@@ -1,0 +1,6973 @@
+export const textbook = {
+  "name": "Chemistry",
+  "author": "Godswill Iyke Dave",
+  "coverImage": "",
+  "chapters": [
+    {
+      "name": "Chapter 1: Fundamentals of Atomic Structure",
+      "image": "https://images.pexels.com/photos/7723354/pexels-photo-7723354.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=OH-aSu-rWgk",
+        "https://www.youtube.com/watch?v=4QblYo-XeoY",
+        "https://www.youtube.com/watch?v=VrNm5EsHkxY"
+      ],
+      "sections": [
+        {
+          "title": "1.1 Subatomic Particles: Protons, Neutrons, Electrons",
+          "image": "https://images.pexels.com/photos/17484970/pexels-photo-17484970.png?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=e9GuJUaX0UM",
+          "content": `Chemistry is the scientific discipline concerned with the composition, structure, properties, and reactions of matter. At the very heart of understanding matter lies the concept of the atom, the fundamental building block of all elements. For centuries, the atom was considered indivisible, but discoveries in the late 19th and early 20th centuries revealed its intricate internal structure. This chapter delves into the fundamental components of the atom – protons, neutrons, and electrons – and explores how their arrangement defines an element's identity and its isotopes. We will then examine how electrons are configured within the atom according to modern quantum mechanical models, introducing the concepts of electron shells, subshells, orbitals, and the quantum numbers that describe them. This understanding of atomic structure is crucial as it forms the basis for explaining chemical bonding, the organization of the periodic table, and the diverse properties of matter.
+
+The atom, once thought to be the smallest indivisible unit of matter, is itself composed of even smaller particles called subatomic particles. The three primary subatomic particles that determine the atom's properties are protons, neutrons, and electrons.
+
+Electrons (e⁻):
+
+Discovery: Discovered by J.J. Thomson in 1897 through experiments with cathode rays. He determined the charge-to-mass ratio of these particles.
+
+Charge: Possess a negative electric charge, which is considered the fundamental unit of negative charge. Its magnitude is -1.602 × 10⁻¹⁹ Coulombs (C). For relative purposes, its charge is often denoted as -1.
+
+Mass: Electrons are extremely light. Their mass is approximately 9.109 × 10⁻³¹ kilograms (kg), which is about 1/1836th the mass of a proton. This mass is often considered negligible when calculating the overall mass of an atom.
+
+Location: Found in the region surrounding the nucleus, often depicted as an "electron cloud" or occupying specific energy levels or orbitals. Electrons are responsible for chemical bonding and determine many of an atom's chemical properties.
+
+Protons (p or p⁺):
+
+Discovery: While positive charge in atoms was known earlier (e.g., Goldstein's canal rays), Ernest Rutherford's experiments (around 1911-1919) led to the discovery of the nucleus and the identification of the proton as the carrier of positive charge within it.
+
+Charge: Possess a positive electric charge equal in magnitude to the electron's charge: +1.602 × 10⁻¹⁹ C. For relative purposes, its charge is denoted as +1.
+
+Mass: Approximately 1.673 × 10⁻²⁷ kg. This is conventionally assigned a relative mass of approximately 1 atomic mass unit (amu).
+
+Location: Found within the nucleus, the small, dense, positively charged center of the atom. The number of protons in the nucleus defines the element (see Atomic Number).
+
+Neutrons (n or n⁰):
+
+Discovery: Discovered by James Chadwick in 1932. Their existence was postulated earlier to account for the discrepancy between atomic number and atomic mass.
+
+Charge: Electrically neutral (no charge).
+
+Mass: Approximately 1.675 × 10⁻²⁷ kg. Its mass is very slightly greater than that of a proton, also assigned a relative mass of approximately 1 amu.
+
+Location: Found within the nucleus along with protons. Neutrons contribute to the mass of the atom and play a crucial role in nuclear stability (helping to counteract the electrostatic repulsion between positively charged protons in the nucleus).
+
+The Nuclear Model of the Atom (Rutherford's Model and Beyond):
+Based on Rutherford's gold foil experiment (alpha particle scattering), the prevailing model of the atom features:
+
+A tiny, dense, positively charged nucleus at the center, containing virtually all the atom's mass (protons and neutrons). The nucleus is extremely small compared to the overall size of the atom (like a marble in a sports stadium).
+
+A much larger region of mostly empty space surrounding the nucleus, where the negatively charged electrons reside, moving rapidly around the nucleus.
+
+(Suggested insertion: A table summarizing the properties (symbol, charge, relative charge, mass in kg, relative mass in amu, location) of protons, neutrons, and electrons. A simple diagram based on Rutherford's nuclear model showing a central nucleus with protons and neutrons, and electrons in orbits/region around it – emphasize relative size and emptiness.)`,
+          "mcq": [
+            {
+              "question": "Which subatomic particle was discovered by J.J. Thomson and has a charge of -1.602 × 10⁻¹⁹ C?",
+              "options": [
+                "Proton",
+                "Neutron",
+                "Electron",
+                "Nucleon"
+              ],
+              "correctAnswer": "Electron",
+              "explanation": "J.J. Thomson discovered the electron in 1897 through his experiments with cathode rays. The electron carries a fundamental negative charge of -1.602 × 10⁻¹⁹ C."
+            }
+          ]
+        },
+        {
+          "title": "1.2 Atomic Number, Mass Number, and Isotopes",
+          "image": "https://images.pexels.com/photos/3735778/pexels-photo-3735778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=KwOHJbE4Tro",
+          "content": `The number of subatomic particles defines the specific type of atom.
+
+Atomic Number (Z):
+
+Defined as the number of protons in the nucleus of an atom.
+
+The atomic number is the fundamental characteristic that identifies an element. All atoms of a particular element have the same atomic number. For example, every carbon atom has 6 protons (Z=6); every oxygen atom has 8 protons (Z=8).
+
+In a neutral atom, the number of electrons is equal to the number of protons (Number of electrons = Z).
+
+The Periodic Table of elements is arranged in order of increasing atomic number.
+
+Mass Number (A) (or Nucleon Number):
+
+Defined as the total number of protons and neutrons in the nucleus of an atom.
+
+A = Number of protons + Number of neutrons
+
+A = Z + N (where N is the number of neutrons).
+
+Therefore, the number of neutrons in an atom can be found by: N = A - Z.
+
+The mass number is always a whole number. It approximates the atomic mass in atomic mass units (amu) because protons and neutrons each have a mass of approximately 1 amu, and electrons have negligible mass.
+
+Nuclide Symbol (or Isotopic Notation):
+A specific type of atom (a nuclide) is represented by its chemical symbol (X) along with its mass number (A) and atomic number (Z):
+ᴬ_ZX
+
+The atomic number Z is sometimes omitted as it is uniquely defined by the element symbol X.
+
+Examples:
+
+Carbon-12: ¹²₆C (6 protons, Z=6; mass number A=12, so 12-6=6 neutrons)
+
+Uranium-238: ²³⁸₉₂U (92 protons, Z=92; mass number A=238, so 238-92=146 neutrons)
+
+Isotopes:
+Atoms of the same element (i.e., having the same atomic number Z, and thus the same number of protons) but with different numbers of neutrons, and therefore different mass numbers (A).
+
+Characteristics of Isotopes:
+
+They have the same number of protons and, if neutral, the same number of electrons.
+
+Thus, isotopes of a given element have nearly identical chemical properties (as chemical properties are primarily determined by the electron configuration, which depends on Z).
+
+They have different physical properties, such as mass, density, and sometimes nuclear stability (radioactivity).
+
+Examples:
+
+Hydrogen Isotopes:
+
+Protium: ¹₁H (1 proton, 0 neutrons) - most common.
+
+Deuterium (D): ²₁H (1 proton, 1 neutron).
+
+Tritium (T): ³₁H (1 proton, 2 neutrons) - radioactive.
+
+Carbon Isotopes:
+
+Carbon-12: ¹²₆C (6 protons, 6 neutrons) - most common, stable.
+
+Carbon-13: ¹³₆C (6 protons, 7 neutrons) - stable.
+
+Carbon-14: ¹⁴₆C (6 protons, 8 neutrons) - radioactive, used in radiocarbon dating.
+
+Chlorine Isotopes: Chlorine exists naturally as a mixture of ³⁵₁₇Cl (approx. 75.8%) and ³⁷₁₇Cl (approx. 24.2%).
+
+Relative Atomic Mass (A_r) (or Atomic Weight): The weighted average mass of all naturally occurring isotopes of an element, calculated based on their natural abundances and isotopic masses (relative to 1/12th the mass of a carbon-12 atom). This is the value usually given for atomic mass in the Periodic Table and is generally not a whole number for elements with multiple isotopes.
+
+Ions: (Review - as many students will have encountered this in earlier science)
+An ion is an atom or a molecule that has gained or lost one or more electrons, resulting in a net positive or negative electric charge.
+
+Cation: Positively charged ion (formed by loss of electrons).
+
+Anion: Negatively charged ion (formed by gain of electrons).
+The number of protons (Z) does not change when an ion is formed.
+
+(Suggested insertion: A table showing how to calculate protons, neutrons, and electrons for various neutral atoms and ions given nuclide symbols. Examples of common isotopes with their compositions. A brief calculation of relative atomic mass from isotopic abundances.)`,
+          "mcq": [
+            {
+              "question": "An atom has an atomic number (Z) of 17 and a mass number (A) of 35. How many neutrons does it have?",
+              "options": [
+                "17",
+                "18",
+                "35",
+                "52"
+              ],
+              "correctAnswer": "18",
+              "explanation": "The number of neutrons (N) is calculated by subtracting the atomic number (Z) from the mass number (A). N = A - Z. So, N = 35 - 17 = 18."
+            }
+          ]
+        },
+        {
+          "title": "1.3 Electron Configuration and Orbital Diagrams",
+          "image": "https://images.pexels.com/photos/7948000/pexels-photo-7948000.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=NIwcDnFjj98",
+          "content": `The arrangement of electrons in the space around the nucleus is crucial for understanding an atom's chemical behavior. Electrons occupy specific energy levels (shells), and within these shells, they occupy subshells (sublevels), which are further composed of atomic orbitals.
+(This section introduces the quantum mechanical model's implications for electron arrangement, which is more accurate than the simple Bohr model shells used in very introductory science).
+
+Energy Levels (Principal Shells):
+
+Described by the principal quantum number (n), where n = 1, 2, 3, 4, ...
+
+Higher n values correspond to higher energy levels and greater average distance from the nucleus.
+
+Shells are also sometimes designated by letters: K (n=1), L (n=2), M (n=3), N (n=4), etc.
+
+Maximum number of electrons a shell n can hold is 2n².
+
+Subshells (Sublevels):
+Within each principal energy shell (except n=1), there are subshells of slightly different energies.
+
+Described by the azimuthal (or angular momentum) quantum number (l). For a given n, l can have integer values from 0 to n-1.
+
+Subshells are designated by letters:
+
+l = 0 → s subshell (sharp) - contains 1 orbital.
+
+l = 1 → p subshell (principal) - contains 3 orbitals (pₓ, pᵧ, p₂).
+
+l = 2 → d subshell (diffuse) - contains 5 orbitals.
+
+l = 3 → f subshell (fundamental) - contains 7 orbitals.
+
+The number of subshells in a principal shell n is equal to n.
+
+n=1: has one subshell (1s)
+
+n=2: has two subshells (2s, 2p)
+
+n=3: has three subshells (3s, 3p, 3d)
+
+n=4: has four subshells (4s, 4p, 4d, 4f)
+
+Energy of Subshells: Within a given shell n (for multi-electron atoms), the energy of subshells generally increases in the order: s < p < d < f.
+
+Atomic Orbitals:
+A region in space around the nucleus where there is a high probability (e.g., 90%) of finding an electron. Each orbital can hold a maximum of two electrons, which must have opposite spins (Pauli Exclusion Principle).
+
+s orbitals: Spherical shape. One s orbital per s subshell.
+
+p orbitals: Dumbbell shape (two lobes). Three p orbitals (pₓ, pᵧ, p₂) in each p subshell, oriented along x, y, and z axes respectively.
+
+d orbitals: More complex shapes (usually 4 lobes, or 2 lobes + a ring). Five d orbitals per d subshell.
+
+f orbitals: Even more complex shapes. Seven f orbitals per f subshell.
+
+Electron Configuration:
+The shorthand notation describing the distribution of electrons among the various orbitals in an atom in its ground state (lowest energy state).
+
+Aufbau Principle (Building-up Principle): Electrons fill the lowest available energy orbitals first.
+
+Order of Filling Orbitals (based on increasing energy):
+1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → 5p → 6s → 4f → 5d → 6p → 7s → 5f → 6d ...
+(This can be remembered using a diagonal rule/mnemonic diagram like Madelung rule or an energy level diagram for multi-electron atoms).
+
+Pauli Exclusion Principle: Each orbital can hold a maximum of two electrons, with opposite spins.
+
+Hund's Rule of Maximum Multiplicity: When filling orbitals within the same subshell (degenerate orbitals - orbitals of equal energy, like the three p orbitals or five d orbitals), electrons occupy separate orbitals individually with parallel spins (same spin quantum number) before pairing up in the same orbital. This minimizes electron-electron repulsion.
+
+Notation for Electron Configuration:
+
+Write the principal shell number (n), then the subshell letter (s, p, d, f), followed by a superscript indicating the number of electrons in that subshell.
+
+Examples:
+
+Hydrogen (H, Z=1): 1s¹
+
+Helium (He, Z=2): 1s²
+
+Lithium (Li, Z=3): 1s² 2s¹
+
+Carbon (C, Z=6): 1s² 2s² 2p²
+
+Oxygen (O, Z=8): 1s² 2s² 2p⁴
+
+Neon (Ne, Z=10): 1s² 2s² 2p⁶
+
+Sodium (Na, Z=11): 1s² 2s² 2p⁶ 3s¹ (Can also use noble gas core notation: [Ne] 3s¹)
+
+Argon (Ar, Z=18): 1s² 2s² 2p⁶ 3s² 3p⁶ or [Ne] 3s² 3p⁶
+
+Potassium (K, Z=19): 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ or [Ar] 4s¹ (Note: 4s fills before 3d)
+
+Iron (Fe, Z=26): 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶ or [Ar] 4s² 3d⁶
+
+Valence Electrons: Electrons in the outermost (highest n value) occupied principal shell. For main group elements (s and p blocks), these are the s and p electrons in the highest energy level. They are crucial for determining chemical bonding and properties. Transition metals also involve d electrons in bonding.
+
+Orbital Diagrams (Box Diagrams):
+A visual representation of electron configuration showing individual orbitals as boxes (or circles/lines) and electrons as arrows (↑ for spin up, ↓ for spin down).
+
+Helps illustrate Hund's rule and Pauli exclusion principle.
+
+Example: Carbon (Z=6, 1s² 2s² 2p²):
+1s: [↑↓]
+2s: [↑↓]
+2p: [↑ ] [↑ ] [ ] (Two electrons in separate p orbitals with parallel spins)
+
+Example: Oxygen (Z=8, 1s² 2s² 2p⁴):
+1s: [↑↓]
+2s: [↑↓]
+2p: [↑↓] [↑ ] [↑ ] (One p orbital is doubly occupied, two are singly occupied)
+
+(Suggested insertion: Diagrams of s, p, and d orbital shapes. An energy level diagram showing the general order of filling of subshells (Aufbau diagram/Madelung rule). Several examples of writing full and condensed electron configurations. Examples of orbital diagrams for various elements, clearly showing Hund's rule and Pauli exclusion.)`,
+          "mcq": [
+            {
+              "question": "Which principle states that electrons fill the lowest available energy orbitals first?",
+              "options": [
+                "Hund's Rule",
+                "Pauli Exclusion Principle",
+                "Aufbau Principle",
+                "Heisenberg Uncertainty Principle"
+              ],
+              "correctAnswer": "Aufbau Principle",
+              "explanation": "The Aufbau principle (from the German for 'building up') dictates the order in which electrons fill orbitals, starting from the lowest energy level (1s) and moving upwards."
+            }
+          ]
+        },
+        {
+          "title": "1.4 Quantum Numbers and Their Significance",
+          "image": "https://images.pexels.com/photos/25626435/pexels-photo-25626435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Aoi4j8es4gQ",
+          "content": `(This section delves a bit deeper into the meaning of quantum numbers introduced in 1.3, connecting them to the properties of electrons in atoms as described by quantum mechanics.)
+
+Solutions to the Schrödinger wave equation for atoms yield a set of four quantum numbers that describe the state of each electron in an atom. These numbers specify the energy, shape, spatial orientation of the orbital, and the intrinsic spin of the electron. No two electrons in the same atom can have the identical set of all four quantum numbers (Pauli Exclusion Principle).
+
+Principal Quantum Number (n):
+
+Symbol: n
+
+Allowed Values: Positive integers: n = 1, 2, 3, 4, ...
+
+Significance:
+
+Primarily determines the electron's main energy level (shell). Higher n values correspond to higher energy levels.
+
+Indicates the average distance of the electron from the nucleus. Larger n means the electron is, on average, further from the nucleus.
+
+Determines the overall size of the orbital.
+
+Shells are often labeled K (n=1), L (n=2), M (n=3), etc.
+
+Azimuthal (or Angular Momentum or Orbital) Quantum Number (l):
+
+Symbol: l (lowercase L)
+
+Allowed Values: For a given value of n, l can take on integer values from 0 to n-1.
+l = 0, 1, 2, ..., (n-1)
+
+Significance:
+
+Determines the shape of the electron's orbital.
+
+Corresponds to the subshell (sublevel) within a principal shell.
+
+The magnitude of the electron's orbital angular momentum is given by L = √[l(l+1)] ħ (where ħ = h/2π).
+
+Subshell designations:
+
+l = 0 corresponds to an s subshell (spherical orbital).
+
+l = 1 corresponds to a p subshell (dumbbell-shaped orbitals).
+
+l = 2 corresponds to a d subshell (more complex orbital shapes).
+
+l = 3 corresponds to an f subshell (even more complex shapes).
+
+Examples:
+
+If n=1, l can only be 0 (1s subshell).
+
+If n=2, l can be 0 (2s subshell) or 1 (2p subshell).
+
+If n=3, l can be 0 (3s), 1 (3p), or 2 (3d).
+
+Magnetic Quantum Number (m_l):
+
+Symbol: m_l
+
+Allowed Values: For a given value of l, m_l can take on integer values from -l to +l, including 0.
+m_l = -l, -(l-1), ..., 0, ..., (l-1), l
+
+Significance:
+
+Determines the spatial orientation of the orbital with respect to a defined axis (e.g., in the presence of an external magnetic field).
+
+Specifies the individual orbital within a subshell.
+
+The number of possible m_l values for a given l is (2l + 1), which is the number of orbitals in that subshell.
+
+s subshell (l=0): m_l = 0 (1 s orbital).
+
+p subshell (l=1): m_l = -1, 0, +1 (3 p orbitals: p_x, p_y, p_z).
+
+d subshell (l=2): m_l = -2, -1, 0, +1, +2 (5 d orbitals).
+
+Orbitals within the same subshell of an isolated atom are degenerate (have the same energy). This degeneracy can be lifted by an external magnetic field (Zeeman effect).
+
+Spin Quantum Number (m_s):
+
+Symbol: m_s
+
+Allowed Values: An electron has an intrinsic property called spin, which is a type of angular momentum. It can be visualized (though not entirely accurately) as the electron spinning on its axis, creating a magnetic dipole moment. The spin can have two possible orientations.
+m_s = +½ ("spin up," often denoted by ↑)
+m_s = -½ ("spin down," often denoted by ↓)
+
+Significance:
+
+Describes the orientation of the electron's intrinsic spin angular momentum.
+
+An orbital can hold a maximum of two electrons, and these two electrons must have opposite spins (Pauli Exclusion Principle).
+
+Summary of Quantum Numbers and Orbitals:
+Each unique combination of n, l, and m_l defines a specific atomic orbital. Each orbital can hold up to two electrons with opposite spins (m_s).
+
+n determines the shell (energy level and size).
+
+l determines the subshell (shape of orbitals).
+
+m_l determines the specific orbital within the subshell (spatial orientation).
+
+m_s describes the electron's spin.
+
+These quantum numbers arise from the solution of the Schrödinger equation for atoms and provide a complete quantum mechanical description of electron states, which is fundamental to understanding atomic properties, chemical bonding, and the structure of the periodic table.
+
+(Suggested insertion: A hierarchical table or diagram showing how n leads to possible l values, how l leads to possible m_l values, and then adding m_s. Relate the number of orbitals in subshells (s=1, p=3, d=5) back to the m_l values. Briefly reiterate the Pauli Exclusion Principle in terms of quantum numbers.)`,
+          "mcq": [
+            {
+              "question": "What is the correct electron configuration for a neutral iron atom (Fe, Z=26)?",
+              "options": [
+                "[Ar] 4s² 3d⁶",
+                "[Ar] 4s¹ 3d⁷",
+                "[Ar] 3d⁸",
+                "[Ar] 4s² 4p⁶"
+              ],
+              "correctAnswer": "[Ar] 4s² 3d⁶",
+              "explanation": "Following the Aufbau principle, after Argon's core ([Ar]), electrons fill the 4s orbital before the 3d orbital. Iron has 26 electrons, so after the 18 in Argon's core, 2 go into 4s and the remaining 6 go into the 3d subshell."
+            },
+            {
+              "question": "Isotopes of a particular element have the same number of ______ but a different number of ______.",
+              "options": [
+                "protons, neutrons",
+                "neutrons, protons",
+                "electrons, protons",
+                "protons, electrons"
+              ],
+              "correctAnswer": "protons, neutrons",
+              "explanation": "Isotopes are defined as atoms of the same element, meaning they have the same number of protons (same atomic number, Z). They differ in their number of neutrons, which results in a different mass number (A)."
+            },
+            {
+              "question": "The orbital shape described by the azimuthal quantum number l=1 is:",
+              "options": [
+                "Spherical (s orbital)",
+                "Dumbbell-shaped (p orbital)",
+                "Cloverleaf-shaped (d orbital)",
+                "Complex-shaped (f orbital)"
+              ],
+              "correctAnswer": "Dumbbell-shaped (p orbital)",
+              "explanation": "The azimuthal quantum number (l) determines the shape of the orbital. l=0 corresponds to an s orbital (spherical), l=1 to a p orbital (dumbbell), l=2 to a d orbital, and l=3 to an f orbital."
+            },
+            {
+              "question": "Which of the following sets of quantum numbers (n, l, m_l, m_s) is NOT allowed for an electron in an atom?",
+              "options": [
+                "(3, 2, -1, +½)",
+                "(2, 2, 1, -½)",
+                "(4, 0, 0, +½)",
+                "(2, 1, 0, -½)"
+              ],
+              "correctAnswer": "(2, 2, 1, -½)",
+              "explanation": "The allowed values for the azimuthal quantum number (l) range from 0 to n-1. In the set (2, 2, 1, -½), n=2, but l=2. This is not allowed because l cannot be equal to n; it can only go up to n-1 (which would be 1 in this case)."
+            },
+            {
+              "question": "How many protons, neutrons, and electrons are in a single ion of ³⁷₁₇Cl⁻?",
+              "options": [
+                "17 p, 20 n, 17 e",
+                "17 p, 20 n, 18 e",
+                "17 p, 37 n, 16 e",
+                "18 p, 19 n, 17 e"
+              ],
+              "correctAnswer": "17 p, 20 n, 18 e",
+              "explanation": "The atomic number (bottom left) is 17, so there are 17 protons. The number of neutrons is Mass Number - Atomic Number = 37 - 17 = 20. For a neutral atom, there would be 17 electrons. Since it's a -1 ion (Cl⁻), it has gained one electron, so it has 17 + 1 = 18 electrons."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2: The Periodic Table and Periodicity",
+      "image": "https://images.pexels.com/photos/5712300/pexels-photo-5712300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=vDy0w3ZxcyU",
+        "https://www.youtube.com/watch?v=hePb00CqvP0",
+        "https://www.youtube.com/watch?v=okolv1y6IlE"
+      ],
+      "sections": [
+        {
+          "title": "2.1 Development of the Periodic Table (Mendeleev to Modern)",
+          "image": "https://images.pexels.com/photos/4458204/pexels-photo-4458204.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=IoldeyRWgz8",
+          "content": `The Periodic Table of Elements is one of the most powerful and iconic tools in chemistry. It is a systematic arrangement of all known chemical elements based on their atomic number and recurring chemical and physical properties. Its structure not only organizes the elements but also allows us to predict their behavior, understand relationships between them, and anticipate the properties of yet-undiscovered elements. This chapter will explore the historical development of the periodic table, delve into the concept of periodicity and key periodic trends (such as atomic radii, ionization energy, and electronegativity), examine the organization into groups and periods with their characteristic blocks (s, p, d, f), and illustrate how an element's position in the table can be used to predict its properties.
+
+The development of the periodic table was a gradual process, built upon the contributions of many scientists.
+
+Early Attempts at Classification:
+
+As more elements were discovered in the 18th and 19th centuries, scientists sought ways to organize them based on observed similarities.
+
+Johann Döbereiner (1829) - Law of Triads: Noticed that some groups of three elements (triads) had similar chemical properties, and the atomic weight of the middle element was approximately the average of the other two (e.g., Li, Na, K; Ca, Sr, Ba; Cl, Br, I).
+
+John Newlands (1864) - Law of Octaves: Arranged known elements in order of increasing atomic weight and observed that every eighth element exhibited similar properties (like musical octaves). This was ridiculed at the time but was an early recognition of periodicity.
+
+Dmitri Mendeleev (1869) - The First Widely Recognized Periodic Table:
+
+A Russian chemist considered the primary architect of the modern periodic table.
+
+Mendeleev's Contributions:
+
+Arranged the then-known elements (about 60) in order of increasing atomic weight.
+
+Grouped elements with similar chemical properties together in vertical columns.
+
+Left gaps in his table for elements that he predicted were yet to be discovered. He even predicted the properties of these missing elements (e.g., eka-aluminum, which became gallium; eka-silicon, which became germanium) based on the properties of their neighbors in the table. The later discovery of these elements with properties matching his predictions provided strong support for his table.
+
+Sometimes, he prioritized similar properties over strict atomic weight order if it made more sense chemically (e.g., Tellurium (Te, atomic weight 127.6) was placed before Iodine (I, atomic weight 126.9) because Iodine's properties matched the halogens better).
+
+Lothar Meyer (1869): Independently developed a similar periodic table based on physical properties (like atomic volume) versus atomic weight.
+
+Henry Moseley (1913) - The Modern Periodic Law:
+
+Through experiments with X-ray spectra of elements, Moseley established that the atomic number (Z) (the number of protons in the nucleus) is the fundamental property that determines an element's identity and its position in the periodic table, not atomic weight.
+
+Modern Periodic Law: "The physical and chemical properties of the elements are periodic functions of their atomic numbers."
+
+Arranging elements by increasing atomic number resolved the anomalies present in Mendeleev's table (like Te and I).
+
+Structure of the Modern Periodic Table:
+
+Periods (Rows): Horizontal rows, numbered 1 to 7. Elements within the same period have the same number of principal electron shells being filled.
+
+Groups (Columns or Families): Vertical columns, numbered 1 to 18 (modern IUPAC system) or using older A/B group system (e.g., IA to VIIIA, IB to VIIIB). Elements within the same group have the same number of valence electrons (electrons in the outermost shell) and thus share similar chemical properties and reactivity.
+
+The length of periods varies because of how electron shells and subshells fill.
+
+(Suggested insertion: Images of Döbereiner's triads, Newlands' octaves. A portrait of Mendeleev and an image of his early periodic table highlighting gaps. A brief mention of Moseley's contribution. A modern periodic table image clearly showing periods and group numbering.)`,
+          "mcq": [
+            {
+              "question": "Henry Moseley's work with X-ray spectra established that the properties of elements are periodic functions of their:",
+              "options": [
+                "Atomic weight",
+                "Atomic radius",
+                "Atomic number",
+                "Number of neutrons"
+              ],
+              "correctAnswer": "Atomic number",
+              "explanation": "Henry Moseley's experiments showed that the atomic number (Z), the number of protons in the nucleus, is the fundamental property that determines an element's identity and its place in the periodic table, leading to the Modern Periodic Law."
+            }
+          ]
+        },
+        {
+          "title": "2.2 Periodic Trends: Atomic Radii, Ionization Energy, Electronegativity",
+          "image": "https://images.pexels.com/photos/7755503/pexels-photo-7755503.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=0h8q1GIQ-H4",
+          "content": `The arrangement of elements in the periodic table leads to predictable trends in their properties, known as periodicity or periodic trends. These trends arise from variations in atomic structure (nuclear charge, electron shielding, number of electron shells) across periods and down groups.
+
+Atomic Radius: A measure of the size of an atom.
+
+Defining it precisely is difficult because electron clouds don't have sharp boundaries. Often defined as half the distance between the nuclei of two identical bonded atoms (covalent radius) or in a metallic crystal.
+
+Trend Across a Period (Left to Right): Generally decreases.
+
+Reason: Across a period, the number of protons in the nucleus (nuclear charge, Z_eff - effective nuclear charge felt by valence electrons) increases, while electrons are added to the same outermost principal shell. The increased nuclear charge pulls the valence electrons more strongly towards the nucleus, reducing the atomic size. The shielding effect from inner electrons does not fully offset the increasing nuclear charge.
+
+Trend Down a Group (Top to Bottom): Generally increases.
+
+Reason: Each successive element down a group has an additional principal electron shell. The outermost electrons are further from the nucleus, and there is increased shielding by the inner core electrons, which reduces the effective pull of the nucleus on the valence electrons. The effect of adding a new shell outweighs the increase in nuclear charge.
+
+Ionization Energy (First Ionization Energy, IE₁):
+
+The minimum energy required to remove one electron from a neutral gaseous atom in its ground state to form a positive ion (cation). X(g) + Energy → X⁺(g) + e⁻.
+
+A measure of how strongly an atom holds onto its outermost electron.
+
+Trend Across a Period (Left to Right): Generally increases.
+
+Reason: Increasing effective nuclear charge and decreasing atomic radius mean valence electrons are held more tightly and require more energy to remove. (Exceptions occur, e.g., between Group 2 & 13, Group 15 & 16, due to electron configurations and subshell stability).
+
+Trend Down a Group (Top to Bottom): Generally decreases.
+
+Reason: Outermost electron is further from the nucleus and more shielded by inner electrons, experiencing a weaker attraction to the nucleus, so it is easier to remove.
+
+Noble gases have the highest ionization energies in their respective periods due to their stable electron configurations. Alkali metals have the lowest.
+
+Electronegativity (EN):
+
+A relative measure of the tendency of an atom to attract a shared pair of electrons towards itself when it is chemically bonded to another atom in a compound.
+
+Values are typically assigned on a relative scale (e.g., Pauling scale, Linus Pauling).
+
+Trend Across a Period (Left to Right): Generally increases.
+
+Reason: Increasing effective nuclear charge and smaller atomic size lead to a stronger attraction for bonding electrons.
+
+Trend Down a Group (Top to Bottom): Generally decreases.
+
+Reason: Increased distance of valence shell from nucleus and increased shielding reduce the atom's ability to attract bonding electrons strongly.
+
+Fluorine (F) is the most electronegative element. Oxygen (O), Nitrogen (N), and Chlorine (Cl) are also highly electronegative. Noble gases are usually not assigned electronegativity values as they rarely form bonds.
+
+Electronegativity differences between atoms determine the type and polarity of chemical bonds (ionic, polar covalent, nonpolar covalent - see Ch 3).
+
+Other Periodic Trends (briefly):
+
+Electron Affinity: Energy change when an electron is added to a neutral gaseous atom to form a negative ion. General trend similar to electronegativity (increases across a period, decreases down a group, with exceptions). Halogens have high electron affinities.
+
+Metallic Character: Properties typical of metals (malleability, ductility, conductivity, tendency to lose electrons/form cations). Increases down a group and decreases across a period (from left to right). Non-metallic character shows the opposite trend.
+
+Ionic Radius: Size of ions. Cations are smaller than their parent neutral atoms (lost electrons, nucleus pulls remaining e⁻ tighter). Anions are larger than their parent neutral atoms (gained electrons, increased e⁻-e⁻ repulsion). Trends within isoelectronic series (ions with same number of electrons).
+
+(Suggested insertion: A periodic table diagram with clear arrows and explanations indicating the trends for atomic radius, ionization energy, and electronegativity across periods and down groups. Graphs showing these trends vs. atomic number can also be very illustrative. Brief notes on electron affinity and metallic character trends.)`,
+          "mcq": [
+            {
+              "question": "Which of the following elements has the highest first ionization energy?",
+              "options": [
+                "Na (Sodium)",
+                "Mg (Magnesium)",
+                "S (Sulfur)",
+                "Cl (Chlorine)"
+              ],
+              "correctAnswer": "Cl (Chlorine)",
+              "explanation": "First ionization energy generally increases across a period from left to right. All these elements are in Period 3. Chlorine is the furthest to the right (before the noble gas), so it holds onto its valence electrons most tightly and requires the most energy to remove one."
+            }
+          ]
+        },
+        {
+          "title": "2.3 Groups and Periods: s‐Block, p‐Block, d‐Block, f‐Block Elements",
+          "image": "https://images.pexels.com/photos/3735778/pexels-photo-3735778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=N8PaCCDplRw",
+          "content": `The periodic table can be divided into blocks based on which type of atomic orbital (subshell) the outermost (valence) electrons are filling.
+
+Periods (Horizontal Rows):
+
+Numbered 1 to 7.
+
+The period number corresponds to the highest principal energy level (n) occupied by electrons in the ground state of the elements in that period.
+
+Groups (Vertical Columns or Families):
+
+Numbered 1 to 18 (IUPAC) or IA-VIIIA & IB-VIIIB (older systems).
+
+Elements in the same group have similar valence electron configurations (same number of electrons in their outermost s and p orbitals for main group elements), which leads to similar chemical properties and reactivity.
+
+Main Group Elements (Representative Elements): Groups 1, 2, and 13-18. Their valence electrons are in s and p subshells.
+
+Transition Metals: Groups 3-12. Valence electrons are in d subshells (of shell n-1) and outermost s subshell (of shell n).
+
+Inner Transition Metals (Lanthanides and Actinides): Two rows usually placed below the main table. Valence electrons are in f subshells (of shell n-2) and outermost s and d subshells.
+
+Blocks of the Periodic Table:
+
+s-Block Elements:
+
+Groups 1 (Alkali Metals) and 2 (Alkaline Earth Metals).
+
+Valence electron configuration ends in ns¹ (Group 1) or ns² (Group 2).
+
+Highly reactive metals (lose electrons easily to form cations).
+
+Soft, low densities, low melting/boiling points (for metals).
+
+p-Block Elements:
+
+Groups 13 to 18 (includes metalloids and non-metals, and some metals at bottom of groups).
+
+Valence electron configuration involves filling np orbitals (ends in ns²np¹ to ns²np⁶).
+
+Group 13 (e.g., B, Al): 3 valence electrons.
+
+Group 14 (e.g., C, Si): 4 valence electrons.
+
+Group 15 (e.g., N, P): 5 valence electrons.
+
+Group 16 (Chalcogens, e.g., O, S): 6 valence electrons.
+
+Group 17 (Halogens, e.g., F, Cl): 7 valence electrons (highly reactive non-metals, form -1 anions).
+
+Group 18 (Noble Gases, e.g., He, Ne, Ar): 8 valence electrons (ns²np⁶, except He 1s²), full valence shell, very stable and unreactive (inert).
+
+Contains a wide range of properties: metals, metalloids, non-metals.
+
+d-Block Elements (Transition Metals):
+
+Groups 3 to 12. Located between s-block and p-block.
+
+Characterized by the filling of (n-1)d orbitals. Outer configuration often ns² (n-1)dˣ or ns¹ (n-1)dʸ.
+
+Properties: Typical metals (hard, high melting/boiling points, good conductors). Many have multiple oxidation states, form colored compounds, and are often used as catalysts.
+
+f-Block Elements (Inner Transition Metals):
+
+Located below the main body of the periodic table for convenience.
+
+Characterized by the filling of (n-2)f orbitals.
+
+Lanthanides (Lanthanoids): Period 6 (filling 4f orbitals). Elements after Lanthanum (La). Similar chemical properties.
+
+Actinides (Actinoids): Period 7 (filling 5f orbitals). Elements after Actinium (Ac). Most are radioactive; some are synthetic (transuranium elements).
+
+(Suggested insertion: A periodic table clearly showing the s, p, d, and f blocks shaded in different colors. Lists of common group names (Alkali Metals, Alkaline Earth Metals, Halogens, Noble Gases) and their corresponding group numbers and typical valence electron configurations.)`,
+          "mcq": [
+            {
+              "question": "Which block of the periodic table contains the Halogens and the Noble Gases?",
+              "options": [
+                "s-block",
+                "p-block",
+                "d-block",
+                "f-block"
+              ],
+              "correctAnswer": "p-block",
+              "explanation": "The p-block consists of Groups 13 to 18. This includes the Halogens (Group 17) and the Noble Gases (Group 18), whose valence electrons are filling the p orbitals."
+            }
+          ]
+        },
+        {
+          "title": "2.4 Predicting Properties from Position in the Table",
+          "image": "https://images.pexels.com/photos/3735778/pexels-photo-3735778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Q9POSOw_gd4",
+          "content": `An element's position in the periodic table provides significant information about its expected physical and chemical properties, largely due to its electron configuration and the periodic trends.
+
+Metallic vs. Non-metallic Character:
+
+Metals are generally found on the left and in the center of the table.
+
+Non-metals are generally on the right side (except Hydrogen).
+
+Metalloids form a diagonal staircase between metals and non-metals.
+
+Metallic character increases down a group and decreases across a period.
+
+Reactivity:
+
+Metals: Reactivity generally increases down a group (e.g., Group 1 - alkali metals become more reactive from Li to Cs because valence electron is easier to lose). Reactivity generally decreases across a period (left to right for metals).
+
+Non-metals: Reactivity generally decreases down a group (e.g., Group 17 - halogens become less reactive from F to I because ability to gain an electron decreases). Reactivity generally increases across a period (left to right up to Group 17).
+
+Noble gases (Group 18) are very unreactive (inert) due to stable full valence shells.
+
+Formation of Ions (and Ionic Charge):
+
+Group 1 metals: Tend to lose 1 electron to form +1 cations (e.g., Na⁺).
+
+Group 2 metals: Tend to lose 2 electrons to form +2 cations (e.g., Mg²⁺).
+
+Group 13 metals (e.g., Al): Tend to lose 3 electrons to form +3 cations (e.g., Al³⁺).
+
+Group 15 non-metals (e.g., N, P): Tend to gain 3 electrons to form -3 anions (e.g., N³⁻).
+
+Group 16 non-metals (e.g., O, S): Tend to gain 2 electrons to form -2 anions (e.g., O²⁻).
+
+Group 17 non-metals (Halogens): Tend to gain 1 electron to form -1 anions (e.g., Cl⁻).
+
+Transition metals often form cations with multiple possible charges (variable oxidation states).
+
+Type of Bonding:
+
+Metal + Non-metal → Typically Ionic bond.
+
+Non-metal + Non-metal → Typically Covalent bond. (Difference in electronegativity determines polarity).
+
+Metal + Metal → Metallic bond.
+
+Formulas of Simple Compounds:
+
+Valency (combining power) of an element is related to its group number (number of valence electrons or number of electrons needed to complete octet).
+
+Can predict formulas of simple binary ionic compounds by balancing charges (e.g., Mg (Group 2, forms Mg²⁺) and Cl (Group 17, forms Cl⁻) combine to form MgCl₂).
+
+Can predict formulas of simple covalent compounds with non-metals based on common valencies (e.g., C (Group 14, often 4 bonds) and H (1 bond) form CH₄).
+
+Physical Properties (General Trends):
+
+Melting/Boiling points: High for metals (especially transition metals), low for many non-metals (molecular substances). Vary within groups.
+
+Density: Generally increases down a group. Varies across periods.
+
+Conductivity: Metals are good conductors; non-metals are poor conductors (insulators); metalloids are semiconductors.
+
+By understanding its position, you can make educated guesses about an element's size, how easily it forms ions, how electronegative it is, whether it's a metal or non-metal, and the types of compounds it is likely to form.
+
+(Suggested insertion: Specific examples of predicting properties for a few elements based on their position. E.g., compare Sodium (Na) vs. Chlorine (Cl) vs. Argon (Ar) in Period 3 for radius, IE, EN, metallic character, ion formation, type of bonding it forms. Compare Fluorine (F) vs. Iodine (I) down Group 17 for reactivity.)`,
+          "mcq": [
+            {
+              "question": "Which element is the most electronegative?",
+              "options": [
+                "Li (Lithium)",
+                "N (Nitrogen)",
+                "F (Fluorine)",
+                "I (Iodine)"
+              ],
+              "correctAnswer": "F (Fluorine)",
+              "explanation": "Electronegativity increases across a period (left to right) and decreases down a group. Fluorine is in the top right of the periodic table (excluding noble gases), making it the most electronegative element."
+            },
+            {
+              "question": "An element in Group 2 of the periodic table is expected to form an ion with what charge?",
+              "options": [
+                "+1",
+                "+2",
+                "-1",
+                "-2"
+              ],
+              "correctAnswer": "+2",
+              "explanation": "Group 2 elements are the Alkaline Earth Metals. They have two valence electrons, which they tend to lose to achieve a stable electron configuration, forming a cation with a +2 charge (e.g., Mg²⁺, Ca²⁺)."
+            },
+            {
+              "question": "How does atomic radius generally change across a period (from left to right) and down a group?",
+              "options": [
+                "Increases across, Increases down",
+                "Decreases across, Increases down",
+                "Increases across, Decreases down",
+                "Decreases across, Decreases down"
+              ],
+              "correctAnswer": "Decreases across, Increases down",
+              "explanation": "Atomic radius decreases across a period because increasing nuclear charge pulls electrons closer. It increases down a group because additional electron shells are added, placing the valence electrons further from the nucleus."
+            },
+            {
+              "question": "Which of the following elements is classified as a metalloid?",
+              "options": [
+                "Al (Aluminum)",
+                "Si (Silicon)",
+                "P (Phosphorus)",
+                "S (Sulfur)"
+              ],
+              "correctAnswer": "Si (Silicon)",
+              "explanation": "Metalloids form a diagonal staircase between metals and non-metals. Silicon (Si) is a classic example, having properties intermediate between metals and non-metals. Aluminum is a metal, while Phosphorus and Sulfur are non-metals."
+            },
+            {
+              "question": "Dmitri Mendeleev is primarily credited with the periodic table because he:",
+              "options": [
+                "Discovered the proton",
+                "Arranged elements by atomic number",
+                "Left gaps for and predicted the properties of undiscovered elements",
+                "Proposed the Law of Octaves"
+              ],
+              "correctAnswer": "Left gaps for and predicted the properties of undiscovered elements",
+              "explanation": "Mendeleev's great insight was not only arranging elements by atomic weight and similar properties but also leaving gaps for elements he predicted must exist. His accurate predictions of their properties (like gallium and germanium) provided strong evidence for his periodic law."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 3: Ionic and Covalent Bonding",
+      "image": "https://images.pexels.com/photos/25626518/pexels-photo-25626518.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=S_k0kr2eZSQ",
+        "https://www.youtube.com/watch?v=5I_1jRGSR9E",
+        "https://www.youtube.com/watch?v=lHuvmD8o1fU"
+      ],
+      "sections": [
+        {
+          "title": "3.1 Ionic Bond Formation and Lattice Energy",
+          "image": "https://images.pexels.com/photos/3839557/pexels-photo-3839557.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=S_k0kr2eZSQ",
+          "content": `Atoms rarely exist in isolation in nature; they tend to combine with other atoms to form more stable arrangements, primarily by achieving a stable electron configuration (often a full outer shell of electrons, like noble gases – the octet rule for many elements, or duet rule for H, Li, Be). The forces that hold atoms together in these combinations are called chemical bonds. The type of chemical bond formed depends largely on the electronegativity differences between the atoms involved. This chapter focuses on two principal types of strong chemical bonds: ionic bonds, formed by the transfer of electrons, and covalent bonds, formed by the sharing of electrons. We will also briefly consider metallic bonding.
+
+Ionic Bond (Electrovalent Bond):
+An ionic bond is formed by the complete transfer of one or more valence electrons from one atom (typically a metal with low ionization energy) to another atom (typically a non-metal with high electron affinity and electronegativity).
+
+This transfer results in the formation of oppositely charged ions:
+
+The atom that loses electron(s) becomes a positively charged ion (cation). Metals readily form cations.
+
+The atom that gains electron(s) becomes a negatively charged ion (anion). Non-metals readily form anions.
+
+The ionic bond is the strong electrostatic force of attraction between these oppositely charged cations and anions.
+
+The driving force for ionic bond formation is the achievement of stable noble gas electron configurations by both ions (octet rule).
+
+Formation of Ionic Compounds (Example: Sodium Chloride, NaCl):
+
+Sodium (Na): Electron configuration 1s²2s²2p⁶3s¹ (or 2,8,1). Has 1 valence electron. It readily loses this electron to achieve a stable octet (like Neon, 2,8).
+Na → Na⁺ + e⁻ (Na atom becomes sodium ion, Na⁺)
+
+Chlorine (Cl): Electron configuration 1s²2s²2p⁶3s²3p⁵ (or 2,8,7). Has 7 valence electrons. It readily gains 1 electron to achieve a stable octet (like Argon, 2,8,8).
+Cl + e⁻ → Cl⁻ (Cl atom becomes chloride ion, Cl⁻)
+
+The Na⁺ cation and Cl⁻ anion are then attracted to each other by strong electrostatic forces, forming the ionic bond in sodium chloride (NaCl).
+
+Representing Ionic Bond Formation (Lewis Dot Structures approach):
+Na (⋅Na) + Cl (:Ċ̣⃛l:) → Na⁺ ([Na]⁺) + Cl⁻ ([:Ċ̣⃛l:]⁻) → NaCl (ionic compound)
+
+Properties of Ionic Compounds:
+
+Crystalline Solids: Ions are arranged in a regular, repeating three-dimensional pattern called a crystal lattice. This ordered arrangement maximizes attraction between opposite charges and minimizes repulsion between like charges, leading to a stable structure.
+
+High Melting and Boiling Points: Due to the strong electrostatic forces of attraction between ions in the lattice, a large amount of thermal energy is required to overcome these forces and separate the ions.
+
+Hard and Brittle: Strong forces make them hard. If subjected to stress, like charges may align, causing repulsion and shattering the crystal (brittle).
+
+Electrical Conductivity:
+
+Do not conduct electricity in the solid state because ions are fixed in the lattice and cannot move freely.
+
+Conduct electricity when molten (liquid) or when dissolved in water (aqueous solution) because the ions become mobile and can carry electric charge.
+
+Solubility: Many ionic compounds are soluble in polar solvents like water. The polar water molecules can surround and hydrate the ions, overcoming the lattice forces.
+
+Lattice Energy:
+The energy released when one mole of an ionic crystalline solid is formed from its constituent gaseous ions. Alternatively, it is the energy required to completely separate one mole of a solid ionic compound into its gaseous ions.
+
+A measure of the strength of the ionic bonds in the crystal lattice.
+
+Higher lattice energy corresponds to stronger ionic bonds and more stable ionic compounds (often with higher melting points).
+
+Factors affecting lattice energy (based on Coulomb's Law F ∝ q₁q₂/r²):
+
+Ionic Charge: Lattice energy increases significantly with increasing charge on the ions (e.g., MgO (Mg²⁺O²⁻) has much higher lattice energy than NaCl (Na⁺Cl⁻)).
+
+Ionic Radius (Size): Lattice energy decreases as the size of the ions increases (distance between ion centers, r, increases, so force decreases). Smaller ions can get closer, leading to stronger attraction.
+
+(Suggested insertion: Lewis dot diagrams clearly showing electron transfer for formation of NaCl, MgO, CaCl₂. A simple diagram of an NaCl crystal lattice structure. A table summarizing key properties of ionic compounds.)`,
+          "mcq": [
+            {
+              "question": "An ionic bond is best described as the:",
+              "options": [
+                "Sharing of electrons between two non-metals",
+                "Electrostatic attraction between a 'sea' of electrons and positive ions",
+                "Electrostatic attraction between oppositely charged ions",
+                "Sharing of electrons between two metals"
+              ],
+              "correctAnswer": "Electrostatic attraction between oppositely charged ions",
+              "explanation": "An ionic bond forms after the complete transfer of one or more electrons from a metal to a non-metal, creating a positive ion (cation) and a negative ion (anion). The bond itself is the strong electrostatic force of attraction between these ions."
+            }
+          ]
+        },
+        {
+          "title": "3.2 Covalent Bonding: Lewis Structures and Octet Rule",
+          "image": "https://images.pexels.com/photos/7605966/pexels-photo-7605966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=swYA3-VDuIk",
+          "content": `Covalent Bond:
+A chemical bond formed by the sharing of one or more pairs of valence electrons between two atoms, typically between two non-metal atoms (which have similar electronegativities, so neither atom can easily pull electrons completely away from the other).
+
+By sharing electrons, each atom can achieve a more stable electron configuration, usually resembling that of a noble gas (e.g., an octet of valence electrons for most elements, or a duet for hydrogen).
+
+The shared pair(s) of electrons are attracted to the nuclei of both atoms, thus holding the atoms together.
+
+Substances formed by covalent bonds are called covalent (or molecular) compounds, and they exist as discrete molecules.
+
+Types of Covalent Bonds (based on number of shared pairs):
+
+Single Covalent Bond: One pair of electrons (2 electrons) is shared between two atoms. Represented by a single line (–) in structural formulas.
+
+Examples: H-H in H₂, Cl-Cl in Cl₂, C-H in CH₄, H-O in H₂O.
+
+Double Covalent Bond: Two pairs of electrons (4 electrons) are shared between two atoms. Represented by two lines (=).
+
+Examples: O=O in O₂, C=O in CO₂, C=C in C₂H₄ (ethene).
+
+Triple Covalent Bond: Three pairs of electrons (6 electrons) are shared between two atoms. Represented by three lines (≡).
+
+Examples: N≡N in N₂, C≡C in C₂H₂ (ethyne/acetylene).
+
+Double and triple bonds are stronger and shorter than single bonds between the same two atoms.
+
+Lewis Structures (Electron Dot Structures for Molecules):
+Diagrams that represent the valence electrons of atoms in a molecule and how they are shared to form covalent bonds or exist as lone pairs.
+
+Octet Rule: Many atoms (especially C, N, O, F, and other main group elements in periods 2 and 3) tend to form bonds in such a way that they achieve eight valence electrons (an octet), like the electron configuration of a noble gas.
+
+Duet Rule: Hydrogen (and sometimes Li, Be) tends to achieve two valence electrons (like Helium).
+
+Steps for Drawing Lewis Structures (Simplified):
+
+Count Total Valence Electrons: Sum the valence electrons for all atoms in the molecule or polyatomic ion (adjust for charge if it's an ion: add electrons for negative charge, subtract for positive charge).
+
+Determine Central Atom: Usually the least electronegative atom (excluding H, which is always terminal). Carbon is often central.
+
+Arrange Atoms: Place the central atom in the center and arrange other atoms (terminal atoms) around it.
+
+Form Single Bonds: Connect each terminal atom to the central atom with a single bond (a pair of electrons, represented by a line or two dots). Subtract these bonding electrons from the total valence electron count.
+
+Distribute Remaining Electrons as Lone Pairs: Distribute the remaining valence electrons as lone pairs (non-bonding pairs) around the terminal atoms first (usually to satisfy their octets, except H), then around the central atom.
+
+Check Octets: Ensure all atoms (especially central atom, except H and sometimes B, Be) have an octet (8 electrons - including shared and lone pairs). Hydrogen should have a duet (2 electrons).
+
+Form Multiple Bonds (if necessary): If the central atom does not have an octet, and there are lone pairs on adjacent terminal atoms, move lone pairs from terminal atoms to form double or triple bonds with the central atom until it achieves an octet. (Prioritize octets for more electronegative terminal atoms first, e.g., O, F).
+
+Exceptions to the Octet Rule:
+
+Incomplete Octet: Some central atoms (e.g., Be in BeCl₂, B in BF₃) can be stable with fewer than 8 valence electrons.
+
+Expanded Octet (Hypervalence): Elements in the 3rd period and beyond (e.g., P, S, Cl, Xe) can sometimes accommodate more than 8 valence electrons in their valence shell by using available d orbitals (e.g., PCl₅, SF₆, XeF₄).
+
+Odd-Electron Molecules (Radicals): Molecules with an odd number of total valence electrons (e.g., NO, NO₂) cannot satisfy the octet rule for all atoms.
+
+(Suggested insertion: Clear examples of Lewis structures for simple molecules like H₂, Cl₂, H₂O, NH₃, CH₄. Examples of molecules with single, double, and triple bonds (O₂, N₂, CO₂, C₂H₄, C₂H₂). Examples showing the octet rule and common exceptions like BF₃, PCl₅, SF₆.)`,
+          "mcq": [
+            {
+              "question": "How many shared electrons are in a triple covalent bond?",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "6"
+              ],
+              "correctAnswer": "6",
+              "explanation": "A single covalent bond involves one shared pair (2 electrons). A double bond involves two shared pairs (4 electrons). A triple covalent bond involves three shared pairs, for a total of 6 shared electrons, as seen in the N₂ molecule."
+            }
+          ]
+        },
+        {
+          "title": "3.3 Polar vs. Nonpolar Covalent Bonds; Electronegativity Differences",
+          "image": "https://images.pexels.com/photos/25626435/pexels-photo-25626435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=SiZXRScxbl0",
+          "content": `While covalent bonds involve sharing electrons, the sharing is not always equal.
+Electronegativity (EN - Review from Ch 2.2): A measure of an atom's ability to attract shared electrons in a chemical bond towards itself.
+
+Polarity of Covalent Bonds: Determined by the difference in electronegativity (ΔEN) between the two bonded atoms.
+
+Nonpolar Covalent Bond:
+
+Electrons are shared equally (or nearly equally) between the two atoms.
+
+Occurs when the two bonded atoms are identical (e.g., H-H in H₂, Cl-Cl in Cl₂, O=O in O₂) or have very similar electronegativities (ΔEN is very small, typically < 0.4).
+
+No significant separation of charge (no bond dipole).
+
+Example: The C-H bond in methane (CH₄) is generally considered nonpolar (ΔEN is small).
+
+Polar Covalent Bond:
+
+Electrons are shared unequally between the two atoms because one atom is more electronegative than the other.
+
+The more electronegative atom attracts the shared electron pair more strongly, acquiring a partial negative charge (δ⁻, delta negative).
+
+The less electronegative atom acquires a partial positive charge (δ⁺, delta positive).
+
+This separation of charge creates a bond dipole (a region of positive charge and a region of negative charge in the bond). The bond is said to be polar.
+
+Occurs when ΔEN is significant (typically between ~0.4 and ~1.7-2.0 on Pauling scale).
+
+The greater the ΔEN, the more polar the bond.
+
+Examples:
+
+H-Cl bond: Cl is more electronegative than H. (H<sup>δ⁺</sup>—Cl<sup>δ⁻</sup>)
+
+H-O bonds in H₂O: O is much more electronegative than H. (O<sup>δ⁻</sup>—H<sup>δ⁺</sup>)
+
+C=O bond in CO₂: O is more electronegative than C. (C<sup>δ⁺</sup>=O<sup>δ⁻</sup>)
+
+Ionic Bond as an Extreme Case: If the electronegativity difference is very large (typically ΔEN > ~1.7-2.0), the electron sharing is so unequal that it's considered a complete transfer of electrons, resulting in an ionic bond rather than a polar covalent bond. There is a continuum from nonpolar covalent to polar covalent to ionic.
+
+(Suggested insertion: Diagrams illustrating electron sharing in nonpolar covalent (e.g., H₂) and polar covalent (e.g., HCl) bonds, showing electron cloud distribution and partial charges (δ⁺, δ⁻) with dipole arrows. A number line or scale showing how ΔEN relates to bond type: Nonpolar Covalent → Polar Covalent → Ionic.)
+
+Molecular Polarity:
+The polarity of individual bonds can influence the overall polarity of a molecule.
+
+A molecule can have polar bonds but be nonpolar overall if the bond dipoles cancel each other out due to molecular symmetry (e.g., CO₂ is linear O=C=O, bond dipoles cancel; CCl₄ is tetrahedral, bond dipoles cancel).
+
+If a molecule has polar bonds and its shape is such that the bond dipoles do not cancel out, the molecule will have a net molecular dipole and be a polar molecule (e.g., H₂O is bent, bond dipoles add up; NH₃ is trigonal pyramidal).
+(Molecular geometry and polarity are discussed further in Chapter 4).`,
+          "mcq": [
+            {
+              "question": "A covalent bond between two atoms is likely to be polar if:",
+              "options": [
+                "The two atoms are identical",
+                "The two atoms have a large difference in electronegativity",
+                "The two atoms are both metals",
+                "The two atoms have a very small difference in electronegativity"
+              ],
+              "correctAnswer": "The two atoms have a large difference in electronegativity",
+              "explanation": "A polar covalent bond results from the unequal sharing of electrons. This occurs when one atom has a significantly higher electronegativity (attraction for shared electrons) than the other, creating partial positive (δ⁺) and partial negative (δ⁻) charges."
+            }
+          ]
+        },
+        {
+          "title": "3.4 Metallic Bonding and Alloys",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=rjfXmz-PLk8",
+          "content": `Metallic Bond:
+The type of chemical bond that holds atoms together in a metallic substance (a metal or an alloy).
+
+Electron Sea Model (Simplified Model):
+
+Metal atoms typically have low ionization energies and lose their valence electrons relatively easily.
+
+In a metallic solid, the metal atoms are arranged in a regular crystal lattice of positive metal ions (cations).
+
+The valence electrons are not associated with any single atom but are delocalized and free to move throughout the entire metallic structure, forming a "sea" or "cloud" of mobile electrons.
+
+The metallic bond is the electrostatic attraction between the fixed positive metal ions and the delocalized, mobile sea of negatively charged electrons that surrounds them.
+
+This model explains many characteristic properties of metals:
+
+Good Electrical Conductivity: Mobile electrons are free to move and carry charge when a potential difference is applied.
+
+Good Thermal Conductivity: Mobile electrons can also efficiently transfer kinetic energy (heat).
+
+Malleability and Ductility: Layers of metal ions can slide past each other without breaking the metallic bonds (which are non-directional) because the electron sea can adjust to new ion positions.
+
+Lustre (Shininess): Mobile electrons can absorb and re-emit light photons, giving metals a shiny appearance.
+
+High Density and Melting/Boiling Points (Generally): Due to strong attractive forces.
+
+(Suggested insertion: A diagram illustrating the "electron sea model" of metallic bonding, showing positive metal ions in a lattice surrounded by delocalized mobile electrons.)
+
+Alloys:
+A mixture of a metal with one or more other elements (which can be metals or non-metals). Alloys are usually designed to have properties superior to those of their constituent elements (e.g., increased strength, hardness, corrosion resistance).
+
+Types of Alloys:
+
+Substitutional Alloy: Atoms of the solute element (usually similar in size to solvent atoms) replace some atoms of the solvent metal in its crystal lattice.
+
+Example: Brass (copper and zinc), Sterling silver (silver and copper), Bronze (copper and tin).
+
+Interstitial Alloy: Atoms of the solute element (which are much smaller) fit into the spaces (interstices) between atoms of the solvent metal in its crystal lattice.
+
+Example: Steel (iron and carbon - carbon atoms are small and fit into spaces in iron lattice, making it harder and stronger).
+
+Alloys are generally still considered to exhibit metallic bonding. Their properties can be tailored by varying the composition.
+
+(Suggested insertion: Simple diagrams illustrating substitutional and interstitial alloys at the atomic level.)`,
+          "mcq": [
+            {
+              "question": "Which of the following is an example of an ionic compound?",
+              "options": [
+                "CO₂",
+                "H₂O",
+                "N₂",
+                "MgO"
+              ],
+              "correctAnswer": "MgO",
+              "explanation": "An ionic compound typically forms between a metal (Mg, Group 2) and a non-metal (O, Group 16). Magnesium transfers two electrons to oxygen, forming Mg²⁺ and O²⁻ ions. CO₂, H₂O, and N₂ are all molecular compounds formed by covalent bonding between non-metals."
+            },
+            {
+              "question": "The 'electron sea' model is used to describe which type of bonding?",
+              "options": [
+                "Ionic bonding",
+                "Covalent bonding",
+                "Metallic bonding",
+                "Hydrogen bonding"
+              ],
+              "correctAnswer": "Metallic bonding",
+              "explanation": "The 'electron sea' model describes metallic bonding as a lattice of positive metal ions (cations) surrounded by a 'sea' of delocalized valence electrons that are free to move throughout the structure, which accounts for metals' conductivity."
+            },
+            {
+              "question": "Which of the following molecules has a nonpolar covalent bond?",
+              "options": [
+                "HCl",
+                "H₂O",
+                "Cl₂",
+                "NH₃"
+              ],
+              "correctAnswer": "Cl₂",
+              "explanation": "A nonpolar covalent bond occurs when electrons are shared equally. This happens between identical atoms, such as in the Cl₂ molecule, where the electronegativity difference is zero. HCl, H₂O, and NH₃ all have polar covalent bonds due to significant electronegativity differences."
+            },
+            {
+              "question": "Which of the following compounds violates the octet rule by having an 'expanded octet'?",
+              "options": [
+                "CH₄",
+                "BF₃",
+                "SF₆",
+                "NH₃"
+              ],
+              "correctAnswer": "SF₆",
+              "explanation": "In SF₆, the central sulfur atom forms six single bonds with six fluorine atoms, meaning it has 12 valence electrons in its outer shell. This is an 'expanded octet', which is possible for elements in the 3rd period and beyond, like sulfur, as they have accessible d orbitals. BF₃ has an incomplete octet."
+            },
+            {
+              "question": "Which factor most significantly increases the lattice energy of an ionic compound?",
+              "options": [
+                "Decreasing the charge on the ions",
+                "Increasing the size of the ions",
+                "Increasing the charge on the ions",
+                "Using ions from the same period"
+              ],
+              "correctAnswer": "Increasing the charge on the ions",
+              "explanation": "Lattice energy is based on Coulomb's Law (F ∝ q₁q₂/r²). The energy is most strongly affected by the magnitude of the charges (q₁ and q₂) on the ions. Therefore, a compound like MgO (Mg²⁺O²⁻) has a much higher lattice energy than NaCl (Na⁺Cl⁻)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4: Molecular Geometry and VSEPR Theory",
+      "image": "https://images.pexels.com/photos/4596713/pexels-photo-4596713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=Q9-JjyAEqnU",
+        "https://www.youtube.com/watch?v=DBrq31w8vC4",
+        "https://www.youtube.com/watch?v=r2XmaiEC0Vw"
+      ],
+      "sections": [
+        {
+          "title": "4.1 VSEPR Basics: Predicting Shapes of Molecules",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=cIuXl7o6mAw",
+          "content": `The three-dimensional shape (geometry) of a molecule is a crucial factor determining its physical and chemical properties, including its reactivity, polarity, and interactions with other molecules. While Lewis structures show how atoms are connected and where valence electrons are located, they do not directly represent the 3D arrangement of atoms. The Valence Shell Electron Pair Repulsion (VSEPR) theory is a simple yet powerful model used to predict the geometry of molecules based on the repulsion between electron pairs in the valence shell of the central atom. This chapter explores VSEPR theory, its application in predicting molecular shapes and bond angles, and relates molecular geometry to concepts like hybridization, molecular polarity, and intermolecular forces.
+
+Valence Shell Electron Pair Repulsion (VSEPR) Theory:
+
+Core Principle: Electron pairs in the valence shell of a central atom in a molecule repel each other and will arrange themselves in space to be as far apart as possible, thus minimizing electrostatic repulsion. This arrangement determines the geometry of the electron pairs, which in turn dictates the geometry of the atoms (molecular shape).
+
+Electron Pairs Considered: VSEPR theory counts both:
+
+Bonding Pairs (BP): Electron pairs shared in covalent bonds between the central atom and surrounding (terminal) atoms. A single, double, or triple bond is treated as a single "electron domain" or "region of electron density" for predicting basic geometry.
+
+Lone Pairs (LP) (Non-bonding Pairs): Pairs of valence electrons on the central atom that are not involved in bonding.
+
+Steps for Applying VSEPR Theory:
+
+Draw the Lewis Structure: Determine the correct Lewis structure for the molecule or polyatomic ion to identify the central atom and the number of bonding pairs and lone pairs around it.
+
+Count Total Electron Domains (Regions of Electron Density) around the Central Atom: Add the number of bonding domains (single, double, or triple bonds each count as one domain) and the number of lone pairs on the central atom. This total is called the steric number.
+
+Determine Electron Domain Geometry: The arrangement of these electron domains around the central atom will adopt a shape that minimizes repulsion. (See table below).
+
+Determine Molecular Geometry (Shape): The arrangement of the atoms in the molecule. Lone pairs influence the molecular geometry because they exert slightly greater repulsion than bonding pairs, but they are not "seen" as part of the final molecular shape. Describe the shape based on the positions of the atoms only.
+
+Basic Electron Domain Geometries and Corresponding Molecular Shapes:
+
+Total Electron Domains (Steric Number)	Electron Domain Geometry	Bonding Domains (BP)	Lone Pairs (LP) on Central Atom	Molecular Geometry	Approx. Bond Angles	Example
+2	Linear	2	0	Linear	180°	BeCl₂, CO₂
+3	Trigonal Planar	3	0	Trigonal Planar	120°	BF₃, SO₃
+3	Trigonal Planar	2	1	Bent (or Angular, V-shape)	<120° (e.g., ~117°)	SO₂, O₃
+4	Tetrahedral	4	0	Tetrahedral	109.5°	CH₄, CCl₄
+4	Tetrahedral	3	1	Trigonal Pyramidal	<109.5° (e.g., ~107°)	NH₃, PCl₃
+4	Tetrahedral	2	2	Bent (or Angular, V-shape)	<109.5° (e.g., ~104.5°)	H₂O, H₂S
+5	Trigonal Bipyramidal	5	0	Trigonal Bipyramidal	90°, 120°	PCl₅
+5	Trigonal Bipyramidal	4	1	See-Saw (or Sawhorse)	<90°, <120°	SF₄
+5	Trigonal Bipyramidal	3	2	T-shaped	<90°	ClF₃
+5	Trigonal Bipyramidal	2	3	Linear	180°	XeF₂, I₃⁻
+6	Octahedral	6	0	Octahedral	90°	SF₆, [SiF₆]²⁻
+6	Octahedral	5	1	Square Pyramidal	<90°	BrF₅, XeOF₄
+6	Octahedral	4	2	Square Planar	90°	XeF₄
+
+Effect of Lone Pairs: Lone pairs occupy more space and exert greater repulsive forces than bonding pairs. This tends to compress the angles between bonding pairs, making them slightly smaller than the ideal angles of the electron domain geometry. (e.g., H-N-H angle in NH₃ is ~107°, less than ideal tetrahedral 109.5°; H-O-H angle in H₂O is ~104.5°).
+
+Effect of Multiple Bonds: Double and triple bonds (as single electron domains) also exert slightly greater repulsion than single bonds.
+
+(Suggested insertion: Clear 3D diagrams or ball-and-stick models for each basic electron domain geometry (linear, trigonal planar, tetrahedral, trigonal bipyramidal, octahedral). For each of these, show derived molecular shapes when lone pairs are present on the central atom. Emphasize difference between electron domain geometry and molecular geometry. Table as above, ideally with visual representations.)`,
+          "mcq": [
+            {
+              "question": "According to VSEPR theory, what is the molecular geometry of ammonia (NH₃)?",
+              "options": [
+                "Tetrahedral",
+                "Trigonal planar",
+                "Trigonal pyramidal",
+                "Bent"
+              ],
+              "correctAnswer": "Trigonal pyramidal",
+              "explanation": "In NH₃, the central nitrogen atom has 3 bonding pairs and 1 lone pair of electrons (4 total electron domains). The electron domain geometry is tetrahedral, but the molecular geometry, which describes the arrangement of the atoms only, is trigonal pyramidal."
+            }
+          ]
+        },
+        {
+          "title": "4.2 Bond Angles, Hybridization, and Molecular Orbitals (Introductory)",
+          "image": "https://images.pexels.com/photos/25626518/pexels-photo-25626518.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=DBrq31w8vC4",
+          "content": `Bond Angles: The angles between adjacent bonds in a molecule, determined by its molecular geometry. VSEPR theory predicts these angles.
+
+Valence Bond Theory and Hybridization (Simplified):
+While VSEPR theory successfully predicts shapes, it doesn't fully explain how atomic orbitals (s, p, d) combine to form covalent bonds with specific geometries. Valence Bond Theory, with the concept of hybridization, offers an explanation.
+
+Hybridization: The mixing of atomic orbitals on a central atom to form a new set of hybrid orbitals that are equivalent in shape and energy, and are oriented in space to achieve the VSEPR-predicted electron domain geometry, thus minimizing repulsion and maximizing bond overlap.
+
+The number of hybrid orbitals formed equals the number of atomic orbitals mixed.
+
+Hybrid orbitals overlap with orbitals of other atoms to form sigma (σ) bonds (and sometimes pi (π) bonds in multiple bonds).
+
+Common Types of Hybridization:
+
+sp Hybridization: Mixing one s orbital and one p orbital gives two sp hybrid orbitals.
+
+Arrangement: Linear (180° apart).
+
+Corresponds to 2 electron domains (e.g., BeCl₂, C in C₂H₂).
+
+Forms two σ bonds (or one σ bond and one π bond from each of two unhybridized p orbitals for triple bonds).
+
+sp² Hybridization: Mixing one s orbital and two p orbitals gives three sp² hybrid orbitals.
+
+Arrangement: Trigonal planar (120° apart).
+
+Corresponds to 3 electron domains (e.g., BF₃, C in C₂H₄).
+
+Forms three σ bonds (or two σ bonds and one π bond from unhybridized p orbital for double bonds).
+
+sp³ Hybridization: Mixing one s orbital and three p orbitals gives four sp³ hybrid orbitals.
+
+Arrangement: Tetrahedral (109.5° apart).
+
+Corresponds to 4 electron domains (e.g., CH₄, NH₃, H₂O).
+
+Forms four σ bonds (or fewer if lone pairs occupy some hybrid orbitals).
+
+Hybridization Involving d Orbitals (for expanded octets, e.g., sp³d, sp³d²): (Often mentioned but less detailed in Gen Chem)
+
+sp³d (e.g., PCl₅) for 5 electron domains (trigonal bipyramidal).
+
+sp³d² (e.g., SF₆) for 6 electron domains (octahedral).
+
+Sigma (σ) Bonds: Formed by direct, end-to-end overlap of orbitals (s-s, s-p, p-p end-on, hybrid-s, hybrid-p). Electron density is concentrated along the internuclear axis. All single bonds are σ bonds. The first bond in a multiple bond is a σ bond.
+
+Pi (π) Bonds: Formed by sideways (parallel) overlap of unhybridized p orbitals (or d orbitals). Electron density is concentrated above and below the internuclear axis.
+
+A double bond consists of one σ bond and one π bond.
+
+A triple bond consists of one σ bond and two π bonds.
+
+π bonds are generally weaker than σ bonds and restrict rotation around the bond axis.
+
+Molecular Orbital (MO) Theory (Very Basic Concept):
+A more advanced model of bonding where atomic orbitals combine to form molecular orbitals that span the entire molecule. Electrons are then assigned to these molecular orbitals.
+
+MOs can be bonding (lower energy, stabilizes molecule) or antibonding (higher energy, destabilizes molecule).
+
+Can explain properties that VBT/hybridization struggles with (e.g., paramagnetism of O₂). (Typically beyond Gen Chem detailed treatment).
+
+(Suggested insertion: Diagrams illustrating sp, sp², sp³ hybridization: showing mixing of atomic orbitals and the shape/orientation of the resulting hybrid orbitals. Diagrams showing sigma (σ) bond formation (end-on overlap) and pi (π) bond formation (sideways overlap of p orbitals).)`,
+          "mcq": [
+            {
+              "question": "A molecule with a trigonal planar electron domain geometry, such as BF₃, has what type of hybridization on the central atom?",
+              "options": [
+                "sp",
+                "sp²",
+                "sp³",
+                "sp³d"
+              ],
+              "correctAnswer": "sp²",
+              "explanation": "A trigonal planar arrangement corresponds to 3 electron domains. This geometry is achieved by mixing one s orbital and two p orbitals to form three sp² hybrid orbitals, which are oriented 120° apart."
+            }
+          ]
+        },
+        {
+          "title": "4.3 Polarity of Molecules and Their Physical Properties",
+          "image": "https://images.pexels.com/photos/25626587/pexels-photo-25626587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=ds5HXmBkO0Y",
+          "content": `Bond Polarity vs. Molecular Polarity:
+
+Bond Polarity: (From Ch 3.3) Arises from unequal sharing of electrons in a covalent bond due to electronegativity differences between the bonded atoms, creating a bond dipole (partial positive and partial negative ends).
+
+Molecular Polarity: The overall polarity of a molecule, which depends on both:
+
+The polarity of its individual bonds.
+
+The geometric shape (3D arrangement) of the molecule, which determines if bond dipoles cancel out or result in a net molecular dipole.
+
+Determining Molecular Polarity:
+
+Draw the Lewis structure and use VSEPR to predict the molecular geometry.
+
+Determine the polarity of each bond using electronegativity differences. Represent bond dipoles with arrows pointing towards the more electronegative atom.
+
+Assess if the bond dipoles cancel each other out due to molecular symmetry.
+
+Nonpolar Molecule:
+
+If all bonds are nonpolar.
+
+Or, if it has polar bonds but the molecular geometry is perfectly symmetrical, causing the bond dipoles to vectorially cancel each other out, resulting in no net molecular dipole moment.
+
+Examples: CO₂ (linear, O=C=O, dipoles cancel), CH₄ (tetrahedral, C-H bonds nearly nonpolar, or if considered slightly polar, symmetrical arrangement causes cancellation), CCl₄ (tetrahedral, symmetrical). BF₃ (trigonal planar, symmetrical).
+
+Polar Molecule (Dipole):
+
+If it has polar bonds and its molecular geometry is asymmetrical, such that the bond dipoles do not cancel out, resulting in a net molecular dipole moment (one end of the molecule is slightly positive, the other slightly negative).
+
+Examples: H₂O (bent shape, polar O-H bonds, dipoles add up), NH₃ (trigonal pyramidal shape, polar N-H bonds and lone pair contribute to net dipole), HCl (linear, polar H-Cl bond).
+
+Effect of Molecular Polarity on Physical Properties:
+Molecular polarity significantly influences physical properties like boiling point, melting point, solubility, and intermolecular forces.
+
+Polar molecules generally have stronger intermolecular forces than nonpolar molecules of similar molar mass.
+
+"Like dissolves like": Polar substances tend to dissolve in polar solvents (e.g., water), while nonpolar substances tend to dissolve in nonpolar solvents (e.g., hexane).
+
+(Suggested insertion: Examples of molecules (e.g., CO₂, H₂O, NH₃, CCl₄) with their Lewis structures, VSEPR shapes, bond dipoles shown, and an assessment of overall molecular polarity (polar or nonpolar) with explanation based on symmetry.)`,
+          "mcq": [
+            {
+              "question": "Why is the CO₂ molecule nonpolar, even though it contains polar C=O bonds?",
+              "options": [
+                "The C=O bonds are actually nonpolar",
+                "The molecule is bent, so the dipoles add up",
+                "The molecule is linear and symmetrical, so the bond dipoles cancel out",
+                "The molecule is ionic, not covalent"
+              ],
+              "correctAnswer": "The molecule is linear and symmetrical, so the bond dipoles cancel out",
+              "explanation": "The C=O bonds in carbon dioxide are polar. However, the molecule has a linear geometry (O=C=O). The two bond dipoles are equal in magnitude and point in opposite directions, so they cancel each other out, resulting in a zero net molecular dipole moment, making the molecule nonpolar."
+            }
+          ]
+        },
+        {
+          "title": "4.4 Intermolecular Forces: London Dispersion, Dipole–Dipole, Hydrogen Bonding",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=W-3PwC5C-3A",
+          "content": `Intermolecular Forces (IMFs): Attractive forces between molecules (or atoms in noble gases). They are generally much weaker than intramolecular forces (covalent, ionic, metallic bonds within molecules or compounds).
+
+IMFs are responsible for holding molecules together in the liquid and solid states and influence many physical properties (e.g., boiling points, melting points, vapor pressure, viscosity, surface tension). Stronger IMFs lead to higher boiling/melting points.
+
+Types of Intermolecular Forces (listed generally from weakest to strongest for molecules of similar size):
+
+London Dispersion Forces (LDFs) (or Dispersion Forces, Van der Waals forces - specifically the induced dipole-induced dipole part):
+
+Weakest type of IMF. Present in all molecules (polar and nonpolar) and atoms. They are the only IMFs present between nonpolar molecules.
+
+Origin: Arise from temporary, instantaneous fluctuations in electron distribution around a molecule or atom, creating temporary, short-lived dipoles (instantaneous dipoles). This temporary dipole in one molecule can then induce a temporary dipole in a neighboring molecule, leading to a weak, transient attraction.
+
+Strength depends on:
+
+Number of Electrons (Molecular Size/Molar Mass): Larger molecules with more electrons have larger, more easily distorted electron clouds (more polarizable), leading to stronger LDFs. (e.g., I₂ (solid) > Br₂ (liquid) > Cl₂ (gas) > F₂ (gas) - increasing molar mass, increasing LDFs, higher MP/BP).
+
+Molecular Shape: Elongated or linear molecules tend to have stronger LDFs than compact, spherical molecules of similar molar mass because they have more surface area for contact.
+
+Dipole-Dipole Forces:
+
+Attractive forces that exist between polar molecules (molecules that have a permanent net dipole moment).
+
+Origin: The positive end (δ⁺) of one polar molecule is attracted to the negative end (δ⁻) of a neighboring polar molecule.
+
+Stronger than LDFs for molecules of comparable size and mass.
+
+Example: Attractions between HCl molecules (H<sup>δ⁺</sup>-Cl<sup>δ⁻</sup>).
+
+Hydrogen Bonding:
+
+A special, strong type of dipole-dipole interaction. Not a true bond like covalent or ionic.
+
+Conditions for Hydrogen Bonding: Occurs when a hydrogen atom (H) is covalently bonded to a highly electronegative small atom (usually Nitrogen (N), Oxygen (O), or Fluorine (F)) AND that hydrogen atom is then attracted to a lone pair of electrons on another N, O, or F atom in a nearby molecule.
+
+The H atom in H-N, H-O, or H-F bond is highly electron-deficient (very δ⁺) due to the high electronegativity of N, O, F. This δ⁺ H is strongly attracted to the δ⁻ lone pair on a nearby N, O, or F.
+
+Stronger than typical dipole-dipole forces and LDFs.
+
+Significance: Responsible for many unique properties of water (e.g., high boiling point, high specific heat, ice less dense than liquid water, surface tension). Important in the structure of biological molecules like proteins (secondary structure) and DNA (base pairing).
+
+Examples of molecules that exhibit hydrogen bonding: H₂O (water), NH₃ (ammonia), HF (hydrogen fluoride), alcohols (R-OH), carboxylic acids (R-COOH), amines (R-NH₂).
+
+(Note: Ion-dipole forces are also important for solutions of ionic compounds in polar solvents, but IMFs here primarily refer to forces between neutral molecules.)
+
+Understanding the types and relative strengths of IMFs present in a substance helps explain and predict its macroscopic physical properties.
+
+(Suggested insertion: Diagrams illustrating London Dispersion Forces (temporary dipoles), Dipole-Dipole forces between polar molecules (showing δ⁺ and δ⁻ alignment), and Hydrogen Bonding (e.g., between water molecules, clearly showing H bonded to O/N/F and attraction to lone pair on another O/N/F). A comparative table summarizing the three main types of IMFs, their origin, relative strength, and example substances.)`,
+          "mcq": [
+            {
+              "question": "Which of the following molecules can exhibit hydrogen bonding?",
+              "options": [
+                "CH₄",
+                "H₂S",
+                "HCl",
+                "HF"
+              ],
+              "correctAnswer": "HF",
+              "explanation": "Hydrogen bonding is a special strong type of dipole-dipole interaction that occurs when hydrogen is bonded to a highly electronegative atom: Nitrogen (N), Oxygen (O), or Fluorine (F). Among the choices, only hydrogen fluoride (HF) meets this condition."
+            },
+            {
+              "question": "What is the approximate bond angle in a water molecule (H₂O)?",
+              "options": [
+                "180°",
+                "120°",
+                "109.5°",
+                "104.5°"
+              ],
+              "correctAnswer": "104.5°",
+              "explanation": "The central oxygen atom in H₂O has 4 electron domains (2 bonding, 2 lone pairs), giving a tetrahedral electron geometry. However, the two lone pairs exert greater repulsion than the bonding pairs, compressing the H-O-H bond angle from the ideal 109.5° to approximately 104.5°."
+            },
+            {
+              "question": "A double bond consists of:",
+              "options": [
+                "Two sigma (σ) bonds",
+                "Two pi (π) bonds",
+                "One sigma (σ) bond and one pi (π) bond",
+                "One sigma (σ) bond and two pi (π) bonds"
+              ],
+              "correctAnswer": "One sigma (σ) bond and one pi (π) bond",
+              "explanation": "The first bond formed between two atoms is always a sigma (σ) bond, resulting from direct end-to-end orbital overlap. A second bond (to make a double bond) is a pi (π) bond, formed by the sideways overlap of p orbitals."
+            },
+            {
+              "question": "Which type of intermolecular force is present in ALL molecules?",
+              "options": [
+                "Hydrogen bonding",
+                "Dipole-dipole forces",
+                "London dispersion forces",
+                "Ionic forces"
+              ],
+              "correctAnswer": "London dispersion forces",
+              "explanation": "London dispersion forces (LDFs) arise from temporary, instantaneous fluctuations in electron distribution. Since all molecules have electrons, all molecules exhibit LDFs, even nonpolar ones. They are the only IMF in nonpolar molecules."
+            },
+            {
+              "question": "What is the molecular shape of XeF₄ (Xenon tetrafluoride)?",
+              "options": [
+                "Tetrahedral",
+                "See-saw",
+                "Square planar",
+                "Octahedral"
+              ],
+              "correctAnswer": "Square planar",
+              "explanation": "The central Xe atom has 4 bonding pairs and 2 lone pairs (6 total electron domains). The electron domain geometry is octahedral. According to VSEPR, the two lone pairs will position themselves on opposite sides (180° apart) to minimize repulsion, leaving the four F atoms in a single plane around Xe, resulting in a square planar molecular geometry."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 5: The Mole Concept and Avogadro’s Number",
+      "image": "https://images.pexels.com/photos/6863336/pexels-photo-6863336.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=74-X94OP2XI",
+        "https://www.youtube.com/watch?v=EowJsC7phzw",
+        "https://www.youtube.com/watch?v=wPGVQu3UXpw"
+      ],
+      "sections": [
+        {
+          "title": "5.1 Definition and Applications of the Mole",
+          "image": "https://images.pexels.com/photos/16380906/pexels-photo-16380906.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=EowJsC7phzw",
+          "content": `Atoms and molecules are incredibly small and cannot be counted individually in a practical sense for laboratory work. To work with macroscopic amounts of substances in chemistry, scientists use a unit called the mole. The mole concept provides a crucial bridge between the microscopic world of atoms and molecules and the macroscopic world of measurable quantities like mass and volume. This chapter will define the mole and Avogadro's number, explain how to calculate and use molar mass, determine empirical and molecular formulas, and apply these concepts to perform fundamental stoichiometric calculations.
+
+The Mole (mol):
+The mole is the SI unit for amount of substance. It is a counting unit, similar to how a "dozen" means 12 items.
+
+Definition: One mole is defined as the amount of substance that contains as many elementary entities (atoms, molecules, ions, electrons, or other specified particles) as there are atoms in exactly 12 grams (0.012 kg) of pure carbon-12 (¹²C).
+
+This specific number of entities is called Avogadro's Number (N_A).
+
+Avogadro's Number (N_A or L):
+The number of elementary entities (e.g., atoms or molecules) in one mole of a substance.
+
+N_A ≈ 6.022 × 10²³ mol⁻¹ (or particles per mole).
+
+This is an extremely large number, reflecting the tiny size of atoms and molecules.
+
+So:
+
+1 mole of carbon atoms contains 6.022 × 10²³ carbon atoms.
+
+1 mole of water (H₂O) molecules contains 6.022 × 10²³ water molecules.
+
+1 mole of sodium chloride (NaCl) formula units contains 6.022 × 10²³ NaCl formula units.
+
+1 mole of electrons contains 6.022 × 10²³ electrons.
+
+Relationship between Moles (n), Number of Particles (N), and Avogadro's Number (N_A):
+N = n × N_A or n = N / N_A
+
+n = number of moles
+
+N = number of particles (atoms, molecules, ions, etc.)
+
+N_A = Avogadro's number
+
+Applications of the Mole Concept:
+
+Converting between Moles and Number of Particles: Allows chemists to relate a macroscopic amount (moles) to a microscopic count (number of atoms/molecules).
+
+Example: How many atoms are in 2.0 moles of Helium (He)?
+N = n × N_A = 2.0 mol × (6.022 × 10²³ atoms/mol) = 1.2044 × 10²⁴ atoms.
+
+Example: How many moles are present in 3.011 × 10²⁴ molecules of CO₂?
+n = N / N_A = (3.011 × 10²⁴ molecules) / (6.022 × 10²³ molecules/mol) = 5.0 mol.
+
+Relating to Mass (via Molar Mass - see 5.2): The mole provides a direct link between the number of particles and the mass of a substance.
+
+Stoichiometry of Chemical Reactions (see 5.4 and Ch 6): Coefficients in balanced chemical equations represent mole ratios of reactants and products, allowing for quantitative predictions.
+
+Concentration of Solutions (e.g., Molarity - see Ch 6): Amount of solute in moles per unit volume of solution.
+
+Gas Volumes (at STP - see Ch 7): One mole of any ideal gas at Standard Temperature and Pressure (STP: 0°C and 1 atm) occupies a volume of approximately 22.4 Liters (molar volume of a gas).
+
+*(Suggested insertion: A clear statement of the definition of the mole and Avogadro's number. Analogies to explain the mole as a counting unit (e.g., dozen, gross). Worked examples converting between moles and number of particles (atoms, molecules).) *`,
+          "mcq": [
+            {
+              "question": "How many atoms are present in 0.5 moles of helium (He) gas? (Avogadro's Number, N_A ≈ 6.022 × 10²³ mol⁻¹)",
+              "options": [
+                "6.022 × 10²³ atoms",
+                "1.204 × 10²⁴ atoms",
+                "3.011 × 10²³ atoms",
+                "0.5 atoms"
+              ],
+              "correctAnswer": "3.011 × 10²³ atoms",
+              "explanation": "The number of particles (N) is the number of moles (n) multiplied by Avogadro's Number (N_A). N = n × N_A = 0.5 mol × (6.022 × 10²³ atoms/mol) = 3.011 × 10²³ atoms."
+            }
+          ]
+        },
+        {
+          "title": "5.2 Molar Mass Calculations and Conversions",
+          "image": "https://images.pexels.com/photos/25626446/pexels-photo-25626446.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=74-X94OP2XI",
+          "content": `Atomic Mass Unit (amu):
+A unit of mass used to express atomic and molecular masses.
+
+Defined as 1/12th the mass of a neutral carbon-12 (¹²C) atom.
+
+1 amu ≈ 1.66054 × 10⁻²⁴ g.
+
+The atomic mass of an element listed in the Periodic Table is its weighted average mass in amu (relative to ¹²C).
+
+Molar Mass (M or MM):
+The mass (in grams) of one mole of a substance (element, molecule, or ionic compound).
+
+Numerically, the molar mass of an element in grams per mole ( g/mol ) is equal to its atomic mass in atomic mass units (amu).
+
+Example: Carbon (C) has an atomic mass of ~12.01 amu.
+Molar mass of Carbon (M_C) = 12.01 g/mol (meaning 1 mole of C atoms has a mass of 12.01 g).
+
+For a molecular compound, the molar mass (often called molecular weight, though molar mass is preferred) is the sum of the molar masses of all the atoms in one molecule of the compound.
+
+Example: Molar mass of water (H₂O):
+M(H₂O) = (2 × M(H)) + (1 × M(O))
+≈ (2 × 1.01 g/mol) + (1 × 16.00 g/mol) = 2.02 + 16.00 = 18.02 g/mol.
+(This means 1 mole of H₂O molecules has a mass of 18.02 g).
+
+For an ionic compound, the molar mass (often called formula weight or formula mass) is the sum of the molar masses of all the atoms in its empirical formula unit.
+
+Example: Molar mass of sodium chloride (NaCl):
+M(NaCl) = M(Na) + M(Cl)
+≈ 22.99 g/mol + 35.45 g/mol = 58.44 g/mol.
+(This means 1 mole of NaCl formula units has a mass of 58.44 g).
+
+Units: grams per mole ( g/mol ).
+
+Conversions between Mass, Moles, and Number of Particles:
+The mole concept and molar mass provide conversion factors:
+
+Mass (m) to Moles (n):
+n = mass (m) / Molar Mass (M)
+
+Moles (n) to Mass (m):
+m = moles (n) × Molar Mass (M)
+
+Moles (n) to Number of Particles (N): (From 5.1)
+N = n × N_A
+
+Number of Particles (N) to Moles (n): (From 5.1)
+n = N / N_A
+
+These relationships can be combined for direct conversions:
+
+Mass to Number of Particles: N = (m/M) × N_A
+
+Number of Particles to Mass: m = (N/N_A) × M
+
+(Suggested insertion: Worked examples of calculating molar masses for various elements and compounds (molecular and ionic). Several clear, step-by-step examples of conversions: grams to moles, moles to grams, moles to particles, particles to moles, grams to particles, particles to grams.)`,
+          "mcq": [
+            {
+              "question": "What is the mass of 2.0 moles of water (H₂O)? (Atomic masses: H ≈ 1.01, O ≈ 16.00)",
+              "options": [
+                "18.02 g",
+                "36.04 g",
+                "9.01 g",
+                "2.0 g"
+              ],
+              "correctAnswer": "36.04 g",
+              "explanation": "First, calculate the molar mass of H₂O: (2 × 1.01) + 16.00 = 18.02 g/mol. Then, calculate the mass: mass = moles × Molar Mass = 2.0 mol × 18.02 g/mol = 36.04 g."
+            }
+          ]
+        },
+        {
+          "title": "5.3 Empirical and Molecular Formulas",
+          "image": "https://images.pexels.com/photos/25626509/pexels-photo-25626509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Jok1xCCm8I0",
+          "content": `Percent Composition by Mass:
+The percentage by mass of each element present in a compound.
+
+% Element = (Total mass of element in 1 mole of compound / Molar mass of compound) × 100%
+
+Example: Percent composition of H and O in H₂O (Molar mass ≈ 18.02 g/mol ).
+Mass of H in 1 mol H₂O = 2 × 1.01 g = 2.02 g.
+Mass of O in 1 mol H₂O = 1 × 16.00 g = 16.00 g.
+%H = (2.02 / 18.02) × 100% ≈ 11.2%
+%O = (16.00 / 18.02) × 100% ≈ 88.8%
+(Check: 11.2 + 88.8 = 100%).
+
+Empirical Formula:
+The simplest whole-number ratio of atoms of each element present in a compound.
+
+It represents the relative number of atoms of each element.
+
+Ionic compounds are typically represented by their empirical formulas (e.g., NaCl, MgO).
+
+Determining Empirical Formula from Percent Composition (or mass data):
+
+Assume a 100g sample (if given % composition, then % becomes grams of each element).
+
+Convert the mass of each element to moles by dividing by its molar mass (atomic mass from periodic table).
+
+Divide the number of moles of each element by the smallest number of moles calculated in step 2 to get a preliminary ratio.
+
+If the ratios are not whole numbers, multiply all ratios by the smallest integer that will convert them to whole numbers. These whole numbers are the subscripts in the empirical formula.
+
+Example: A compound contains 40.0% Carbon, 6.7% Hydrogen, and 53.3% Oxygen by mass. Determine its empirical formula.
+Assume 100g sample: 40.0g C, 6.7g H, 53.3g O.
+Moles:
+C: 40.0g / 12.01 g/mol ≈ 3.33 mol
+H: 6.7g / 1.01 g/mol ≈ 6.63 mol
+O: 53.3g / 16.00 g/mol ≈ 3.33 mol
+Divide by smallest (3.33):
+C: 3.33 / 3.33 ≈ 1
+H: 6.63 / 3.33 ≈ 2
+O: 3.33 / 3.33 ≈ 1
+Empirical Formula: CH₂O.
+
+Molecular Formula:
+The actual number of atoms of each element present in one molecule of a molecular compound.
+
+The molecular formula is either the same as the empirical formula or a whole-number multiple of it.
+Molecular Formula = (Empirical Formula)ₓ (where x is a whole number)
+
+x = Molar Mass of Compound / Molar Mass of Empirical Formula
+
+To determine the molecular formula, you need both the empirical formula and the molar mass of the compound.
+
+Example (continuing above): If the molar mass of the compound with empirical formula CH₂O is found to be 180 g/mol .
+Molar mass of CH₂O ≈ 12.01 + 2(1.01) + 16.00 = 30.03 g/mol .
+x = (Molar Mass of Compound) / (Molar Mass of CH₂O) = 180 g/mol / 30.03 g/mol ≈ 6.
+Molecular Formula = (CH₂O)₆ = C₆H₁₂O₆ (Glucose).
+
+(Suggested insertion: Worked examples of calculating percent composition. Detailed step-by-step examples of determining empirical formula from percent composition, and then determining molecular formula given empirical formula and molar mass.)`,
+          "mcq": [
+            {
+              "question": "A compound has an empirical formula of CH₂O and a molar mass of 180 g/mol. What is its molecular formula? (Molar mass of CH₂O ≈ 30 g/mol)",
+              "options": [
+                "CH₂O",
+                "C₂H₄O₂",
+                "C₆H₁₂O₆",
+                "C₃H₆O₃"
+              ],
+              "correctAnswer": "C₆H₁₂O₆",
+              "explanation": "First, find the ratio of the molecular mass to the empirical formula mass: 180 g/mol / 30 g/mol = 6. Then, multiply the subscripts in the empirical formula by this ratio: (CH₂O)₆ = C₆H₁₂O₆."
+            }
+          ]
+        },
+        {
+          "title": "5.4 Stoichiometric Calculations: Reactants to Products",
+          "image": "https://images.pexels.com/photos/25626446/pexels-photo-25626446.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=1GiZzCzmO5Q",
+          "content": `Stoichiometry: The study of the quantitative relationships (ratios by moles, mass, volume) between reactants and products in a balanced chemical reaction.
+
+Based on the Law of Conservation of Mass.
+
+A balanced chemical equation provides the mole ratios between reactants and products.
+
+Example: N₂(g) + 3H₂(g) → 2NH₃(g)
+This means: 1 mole of N₂ reacts with 3 moles of H₂ to produce 2 moles of NH₃.
+
+General Steps for Stoichiometric Calculations (e.g., mass-mass problems):
+
+Write and Balance the Chemical Equation: This is crucial.
+
+Convert Known Quantity to Moles: Convert the given amount of a reactant or product (e.g., mass) into moles using its molar mass.
+
+Use Mole Ratios: Use the mole ratios from the coefficients in the balanced equation to find the number of moles of the desired unknown reactant or product.
+
+Moles of unknown = Moles of known × (Coefficient of unknown / Coefficient of known)
+
+Convert Moles of Unknown to Desired Units: Convert the moles of the unknown substance back to the desired units (e.g., mass using its molar mass, volume of gas at STP).
+
+Types of Stoichiometric Calculations:
+
+Mole-Mole: Given moles of one substance, find moles of another. (Uses only mole ratio step).
+
+Mass-Mole: Given mass of one substance, find moles of another (or vice versa).
+
+Mass-Mass: Given mass of one substance, find mass of another. (Most common type: mass → moles → mole ratio → moles → mass).
+
+Volume-Volume (for gases, at constant T and P - Gay-Lussac's Law of Combining Volumes): Coefficients in balanced equation also represent volume ratios for gases.
+
+Mass-Volume / Volume-Mass (often involving gases at STP where 1 mol = 22.4 L).
+
+Example (Mass-Mass): For the reaction N₂(g) + 3H₂(g) → 2NH₃(g), if 5.00 g of N₂ reacts completely, what mass of NH₃ is produced?
+Molar masses: N₂ ≈ 28.02 g/mol ; NH₃ ≈ 17.03 g/mol .
+
+Balanced equation is given.
+
+Moles of N₂: n(N₂) = 5.00 g / 28.02 g/mol ≈ 0.1784 mol N₂.
+
+Mole ratio N₂ to NH₃ is 1:2.
+Moles of NH₃ = Moles of N₂ × (2 mol NH₃ / 1 mol N₂) ≈ 0.1784 mol N₂ × 2 ≈ 0.3568 mol NH₃.
+
+Mass of NH₃: m(NH₃) = n(NH₃) × M(NH₃) ≈ 0.3568 mol × 17.03 g/mol ≈ 6.07 g NH₃.
+
+(Limiting reactants and percent yield are usually covered here or in the next chapter on reactions - see Ch 6 for their inclusion here as requested by the outline).
+
+(Suggested insertion: A flowchart summarizing the general steps for stoichiometric calculations. Multiple worked examples covering mole-mole, mass-mole, and especially mass-mass calculations, with clear application of mole ratios from balanced equations.)`,
+          "mcq": [
+            {
+              "question": "Given the balanced equation 2H₂(g) + O₂(g) → 2H₂O(g), how many moles of water are produced from 4 moles of hydrogen gas?",
+              "options": [
+                "1 mole",
+                "2 moles",
+                "4 moles",
+                "8 moles"
+              ],
+              "correctAnswer": "4 moles",
+              "explanation": "The mole ratio between H₂ and H₂O is 2:2, or 1:1. Therefore, if 4 moles of H₂ react, 4 moles of H₂O will be produced."
+            },
+            {
+              "question": "One mole of any substance contains how many elementary entities?",
+              "options": [
+                "12 entities",
+                "100 entities",
+                "6.022 × 10²³ entities",
+                "1.66 × 10⁻²⁴ entities"
+              ],
+              "correctAnswer": "6.022 × 10²³ entities",
+              "explanation": "One mole is defined as the amount of substance containing Avogadro's number (N_A) of particles, which is approximately 6.022 × 10²³ particles (atoms, molecules, ions, etc.)."
+            },
+            {
+              "question": "What is the percent composition by mass of carbon in methane (CH₄)? (Atomic masses: C ≈ 12.01, H ≈ 1.01)",
+              "options": [
+                "25.1%",
+                "74.9%",
+                "12.01%",
+                "4.04%"
+              ],
+              "correctAnswer": "74.9%",
+              "explanation": "Molar mass of CH₄ = 12.01 + (4 × 1.01) = 16.05 g/mol. Mass of Carbon in 1 mole = 12.01 g. Percent C = (Mass of C / Molar Mass of CH₄) × 100% = (12.01 / 16.05) × 100% ≈ 74.9%."
+            },
+            {
+              "question": "For the reaction N₂(g) + 3H₂(g) → 2NH₃(g), what mass of ammonia (NH₃) is produced if 28.02 g of nitrogen (N₂) reacts completely? (Molar masses: N₂ ≈ 28.02 g/mol, NH₃ ≈ 17.03 g/mol)",
+              "options": [
+                "17.03 g",
+                "34.06 g",
+                "8.52 g",
+                "28.02 g"
+              ],
+              "correctAnswer": "34.06 g",
+              "explanation": "1. Moles of N₂ = 28.02 g / 28.02 g/mol = 1.0 mol. 2. Mole ratio N₂:NH₃ is 1:2. Moles of NH₃ produced = 1.0 mol N₂ × (2 mol NH₃ / 1 mol N₂) = 2.0 mol NH₃. 3. Mass of NH₃ = 2.0 mol × 17.03 g/mol = 34.06 g."
+            },
+            {
+              "question": "The term 'Molar Mass' refers to the:",
+              "options": [
+                "Mass of one atom of an element in amu",
+                "Mass of one molecule of a compound in grams",
+                "Mass in grams of one mole of a substance",
+                "Total number of protons and neutrons in an atom"
+              ],
+              "correctAnswer": "Mass in grams of one mole of a substance",
+              "explanation": "Molar mass is the mass of one mole (6.022 × 10²³ particles) of a substance, and its units are grams per mole (g/mol). It is numerically equal to the substance's atomic or molecular mass in amu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 6: Chemical Reactions and Equations",
+      "image": "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=kY1Qeju6JKI",
+        "https://www.youtube.com/watch?v=zmdxMlb88Fs",
+        "https://www.youtube.com/watch?v=qquOFYOpdl0"
+      ],
+      "sections": [
+        {
+          "title": "6.1 Writing and Balancing Chemical Equations (Including Redox, Acid–Base)",
+          "image": "https://images.pexels.com/photos/8851602/pexels-photo-8851602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=dF5lB7gRtcA",
+          "content": `Chemical reactions are the processes by which substances (reactants) are transformed into new substances (products) through the breaking and forming of chemical bonds. Understanding chemical reactions involves knowing how to represent them using balanced chemical equations, classifying them into different types, and performing quantitative calculations related to the amounts of substances involved. This chapter will cover writing and balancing various types of chemical equations, including redox and acid-base reactions, explore common reaction types, and delve deeper into stoichiometric calculations such as determining limiting reactants, percent yield, and using various concentration units.
+
+(Note: Some stoichiometric concepts were introduced in Ch 5. This chapter integrates them more directly with reaction types and specific calculations like limiting reactants and yield, which naturally follow after balancing equations.)
+
+Chemical Equation (Review from Ch 4):
+A symbolic representation of a chemical reaction.
+
+Reactants on left → Products on right.
+
+Physical states: (s), (l), (g), (aq).
+
+Law of Conservation of Mass: Atoms are neither created nor destroyed in a chemical reaction. Therefore, a chemical equation must be balanced, meaning it has the same number of atoms of each element on both sides.
+
+Balancing involves adjusting stoichiometric coefficients (numbers in front of chemical formulas).
+
+Balancing Equations (General Method - Review):
+
+Write correct formulas for all reactants and products.
+
+Count atoms of each element on both sides.
+
+Adjust coefficients one element at a time (often leaving H and O, or elements appearing in many substances, until last).
+
+Ensure coefficients are in the smallest whole-number ratio.
+
+Check the final atom count for each element.
+
+Balancing Redox (Oxidation-Reduction) Equations:
+Redox reactions involve the transfer of electrons. Oxidation is loss of electrons (increase in oxidation number); Reduction is gain of electrons (decrease in oxidation number).
+
+Oxidation Number (State): A number assigned to an atom in a molecule or ion that reflects its degree of oxidation (loss of electrons) or reduction (gain of electrons) relative to its elemental state. (Rules for assigning oxidation numbers are needed here).
+
+Often more complex to balance, especially in acidic or basic solutions, as charge and atoms (including H and O from water/H⁺/OH⁻) must be balanced.
+
+Common Methods for Balancing Redox Equations:
+
+Half-Reaction Method (Ion-Electron Method):
+a. Identify the oxidation and reduction half-reactions.
+b. Balance atoms other than H and O in each half-reaction.
+c. Balance O atoms by adding H₂O.
+d. Balance H atoms by adding H⁺ (if acidic solution) or OH⁻ (if basic solution - requires an extra step: add H₂O to balance H, then add OH⁻ to both sides to neutralize H⁺ if needed).
+e. Balance charge by adding electrons (e⁻) to the appropriate side.
+f. Multiply each half-reaction by an integer so that the number of electrons lost in oxidation equals the number of electrons gained in reduction.
+g. Add the balanced half-reactions together and cancel out common species on both sides (e.g., electrons, H₂O, H⁺).
+h. Check that both atoms and charge are balanced.
+
+Oxidation Number Method: (Focuses on changes in oxidation numbers).
+
+Balancing Acid-Base Neutralization Equations:
+These are often double displacement reactions where an acid reacts with a base to form a salt and water.
+
+Ensure the number of H atoms from the acid balances with the number of OH groups from the base to form water molecules, or ensure ions correctly combine to form the salt.
+
+Example: H₂SO₄(aq) + NaOH(aq) → Na₂SO₄(aq) + H₂O(l)
+Unbalanced: 1 Na on left, 2 Na on right. 1 SO₄ on left, 1 SO₄ on right. H: 1+2=3 on left, 2 on right. O (from OH/H₂O): 1 on left, 1 on right.
+Balance Na: H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + H₂O(l)
+Balance H and O by balancing water: H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l) (Now 4H, 6O on left; 4H, 6O on right, excluding SO₄). Balanced.
+
+(Suggested insertion: Rules for assigning oxidation numbers. Detailed step-by-step examples for balancing redox equations using the half-reaction method in both acidic and basic solutions. Several examples of balancing acid-base and other more complex non-redox equations.)`,
+          "mcq": [
+            {
+              "question": "In a redox reaction, the species that is reduced is also known as the:",
+              "options": [
+                "Reducing agent",
+                "Oxidizing agent",
+                "Spectator ion",
+                "Catalyst"
+              ],
+              "correctAnswer": "Oxidizing agent",
+              "explanation": "Reduction is the gain of electrons. The substance that gets reduced gains electrons from another substance, thereby causing the other substance to be oxidized. Therefore, the reduced species is the oxidizing agent."
+            }
+          ]
+        },
+        {
+          "title": "6.2 Types of Reactions: Combination, Decomposition, Displacement, Combustion (Review and Expansion)",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=EBc7rHf0Md4",
+          "content": `(These types were introduced conceptually in Chapter 4.1. This section could provide more examples, perhaps with more complex compounds or a deeper look at predicting products, including common redox patterns within these types).
+
+Combination (Synthesis) Reactions: A + B → AB
+
+Metal + Non-metal → Ionic compound (e.g., 2Na(s) + Cl₂(g) → 2NaCl(s))
+
+Non-metal + Non-metal → Covalent compound (e.g., S(s) + O₂(g) → SO₂(g))
+
+Compound + Element → New compound (e.g., 2SO₂(g) + O₂(g) → 2SO₃(g))
+
+Compound + Compound → New compound (e.g., CaO(s) + H₂O(l) → Ca(OH)₂(s))
+
+Decomposition Reactions: AB → A + B (Often require energy input)
+
+Binary compound → Elements (e.g., 2HgO(s) → 2Hg(l) + O₂(g))
+
+Metal carbonates → Metal oxide + CO₂ (e.g., MgCO₃(s) → MgO(s) + CO₂(g))
+
+Metal hydroxides → Metal oxide + H₂O (e.g., Ca(OH)₂(s) → CaO(s) + H₂O(g))
+
+Metal chlorates → Metal chloride + O₂ (e.g., 2KClO₃(s) → 2KCl(s) + 3O₂(g))
+
+Some acids → Non-metal oxide + H₂O (e.g., H₂CO₃(aq) → H₂O(l) + CO₂(g))
+
+Single Displacement (Replacement) Reactions: A + BC → AC + B or A + BC → BA + C
+
+Driven by relative activities of elements (Activity Series for metals, Activity Series for halogens). A more reactive element displaces a less reactive element from its compound.
+
+Metal displacing another metal ion from solution: Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)
+
+Metal displacing hydrogen from water or acid: 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g); Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)
+
+Halogen displacing another halide ion: Cl₂(g) + 2NaBr(aq) → 2NaCl(aq) + Br₂(l)
+
+Double Displacement (Metathesis) Reactions: AB + CD → AD + CB
+
+Often driven by formation of a precipitate, a gas, or water.
+
+Precipitation Reactions: Form an insoluble solid (precipitate). Use solubility rules to predict.
+
+Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq)
+
+Acid-Base Neutralization: Acid + Base → Salt + Water.
+
+H₂SO₄(aq) + 2KOH(aq) → K₂SO₄(aq) + 2H₂O(l)
+
+Gas-Forming Reactions: e.g., metal carbonate + acid → salt + water + CO₂.
+
+CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)
+
+Combustion Reactions: Typically, a substance (fuel) reacts rapidly with an oxidant (usually oxygen, O₂) to produce heat and light.
+
+Complete Combustion of Hydrocarbons (or compounds with C, H, O): Products are CO₂ and H₂O.
+
+C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g) (Propane)
+
+Incomplete Combustion (insufficient O₂): May produce carbon monoxide (CO) and/or elemental carbon (soot) in addition to CO₂ and H₂O.
+
+(Suggested insertion: For each reaction type, provide several diverse balanced chemical equation examples, highlighting reactants and products. Include simple solubility rules for precipitation and the activity series for single displacement reactions if not covered elsewhere in prerequisites.)`,
+          "mcq": [
+            {
+              "question": "The reaction Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s) is an example of which type of reaction?",
+              "options": [
+                "Combination",
+                "Decomposition",
+                "Single Displacement",
+                "Double Displacement"
+              ],
+              "correctAnswer": "Single Displacement",
+              "explanation": "This is a single displacement (or replacement) reaction where a more reactive metal (Zinc) displaces a less reactive metal (Copper) from its salt solution. The activity series of metals predicts this reaction will occur."
+            }
+          ]
+        },
+        {
+          "title": "6.3 Limiting Reactants, Percent Yield, and Theoretical Yield",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=TlDXgCc16Fk",
+          "content": `(This builds on Chapter 5.4, directly applying stoichiometry to reactions where reactants may not be in perfect stoichiometric ratios).
+Limiting Reactant (Limiting Reagent):
+In most chemical reactions, reactants are not present in the exact stoichiometric proportions required by the balanced equation. One reactant will be completely consumed before the others. This reactant is the limiting reactant because it limits the maximum amount of product that can be formed.
+
+The other reactant(s) are present in excess (excess reactants).
+
+To identify the limiting reactant:
+
+Calculate the number of moles of each reactant available.
+
+For each reactant, divide its available moles by its stoichiometric coefficient in the balanced chemical equation.
+
+The reactant that yields the smallest result from this division is the limiting reactant.
+
+All calculations of product amounts (theoretical yield) must be based on the initial amount of the limiting reactant.
+
+Theoretical Yield:
+The maximum amount of product that could be formed from given amounts of reactants, assuming the reaction goes to completion perfectly (100% efficiency) and all of the limiting reactant is consumed according to the balanced chemical equation. Calculated using stoichiometry based on the limiting reactant.
+
+Actual Yield:
+The amount of product actually obtained when the reaction is carried out in a laboratory or industrial process. It is an experimentally measured quantity.
+
+Actual yield is often less than theoretical yield due to:
+
+Incomplete reactions (equilibrium may be reached before completion).
+
+Side reactions producing unwanted byproducts.
+
+Losses of product during separation, purification, or transfer.
+
+Impurities in reactants.
+
+Percent Yield:
+A measure of the efficiency of a chemical reaction, comparing the actual yield to the theoretical yield.
+Percent Yield = (Actual Yield / Theoretical Yield) × 100%
+
+Both actual and theoretical yields must be in the same units (e.g., grams or moles).
+
+Percent yield is usually less than 100%. Values over 100% often indicate impure product (e.g., product contaminated with solvent or byproducts).
+
+(Suggested insertion: Several clear, step-by-step worked examples involving limiting reactant calculations: (a) identifying the limiting reactant from given masses of two reactants, (b) calculating the theoretical yield of a product based on the limiting reactant, (c) calculating the amount of excess reactant remaining. Examples of percent yield calculations.)`,
+          "mcq": [
+            {
+              "question": "If a chemist calculates that a reaction should produce 50.0 g of product but only obtains 45.0 g in the lab, what is the percent yield?",
+              "options": [
+                "90.0%",
+                "111%",
+                "45.0%",
+                "50.0%"
+              ],
+              "correctAnswer": "90.0%",
+              "explanation": "Percent Yield = (Actual Yield / Theoretical Yield) × 100%. So, (45.0 g / 50.0 g) × 100% = 90.0%."
+            }
+          ]
+        },
+        {
+          "title": "6.4 Concentration Units: Molarity, Molality, Percent Composition (Applied to Solutions)",
+          "image": "https://images.pexels.com/photos/8378733/pexels-photo-8378733.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=SpnBOqpGll4",
+          "content": `(Review and expansion from Ch 4, now specifically in context of reactions in solution and stoichiometry).
+When reactions occur in solutions, the amount of reactant or product is often expressed in terms of concentration.
+
+Molarity (M): (Most common for stoichiometry in solutions)
+
+Moles of solute per liter of solution.
+
+Molarity (M) = moles of solute (n) / Volume of solution (V, in Liters)
+
+Used to calculate moles of solute from a given volume of solution (n = M × V) or volume needed for a certain number of moles (V = n / M).
+
+Units: mol/L or M.
+
+Molality (m): (Less common in Gen Chem, but important in physical chemistry, e.g., colligative properties)
+
+Moles of solute per kilogram of solvent.
+
+Molality (m) = moles of solute / mass of solvent (in kg)
+
+Units: mol/kg or m.
+
+Advantage: Molality is temperature-independent (as mass doesn't change with T, unlike volume).
+
+Percent Composition by Mass (%(w/w) or %(m/m)):
+
+(Mass of solute / Mass of solution) × 100%
+
+Mass of solution = Mass of solute + Mass of solvent.
+
+Percent Composition by Volume (%(v/v)): (For liquid-liquid solutions)
+
+(Volume of solute / Volume of solution) × 100%
+
+Assumes volumes are additive (which is not always strictly true).
+
+Mass/Volume Percent (%(w/v) or %(m/v)):
+
+(Mass of solute (g) / Volume of solution (mL)) × 100%
+
+Common in biological and medical contexts.
+
+Mole Fraction (χ):
+
+Ratio of moles of one component (solute or solvent) to the total moles of all components in the solution.
+
+χ_A = n_A / (n_A + n_B + ...)
+
+Sum of mole fractions of all components is 1. Dimensionless.
+
+Dilution of Solutions:
+Adding more solvent to a concentrated solution to make a less concentrated solution. The amount of solute remains constant.
+M₁V₁ = M₂V₂ (for molarity)
+or C₁V₁ = C₂V₂ (for other concentration units where volume is involved).
+Where M₁/C₁ and V₁ are initial molarity/concentration and volume, and M₂/C₂ and V₂ are final molarity/concentration and volume.
+
+Stoichiometry of Reactions in Solution:
+
+Often involves using molarity and volume to determine moles of reactants or products.
+
+Example: What volume of 0.500 M HCl solution is needed to react completely with 10.0 g of CaCO₃?
+Reaction: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)
+
+Moles of CaCO₃: 10.0 g / (100.09 g/mol) ≈ 0.0999 mol CaCO₃.
+
+Mole ratio CaCO₃ to HCl is 1:2.
+Moles of HCl needed = 0.0999 mol CaCO₃ × (2 mol HCl / 1 mol CaCO₃) ≈ 0.1998 mol HCl.
+
+Volume of HCl solution: V = n / M = 0.1998 mol / 0.500 mol/L ≈ 0.3996 L or 399.6 mL.
+
+(Suggested insertion: Examples of calculating each type of concentration. Step-by-step examples of preparing solutions of a specific molarity from a solid solute, and examples of dilution calculations using M₁V₁ = M₂V₂. Worked examples of stoichiometric calculations for reactions in solution, including titrations where one concentration is unknown.)`,
+          "mcq": [
+            {
+              "question": "What is the molarity (M) of a solution prepared by dissolving 0.5 moles of NaCl in enough water to make 250 mL of solution?",
+              "options": [
+                "0.5 M",
+                "1.0 M",
+                "2.0 M",
+                "0.25 M"
+              ],
+              "correctAnswer": "2.0 M",
+              "explanation": "Molarity (M) = moles of solute / Volume of solution (L). First, convert the volume to liters: 250 mL = 0.250 L. Then calculate molarity: M = 0.5 mol / 0.250 L = 2.0 mol/L or 2.0 M."
+            },
+            {
+              "question": "What are the correct coefficients to balance the equation: __C₃H₈ + __O₂ → __CO₂ + __H₂O?",
+              "options": [
+                "1, 3, 3, 4",
+                "1, 5, 3, 4",
+                "2, 7, 6, 8",
+                "1, 4, 3, 2"
+              ],
+              "correctAnswer": "1, 5, 3, 4",
+              "explanation": "To balance the combustion of propane (C₃H₈): 1. Balance C: 1 C₃H₈ → 3 CO₂. 2. Balance H: 1 C₃H₈ → 4 H₂O. 3. Balance O: Right side has (3×2) + (4×1) = 10 O atoms. So, we need 5 O₂ molecules on the left. The balanced equation is C₃H₈ + 5O₂ → 3CO₂ + 4H₂O."
+            },
+            {
+              "question": "For the reaction 2Mg + O₂ → 2MgO, if 24.3 g of Mg reacts with 32.0 g of O₂, which is the limiting reactant? (Molar masses: Mg ≈ 24.3 g/mol, O₂ ≈ 32.0 g/mol)",
+              "options": [
+                "Mg",
+                "O₂",
+                "MgO",
+                "Both are completely consumed"
+              ],
+              "correctAnswer": "Mg",
+              "explanation": "1. Moles of Mg = 24.3 g / 24.3 g/mol = 1.0 mol. 2. Moles of O₂ = 32.0 g / 32.0 g/mol = 1.0 mol. 3. From the balanced equation, 2 moles of Mg react with 1 mole of O₂. Therefore, 1.0 mole of Mg would require 0.5 moles of O₂. Since we have 1.0 mole of O₂, O₂ is in excess and Mg is the limiting reactant."
+            },
+            {
+              "question": "Which of the following reaction types is characterized by the formation of an insoluble solid from two aqueous solutions?",
+              "options": [
+                "Combustion",
+                "Neutralization",
+                "Precipitation",
+                "Decomposition"
+              ],
+              "correctAnswer": "Precipitation",
+              "explanation": "A precipitation reaction is a type of double displacement reaction where two soluble ionic compounds in aqueous solution react to form an insoluble ionic compound, called a precipitate."
+            },
+            {
+              "question": "The theoretical yield of a reaction is the:",
+              "options": [
+                "Amount of product actually obtained in the lab",
+                "Maximum amount of product that can be formed from the limiting reactant",
+                "Percentage of product obtained compared to the maximum possible",
+                "Amount of the excess reactant remaining after the reaction"
+              ],
+              "correctAnswer": "Maximum amount of product that can be formed from the limiting reactant",
+              "explanation": "Theoretical yield is a calculated quantity representing the maximum possible amount of product that can be produced, assuming 100% reaction efficiency, based on the amount of the limiting reactant."
+            },
+            {
+              "question": "What is the oxidation number of chromium (Cr) in the dichromate ion, Cr₂O₇²⁻?",
+              "options": [
+                "+3",
+                "+6",
+                "+7",
+                "+12"
+              ],
+              "correctAnswer": "+6",
+              "explanation": "Let the oxidation number of Cr be x. Oxygen is usually -2. The sum of oxidation numbers must equal the overall charge of the ion (-2). So, 2(x) + 7(-2) = -2.  2x - 14 = -2.  2x = 12.  x = +6."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 7: Gases and Gas Laws",
+      "image": "https://images.pexels.com/photos/14754172/pexels-photo-14754172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=W2g2iP83JoI",
+        "https://www.youtube.com/watch?v=F-dQBJcK0D0",
+        "https://www.youtube.com/watch?v=robEY-idcLU"
+      ],
+      "sections": [
+        {
+          "title": "7.1 Ideal Gas Law (PV = nRT) and Kinetic Molecular Theory",
+          "image": "https://images.pexels.com/photos/25626509/pexels-photo-25626509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=bHqx_OOF7ko",
+          "content": `Gases are one of the fundamental states of matter, characterized by their ability to expand to fill any container, their low densities, and their compressibility. The behavior of gases can be described by a set of relationships known as gas laws, which relate pressure, volume, temperature, and the amount of gas. The Kinetic Molecular Theory provides a microscopic model to explain these macroscopic behaviors. This chapter will explore the Ideal Gas Law, its component laws (Boyle's, Charles's, Avogadro's), Dalton's Law of Partial Pressures, and touch upon the behavior of real gases.
+
+Properties of Gases (Review):
+
+Expand to fill container (no definite shape or volume).
+
+Highly compressible.
+
+Low densities compared to liquids and solids.
+
+Mix readily and completely with other gases (diffusion and effusion).
+
+Exert pressure on the walls of their container.
+
+Variables Describing a Gas:
+
+Pressure (P): Force per unit area exerted by the gas.
+
+Units: Pascals (Pa, SI unit), atmospheres (atm), millimeters of mercury (mm Hg or torr), pounds per square inch (psi).
+
+1 atm = 101,325 Pa = 760 mm Hg = 760 torr ≈ 14.7 psi.
+
+Measured with barometer (atmospheric pressure) or manometer (pressure of enclosed gas).
+
+Volume (V): Space occupied by the gas (equal to volume of container).
+
+Units: Liters (L), milliliters (mL), cubic meters (m³). 1 L = 1000 mL = 1000 cm³ = 0.001 m³.
+
+Temperature (T): Measure of the average kinetic energy of gas particles. Must be in Kelvin (K) for gas law calculations.
+
+T(K) = T(°C) + 273.15.
+
+Amount of Gas (n): Usually expressed in moles (mol).
+
+The Ideal Gas Law:
+An equation of state that describes the relationship between P, V, T, and n for an ideal gas. An ideal gas is a hypothetical gas whose particles have no volume and no intermolecular attractions. Real gases approximate ideal behavior at high temperatures and low pressures.
+PV = nRT
+Where:
+
+P = Pressure
+
+V = Volume
+
+n = Number of moles
+
+T = Absolute Temperature (in Kelvin)
+
+R = Ideal Gas Constant (or Universal Gas Constant). Its value depends on the units used for P and V.
+
+R = 0.08206 L⋅atm/(mol⋅K) (if P in atm, V in L)
+
+R = 8.314 J/(mol⋅K) or 8.314 Pa⋅m³/(mol⋅K) (if P in Pa, V in m³, SI units)
+
+The Ideal Gas Law is a combination of empirical gas laws (Boyle's, Charles's, Avogadro's).
+It can also be expressed in terms of number of molecules (N = nN_A):
+PV = NkT
+where k = R/N_A is Boltzmann's constant (k ≈ 1.38 × 10⁻²³ J/K).
+
+Kinetic Molecular Theory of Gases (KMT):
+A microscopic model that explains the macroscopic behavior of ideal gases based on the motion of their constituent particles (atoms or molecules).
+
+Postulates of KMT for an Ideal Gas:
+
+Gases consist of a large number of tiny particles (atoms/molecules) that are in constant, random, rapid, straight-line motion.
+
+The volume of the gas particles themselves is negligible compared to the total volume occupied by the gas (i.e., particles are far apart).
+
+There are no attractive or repulsive forces between gas particles (intermolecular forces are negligible).
+
+Collisions between gas particles and between particles and the walls of the container are perfectly elastic (no net loss of kinetic energy during collisions).
+
+The average kinetic energy of the gas particles is directly proportional to the absolute temperature (in Kelvin) of the gas. All gases at the same temperature have the same average kinetic energy.
+KE_avg = ½ m₀(v_rms)² = (3/2)kT (per particle)
+KE_avg_mol = (3/2)RT (per mole, for monatomic ideal gas)
+(m₀ is mass of one particle, v_rms is root-mean-square speed).
+
+KMT Explanations:
+
+Pressure: Arises from the sum of forces exerted by gas particles colliding with the container walls.
+
+Temperature: Relates directly to the average kinetic energy of particles. Higher T → faster particles → more energetic collisions.
+
+Boyle's Law: At constant T and n, if V decreases, particles collide with walls more frequently, so P increases.
+
+Charles's Law: At constant P and n, if T increases, particles move faster. To keep P constant (same collision rate/force), V must increase.
+
+(Suggested insertion: Table of common units for P, V, T and values of R. Diagrams illustrating the postulates of KMT (particles in motion, elastic collisions). A graph of the Maxwell-Boltzmann distribution of molecular speeds (optional, but good context for KE_avg and T).)`,
+          "mcq": [
+            {
+              "question": "According to the Kinetic Molecular Theory of gases, the average kinetic energy of gas particles is directly proportional to the:",
+              "options": [
+                "Pressure of the gas",
+                "Volume of the container",
+                "Absolute temperature (in Kelvin)",
+                "Number of moles of the gas"
+              ],
+              "correctAnswer": "Absolute temperature (in Kelvin)",
+              "explanation": "A key postulate of the Kinetic Molecular Theory is that the average kinetic energy of gas particles is directly proportional to the absolute temperature (T in Kelvin). This means at the same temperature, all gases have the same average kinetic energy."
+            }
+          ]
+        },
+        {
+          "title": "7.2 Boyle’s, Charles’s, and Avogadro’s Laws",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=BY9VGS2eXas",
+          "content": `These are empirical gas laws that were foundational to the development of the Ideal Gas Law. They describe relationships between two variables while others are held constant.
+
+Boyle's Law (Pressure-Volume Relationship):
+
+"For a fixed amount of gas (n = constant) at constant temperature (T = constant), the volume of the gas is inversely proportional to its pressure."
+
+V ∝ 1/P or PV = k₁ (where k₁ is a constant)
+
+This means if pressure increases, volume decreases proportionally, and vice versa, such that their product remains constant.
+
+For two states (1 and 2): P₁V₁ = P₂V₂
+
+Graph of P vs. V is a hyperbola (at constant T). Graph of P vs. 1/V is a straight line through origin.
+
+Charles's Law (Volume-Temperature Relationship):
+
+"For a fixed amount of gas (n = constant) at constant pressure (P = constant), the volume of the gas is directly proportional to its absolute temperature (in Kelvin)."
+
+V ∝ T or V/T = k₂ (where k₂ is a constant)
+
+Temperatures must be in Kelvin.
+
+This means if absolute temperature increases, volume increases proportionally, and vice versa.
+
+For two states (1 and 2): V₁/T₁ = V₂/T₂
+
+Graph of V vs. T (Kelvin) is a straight line passing through the origin (if extrapolated to 0K). (Graph of V vs. T (Celsius) is a straight line but doesn't pass through 0°C, intercepts at -273.15°C).
+
+Gay-Lussac's Law (Pressure-Temperature Relationship - sometimes Amontons's Law):
+
+"For a fixed amount of gas (n = constant) at constant volume (V = constant), the pressure of the gas is directly proportional to its absolute temperature (in Kelvin)."
+
+P ∝ T or P/T = k₃ (where k₃ is a constant)
+
+Temperatures must be in Kelvin.
+
+For two states (1 and 2): P₁/T₁ = P₂/T₂
+
+Graph of P vs. T (Kelvin) is a straight line through the origin.
+
+Avogadro's Law (Volume-Amount Relationship):
+
+"Equal volumes of all ideal gases, at the same temperature and pressure, contain the same number of molecules (or moles)."
+
+"For a fixed pressure (P = constant) and temperature (T = constant), the volume of a gas is directly proportional to the number of moles (n) of the gas."
+
+V ∝ n or V/n = k₄ (where k₄ is a constant)
+
+For two states (1 and 2): V₁/n₁ = V₂/n₂
+
+Molar Volume of a Gas at STP: One mole of any ideal gas at Standard Temperature and Pressure (STP: 0°C = 273.15 K, and 1 atm = 101.325 kPa) occupies a volume of approximately 22.4 Liters (L).
+
+Combined Gas Law:
+Combines Boyle's, Charles's, and Gay-Lussac's laws for a fixed amount of gas (n constant).
+(P₁V₁) / T₁ = (P₂V₂) / T₂
+(Temperatures must be in Kelvin).
+
+The Ideal Gas Law PV=nRT incorporates all these individual laws.
+
+(Suggested insertion: Graphs for Boyle's Law (P vs. V hyperbola), Charles's Law (V vs. T Kelvin - straight line thru origin), Gay-Lussac's Law (P vs. T Kelvin - straight line thru origin). Clear statements of each law with their respective formulas for two states. Worked examples applying Boyle's, Charles's, Gay-Lussac's, Avogadro's, and the Combined Gas Law to solve for unknown P, V, T, or n.)`,
+          "mcq": [
+            {
+              "question": "A balloon has a volume of 2.0 L at 25°C. If the temperature is increased to 50°C at constant pressure, what will be the new volume? (Remember to use Kelvin)",
+              "options": [
+                "1.0 L",
+                "4.0 L",
+                "2.17 L",
+                "1.85 L"
+              ],
+              "correctAnswer": "2.17 L",
+              "explanation": "This is an application of Charles's Law (V₁/T₁ = V₂/T₂). Temperatures must be in Kelvin. T₁ = 25°C + 273.15 = 298.15 K. T₂ = 50°C + 273.15 = 323.15 K. V₂ = V₁(T₂/T₁) = 2.0 L × (323.15 K / 298.15 K) ≈ 2.17 L."
+            }
+          ]
+        },
+        {
+          "title": "7.3 Partial Pressures and Dalton’s Law",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=gvXMg3J5j_Y",
+          "content": `Applies to mixtures of gases that do not react chemically.
+Dalton's Law of Partial Pressures:
+
+"In a mixture of non-reacting gases, the total pressure exerted is equal to the sum of the partial pressures that each individual gas would exert if it alone occupied the entire volume at the same temperature."
+P_total = P₁ + P₂ + P₃ + ...
+where P_total is the total pressure of the mixture, and P₁, P₂, P₃,... are the partial pressures of the individual gases (components) in the mixture.
+
+Partial Pressure (P_i): The pressure that a gas in a mixture would exert if it were the only gas present in the container of the same volume and at the same temperature.
+
+The partial pressure of a gas in a mixture is also related to its mole fraction (χ_i) in the mixture:
+P_i = χ_i × P_total
+where χ_i = Moles of gas i / Total moles of all gases in mixture = n_i / n_total.
+The sum of mole fractions is 1 (Σχ_i = 1).
+
+Collecting Gases Over Water:
+When a gas is collected by bubbling it through water and into an inverted container, the collected gas is a mixture of the desired gas and water vapor.
+
+The total pressure inside the collection container (P_total) is equal to the sum of the partial pressure of the collected gas (P_gas) and the partial pressure of water vapor (P_water_vapor):
+P_total = P_gas + P_water_vapor
+
+The pressure of the collected gas is then: P_gas = P_total - P_water_vapor.
+
+P_total is often assumed to be equal to the atmospheric pressure (if water levels inside and outside container are equal).
+
+P_water_vapor (vapor pressure of water) depends only on the temperature and can be found from tables.
+
+(Suggested insertion: A diagram illustrating Dalton's Law with containers of individual gases and then mixed. An example diagram of collecting a gas over water. Worked examples calculating total pressure from partial pressures, partial pressures from mole fractions and total pressure, and finding pressure of a dry gas collected over water.)`,
+          "mcq": [
+            {
+              "question": "A container holds a mixture of nitrogen gas (N₂) at a partial pressure of 0.8 atm and oxygen gas (O₂) at a partial pressure of 0.2 atm. What is the total pressure of the gas mixture?",
+              "options": [
+                "0.6 atm",
+                "1.0 atm",
+                "1.6 atm",
+                "0.16 atm"
+              ],
+              "correctAnswer": "1.0 atm",
+              "explanation": "Dalton's Law of Partial Pressures states that the total pressure of a gas mixture is the sum of the partial pressures of the individual gases. P_total = P_N₂ + P_O₂ = 0.8 atm + 0.2 atm = 1.0 atm."
+            }
+          ]
+        },
+        {
+          "title": "7.4 Real Gases and Deviations from Ideal Behavior",
+          "image": "https://images.pexels.com/photos/8378747/pexels-photo-8378747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Y4ef1p8d_5Q",
+          "content": `The Ideal Gas Law (PV=nRT) provides a good approximation for the behavior of real gases under many conditions, especially at low pressures and high temperatures. However, real gases deviate from ideal behavior, particularly at high pressures and low temperatures.
+Reasons for Deviation (Breakdown of KMT Assumptions for Ideal Gases):
+
+Finite Volume of Gas Particles:
+
+Ideal gas KMT assumes gas particles have zero volume.
+
+Real gas particles do have a finite (though small) volume.
+
+At high pressures, the volume of the particles themselves becomes a significant fraction of the total container volume. The actual "free" volume available for movement is less than the container volume. This tends to make the measured PV/nRT ratio greater than 1 for ideal.
+
+Intermolecular Forces of Attraction (IMFs):
+
+Ideal gas KMT assumes no attractive forces between particles.
+
+Real gas particles do experience weak IMFs (London dispersion forces, dipole-dipole if polar).
+
+At low temperatures (particles move slower) and high pressures (particles closer together), these IMFs become more significant.
+
+Attractive forces reduce the frequency and force of collisions with the container walls, leading to a pressure lower than that predicted by the ideal gas law. This tends to make PV/nRT less than 1.
+
+Compressibility Factor (Z):
+A measure of deviation from ideal behavior: Z = PV / (nRT).
+
+For an ideal gas, Z = 1 under all conditions.
+
+For real gases, Z can be greater or less than 1.
+
+At very low pressures, Z ≈ 1 (behaves ideally).
+
+At moderate pressures, Z < 1 (IMFs dominate, actual P is less than ideal P).
+
+At very high pressures, Z > 1 (finite particle volume dominates, actual V_free is less, causing P to be higher than ideal for a given V_container, or V_container to be larger than ideal for a given P).
+
+Van der Waals Equation (an equation of state for real gases):
+An attempt to modify the ideal gas law to account for finite particle volume and intermolecular attractions.
+[P + a(n/V)²] [V - nb] = nRT
+Where:
+
+a is a constant that accounts for the strength of intermolecular attractions (larger a = stronger attractions). The a(n/V)² term corrects the observed pressure P upwards.
+
+b is a constant related to the volume occupied by the gas particles themselves (larger b = larger particle volume). The nb term corrects the container volume V downwards to give "free" volume.
+
+a and b are specific constants for each gas, determined experimentally.
+
+The van der Waals equation provides better agreement with experimental behavior of real gases over a wider range of conditions than the ideal gas law, but it is still an approximation. Other more complex equations of state also exist.
+
+(Suggested insertion: Graphs of Z vs. P for a real gas at different temperatures, showing deviations from Z=1. A qualitative discussion of the roles of the 'a' and 'b' correction terms in the van der Waals equation, without necessarily requiring students to solve it extensively.)`,
+          "mcq": [
+            {
+              "question": "Under which conditions do real gases deviate most from ideal behavior?",
+              "options": [
+                "High temperature and low pressure",
+                "High temperature and high pressure",
+                "Low temperature and high pressure",
+                "Low temperature and low pressure"
+              ],
+              "correctAnswer": "Low temperature and high pressure",
+              "explanation": "Real gases deviate from ideal behavior when intermolecular forces and the finite volume of gas particles become significant. This occurs at low temperatures (particles move slower, IMFs are more effective) and high pressures (particles are closer together, volume of particles is a larger fraction of container volume)."
+            },
+            {
+              "question": "A sample of gas has its pressure doubled and its absolute temperature doubled. What happens to its volume?",
+              "options": [
+                "It is quadrupled",
+                "It is halved",
+                "It remains the same",
+                "It is doubled"
+              ],
+              "correctAnswer": "It remains the same",
+              "explanation": "Using the Combined Gas Law (P₁V₁/T₁ = P₂V₂/T₂). Let P₂ = 2P₁ and T₂ = 2T₁. Then (P₁V₁/T₁) = (2P₁V₂ / 2T₁). The P₁ and T₁ terms cancel, as does the '2'. This leaves V₁ = V₂, so the volume remains the same."
+            },
+            {
+              "question": "What is the volume of 2.0 moles of an ideal gas at Standard Temperature and Pressure (STP)?",
+              "options": [
+                "22.4 L",
+                "11.2 L",
+                "44.8 L",
+                "2.0 L"
+              ],
+              "correctAnswer": "44.8 L",
+              "explanation": "At STP (0°C and 1 atm), one mole of any ideal gas occupies a molar volume of approximately 22.4 L. Therefore, 2.0 moles would occupy 2.0 mol × 22.4 L/mol = 44.8 L."
+            },
+            {
+              "question": "The van der Waals equation for real gases includes a correction term 'nb' to account for:",
+              "options": [
+                "Intermolecular forces of attraction",
+                "The mass of the gas particles",
+                "The finite volume occupied by the gas particles",
+                "The kinetic energy of the gas particles"
+              ],
+              "correctAnswer": "The finite volume occupied by the gas particles",
+              "explanation": "The van der Waals equation modifies the ideal gas law. The [V - nb] term corrects the container volume (V) downwards to account for the actual volume taken up by the gas particles themselves, giving a more accurate 'free' volume."
+            },
+            {
+              "question": "If equal masses of O₂ and CH₄ are placed in separate containers of equal volume and temperature, which of the following is true?",
+              "options": [
+                "The pressure in the O₂ container is greater than in the CH₄ container.",
+                "The pressure in the CH₄ container is greater than in the O₂ container.",
+                "The pressures in both containers are equal.",
+                "There is not enough information to determine."
+              ],
+              "correctAnswer": "The pressure in the CH₄ container is greater than in the O₂ container.",
+              "explanation": "Pressure is proportional to the number of moles (n) (PV=nRT). Molar mass of O₂ is ~32 g/mol; CH₄ is ~16 g/mol. For an equal mass (e.g., 32g), you have 1 mole of O₂ but 2 moles of CH₄. Since CH₄ has more moles, it will exert a greater pressure under the same conditions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 8: Liquids and Solids",
+      "image": "https://images.pexels.com/photos/5477795/pexels-photo-5477795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=9TVOlTolKFA",
+        "https://www.youtube.com/watch?v=MrTxRn9MNWM",
+        "https://www.youtube.com/watch?v=kkq8ruV8_Jw"
+      ],
+      "sections": [
+        {
+          "title": "8.1 Intermolecular Forces in Liquids: Vapor Pressure, Boiling Point",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=P5HvzVwscx8",
+          "content": `While gases are characterized by particles in random, high-speed motion with negligible intermolecular forces, liquids and solids represent condensed states of matter where intermolecular forces (IMFs) play a dominant role in determining their structure and properties. Particles in liquids are still mobile but held closely together by IMFs. Particles in solids are typically locked into fixed positions, often in an ordered arrangement. This chapter will explore the influence of IMFs on the properties of liquids (like vapor pressure and boiling point), examine phase diagrams that depict phase transitions, and classify different types of solids based on their bonding and structure, including an introduction to crystallography.
+
+Intermolecular Forces (IMFs - Review from Ch 4.4): Attractive forces between molecules.
+
+Types: London Dispersion Forces (LDFs - present in all), Dipole-Dipole forces (in polar molecules), Hydrogen Bonding (special strong dipole-dipole involving H with N, O, or F).
+
+Strength of IMFs significantly influences the physical properties of liquids. Stronger IMFs generally lead to:
+
+Higher boiling points and melting points.
+
+Higher enthalpy of vaporization and fusion.
+
+Higher surface tension.
+
+Higher viscosity.
+
+Lower vapor pressure.
+
+Key Properties of Liquids Related to IMFs:
+
+Vapor Pressure:
+
+In a closed container, some molecules at the surface of a liquid have enough kinetic energy to escape into the gas phase (vaporization/evaporation). Simultaneously, some gas phase molecules collide with the liquid surface and re-enter the liquid phase (condensation).
+
+When the rate of evaporation equals the rate of condensation, a dynamic equilibrium is reached, and the gas phase above the liquid is said to be saturated with vapor.
+
+The pressure exerted by this vapor in equilibrium with its liquid at a given temperature is called the equilibrium vapor pressure (or simply vapor pressure).
+
+Factors affecting vapor pressure:
+
+Strength of IMFs: Liquids with weaker IMFs have higher vapor pressures (molecules escape more easily). (e.g., diethyl ether (weak LDFs) is volatile, high VP; water (strong H-bonding) has lower VP at same temp).
+
+Temperature: Vapor pressure increases with increasing temperature. (Higher T → more molecules have enough KE to escape liquid phase).
+
+Volatility: Liquids that evaporate readily at room temperature (high vapor pressure) are called volatile liquids.
+
+Boiling Point (BP):
+
+The temperature at which the vapor pressure of a liquid equals the external (atmospheric) pressure surrounding the liquid.
+
+At the boiling point, vaporization (boiling) occurs throughout the bulk of the liquid, not just at the surface. Bubbles of vapor form within the liquid and rise.
+
+Normal Boiling Point: The boiling point of a liquid at standard atmospheric pressure (1 atm or 101.325 kPa). (e.g., normal BP of water is 100°C).
+
+Factors affecting boiling point:
+
+Strength of IMFs: Liquids with stronger IMFs have higher boiling points (more energy needed to overcome IMFs and allow molecules to enter gas phase).
+
+External Pressure: Boiling point changes with external pressure. Lower external pressure → lower boiling point (e.g., water boils below 100°C at high altitudes). Higher external pressure → higher boiling point (e.g., pressure cooker).
+
+Surface Tension:
+
+A measure of the inward force or "tension" at the surface of a liquid that causes it to behave as if covered by a stretched elastic skin.
+
+Caused by an imbalance of IMFs at the surface. Molecules in the bulk of the liquid are attracted equally in all directions by neighboring molecules. Molecules at the surface experience a net inward pull because there are no molecules above them. This inward pull minimizes the surface area.
+
+Liquids with stronger IMFs generally have higher surface tension (e.g., water has high surface tension due to H-bonding, allowing small insects to walk on it, formation of spherical droplets).
+
+Viscosity:
+
+A measure of a fluid's resistance to flow. "Thickness" or internal friction of a fluid.
+
+Liquids with stronger IMFs and/or more complex/entangled molecular shapes tend to be more viscous (flow more slowly).
+
+Viscosity generally decreases with increasing temperature (particles have more KE to overcome IMFs).
+
+Examples: Honey, glycerol are more viscous than water.
+
+(Suggested insertion: Diagrams illustrating vapor pressure equilibrium in a closed container. A graph showing how vapor pressure of a liquid increases with temperature, and how boiling point is where VP equals external P. Diagrams illustrating surface tension (net inward force on surface molecules) and viscosity (layers of liquid sliding past each other).)`,
+          "mcq": [
+            {
+              "question": "A liquid with strong intermolecular forces would be expected to have a:",
+              "options": [
+                "High vapor pressure and high boiling point",
+                "Low vapor pressure and high boiling point",
+                "High vapor pressure and low boiling point",
+                "Low vapor pressure and low boiling point"
+              ],
+              "correctAnswer": "Low vapor pressure and high boiling point",
+              "explanation": "Strong intermolecular forces hold liquid molecules together tightly. This makes it difficult for molecules to escape into the gas phase (low vapor pressure) and requires more energy (a higher temperature) to overcome these forces for the liquid to boil (high boiling point)."
+            }
+          ]
+        },
+        {
+          "title": "8.2 Phase Diagrams and Phase Transitions",
+          "image": "https://images.pexels.com/photos/5731020/pexels-photo-5731020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=I5n7Ude8RRI",
+          "content": `A phase diagram is a graphical representation that shows the conditions of temperature (T) and pressure (P) at which a substance exists as a solid, liquid, or gas (or in equilibrium between phases).
+
+Regions: Areas on the diagram represent conditions where only one phase is stable.
+
+Lines (Phase Boundaries or Equilibrium Curves): Curves on the diagram represent conditions where two phases are in equilibrium.
+
+Solid-Liquid Line (Melting/Freezing Curve): Shows T and P at which solid and liquid are in equilibrium. Slope can be positive (most substances) or negative (e.g., water - ice is less dense than liquid water, so melting point decreases with increasing pressure).
+
+Liquid-Gas Line (Vaporization/Condensation Curve): Shows T and P at which liquid and gas (vapor) are in equilibrium. This is the vapor pressure curve of the liquid. It ends at the critical point.
+
+Solid-Gas Line (Sublimation/Deposition Curve): Shows T and P at which solid and gas are in equilibrium.
+
+Triple Point (T_t, P_t): The specific temperature and pressure at which all three phases (solid, liquid, gas) of a substance can coexist in equilibrium. Unique for each substance.
+
+Critical Point (T_c, P_c): The specific temperature and pressure at the end of the liquid-gas equilibrium curve.
+
+Critical Temperature (T_c): The temperature above which a gas cannot be liquefied, no matter how much pressure is applied.
+
+Critical Pressure (P_c): The minimum pressure required to liquefy a gas at its critical temperature.
+
+Beyond the critical point, there is no distinct liquid or gas phase; the substance exists as a supercritical fluid (has properties of both liquids and gases, e.g., density of a liquid, viscosity of a gas).
+
+Interpreting a Phase Diagram:
+
+Start at a given P, T point and see which phase region it falls in.
+
+Follow lines to see phase transitions:
+
+Moving horizontally at constant P:
+
+Increase T: Solid → Liquid (melting) → Gas (boiling). Or Solid → Gas (sublimation) if below triple point pressure.
+
+Moving vertically at constant T:
+
+Increase P: Gas → Liquid (condensation) → Solid (freezing, if applicable). Or Gas → Solid (deposition).
+
+(Suggested insertion: A typical phase diagram (e.g., for CO₂ which has a positive solid-liquid slope and triple point above 1 atm, showing sublimation at 1 atm). The phase diagram of water, highlighting its negative solid-liquid slope and the positions of triple point and critical point. Use arrows on diagrams to show paths corresponding to melting, freezing, boiling, condensation, sublimation, deposition when T or P is changed.)`,
+          "mcq": [
+            {
+              "question": "On a phase diagram, the specific temperature and pressure at which all three phases of a substance can coexist in equilibrium is called the:",
+              "options": [
+                "Critical point",
+                "Triple point",
+                "Boiling point",
+                "Melting point"
+              ],
+              "correctAnswer": "Triple point",
+              "explanation": "The triple point is the unique set of conditions (temperature and pressure) where the solid, liquid, and gas phases of a substance are all in equilibrium with each other."
+            }
+          ]
+        },
+        {
+          "title": "8.3 Types of Solids: Ionic, Covalent Network, Molecular, Metallic",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=f041ljT4yuc",
+          "content": `Solids are characterized by particles (atoms, molecules, or ions) that are closely packed and vibrate about fixed positions. Their properties depend on the type of particles and the nature of the forces holding them together.
+
+Ionic Solids:
+
+Particles: Positive and negative ions (cations and anions).
+
+Bonding: Held together by strong electrostatic attractions (ionic bonds) in a crystal lattice structure.
+
+Properties:
+
+Hard, brittle.
+
+High melting points and boiling points.
+
+Poor electrical conductors in solid state (ions are fixed).
+
+Good conductors when molten or dissolved in water (ions become mobile).
+
+Often soluble in polar solvents like water.
+
+Examples: NaCl (sodium chloride), MgO (magnesium oxide), CuSO₄ (copper(II) sulfate).
+
+Covalent Network Solids (or Network Covalent Solids, Macromolecular Solids):
+
+Particles: Atoms.
+
+Bonding: Atoms are covalently bonded together in a continuous, extensive three-dimensional network or two-dimensional layers. The entire crystal is essentially one giant molecule.
+
+Properties:
+
+Very hard and strong (due to strong covalent bonds throughout).
+
+Very high melting points and boiling points.
+
+Generally poor electrical conductors (electrons are localized in covalent bonds), with exceptions like graphite.
+
+Usually insoluble in common solvents.
+
+Examples:
+
+Diamond (carbon atoms, tetrahedral sp³ network - very hard).
+
+Graphite (carbon atoms, layered sp² network - layers slide, conducts electricity within layers due to delocalized π electrons).
+
+Silicon dioxide (SiO₂, quartz - network of Si-O bonds).
+
+Silicon carbide (SiC - carborundum).
+
+Molecular Solids:
+
+Particles: Discrete molecules (held together internally by covalent bonds).
+
+Bonding: Molecules are held together in the solid state by relatively weak intermolecular forces (IMFs) – London dispersion forces, dipole-dipole forces, and/or hydrogen bonds. (Covalent bonds are within the molecules).
+
+Properties:
+
+Relatively soft.
+
+Low to moderate melting points and boiling points (IMFs are weaker than ionic or covalent network bonds).
+
+Poor electrical conductors (no free ions or mobile electrons).
+
+Solubility depends on polarity ("like dissolves like").
+
+Often volatile (can vaporize easily).
+
+Examples: Ice (H₂O), dry ice (solid CO₂), sugar (C₁₂H₂₂O₁₁), iodine (I₂), paraffin wax, most organic compounds that are solid at room temperature.
+
+Metallic Solids:
+
+Particles: Metal atoms (positive metal ions, cations).
+
+Bonding: Held together by metallic bonds – attraction between the lattice of positive metal ions and a delocalized "sea" of mobile valence electrons that are shared among all the ions.
+
+Properties:
+
+Good electrical conductors (mobile electrons).
+
+Good thermal conductors.
+
+Malleable (can be hammered into sheets) and ductile (can be drawn into wires).
+
+Lustrous (shiny).
+
+Melting points vary widely (from low, e.g., Hg, to very high, e.g., W).
+
+Generally high densities.
+
+Examples: Iron (Fe), Copper (Cu), Silver (Ag), Gold (Au), Sodium (Na), Aluminum (Al), alloys (e.g., brass, steel).
+
+Amorphous Solids:
+Lack a regular, ordered, long-range crystal structure. Particles are arranged randomly, like in a liquid, but are fixed in position.
+
+Soften gradually over a temperature range rather than having a sharp melting point.
+
+Examples: Glass, rubber, many plastics (polymers), asphalt.
+
+(Suggested insertion: A table summarizing the four main types of crystalline solids: particles, bonding forces, typical properties (hardness, MP/BP, conductivity), and examples. Simple diagrams illustrating the general arrangement/bonding for each type.)`,
+          "mcq": [
+            {
+              "question": "Diamond is an example of which type of solid?",
+              "options": [
+                "Ionic solid",
+                "Covalent network solid",
+                "Molecular solid",
+                "Metallic solid"
+              ],
+              "correctAnswer": "Covalent network solid",
+              "explanation": "In diamond, each carbon atom is covalently bonded to four other carbon atoms in a continuous three-dimensional network. This makes the entire crystal essentially one giant molecule, giving it extreme hardness and a very high melting point, characteristic of covalent network solids."
+            }
+          ]
+        },
+        {
+          "title": "8.4 Crystallography and Unit Cells (Introductory)",
+          "image": "https://images.pexels.com/photos/25626515/pexels-photo-25626515.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=PKUnXeHpI5s",
+          "content": `Crystalline Solids: Solids in which the constituent particles (atoms, ions, or molecules) are arranged in a highly ordered, repeating three-dimensional pattern called a crystal lattice.
+
+The overall shape of a well-formed crystal often reflects its internal atomic arrangement.
+
+Crystal Lattice: An imaginary framework consisting of a regular array of points in space, where each point has identical surroundings. The particles of the crystal are located at or around these lattice points.
+
+Unit Cell:
+The smallest repeating structural unit (group of atoms, ions, or molecules) in a crystal lattice that, when translated repeatedly in three dimensions, generates the entire crystal structure.
+
+Defined by its lattice parameters: lengths of its edges (a, b, c) and the angles between them (α, β, γ).
+
+Seven Crystal Systems: Based on symmetry and lattice parameters (e.g., cubic, tetragonal, orthorhombic, monoclinic, triclinic, hexagonal, rhombohedral/trigonal).
+
+Bravais Lattices: There are 14 distinct types of unit cells (Bravais lattices) that can fill 3D space, derived from the seven crystal systems by considering different centering of lattice points (e.g., primitive/simple, body-centered, face-centered).
+
+Common Cubic Unit Cells (Simplest to visualize):
+(In cubic system: a = b = c, α = β = γ = 90°)
+
+Simple Cubic (SC or Primitive Cubic, P):
+
+Lattice points (atoms/ions) only at the 8 corners of the cube.
+
+Each corner atom is shared by 8 unit cells, so (1/8 atom/corner) × 8 corners = 1 atom per unit cell.
+
+Low packing efficiency (loosely packed). Relatively rare for metals.
+
+Body-Centered Cubic (BCC or I):
+
+Lattice points at the 8 corners AND one lattice point at the center of the cube.
+
+(1/8 × 8 corners) + (1 center atom) = 1 + 1 = 2 atoms per unit cell.
+
+More common for metals (e.g., Fe, Cr, W, alkali metals).
+
+Face-Centered Cubic (FCC or F):
+
+Lattice points at the 8 corners AND one lattice point at the center of each of the 6 faces of the cube.
+
+(1/8 × 8 corners) + (1/2 atom/face × 6 faces) = 1 + 3 = 4 atoms per unit cell.
+
+High packing efficiency (closest packing arrangement along with HCP). Common for metals (e.g., Al, Cu, Ag, Au, Ni, Pb).
+
+Coordination Number: The number of nearest neighboring atoms or ions surrounding a given atom or ion in a crystal lattice.
+Packing Efficiency: The percentage of the total volume of the unit cell that is occupied by atoms (assuming spherical atoms).
+
+X-ray Diffraction (XRD):
+A primary experimental technique used to determine the crystal structure of solids.
+
+When a beam of X-rays (with wavelengths comparable to interatomic spacing) strikes a crystal, the X-rays are diffracted (scattered) by the regularly arranged planes of atoms in the lattice.
+
+The diffracted waves interfere constructively at specific angles, producing a diffraction pattern (a set of spots or rings).
+
+Bragg's Law: Relates the wavelength of X-rays (λ), the angle of diffraction (θ), and the spacing between atomic planes (d) in the crystal:
+nλ = 2d sin(θ) (where n is an integer, order of reflection).
+
+By analyzing the positions and intensities of the diffracted beams, the arrangement of atoms (unit cell type, dimensions, atomic positions) can be determined.
+
+(Suggested insertion: Diagrams of simple cubic, body-centered cubic, and face-centered cubic unit cells, showing locations of atoms and how to count atoms per unit cell. A simple diagram illustrating X-ray diffraction from crystal planes (Bragg's Law concept).)`,
+          "mcq": [
+            {
+              "question": "How many total atoms are contained within one face-centered cubic (FCC) unit cell?",
+              "options": [
+                "1",
+                "2",
+                "4",
+                "8"
+              ],
+              "correctAnswer": "4",
+              "explanation": "An FCC unit cell has atoms at the 8 corners and in the center of the 6 faces. The calculation is: (8 corners × 1/8 atom per corner) + (6 faces × 1/2 atom per face) = 1 + 3 = 4 atoms per unit cell."
+            },
+            {
+              "question": "The process of a solid changing directly into a gas is called:",
+              "options": [
+                "Melting",
+                "Vaporization",
+                "Deposition",
+                "Sublimation"
+              ],
+              "correctAnswer": "Sublimation",
+              "explanation": "Sublimation is the phase transition from the solid state directly to the gaseous state, without passing through the liquid phase. A common example is dry ice (solid CO₂)."
+            },
+            {
+              "question": "Which of the following substances is an example of a molecular solid?",
+              "options": [
+                "NaCl (Salt)",
+                "SiO₂ (Quartz)",
+                "Fe (Iron)",
+                "H₂O (Ice)"
+              ],
+              "correctAnswer": "H₂O (Ice)",
+              "explanation": "Molecular solids consist of discrete molecules held together by intermolecular forces. In ice, individual H₂O molecules are held in a crystal lattice by hydrogen bonds. NaCl is ionic, SiO₂ is a covalent network, and Fe is metallic."
+            },
+            {
+              "question": "Why does water have a higher boiling point than hydrogen sulfide (H₂S), even though H₂S is a heavier molecule?",
+              "options": [
+                "H₂S is a covalent network solid",
+                "Water has stronger London dispersion forces",
+                "Water can form strong hydrogen bonds, while H₂S cannot",
+                "Water is less dense than H₂S"
+              ],
+              "correctAnswer": "Water can form strong hydrogen bonds, while H₂S cannot",
+              "explanation": "Water (H₂O) molecules are held together by strong hydrogen bonds, a powerful type of intermolecular force. H₂S molecules are held together by weaker dipole-dipole forces and LDFs. The extra energy needed to overcome water's hydrogen bonds results in a much higher boiling point."
+            },
+            {
+              "question": "The temperature above which a substance cannot be liquefied, no matter how much pressure is applied, is known as the:",
+              "options": [
+                "Triple point temperature",
+                "Normal boiling point",
+                "Critical temperature",
+                "Absolute zero"
+              ],
+              "correctAnswer": "Critical temperature",
+              "explanation": "The critical temperature (T_c) is a key property shown on a phase diagram. Above this temperature, the substance exists as a supercritical fluid, and the distinction between liquid and gas phases disappears."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 9: Solutions and Their Properties",
+      "image": "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=c8dDLe37ONg",
+        "https://www.youtube.com/watch?v=PWAZKD0T91I",
+        "https://www.youtube.com/watch?v=MDHlaTHbEgM"
+      ],
+      "sections": [
+        {
+          "title": "9.1 Types of Solutions: Saturated, Unsaturated, Supersaturated",
+          "image": "https://images.pexels.com/photos/19802121/pexels-photo-19802121.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Q-hLDR4RyEM",
+          "content": `A solution is a homogeneous mixture of two or more substances. Solutions are ubiquitous in chemistry and daily life, from saltwater and air to biological fluids and industrial processes. Understanding the nature of solutions, the factors affecting solubility, and how the presence of a solute alters the properties of a solvent (colligative properties) is essential. This chapter explores types of solutions, solubility principles, concentration units (revisited), and the important colligative properties of solutions.
+
+Solution: A homogeneous mixture formed when one substance (the solute) dissolves uniformly in another substance (the solvent).
+
+Solute: The substance that is dissolved (usually present in a smaller amount).
+
+Solvent: The substance that does the dissolving (usually present in a larger amount).
+
+Water is a very common solvent, and solutions where water is the solvent are called aqueous solutions.
+
+Solutions can exist in any phase:
+
+Solid in liquid (e.g., salt in water, sugar in tea).
+
+Liquid in liquid (e.g., alcohol in water, vinegar - acetic acid in water).
+
+Gas in liquid (e.g., carbon dioxide in soda water).
+
+Gas in gas (e.g., air - N₂, O₂, etc.).
+
+Solid in solid (e.g., alloys like brass - Cu in Zn).
+
+Solubility: The maximum amount of a solute that can dissolve in a given amount of solvent at a specific temperature (and pressure, for gases) to form a saturated solution. Often expressed as grams of solute per 100 g of solvent, or moles of solute per liter of solution (molar solubility).
+
+Types of Solutions based on Amount of Solute Dissolved:
+
+Unsaturated Solution:
+
+A solution that contains less solute than the maximum amount that can be dissolved in that solvent at that temperature.
+
+If more solute is added to an unsaturated solution, it will dissolve (until saturation is reached).
+
+Saturated Solution:
+
+A solution that contains the maximum amount of solute that can be dissolved in that solvent at that temperature.
+
+If more solute is added to a saturated solution, it will not dissolve and will usually settle at the bottom (undissolved solute).
+
+In a saturated solution, there is a dynamic equilibrium between the dissolved solute and any undissolved solute: Rate of dissolving = Rate of crystallization.
+
+Supersaturated Solution:
+
+A solution that contains more dissolved solute than is normally possible in a saturated solution at that temperature.
+
+These solutions are unstable. They are usually prepared by dissolving a large amount of solute in a hot solvent and then cooling the solution slowly and carefully.
+
+Addition of a tiny "seed crystal" of the solute, or scratching the container, can often trigger rapid crystallization of the excess dissolved solute, and the solution becomes saturated.
+
+(Suggested insertion: Diagrams illustrating unsaturated, saturated (with undissolved solute in equilibrium), and supersaturated solutions (with subsequent crystallization upon seeding).)`,
+          "mcq": [
+            {
+              "question": "A solution that contains the maximum amount of dissolved solute at a given temperature is described as:",
+              "options": [
+                "Unsaturated",
+                "Saturated",
+                "Supersaturated",
+                "Concentrated"
+              ],
+              "correctAnswer": "Saturated",
+              "explanation": "A saturated solution is one in which the solvent has dissolved the maximum amount of solute possible at that temperature, and it is in dynamic equilibrium with any undissolved solute."
+            }
+          ]
+        },
+        {
+          "title": "9.2 Solubility Rules and Factors Affecting Solubility",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=8ZubvQARRGk",
+          "content": `Solubility Rules (for Ionic Compounds in Water - often qualitative):
+General guidelines used to predict whether an ionic compound will be soluble or insoluble in water at room temperature. (These are empirical rules with some exceptions).
+
+General Categories of Soluble Compounds:
+
+Compounds containing Group 1 cations (Li⁺, Na⁺, K⁺, Rb⁺, Cs⁺) and ammonium ion (NH₄⁺).
+
+Compounds containing nitrate (NO₃⁻), acetate (CH₃COO⁻ or C₂H₃O₂⁻), chlorate (ClO₃⁻), and perchlorate (ClO₄⁻) anions.
+
+Most compounds containing chloride (Cl⁻), bromide (Br⁻), and iodide (I⁻) anions are soluble, except those of Ag⁺, Pb²⁺, and Hg₂²⁺.
+
+Most compounds containing sulfate (SO₄²⁻) anions are soluble, except those of Ba²⁺, Sr²⁺, Pb²⁺, Ca²⁺, Hg₂²⁺, (Ag₂SO₄ is slightly soluble).
+
+General Categories of Insoluble Compounds (often considered slightly soluble):
+
+Most compounds containing carbonate (CO₃²⁻), phosphate (PO₄³⁻), chromate (CrO₄²⁻), and sulfide (S²⁻) anions are insoluble, except those of Group 1 cations and NH₄⁺. (Sulfides of Group 2 metals are also somewhat soluble).
+
+Most compounds containing hydroxide (OH⁻) and oxide (O²⁻) anions are insoluble, except those of Group 1 cations, and Ca(OH)₂, Sr(OH)₂, Ba(OH)₂ (which are moderately soluble).
+
+These rules are useful for predicting precipitation reactions.
+
+Factors Affecting Solubility:
+
+Nature of Solute and Solvent ("Like Dissolves Like"):
+
+Polar solutes tend to dissolve well in polar solvents (e.g., ionic compounds like NaCl, polar covalent compounds like sugar or ethanol, dissolve in polar water due to ion-dipole or dipole-dipole/H-bonding interactions).
+
+Nonpolar solutes tend to dissolve well in nonpolar solvents (e.g., oil, grease, iodine dissolve in nonpolar solvents like hexane or carbon tetrachloride due to LDFs).
+
+Polar solutes generally have low solubility in nonpolar solvents, and vice versa.
+
+Temperature:
+
+Solubility of Solids in Liquids: Generally increases with increasing temperature for most solids (dissolving is often endothermic). Some exceptions exist where solubility decreases with increasing temperature (e.g., Ce₂(SO₄)₃).
+
+Solubility Curves: Graphs showing solubility of a solute in a solvent as a function of temperature.
+
+Solubility of Gases in Liquids: Generally decreases with increasing temperature. (Higher T → more KE for gas molecules → easier to escape from solution).
+
+Pressure (Mainly for solubility of gases in liquids):
+
+Henry's Law: The solubility of a gas in a liquid is directly proportional to the partial pressure of that gas above the liquid, at a constant temperature.
+S_gas = k_H P_gas (where S_gas is solubility, P_gas is partial pressure of gas, k_H is Henry's law constant).
+
+Higher pressure → more gas molecules dissolve. (e.g., carbonation of soft drinks under high CO₂ pressure).
+
+Pressure has very little effect on the solubility of solids or liquids in liquid solvents.
+
+(Suggested insertion: A summary table of common solubility rules for ionic compounds in water. Simple graphs showing solubility curves for solids (some increasing, maybe one decreasing with T) and effect of temperature on gas solubility. Diagram illustrating Henry's Law for gas solubility under pressure.)`,
+          "mcq": [
+            {
+              "question": "According to Henry's Law, how does the solubility of a gas in a liquid change if the partial pressure of the gas above the liquid is doubled?",
+              "options": [
+                "It is halved",
+                "It remains the same",
+                "It is doubled",
+                "It is quadrupled"
+              ],
+              "correctAnswer": "It is doubled",
+              "explanation": "Henry's Law states that the solubility of a gas in a liquid is directly proportional to the partial pressure of that gas above the liquid (S_gas = k_H * P_gas). Therefore, if the pressure is doubled, the solubility also doubles."
+            }
+          ]
+        },
+        {
+          "title": "9.3 Colligative Properties: Vapor Pressure Lowering, Boiling Point Elevation, Freezing Point Depression",
+          "image": "https://images.pexels.com/photos/3735778/pexels-photo-3735778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=77OLIBxRYSo",
+          "content": `Colligative Properties: Physical properties of solutions that depend on the concentration of solute particles (number of solute particles per unit volume or per unit mass of solvent), but not on the chemical identity or nature of the solute particles themselves.
+
+Assume non-volatile solute (solute does not contribute significantly to vapor pressure).
+
+For ionic solutes that dissociate, the total number of solute particles (ions) in solution must be considered (van't Hoff factor, i).
+
+Vapor Pressure Lowering (Raoult's Law):
+
+The vapor pressure of a pure solvent is lowered when a non-volatile solute is dissolved in it.
+
+The solute particles at the surface reduce the ability of solvent molecules to escape into the vapor phase.
+
+Raoult's Law (for ideal solutions): The partial vapor pressure of the solvent (P_solvent) above a solution is equal to the mole fraction of the solvent (χ_solvent) in the solution multiplied by the vapor pressure of the pure solvent (P°_solvent).
+P_solvent = χ_solvent × P°_solvent
+
+Since χ_solvent < 1 in a solution, P_solvent < P°_solvent.
+
+Vapor pressure lowering (ΔP = P°_solvent - P_solvent) is proportional to the mole fraction of the solute (χ_solute).
+ΔP = χ_solute × P°_solvent.
+
+Boiling Point Elevation (ΔT_b):
+
+Because the vapor pressure of a solution is lower than that of the pure solvent, a solution must be heated to a higher temperature than the pure solvent to reach a vapor pressure equal to the external atmospheric pressure (i.e., to boil).
+
+The increase in boiling point is called boiling point elevation.
+
+ΔT_b = T_b (solution) - T_b (pure solvent)
+
+ΔT_b is directly proportional to the molal concentration (m) of solute particles:
+ΔT_b = i K_b m
+Where:
+
+i is the van't Hoff factor (number of particles produced per formula unit of solute in solution, e.g., i=1 for non-electrolytes like sugar; i=2 for NaCl; i=3 for CaCl₂ - ideally).
+
+K_b is the molal boiling point elevation constant (ebullioscopic constant), a property of the solvent. (e.g., for water, K_b = 0.512 °C/m).
+
+m is the molality of the solution (moles of solute / kg of solvent).
+
+Freezing Point Depression (ΔT_f):
+
+The presence of a solute disrupts the ability of solvent molecules to organize into a solid lattice, so the solution freezes at a lower temperature than the pure solvent.
+
+The decrease in freezing point is called freezing point depression.
+
+ΔT_f = T_f (pure solvent) - T_f (solution) (Note: ΔT_f is a positive value representing the depression).
+
+ΔT_f is directly proportional to the molal concentration (m) of solute particles:
+ΔT_f = i K_f m
+Where:
+
+i is the van't Hoff factor.
+
+K_f is the molal freezing point depression constant (cryoscopic constant), a property of the solvent. (e.g., for water, K_f = 1.86 °C/m).
+
+m is the molality of the solution.
+
+Applications: Antifreeze in car radiators, using salt to melt ice on roads.
+
+Determination of Molar Mass using Colligative Properties:
+Colligative properties can be used experimentally to determine the molar mass of an unknown non-volatile solute if a known mass of solute is dissolved in a known mass of solvent and the change in BP, FP, or VP is measured.
+
+(Suggested insertion: A graph showing vapor pressure lowering for a solution compared to pure solvent. Graphs illustrating boiling point elevation and freezing point depression. Worked examples for calculating ΔT_b, ΔT_f, and determining molar mass from these.)`,
+          "mcq": [
+            {
+              "question": "Which of the following aqueous solutions would have the lowest freezing point?",
+              "options": [
+                "0.1 m C₆H₁₂O₆ (glucose)",
+                "0.1 m NaCl",
+                "0.1 m CaCl₂",
+                "Pure water"
+              ],
+              "correctAnswer": "0.1 m CaCl₂",
+              "explanation": "Freezing point depression is a colligative property, depending on the concentration of solute particles. CaCl₂ dissociates into three ions (Ca²⁺ + 2Cl⁻), giving it a van't Hoff factor (i) of 3. NaCl gives 2 ions (i=2), and glucose is a non-electrolyte (i=1). Since CaCl₂ produces the most particles, it will cause the greatest freezing point depression."
+            }
+          ]
+        },
+        {
+          "title": "9.4 Osmosis and Osmotic Pressure",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=EeX09lKTHPQ",
+          "content": `Osmosis: The net movement (diffusion) of solvent molecules (usually water) across a semipermeable membrane from a region of higher solvent concentration (lower solute concentration) to a region of lower solvent concentration (higher solute concentration).
+
+A semipermeable membrane allows passage of solvent molecules but blocks or restricts passage of solute particles.
+
+Osmosis aims to equalize the solute concentrations on both sides of the membrane.
+
+Important in biological systems (e.g., water movement in/out of cells).
+
+Cells in hypertonic solution (higher external solute): Water leaves cell, cell shrinks (crenation in animal cells, plasmolysis in plant cells).
+
+Cells in hypotonic solution (lower external solute): Water enters cell, cell swells (may burst/lyse in animal cells; becomes turgid in plant cells due to cell wall).
+
+Cells in isotonic solution: No net water movement.
+
+Osmotic Pressure (Π):
+The external pressure that must be applied to the solution side to prevent the net inward flow of solvent across a semipermeable membrane (i.e., to stop osmosis).
+
+It is a measure of the tendency of a solution to take in solvent by osmosis.
+
+For dilute solutions, osmotic pressure is proportional to the molar concentration (M) of solute particles and absolute temperature (T):
+Π = iMRT (van't Hoff equation for osmotic pressure)
+Where:
+
+i is van't Hoff factor.
+
+M is molarity of solution (mol/L).
+
+R is ideal gas constant (0.08206 L⋅atm/(mol⋅K) or 8.314 J/(mol⋅K) - choose based on desired pressure units).
+
+T is absolute temperature (K).
+
+Osmotic pressure is a colligative property.
+
+Can be very large even for dilute solutions.
+
+Reverse Osmosis: If a pressure greater than the osmotic pressure is applied to the solution side, solvent molecules can be forced to move from the solution to the pure solvent side, against the normal osmotic flow. Used in water purification/desalination.
+
+(Suggested insertion: Diagrams illustrating osmosis across a semipermeable membrane with different solute concentrations on each side. Diagrams showing effect of hyper/hypo/isotonic solutions on animal and plant cells. A diagram illustrating the concept of osmotic pressure and reverse osmosis.)`,
+          "mcq": [
+            {
+              "question": "If a red blood cell is placed in a hypotonic solution (like pure water), what will happen?",
+              "options": [
+                "The cell will shrink (crenate)",
+                "The cell will swell and possibly burst (lyse)",
+                "There will be no change",
+                "The cell will become a solid"
+              ],
+              "correctAnswer": "The cell will swell and possibly burst (lyse)",
+              "explanation": "A hypotonic solution has a lower solute concentration than the cell's interior. Due to osmosis, water will move from the region of higher water concentration (outside the cell) to the region of lower water concentration (inside the cell), causing it to swell and potentially lyse."
+            },
+            {
+              "question": "The 'like dissolves like' rule suggests that:",
+              "options": [
+                "Gases dissolve in other gases",
+                "Ionic compounds dissolve in nonpolar solvents",
+                "Nonpolar solutes dissolve well in polar solvents",
+                "Polar solutes dissolve well in polar solvents"
+              ],
+              "correctAnswer": "Polar solutes dissolve well in polar solvents",
+              "explanation": "The 'like dissolves like' principle states that substances with similar intermolecular forces and polarity tend to be soluble in each other. Thus, polar solutes (like sugar or NaCl) dissolve in polar solvents (like water), and nonpolar solutes (like oil) dissolve in nonpolar solvents (like hexane)."
+            },
+            {
+              "question": "Which of the following is NOT a colligative property?",
+              "options": [
+                "Boiling point elevation",
+                "Freezing point depression",
+                "Vapor pressure lowering",
+                "Solubility"
+              ],
+              "correctAnswer": "Solubility",
+              "explanation": "Colligative properties depend only on the concentration of solute particles, not their identity. Boiling point elevation, freezing point depression, vapor pressure lowering, and osmotic pressure are the four main colligative properties. Solubility depends on the specific chemical nature of both the solute and the solvent."
+            },
+            {
+              "question": "A solution prepared by dissolving a large amount of solute in a hot solvent and then cooling it carefully is likely to be:",
+              "options": [
+                "Isotonic",
+                "Unsaturated",
+                "Saturated",
+                "Supersaturated"
+              ],
+              "correctAnswer": "Supersaturated",
+              "explanation": "A supersaturated solution is an unstable solution that holds more dissolved solute than is normally possible at that temperature. It is typically created by dissolving solute at a high temperature and then cooling it without causing crystallization."
+            },
+            {
+              "question": "Why is salt (NaCl) effective at melting ice on roads?",
+              "options": [
+                "The salt has a chemical reaction with ice that produces heat.",
+                "The salt raises the freezing point of water.",
+                "The salt dissolves in the thin layer of water on the ice, creating a solution with a lower freezing point.",
+                "The salt crystals physically break up the ice."
+              ],
+              "correctAnswer": "The salt dissolves in the thin layer of water on the ice, creating a solution with a lower freezing point.",
+              "explanation": "This is a direct application of freezing point depression. When salt dissolves in water, it creates a saline solution whose freezing point is significantly lower than 0°C. This allows the ice to melt even when the ambient temperature is below the normal freezing point of pure water."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 10: Acid–Base Equilibria and pH",
+      "image": "https://images.pexels.com/photos/3735773/pexels-photo-3735773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=jdmHjFp_35I",
+        "https://www.youtube.com/watch?v=OEW4-Sfyvik",
+        "https://www.youtube.com/watch?v=FM2MpMbV0rw"
+      ],
+      "sections": [
+        {
+          "title": "10.1 Definitions: Arrhenius, Brønsted–Lowry, Lewis Acids and Bases",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=EyBkPwsRY2E",
+          "content": `Acids and bases are common and important classes of chemical compounds that exhibit characteristic properties. Their reactions are fundamental in chemistry, biology, and many industrial processes. This chapter explores various definitions of acids and bases, the concept of pH as a measure of acidity/alkalinity, the distinction between strong and weak acids/bases and their dissociation, and the principles of buffer systems and acid-base titrations.
+
+Over time, the definitions of acids and bases have evolved to become more general and encompassing.
+
+Arrhenius Definition (Svante Arrhenius, late 19th century):
+
+Focuses on behavior in aqueous (water) solutions.
+
+Arrhenius Acid: A substance that produces hydrogen ions (H⁺) (or hydronium ions, H₃O⁺) when dissolved in water.
+
+HCl(aq) → H⁺(aq) + Cl⁻(aq)
+
+HNO₃(aq) → H⁺(aq) + NO₃⁻(aq)
+(Note: H⁺ in water readily associates with H₂O to form H₃O⁺, the hydronium ion. H⁺ and H₃O⁺ are often used interchangeably to represent the acidic species in water).
+
+Arrhenius Base: A substance that produces hydroxide ions (OH⁻) when dissolved in water.
+
+NaOH(aq) → Na⁺(aq) + OH⁻(aq)
+
+Ca(OH)₂(aq) → Ca²⁺(aq) + 2OH⁻(aq)
+
+Limitation: Restricted to aqueous solutions; doesn't explain basicity of substances like ammonia (NH₃) which don't contain OH⁻ but produce OH⁻ in water.
+
+Brønsted–Lowry Definition (Johannes Brønsted and Thomas Lowry, 1923):
+
+Focuses on proton (H⁺) transfer. More general than Arrhenius.
+
+Brønsted-Lowry Acid: A proton (H⁺) donor.
+
+Brønsted-Lowry Base: A proton (H⁺) acceptor.
+
+An acid-base reaction involves the transfer of a proton from an acid to a base.
+
+Example: HCl(aq) + H₂O(l) ⇌ H₃O⁺(aq) + Cl⁻(aq)
+
+HCl is an acid (donates H⁺ to H₂O).
+
+H₂O is a base (accepts H⁺ from HCl).
+
+Example: NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)
+
+H₂O is an acid (donates H⁺ to NH₃).
+
+NH₃ is a base (accepts H⁺ from H₂O).
+
+Amphoteric (or Amphiprotic) Substance: A substance that can act as either an acid or a base depending on the reaction (e.g., water H₂O, bicarbonate ion HCO₃⁻).
+
+Conjugate Acid-Base Pairs: When a Brønsted-Lowry acid donates a proton, it forms its conjugate base. When a Brønsted-Lowry base accepts a proton, it forms its conjugate acid.
+
+Acid₁ + Base₂ ⇌ Conjugate Base₁ + Conjugate Acid₂
+
+In HCl + H₂O ⇌ H₃O⁺ + Cl⁻:
+HCl (acid) and Cl⁻ (conjugate base) form a pair.
+H₂O (base) and H₃O⁺ (conjugate acid) form a pair.
+
+Strong acids have weak conjugate bases. Weak acids have strong conjugate bases (and vice versa for bases).
+
+Lewis Definition (Gilbert N. Lewis, 1923):
+
+Most general definition; focuses on electron pair transfer. Does not require protons or aqueous solutions.
+
+Lewis Acid: An electron pair acceptor. (Often has an incomplete octet or can accept electron pairs into empty orbitals, e.g., BF₃, AlCl₃, metal cations like Fe³⁺).
+
+Lewis Base: An electron pair donor. (Must have at least one lone pair of electrons, e.g., NH₃, H₂O, OH⁻, Cl⁻).
+
+A Lewis acid-base reaction involves the formation of a coordinate covalent bond (dative bond) where both electrons in the shared pair come from the Lewis base.
+
+Example: BF₃ (acid) + :NH₃ (base) → F₃B←NH₃ (adduct)
+
+All Brønsted-Lowry acids/bases are also Lewis acids/bases (though H⁺ itself is the Lewis acid). All Arrhenius acids/bases are also Brønsted-Lowry acids/bases in water. The Lewis definition is broader.
+
+(Suggested insertion: A table comparing the Arrhenius, Brønsted-Lowry, and Lewis definitions with key characteristics and examples for each. Clearly illustrate conjugate acid-base pairs.)`,
+          "mcq": [
+            {
+              "question": "In the reaction NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq), water (H₂O) acts as a:",
+              "options": [
+                "Brønsted-Lowry acid",
+                "Brønsted-Lowry base",
+                "Lewis acid only",
+                "Spectator ion"
+              ],
+              "correctAnswer": "Brønsted-Lowry acid",
+              "explanation": "According to the Brønsted-Lowry definition, an acid is a proton (H⁺) donor. In this reaction, H₂O donates a proton to NH₃ to form OH⁻ and NH₄⁺. Therefore, H₂O is acting as the Brønsted-Lowry acid."
+            }
+          ]
+        },
+        {
+          "title": "10.2 pH, pOH, and pKw Calculations",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=21WfQ6z_00Y",
+          "content": `Autoionization of Water (Self-ionization):
+Water can act as both an acid and a base, even with itself, in a process called autoionization.
+H₂O(l) + H₂O(l) ⇌ H₃O⁺(aq) + OH⁻(aq)
+or simplified: H₂O(l) ⇌ H⁺(aq) + OH⁻(aq)
+
+The equilibrium constant for this process is the ion-product constant for water (K_w):
+K_w = [H₃O⁺][OH⁻] (or K_w = [H⁺][OH⁻])
+
+At 25°C, K_w = 1.0 × 10⁻¹⁴ (mol/L)². This value is constant for any aqueous solution at 25°C.
+
+In pure water (neutral solution) at 25°C: [H₃O⁺] = [OH⁻] = √(1.0 × 10⁻¹⁴) = 1.0 × 10⁻⁷ M.
+
+Acidic solution: [H₃O⁺] > [OH⁻] (so [H₃O⁺] > 10⁻⁷ M and [OH⁻] < 10⁻⁷ M).
+
+Basic (alkaline) solution: [OH⁻] > [H₃O⁺] (so [OH⁻] > 10⁻⁷ M and [H₃O⁺] < 10⁻⁷ M).
+
+The pH Scale:
+A logarithmic scale used to express the acidity or alkalinity of an aqueous solution, based on the hydronium ion concentration [H₃O⁺] (or [H⁺]).
+
+Definition of pH: pH = -log₁₀[H₃O⁺] (or pH = -log₁₀[H⁺])
+
+From this, [H₃O⁺] = 10^(-pH).
+
+pH Range:
+
+pH < 7: Acidic solution (at 25°C)
+
+pH = 7: Neutral solution (at 25°C)
+
+pH > 7: Basic (alkaline) solution (at 25°C)
+
+A change of 1 pH unit represents a tenfold change in [H₃O⁺]. (e.g., pH 3 is 10x more acidic than pH 4).
+
+The pOH Scale:
+Similarly defines alkalinity based on hydroxide ion concentration [OH⁻].
+
+Definition of pOH: pOH = -log₁₀[OH⁻]
+
+[OH⁻] = 10^(-pOH).
+
+Relationship between pH, pOH, and pK_w:
+Taking -log₁₀ of the K_w expression: -log(K_w) = -log[H₃O⁺] - log[OH⁻]
+pK_w = pH + pOH
+At 25°C, K_w = 1.0 × 10⁻¹⁴, so pK_w = -log(1.0 × 10⁻¹⁴) = 14.00.
+Therefore, at 25°C: pH + pOH = 14.00.
+This allows for easy conversion between pH and pOH, or calculating one if the other is known (or if [H₃O⁺] or [OH⁻] is known).
+
+(Suggested insertion: A pH scale diagram (0-14) showing common substances and their approximate pH values (e.g., stomach acid, lemon juice, vinegar, pure water, blood, baking soda, ammonia, NaOH). Worked examples of calculating pH from [H⁺], [H⁺] from pH, and interconverting pH and pOH.)`,
+          "mcq": [
+            {
+              "question": "What is the pH of a solution with a hydroxide ion concentration [OH⁻] of 1.0 × 10⁻³ M at 25°C?",
+              "options": [
+                "3.00",
+                "1.00",
+                "11.00",
+                "-3.00"
+              ],
+              "correctAnswer": "11.00",
+              "explanation": "First, calculate the pOH: pOH = -log[OH⁻] = -log(1.0 × 10⁻³) = 3.00. Then, use the relationship pH + pOH = 14.00 (at 25°C). So, pH = 14.00 - pOH = 14.00 - 3.00 = 11.00."
+            }
+          ]
+        },
+        {
+          "title": "10.3 Strong vs. Weak Acids/Bases and Dissociation Constants (K_a, K_b)",
+          "image": "https://images.pexels.com/photos/25626435/pexels-photo-25626435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=7C_HsfB_6PQ",
+          "content": `The strength of an acid or base refers to the extent to which it ionizes (dissociates) in water to produce H⁺ (for acids) or OH⁻ (for bases, or affects H⁺/OH⁻ concentrations).
+Strong Acids:
+
+Ionize completely (or almost completely, ~100%) in aqueous solution to produce H⁺ ions.
+
+Represented by a single arrow (→) in ionization equation.
+
+Their conjugate bases are very weak (negligible basicity).
+
+Common Strong Acids (memorize):
+
+Hydrochloric acid (HCl)
+
+Hydrobromic acid (HBr)
+
+Hydroiodic acid (HI)
+
+Nitric acid (HNO₃)
+
+Sulfuric acid (H₂SO₄ - first ionization is strong, second is weak)
+
+Perchloric acid (HClO₄)
+
+Chloric acid (HClO₃) - sometimes included
+
+For a strong acid HA: HA(aq) → H⁺(aq) + A⁻(aq). If initial concentration of HA is C_HA, then [H⁺] ≈ C_HA at equilibrium. pH is easily calculated.
+
+Weak Acids:
+
+Ionize only partially (to a small extent) in aqueous solution. An equilibrium is established.
+
+Represented by a reversible arrow (⇌) in ionization equation.
+
+HA(aq) + H₂O(l) ⇌ H₃O⁺(aq) + A⁻(aq) or HA(aq) ⇌ H⁺(aq) + A⁻(aq)
+
+Their conjugate bases are relatively stronger weak bases.
+
+Acid Dissociation Constant (K_a): The equilibrium constant for the ionization of a weak acid.
+K_a = ([H₃O⁺][A⁻]) / [HA] (at equilibrium)
+
+The magnitude of K_a indicates the strength of the weak acid:
+
+Larger K_a → stronger weak acid (more ionization).
+
+Smaller K_a → weaker weak acid (less ionization).
+
+Often expressed as pK_a = -log₁₀(K_a). Smaller pK_a → stronger acid.
+
+Examples of Weak Acids: Acetic acid (CH₃COOH), carbonic acid (H₂CO₃), hydrofluoric acid (HF), phosphoric acid (H₃PO₄), citric acid, nitrous acid (HNO₂).
+
+Strong Bases:
+
+Dissociate completely (or almost completely) in aqueous solution to produce OH⁻ ions (or react completely with water to produce OH⁻).
+
+Typically soluble ionic hydroxides of Group 1 (alkali metals) and some Group 2 (alkaline earth metals).
+
+Common Strong Bases (memorize):
+
+Lithium hydroxide (LiOH)
+
+Sodium hydroxide (NaOH)
+
+Potassium hydroxide (KOH)
+
+Rubidium hydroxide (RbOH)
+
+Cesium hydroxide (CsOH)
+
+Calcium hydroxide (Ca(OH)₂ - "strong" but only moderately soluble)
+
+Strontium hydroxide (Sr(OH)₂)
+
+Barium hydroxide (Ba(OH)₂)
+
+For a strong base MOH: MOH(aq) → M⁺(aq) + OH⁻(aq). If initial conc. is C_MOH, then [OH⁻] ≈ C_MOH. pOH and pH easily calculated.
+
+Weak Bases:
+
+React with water only partially to produce OH⁻ ions. An equilibrium is established.
+
+B(aq) + H₂O(l) ⇌ BH⁺(aq) + OH⁻(aq) (where B is the weak base, BH⁺ is its conjugate acid).
+
+Their conjugate acids are relatively stronger weak acids.
+
+Base Dissociation Constant (K_b): The equilibrium constant for the ionization of a weak base.
+K_b = ([BH⁺][OH⁻]) / [B] (at equilibrium)
+
+Larger K_b → stronger weak base. Smaller K_b → weaker weak base.
+
+Often expressed as pK_b = -log₁₀(K_b).
+
+Examples of Weak Bases: Ammonia (NH₃), amines (e.g., methylamine CH₃NH₂), aniline (C₆H₅NH₂), many anions of weak acids (e.g., acetate ion CH₃COO⁻, fluoride ion F⁻ - which act as bases by hydrolyzing water).
+
+Relationship between K_a and K_b for a Conjugate Acid-Base Pair:
+For a conjugate acid-base pair HA/A⁻ (or BH⁺/B):
+K_a (for HA) × K_b (for A⁻) = K_w
+At 25°C, K_a × K_b = 1.0 × 10⁻¹⁴.
+Or pK_a + pK_b = pK_w = 14.00.
+This means if you know K_a for a weak acid, you can find K_b for its conjugate base.
+
+Calculations involving weak acids/bases typically use an ICE table (Initial, Change, Equilibrium) and the K_a or K_b expression to find equilibrium concentrations and then pH/pOH. Approximations can often be made if K_a/K_b is small relative to initial concentration.
+
+(Suggested insertion: Tables listing common strong acids and strong bases. Definitions and expressions for K_a and K_b. An example ICE table calculation for finding pH of a weak acid solution given initial concentration and K_a.)`,
+          "mcq": [
+            {
+              "question": "Which of the following is a characteristic of a weak acid?",
+              "options": [
+                "It ionizes completely in water.",
+                "It has a very large K_a value.",
+                "It establishes an equilibrium with its conjugate base in solution.",
+                "Its conjugate base is a very weak base."
+              ],
+              "correctAnswer": "It establishes an equilibrium with its conjugate base in solution.",
+              "explanation": "A weak acid only partially ionizes in water, meaning the ionization reaction is reversible and establishes an equilibrium. This is represented by a reversible arrow (⇌) and is described by an equilibrium constant, K_a."
+            }
+          ]
+        },
+        {
+          "title": "10.4 Buffer Systems, Titration Curves, and Indicators",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=A6SAF4T1hAs",
+          "content": `Buffer Solution (Buffer System):
+A solution that resists changes in pH when small amounts of an acid or a base are added to it, or when it is diluted.
+
+Composition of a Buffer: Typically consists of a mixture of:
+
+A weak acid and its conjugate base (e.g., CH₃COOH / CH₃COO⁻Na⁺ solution).
+
+Or, a weak base and its conjugate acid (e.g., NH₃ / NH₄Cl solution).
+
+How Buffers Work:
+
+If an acid (H⁺) is added to an acidic buffer (HA/A⁻): The conjugate base A⁻ reacts with the added H⁺: A⁻ + H⁺ → HA. This consumes most of the added H⁺, preventing a large drop in pH.
+
+If a base (OH⁻) is added to an acidic buffer (HA/A⁻): The weak acid HA reacts with the added OH⁻: HA + OH⁻ → A⁻ + H₂O. This consumes most of the added OH⁻, preventing a large rise in pH.
+
+Similar reactions occur in a basic buffer (B/BH⁺).
+
+Henderson-Hasselbalch Equation (for calculating pH of a buffer):
+For an acidic buffer (HA/A⁻):
+pH = pK_a + log₁₀ ([A⁻] / [HA]) or pH = pK_a + log₁₀ ([conjugate base] / [weak acid])
+(where [A⁻] and [HA] are equilibrium concentrations, often approximated by initial concentrations if K_a is small and amounts are significant).
+
+When [A⁻] = [HA], then log₁₀(1) = 0, so pH = pK_a. This is the point of maximum buffer capacity.
+
+A buffer is most effective when pH ≈ pK_a (within ±1 pH unit of pK_a).
+
+Buffer Capacity: The amount of acid or base that a buffer solution can neutralize before its pH changes significantly. Depends on the concentrations of the weak acid and its conjugate base. Higher concentrations = higher capacity.
+
+Importance: Buffers are crucial in biological systems (e.g., blood pH maintained by bicarbonate buffer system) and chemical processes.
+
+Acid-Base Titration:
+A laboratory technique used to determine the unknown concentration of an acid or base solution by reacting it with a solution of known concentration (a standard solution or titrant).
+
+A known volume of the solution with unknown concentration (analyte) is placed in a flask.
+
+The standard solution (titrant) is gradually added from a burette until the reaction between the acid and base is just complete (the equivalence point or stoichiometric point).
+
+An acid-base indicator is often used to signal the endpoint of the titration, which is a point very close to the equivalence point where the indicator changes color.
+
+Titration Curve:
+A graph that plots the pH of the analyte solution (y-axis) against the volume of titrant added (x-axis). The shape of the titration curve depends on whether strong/weak acids and bases are involved.
+
+Strong Acid - Strong Base Titration (e.g., HCl + NaOH):
+
+pH starts low (acidic).
+
+Slow pH rise initially, then a very steep, rapid rise around the equivalence point.
+
+Equivalence point is at pH = 7.00 (at 25°C).
+
+pH continues to rise slowly after equivalence point (solution becomes basic).
+
+Appropriate indicators: Bromothymol blue (changes around pH 7), phenolphthalein, methyl red.
+
+Weak Acid - Strong Base Titration (e.g., CH₃COOH + NaOH):
+
+pH starts higher than for a strong acid of same concentration.
+
+Buffer region: In the initial part of titration (before equivalence point), a buffer solution (CH₃COOH/CH₃COO⁻) is formed. pH changes slowly in this region.
+
+Midpoint of buffer region (half-equivalence point): pH = pK_a of the weak acid.
+
+Equivalence point is at pH > 7.00 (due to hydrolysis of the conjugate base A⁻ formed, e.g., CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻).
+
+Appropriate indicator: Phenolphthalein (changes color in pH 8-10 range).
+
+Strong Acid - Weak Base Titration (e.g., HCl + NH₃):
+
+pH starts high (basic, but not as high as strong base).
+
+Buffer region (NH₃/NH₄⁺) forms before equivalence point.
+
+Equivalence point is at pH < 7.00 (due to hydrolysis of the conjugate acid BH⁺ formed, e.g., NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺).
+
+Appropriate indicator: Methyl red or methyl orange (change color in acidic pH range).
+
+Weak Acid - Weak Base Titration: pH change at equivalence point is less distinct, making it harder to choose a suitable indicator. Not commonly performed for precise quantitative analysis.
+
+Acid-Base Indicators:
+Weak organic acids or bases whose undissociated form (HIn) has a different color from its conjugate base form (In⁻) (or vice versa for basic indicators).
+HIn(aq) ⇌ H⁺(aq) + In⁻(aq)
+(Color 1) (Color 2)
+
+The color change occurs over a specific pH range (related to the pK_a of the indicator). An indicator should be chosen such that its color change range brackets the pH at the equivalence point of the titration.
+
+(Suggested insertion: A diagram showing how a buffer solution works (HA/A⁻ reacting with added H⁺ or OH⁻). Example of Henderson-Hasselbalch equation use. Sketches of titration curves for: Strong Acid-Strong Base, Weak Acid-Strong Base, Strong Acid-Weak Base, highlighting buffer regions, equivalence points, and pK_a at half-equivalence for weak acid titration. A small table of common indicators and their pH ranges of color change.)`,
+          "mcq": [
+            {
+              "question": "A buffer solution is most effective at resisting pH changes when:",
+              "options": [
+                "The pH is equal to 7",
+                "The pOH is equal to the pK_b",
+                "The pH is equal to the pK_a of the weak acid component",
+                "The solution is highly diluted"
+              ],
+              "correctAnswer": "The pH is equal to the pK_a of the weak acid component",
+              "explanation": "According to the Henderson-Hasselbalch equation (pH = pK_a + log([base]/[acid])), a buffer has maximum capacity when the concentrations of the weak acid and its conjugate base are equal. At this point, log(1) = 0, and the pH of the solution is equal to the pK_a of the weak acid."
+            },
+            {
+              "question": "What is the conjugate base of the ammonium ion, NH₄⁺?",
+              "options": [
+                "NH₃",
+                "NH₂⁻",
+                "H₂O",
+                "H₃O⁺"
+              ],
+              "correctAnswer": "NH₃",
+              "explanation": "A conjugate base is formed when a Brønsted-Lowry acid donates a proton (H⁺). When NH₄⁺ (the acid) donates a proton, it forms ammonia (NH₃)."
+            },
+            {
+              "question": "Which of the following is a strong acid?",
+              "options": [
+                "CH₃COOH (Acetic Acid)",
+                "HF (Hydrofluoric Acid)",
+                "H₂CO₃ (Carbonic Acid)",
+                "HNO₃ (Nitric Acid)"
+              ],
+              "correctAnswer": "HNO₃ (Nitric Acid)",
+              "explanation": "Nitric acid (HNO₃) is one of the common strong acids that ionize completely in water. Acetic acid, hydrofluoric acid, and carbonic acid are all examples of weak acids."
+            },
+            {
+              "question": "At the equivalence point of a titration between a weak acid (e.g., CH₃COOH) and a strong base (e.g., NaOH), the pH of the resulting solution will be:",
+              "options": [
+                "Less than 7",
+                "Equal to 7",
+                "Greater than 7",
+                "Equal to the pK_a of the acid"
+              ],
+              "correctAnswer": "Greater than 7",
+              "explanation": "At the equivalence point, all the weak acid has been converted to its conjugate base (e.g., CH₃COO⁻). This conjugate base is a weak base itself and will react with water (hydrolyze) to produce OH⁻ ions (CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻), making the solution basic, with a pH greater than 7."
+            },
+            {
+              "question": "Which species can act as both a Brønsted-Lowry acid and a Brønsted-Lowry base (i.e., is amphoteric)?",
+              "options": [
+                "Cl⁻",
+                "H₃O⁺",
+                "HCO₃⁻",
+                "CO₃²⁻"
+              ],
+              "correctAnswer": "HCO₃⁻",
+              "explanation": "The bicarbonate ion (HCO₃⁻) is amphoteric. It can act as an acid by donating a proton to become CO₃²⁻. It can also act as a base by accepting a proton to become H₂CO₃."
+            }
+          ]
+        }
+      ]
+    },
+     {
+      "name": "Chapter 11: Chemical Thermodynamics",
+      "image": "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=NyOYW07-L5g",
+        "https://www.youtube.com/watch?v=LsqKL3pBVMA",
+        "https://www.youtube.com/watch?v=8N1BxHgsoOw"
+      ],
+      "sections": [
+        {
+          "title": "11.1 The First Law: Internal Energy, Heat, and Work",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=UXrWyddRTrg",
+          "content": `Chemical thermodynamics is the study of energy transformations that accompany chemical and physical changes. It helps us understand why some reactions occur spontaneously while others do not, how much energy is released or absorbed during a reaction, and the extent to which a reaction will proceed. Key concepts include internal energy, heat, work, enthalpy, entropy, and Gibbs free energy, which are governed by the fundamental laws of thermodynamics.
+
+(This builds on Chapter 12 of the Physics outline if one existed, focusing more on chemical systems.)
+
+Thermodynamic System: The specific part of the universe being studied (e.g., a chemical reaction in a beaker).
+
+Surroundings: Everything outside the system.
+
+Universe = System + Surroundings.
+
+Types of Systems: Open (exchanges matter & energy), Closed (exchanges energy only), Isolated (exchanges neither).
+
+Internal Energy (U or E):
+The total energy contained within a system. It is the sum of all kinetic energies (translational, rotational, vibrational motion of particles) and potential energies (intermolecular forces, chemical bonds) of the particles within the system.
+
+Internal energy is a state function: its value depends only on the current state of the system (e.g., temperature, pressure, composition), not on how that state was reached.
+
+We are usually interested in the change in internal energy (ΔU):
+ΔU = U_final - U_initial.
+
+Heat (q):
+The transfer of thermal energy between a system and its surroundings due to a temperature difference.
+
+Sign Convention (from system's perspective):
+
+q > 0: Heat is absorbed by the system from the surroundings (endothermic process).
+
+q < 0: Heat is released by the system to the surroundings (exothermic process).
+
+Unit: Joule (J) or kilojoule (kJ). (Calorie/kilocalorie also used).
+
+Work (w):
+Energy transferred when a force causes displacement. In chemical systems, the most common type of work is pressure-volume work (PV work) associated with the expansion or compression of gases.
+
+Sign Convention (work done by the system):
+
+w > 0: Work is done by the system on the surroundings (e.g., gas expansion, system loses energy). (This is common physics convention for W in ΔU=Q-W. Chemistry sometimes uses w < 0 for work done by system.)
+
+w < 0: Work is done on the system by the surroundings (e.g., gas compression, system gains energy).
+
+PV Work: For a system expanding against a constant external pressure P_ext:
+w = -P_ext ΔV (where ΔV = V_final - V_initial).
+
+If system expands (ΔV > 0), w < 0 (work done on system is negative, or work done by system is positive P_ext ΔV). It's important to be consistent with sign convention chosen. (Let's use the standard Chemistry convention for the 1st Law: w = work done on the system).
+Revised sign convention for w in Chemistry:
+
+w > 0: Work done ON the system (e.g., compression, system gains energy).
+
+w < 0: Work done BY the system (e.g., expansion, system loses energy).
+
+So, w = -P_ext ΔV is still often the work done by the gas against external pressure. If work done on gas: w_on_gas = P_ext ΔV_compression = - P_ext ΔV_expansion_of_gas. For clarity, we can specify w_by_system.
+
+The First Law of Thermodynamics (Law of Conservation of Energy):
+Energy cannot be created or destroyed, only transferred or transformed. The total energy of the universe is constant.
+For a closed system, the change in its internal energy (ΔU) is equal to the heat (q) added to the system plus the work (w) done on the system.
+ΔU = q + w
+(Using the chemistry convention where w is work done ON the system).
+
+If w is defined as work done BY the system, then ΔU = q - w_by_system.
+
+This law links changes in internal energy to heat and work transfers.
+
+(Suggested insertion: Diagrams illustrating system, surroundings, boundary. Examples of calculating PV work during expansion/compression. Clear statement of the First Law with sign conventions explicitly defined and used consistently in examples.)`,
+          "mcq": [
+            {
+              "question": "The First Law of Thermodynamics is a statement of:",
+              "options": [
+                "The conservation of mass",
+                "The conservation of energy",
+                "The spontaneous increase of entropy",
+                "The law of definite proportions"
+              ],
+              "correctAnswer": "The conservation of energy",
+              "explanation": "The First Law of Thermodynamics states that energy cannot be created or destroyed, only transferred or transformed. It is essentially the law of conservation of energy applied to thermodynamic systems, expressed as ΔU = q + w."
+            }
+          ]
+        },
+        {
+          "title": "11.2 Enthalpy Changes: Calorimetry and Hess’s Law",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=DLhJZHStvGc",
+          "content": `Many chemical reactions occur at constant pressure (e.g., in an open beaker).
+Enthalpy (H):
+A thermodynamic state function defined as H = U + PV (where U is internal energy, P is pressure, V is volume).
+
+The change in enthalpy (ΔH) of a system at constant pressure is equal to the heat (q_p) absorbed or released by the system at constant pressure.
+ΔH = q_p (at constant pressure)
+
+ΔH = H_final - H_initial = H_products - H_reactants.
+
+Significance: ΔH provides a measure of the heat flow in reactions occurring at constant pressure.
+
+Exothermic Reaction: Releases heat to surroundings. q_p < 0, so ΔH < 0. (Products have lower enthalpy than reactants).
+
+Endothermic Reaction: Absorbs heat from surroundings. q_p > 0, so ΔH > 0. (Products have higher enthalpy than reactants).
+
+Standard Enthalpy Change (ΔH°): Enthalpy change when reaction occurs under standard conditions (usually 298 K or 25°C, and 1 atm pressure for gases, 1 M concentration for solutions).
+
+Types of Enthalpy Changes:
+
+Enthalpy of Formation (ΔH°_f): Heat change when 1 mole of a compound is formed from its elements in their standard states. (ΔH°_f for an element in its standard state is 0).
+
+Enthalpy of Combustion (ΔH°_c): Heat released when 1 mole of a substance is completely burned in excess oxygen.
+
+Enthalpy of Neutralization, Enthalpy of Solution, Enthalpy of Fusion, Enthalpy of Vaporization, etc.
+
+Calorimetry:
+The experimental measurement of heat flow (q) associated with chemical or physical changes.
+
+Done using a calorimeter (an insulated container).
+
+Principle: Heat released by reaction = Heat absorbed by calorimeter + Heat absorbed by contents (e.g., water).
+q_reaction = -(q_calorimeter + q_contents)
+
+For q_contents (e.g., water): q = mcΔT (m=mass, c=specific heat capacity, ΔT = change in temp).
+
+q_calorimeter = C_calΔT (C_cal = heat capacity of calorimeter).
+
+Types of Calorimeters:
+
+Coffee-cup calorimeter (constant pressure, measures q_p = ΔH).
+
+Bomb calorimeter (constant volume, measures q_v = ΔU).
+
+Hess's Law (Law of Constant Heat Summation):
+If a chemical reaction can be expressed as the sum of a series of steps (other reactions), then the enthalpy change for the overall reaction is equal to the algebraic sum of the enthalpy changes for the individual steps.
+
+This is because enthalpy is a state function (depends only on initial and final states, not path).
+
+Allows calculation of ΔH for reactions that are difficult to measure directly.
+
+Rules for Manipulating Thermochemical Equations:
+
+If an equation is reversed, the sign of ΔH is reversed.
+
+If coefficients in an equation are multiplied by a factor, ΔH is multiplied by the same factor.
+
+Using Standard Enthalpies of Formation (ΔH°_f) to Calculate ΔH°_reaction:
+ΔH°_reaction = ΣnΔH°_f(products) - ΣmΔH°_f(reactants)
+(where n and m are stoichiometric coefficients).
+
+(Suggested insertion: Energy profile diagrams for exothermic and endothermic reactions showing ΔH. Diagrams of a coffee-cup calorimeter and a bomb calorimeter. Detailed worked examples using Hess's Law to calculate ΔH for a target reaction from given step reactions. Examples of calculating ΔH°_reaction using standard enthalpies of formation from a data table.)`,
+          "mcq": [
+            {
+              "question": "A reaction that releases heat into the surroundings is described as:",
+              "options": [
+                "Endothermic, with ΔH > 0",
+                "Exothermic, with ΔH > 0",
+                "Endothermic, with ΔH < 0",
+                "Exothermic, with ΔH < 0"
+              ],
+              "correctAnswer": "Exothermic, with ΔH < 0",
+              "explanation": "An exothermic reaction releases heat, so the heat flow (q) is negative from the system's perspective. At constant pressure, this corresponds to a negative change in enthalpy (ΔH < 0)."
+            }
+          ]
+        },
+        {
+          "title": "11.3 The Second Law: Entropy and Spontaneity (ΔG = ΔH − TΔS)",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "",
+          "content": `The First Law deals with energy conservation but doesn't predict whether a process will occur spontaneously. Spontaneity is related to the Second Law of Thermodynamics.
+
+Spontaneous Process: A process that occurs naturally under a given set of conditions without continuous external intervention (though it may need an initial activation energy). Spontaneous processes are generally irreversible.
+
+Factors influencing spontaneity:
+
+Tendency towards lower energy (exothermic processes, ΔH < 0, are often spontaneous).
+
+Tendency towards increased disorder or randomness.
+
+Entropy (S):
+A thermodynamic state function that is a measure of the disorder, randomness, or dispersal of energy in a system.
+
+Higher entropy = more disorder/randomness/dispersal.
+
+Generally, S(gas) > S(liquid) > S(solid).
+
+Entropy increases when:
+
+A solid melts to a liquid.
+
+A liquid vaporizes to a gas.
+
+A solute dissolves in a solvent.
+
+The number of gas molecules increases in a reaction.
+
+The temperature of a substance increases.
+
+Change in Entropy (ΔS): ΔS = S_final - S_initial.
+
+Second Law of Thermodynamics:
+"The total entropy of an isolated system (or the universe) always increases for a spontaneous process and remains constant for a reversible process at equilibrium."
+ΔS_universe = ΔS_system + ΔS_surroundings ≥ 0
+
+For a spontaneous process: ΔS_universe > 0.
+
+Calculating ΔS_surroundings: ΔS_surr = -ΔH_sys / T (for a process at constant T and P).
+
+Gibbs Free Energy (G) (or Free Enthalpy):
+A thermodynamic state function that combines enthalpy (H) and entropy (S) to predict the spontaneity of a process occurring at constant temperature (T) and constant pressure (P). Defined by Willard Gibbs.
+G = H - TS
+The change in Gibbs free energy (ΔG) for a process at constant T is:
+ΔG = ΔH - TΔS (where T is in Kelvin).
+
+ΔG and Spontaneity (at constant T and P):
+
+If ΔG < 0: The process is spontaneous in the forward direction (exergonic).
+
+If ΔG > 0: The process is non-spontaneous in the forward direction (endergonic). The reverse process is spontaneous.
+
+If ΔG = 0: The system is at equilibrium.
+
+Factors determining ΔG:
+| ΔH | ΔS | -TΔS | ΔG = ΔH - TΔS | Spontaneity |
+|----|----|------|---------------|---------------------------------------------|
+| - | + | - | Always - | Spontaneous at all temperatures. |
+| + | - | + | Always + | Non-spontaneous at all temperatures. |
+| - | - | + | - at low T, + at high T | Spontaneous at low T; non-spontaneous at high T. |
+| + | + | - | + at low T, - at high T | Non-spontaneous at low T; spontaneous at high T. |
+(Spontaneity depends on the relative magnitudes of ΔH and TΔS).
+
+Standard Gibbs Free Energy Change (ΔG°): Calculated using standard enthalpy changes (ΔH°) and standard entropy changes (ΔS°), or standard free energies of formation (ΔG°_f).
+ΔG°_reaction = ΣnΔG°_f(products) - ΣmΔG°_f(reactants)
+
+ΔG° is related to the equilibrium constant K: ΔG° = -RT lnK.
+
+(Suggested insertion: Examples illustrating entropy changes for physical processes (melting, boiling) and chemical reactions (e.g., based on change in moles of gas). A table summarizing the relationship between signs of ΔH, ΔS, and ΔG and spontaneity at different temperatures. Worked examples calculating ΔG from ΔH and ΔS, and using ΔG to predict spontaneity. Discussion of "entropy-driven" vs. "enthalpy-driven" reactions.)`,
+          "mcq": [
+            {
+              "question": "A chemical reaction will always be spontaneous if:",
+              "options": [
+                "ΔH is positive and ΔS is positive",
+                "ΔH is negative and ΔS is negative",
+                "ΔH is negative and ΔS is positive",
+                "ΔH is positive and ΔS is negative"
+              ],
+              "correctAnswer": "ΔH is negative and ΔS is positive",
+              "explanation": "Spontaneity is predicted by the Gibbs free energy change, ΔG = ΔH - TΔS. A process is spontaneous if ΔG is negative. If ΔH is negative (favorable) and ΔS is positive (favorable), then -TΔS will also be negative. The sum of two negative terms will always be negative, making ΔG negative at all temperatures."
+            }
+          ]
+        },
+        {
+          "title": "11.4 Thermochemical Equations and Applications",
+          "image": "https://images.pexels.com/photos/6256066/pexels-photo-6256066.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Io_F4evJ43k",
+          "content": `A thermochemical equation is a balanced chemical equation that includes the physical state of all reactants and products and the associated enthalpy change (ΔH) for the reaction under specified conditions (usually standard conditions).
+
+The ΔH value written is for the molar amounts as given by the stoichiometric coefficients in the equation.
+
+Example: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l) ΔH° = -890.4 kJ/mol
+(This means that when 1 mole of CH₄ gas reacts with 2 moles of O₂ gas to produce 1 mole of CO₂ gas and 2 moles of liquid H₂O at standard conditions, 890.4 kJ of heat is released).
+
+Rules for Manipulating Thermochemical Equations (consistent with Hess's Law):
+
+If the equation is reversed, the sign of ΔH is changed.
+
+If the coefficients in the equation are multiplied or divided by a factor, the ΔH value is also multiplied or divided by the same factor.
+
+Physical states of reactants and products must be specified, as ΔH depends on phase (e.g., ΔH for H₂O(l) → H₂O(g) is ΔH_vap).
+
+Applications:
+
+Calculating energy changes in reactions (heat absorbed or released).
+
+Determining fuel values (energy released per gram or per mole on combustion).
+
+Designing industrial processes (managing heat, optimizing energy efficiency).
+
+Understanding energy content of foods.
+
+Predicting feasibility of reactions (using ΔG from ΔH and ΔS).
+
+Bond Enthalpies (Bond Energies):
+The average enthalpy change required to break one mole of a specific type of covalent bond in the gaseous state, or energy released when one mole of such bonds is formed.
+
+Breaking bonds is an endothermic process (ΔH > 0).
+
+Forming bonds is an exothermic process (ΔH < 0).
+
+Estimating ΔH_reaction using average bond enthalpies:
+ΔH_reaction ≈ Σ(Bond enthalpies of bonds broken in reactants) - Σ(Bond enthalpies of bonds formed in products)
+This is an estimation because average bond enthalpies are used, which can vary slightly depending on the specific molecule. Works best for gas-phase reactions.
+
+(Suggested insertion: Several examples of writing and interpreting thermochemical equations. Worked examples using bond enthalpies from a table to estimate ΔH for a reaction. Discussion of food calories and fuel values as applications.)`,
+          "mcq": [
+            {
+              "question": "Given the thermochemical equation: 2H₂(g) + O₂(g) → 2H₂O(l)  ΔH = -572 kJ. What is the enthalpy change for the formation of one mole of liquid water?",
+              "options": [
+                "-572 kJ",
+                "-286 kJ",
+                "+572 kJ",
+                "+286 kJ"
+              ],
+              "correctAnswer": "-286 kJ",
+              "explanation": "The given equation shows the formation of 2 moles of H₂O(l) releases 572 kJ of heat. To find the enthalpy change for the formation of one mole, you divide the total enthalpy change by 2: (-572 kJ) / 2 = -286 kJ."
+            },
+            {
+              "question": "Which of the following processes would be expected to have a positive change in entropy (ΔS > 0)?",
+              "options": [
+                "Condensing a gas into a liquid",
+                "Freezing a liquid into a solid",
+                "Sublimating a solid into a gas",
+                "Combining two gases to form a single solid product"
+              ],
+              "correctAnswer": "Sublimating a solid into a gas",
+              "explanation": "Entropy (S) is a measure of disorder. The gas phase is much more disordered than the solid phase. Therefore, the transition from a solid directly to a gas (sublimation) results in a large increase in disorder, and ΔS will be positive."
+            },
+            {
+              "question": "Hess's Law is useful for calculating ΔH for a reaction because enthalpy is a:",
+              "options": [
+                "State function",
+                "Path function",
+                "Kinetic property",
+                "Colligative property"
+              ],
+              "correctAnswer": "State function",
+              "explanation": "Hess's Law works because enthalpy (H) is a state function. This means the change in enthalpy (ΔH) depends only on the initial and final states (reactants and products), not on the specific pathway or intermediate steps taken to get there."
+            },
+            {
+              "question": "Using bond enthalpies, the enthalpy of a reaction is estimated as:",
+              "options": [
+                "Energy of bonds formed + Energy of bonds broken",
+                "Energy of bonds formed - Energy of bonds broken",
+                "Energy of bonds broken - Energy of bonds formed",
+                "Energy of products - Energy of reactants"
+              ],
+              "correctAnswer": "Energy of bonds broken - Energy of bonds formed",
+              "explanation": "To estimate ΔH, you calculate the total energy required to break all the bonds in the reactants (an endothermic process, +) and subtract the total energy released when forming all the bonds in the products (an exothermic process, -). This gives the net enthalpy change."
+            },
+            {
+              "question": "A process for which ΔG is positive at constant T and P is described as:",
+              "options": [
+                "Spontaneous",
+                "Non-spontaneous",
+                "At equilibrium",
+                "Exothermic"
+              ],
+              "correctAnswer": "Non-spontaneous",
+              "explanation": "The change in Gibbs free energy (ΔG) is the ultimate predictor of spontaneity at constant temperature and pressure. If ΔG > 0, the process is non-spontaneous in the forward direction and requires energy input to occur. The reverse process would be spontaneous."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 12: Chemical Kinetics",
+      "image": "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=7I0Xg92_eA4",
+        "https://www.youtube.com/watch?v=wYqQCojggyM",
+        "https://www.youtube.com/watch?v=oh4L2gcI5ds"
+      ],
+      "sections": [
+        {
+          "title": "12.1 Reaction Rates and Rate Laws (Zero, First, Second Order)",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=nfx4lU8RZzw",
+          "content": `Thermodynamics tells us whether a reaction is spontaneous (energetically favorable) and the extent to which it will proceed, but it provides no information about how fast the reaction occurs. Chemical kinetics is the branch of chemistry concerned with the rates of chemical reactions, the factors that influence these rates (e.g., concentration, temperature, catalysts), and the reaction mechanisms (the step-by-step molecular pathway by which reactants are converted to products). Understanding kinetics is vital for controlling reactions in industry, biology, and environmental processes.
+
+Reaction Rate:
+The speed at which a chemical reaction proceeds. It is usually defined as the change in concentration of a reactant or a product per unit time.
+
+Units: Typically mol L⁻¹s⁻¹ (or M/s), or other concentration/time units.
+
+Average Rate: Calculated over a time interval Δt.
+
+Average rate = -Δ[Reactant] / Δt (negative sign because reactant concentration decreases)
+
+Average rate = +Δ[Product] / Δt
+
+Instantaneous Rate: The rate at a specific point in time; the slope of the tangent to the concentration vs. time curve at that point. Rate = -d[Reactant]/dt or +d[Product]/dt.
+
+For a general reaction aA + bB → cC + dD, the rate of reaction can be uniquely defined by relating the rates of change of concentrations to stoichiometry:
+Rate = -(1/a) d[A]/dt = -(1/b) d[B]/dt = +(1/c) d[C]/dt = +(1/d) d[D]/dt.
+
+Factors Affecting Reaction Rates:
+
+Nature of Reactants: Some substances are inherently more reactive than others (e.g., due to bond strengths, molecular structure).
+
+Concentration of Reactants: Higher concentration generally leads to a faster reaction rate because there are more reactant particles per unit volume, resulting in more frequent collisions.
+
+Temperature: Higher temperature almost always leads to a significantly faster reaction rate. Increased temperature means particles have higher average kinetic energy, leading to more frequent and more energetic (effective) collisions.
+
+Surface Area of Reactants (for heterogeneous reactions): Increasing surface area of solid reactants increases the rate (e.g., powdered solid reacts faster than a large lump) because more reactant particles are exposed for collision.
+
+Presence of a Catalyst: A catalyst speeds up a reaction without being consumed itself by providing an alternative reaction pathway with a lower activation energy.
+
+Pressure (for gaseous reactions): Increasing pressure of gaseous reactants (by decreasing volume) increases their concentration and thus the reaction rate.
+
+Rate Law (or Rate Equation):
+An experimentally determined mathematical expression that relates the rate of a reaction to the concentrations of reactants (and sometimes products or catalysts).
+For a general reaction aA + bB → Products:
+Rate = k [A]^x [B]^y
+Where:
+
+[A], [B] are molar concentrations of reactants A and B.
+
+k is the rate constant (or specific rate constant): A proportionality constant specific to the reaction at a given temperature. Its units depend on the overall order.
+
+x and y are the orders of reaction with respect to reactants A and B, respectively.
+
+Orders are usually small whole numbers (0, 1, 2) but can be fractional or negative.
+
+Orders are determined experimentally and are not necessarily equal to the stoichiometric coefficients (a, b) in the balanced equation.
+
+Overall Order of Reaction: The sum of the individual orders: Overall order = x + y.
+
+Reaction Orders:
+
+Zero Order (e.g., x = 0): Rate is independent of the concentration of that reactant. Rate = k. Units of k: M/s.
+
+Integrated rate law: [A]_t = -kt + [A]₀. Graph of [A] vs. t is linear (slope = -k).
+
+Half-life: t_½ = [A]₀ / (2k).
+
+First Order (e.g., x = 1): Rate is directly proportional to the concentration of that reactant. Rate = k[A]. Units of k: s⁻¹.
+
+Integrated rate law: ln[A]_t = -kt + ln[A]₀ or [A]_t = [A]₀ e^(-kt). Graph of ln[A] vs. t is linear (slope = -k).
+
+Half-life (t_½): Time for concentration to drop to half its initial value. Constant for a first-order reaction: t_½ = ln(2) / k ≈ 0.693 / k.
+
+Many radioactive decays are first-order.
+
+Second Order (e.g., x = 2, or x=1 and y=1): Rate is proportional to the square of the concentration of one reactant, or to the product of concentrations of two reactants. Rate = k[A]² or Rate = k[A][B]. Units of k: M⁻¹s⁻¹.
+
+Integrated rate law (for Rate = k[A]²): 1/[A]_t = kt + 1/[A]₀. Graph of 1/[A] vs. t is linear (slope = k).
+
+Half-life: t_½ = 1 / (k[A]₀) (depends on initial concentration).
+
+Determining rate laws and orders requires experimental data (e.g., method of initial rates, graphical methods using integrated rate laws).
+
+(Suggested insertion: Graphs of concentration vs. time for reactants, showing calculation of average and instantaneous rates. Table summarizing key features (rate law form, units of k, integrated rate law, half-life equation, linear graph plot) for zero, first, and second-order reactions. An example of determining reaction orders and rate constant using the method of initial rates.)`,
+          "mcq": [
+            {
+              "question": "For a first-order reaction, what is the relationship between the half-life (t_½) and the initial concentration of the reactant?",
+              "options": [
+                "The half-life is directly proportional to the initial concentration.",
+                "The half-life is inversely proportional to the initial concentration.",
+                "The half-life is independent of the initial concentration.",
+                "The half-life is equal to the initial concentration."
+              ],
+              "correctAnswer": "The half-life is independent of the initial concentration.",
+              "explanation": "A key characteristic of a first-order reaction is that its half-life is constant and does not depend on the initial concentration. The half-life is determined only by the rate constant, k (t_½ = 0.693 / k)."
+            }
+          ]
+        },
+        {
+          "title": "12.2 Rate Constants and Activation Energy (Arrhenius Equation)",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=9j22V8j_x0M",
+          "content": `Rate Constant (k):
+
+Specific to a particular reaction at a given temperature.
+
+Independent of reactant concentrations (for a given reaction).
+
+Units depend on overall reaction order.
+
+Generally increases significantly with increasing temperature.
+
+Activation Energy (E_a):
+The minimum amount of energy that reactant molecules must possess (e.g., upon collision) for a chemical reaction to occur. It is an energy barrier that must be overcome.
+
+Higher E_a → Slower reaction rate (fewer molecules have enough energy to react).
+
+A catalyst speeds up a reaction by lowering the activation energy.
+
+Arrhenius Equation:
+Relates the rate constant k of a reaction to the absolute temperature T and the activation energy E_a.
+k = A e^(-E_a / RT)
+Where:
+
+A is the pre-exponential factor (or frequency factor): Related to the frequency of collisions and the orientation of molecules for effective collision. Has same units as k.
+
+e is the base of natural logarithm (≈ 2.718).
+
+E_a is activation energy (usually in J/mol or kJ/mol).
+
+R is ideal gas constant (8.314 J/(mol⋅K)).
+
+T is absolute temperature (in Kelvin).
+
+The term e^(-E_a/RT) represents the fraction of molecules that have enough energy to overcome the activation energy barrier at temperature T.
+
+Logarithmic form of Arrhenius Equation:
+ln(k) = ln(A) - (E_a / RT)
+This has the form of a linear equation (y = c + mx) if ln(k) is plotted against 1/T.
+
+Plot ln(k) (y-axis) vs. 1/T (x-axis).
+
+Slope m = -E_a / R. (So E_a = -mR).
+
+y-intercept = ln(A).
+This allows experimental determination of E_a and A by measuring k at different temperatures.
+
+Two-Point Form (for finding E_a from k at two temperatures):
+ln(k₂/k₁) = (E_a/R) (1/T₁ - 1/T₂)
+
+(Suggested insertion: An energy profile diagram for a reaction, clearly labeling reactants, products, activation energy (E_a), transition state (activated complex), and ΔH (enthalpy change). Graph of ln(k) vs. 1/T (Arrhenius plot) showing how to get E_a from slope. Example of calculating E_a using the two-point form.)`,
+          "mcq": [
+            {
+              "question": "According to the Arrhenius equation, how does the rate constant (k) of a reaction change as the temperature increases?",
+              "options": [
+                "k increases linearly with temperature",
+                "k increases exponentially with temperature",
+                "k decreases with temperature",
+                "k is independent of temperature"
+              ],
+              "correctAnswer": "k increases exponentially with temperature",
+              "explanation": "The Arrhenius equation, k = A * e^(-Ea/RT), shows an exponential relationship. As temperature (T) increases, the negative exponent (-Ea/RT) becomes smaller (less negative), causing the value of e^(-Ea/RT) and thus the rate constant (k) to increase significantly."
+            }
+          ]
+        },
+        {
+          "title": "12.3 Collision Theory and Transition‐State Theory",
+          "image": "https://images.pexels.com/photos/11308989/pexels-photo-11308989.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=zd1XKcnKDXs",
+          "content": `These theories provide a more detailed molecular-level view of how chemical reactions occur.
+Collision Theory:
+For a reaction to occur, reactant particles (atoms, molecules, or ions) must collide with each other. However, not all collisions result in a reaction.
+
+Conditions for an Effective (Reaction-Producing) Collision:
+
+Sufficient Kinetic Energy: Colliding particles must possess a minimum amount of kinetic energy, equal to or greater than the activation energy (E_a), to overcome repulsive forces and break existing bonds.
+
+Correct Orientation (Steric Factor): Colliding particles must be oriented in space in a way that allows for the necessary bond breaking and bond formation.
+
+Rate ∝ Collision Frequency × Fraction of Effective Collisions
+
+The pre-exponential factor A in Arrhenius equation is related to collision frequency and the orientation factor. The exponential term e^(-E_a/RT) relates to the fraction of collisions with sufficient energy.
+
+Increasing temperature increases both collision frequency and the fraction of molecules with sufficient energy.
+
+Increasing concentration increases collision frequency.
+
+Transition-State Theory (Activated Complex Theory):
+A more refined model that focuses on the state of the reactant molecules as they transform into products.
+
+Transition State (Activated Complex): An unstable, high-energy, transient arrangement of atoms that exists at the peak of the energy barrier (top of the activation energy hill) as old bonds are breaking and new bonds are forming. It is neither reactant nor product.
+
+The activation energy (E_a) is the energy difference between the reactants and the transition state.
+
+The reaction proceeds from reactants → transition state → products.
+
+This theory helps explain the role of molecular structure and orientation in determining reaction rates.
+
+(Suggested insertion: Diagrams illustrating effective vs. ineffective collisions (considering orientation and energy). Reinforce the energy profile diagram showing the transition state/activated complex at the E_a peak.)`,
+          "mcq": [
+            {
+              "question": "According to collision theory, what are the two main conditions required for a reaction to occur between colliding particles?",
+              "options": [
+                "High concentration and high pressure",
+                "Correct mass and correct velocity",
+                "Presence of a catalyst and high temperature",
+                "Sufficient kinetic energy and correct orientation"
+              ],
+              "correctAnswer": "Sufficient kinetic energy and correct orientation",
+              "explanation": "For a collision to be effective (lead to a reaction), the colliding particles must have a minimum kinetic energy equal to or greater than the activation energy (Ea), and they must collide with the proper spatial orientation to allow for bond breaking and formation."
+            }
+          ]
+        },
+        {
+          "title": "12.4 Catalysis: Homogeneous and Heterogeneous Catalysts",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=ynNxiZSusU",
+          "content": `A catalyst is a substance that increases the rate of a chemical reaction without being consumed in the overall process.
+
+How Catalysts Work:
+
+Catalysts provide an alternative reaction mechanism (a different pathway) with a lower activation energy (E_a).
+
+This allows a greater fraction of reactant molecules to have sufficient energy to react at a given temperature, thus increasing the reaction rate.
+
+A catalyst does not change the enthalpy change (ΔH) or Gibbs free energy change (ΔG) of the overall reaction. It does not affect the equilibrium position, only how quickly equilibrium is reached.
+
+Characteristics of Catalysts:
+
+Increase reaction rate.
+
+Are not consumed in the net reaction (may participate in intermediate steps but are regenerated).
+
+Are often specific for a particular reaction or type of reaction.
+
+A small amount of catalyst can often catalyze a large amount of reactant.
+
+Types of Catalysis:
+
+Homogeneous Catalysis:
+
+The catalyst and the reactants are in the same phase (e.g., all liquids, or all gases).
+
+Reaction often occurs throughout the bulk of the solution.
+
+Examples:
+
+Acid catalysis (e.g., H⁺ ions catalyzing ester hydrolysis).
+
+Base catalysis.
+
+Enzymes (biological catalysts) in aqueous solution.
+
+Depletion of ozone by chlorine radicals (gas phase).
+
+Heterogeneous Catalysis:
+
+The catalyst and the reactants are in different phases (e.g., solid catalyst with liquid or gaseous reactants).
+
+Reaction usually occurs at the surface of the solid catalyst.
+
+Mechanism often involves:
+
+Adsorption of reactants onto the catalyst surface.
+
+Reaction of adsorbed species on the surface.
+
+Desorption of products from the surface.
+
+Increasing surface area of solid catalyst increases its effectiveness.
+
+Examples:
+
+Haber process for ammonia synthesis: Iron (Fe) catalyst (solid) for N₂(g) + H₂(g) reaction.
+
+Catalytic converters in cars: Solid catalysts (e.g., Pt, Pd, Rh) convert toxic exhaust gases (CO, NOx, unburnt hydrocarbons) into less harmful substances (CO₂, N₂, H₂O).
+
+Hydrogenation of alkenes using Nickel (Ni) or Platinum (Pt) catalyst.
+
+Enzymes (Biological Catalysts):
+
+Proteins (usually) that catalyze biochemical reactions in living organisms.
+
+Highly specific for their substrates (reactants).
+
+Work under mild conditions (body temperature, physiological pH).
+
+Often have an "active site" where substrate binds and reaction occurs.
+
+Crucial for virtually all metabolic processes.
+
+(Suggested insertion: Energy profile diagrams showing the effect of a catalyst: lowering E_a for both forward and reverse reactions, but not changing ΔH. Simple diagrams illustrating homogeneous (e.g., ions in solution) vs. heterogeneous catalysis (e.g., gas molecules adsorbing on a solid surface). A lock-and-key or induced-fit model for enzyme action.)`,
+          "mcq": [
+            {
+              "question": "How does a catalyst increase the rate of a chemical reaction?",
+              "options": [
+                "It increases the overall energy released (ΔH).",
+                "It increases the temperature of the reactants.",
+                "It provides an alternative reaction pathway with a lower activation energy.",
+                "It increases the concentration of the reactants."
+              ],
+              "correctAnswer": "It provides an alternative reaction pathway with a lower activation energy.",
+              "explanation": "A catalyst works by providing a different reaction mechanism that has a lower activation energy (Ea) than the uncatalyzed reaction. This allows a larger fraction of reactant molecules to have sufficient energy to react, thus speeding up the reaction."
+            },
+            {
+              "question": "For the reaction with the rate law: Rate = k[A]²[B], what is the overall order of the reaction?",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "correctAnswer": "3",
+              "explanation": "The overall order of a reaction is the sum of the individual orders of the reactants in the rate law. In this case, the order with respect to A is 2, and the order with respect to B is 1. The overall order is 2 + 1 = 3."
+            },
+            {
+              "question": "The transition state (or activated complex) in a reaction is best described as:",
+              "options": [
+                "A stable intermediate product that can be isolated.",
+                "The final product of the reaction.",
+                "An unstable, high-energy arrangement of atoms where bonds are breaking and forming.",
+                "The reactant molecules before they collide."
+              ],
+              "correctAnswer": "An unstable, high-energy arrangement of atoms where bonds are breaking and forming.",
+              "explanation": "The transition state is a transient, high-energy species that exists at the peak of the activation energy barrier. It is not a stable intermediate and represents the point of maximum energy during the conversion of reactants to products."
+            },
+            {
+              "question": "The Haber process for synthesizing ammonia (N₂(g) + 3H₂(g) ⇌ 2NH₃(g)) uses a solid iron catalyst. This is an example of:",
+              "options": [
+                "Homogeneous catalysis",
+                "Heterogeneous catalysis",
+                "Enzyme catalysis",
+                "Acid-base catalysis"
+              ],
+              "correctAnswer": "Heterogeneous catalysis",
+              "explanation": "Heterogeneous catalysis occurs when the catalyst and the reactants are in different phases. In the Haber process, the reactants are gases (N₂ and H₂) while the catalyst is a solid (Fe), so it is a heterogeneous system."
+            },
+            {
+              "question": "If the rate of a reaction is independent of the concentration of a reactant, the reaction is said to be ______ with respect to that reactant.",
+              "options": [
+                "zero order",
+                "first order",
+                "second order",
+                "catalyzed"
+              ],
+              "correctAnswer": "zero order",
+              "explanation": "In a zero-order reaction, the rate is given by Rate = k[A]⁰ = k. Since any number to the power of zero is 1, the concentration of reactant A does not affect the reaction rate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 13: Chemical Equilibrium",
+      "image": "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=1GiZzCzmO5Q",
+        "https://www.youtube.com/watch?v=J4WJCYpTYj8",
+        "https://www.youtube.com/watch?v=g5wNg_dKsYY"
+      ],
+      "sections": [
+        {
+          "title": "13.1 Dynamic Equilibrium in Closed Systems",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=W7HuGiSqqy0",
+          "content": `Many chemical reactions do not proceed to completion where all reactants are converted to products. Instead, they reach a state of chemical equilibrium, where the rates of the forward and reverse reactions are equal, and the net concentrations of reactants and products remain constant over time, provided the conditions (temperature, pressure) are unchanged. This chapter explores the dynamic nature of equilibrium, factors that can shift equilibrium (Le Châtelier's Principle), and the concept of the equilibrium constant to quantify the extent of a reaction.
+
+Reversible Reaction: A chemical reaction that can proceed in both the forward (reactants → products) and reverse (products → reactants) directions. Represented by a double arrow (⇌).
+aA + bB ⇌ cC + dD
+
+Chemical Equilibrium: A state reached in a reversible reaction when the rate of the forward reaction becomes equal to the rate of the reverse reaction.
+Rate_forward = Rate_reverse
+
+Dynamic Nature: At equilibrium, both forward and reverse reactions are still occurring, but at the same rate. There is no net change in the concentrations of reactants and products. It is a dynamic state, not a static one where reactions have stopped.
+
+Closed System: Equilibrium is typically achieved in a closed system, where no matter (reactants or products) can enter or leave, though energy can be exchanged.
+
+Characteristics of Equilibrium:
+
+Macroscopic properties (concentration, pressure, color) remain constant over time.
+
+Can be approached from either direction (starting with reactants or starting with products).
+
+Affected by temperature, pressure (for gases), and concentration.
+
+(Suggested insertion: A graph of concentration vs. time for a reversible reaction, showing concentrations of reactants decreasing and products increasing until they reach constant values at equilibrium, indicating forward and reverse rates becoming equal.)`,
+          "mcq": [
+            {
+              "question": "Chemical equilibrium is described as 'dynamic' because:",
+              "options": [
+                "The temperature is constantly changing.",
+                "Both the forward and reverse reactions are still occurring.",
+                "The concentrations of products and reactants are always equal.",
+                "The reaction has completely stopped."
+              ],
+              "correctAnswer": "Both the forward and reverse reactions are still occurring.",
+              "explanation": "At equilibrium, the reaction has not stopped. The forward reaction (reactants to products) and the reverse reaction (products to reactants) are happening at the same rate, resulting in no net change in concentrations. This is the dynamic nature of equilibrium."
+            }
+          ]
+        },
+        {
+          "title": "13.2 Le Châtelier’s Principle and Shifts in Equilibrium",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=x4Kg3Ux4gB8",
+          "content": `Le Châtelier's Principle (Henri Le Châtelier, 1888):
+"If a change in conditions (a stress) is applied to a a system at equilibrium, the system will shift in a direction that tends to relieve or counteract the stress and re-establish equilibrium."
+
+This principle helps predict how an equilibrium position will change in response to changes in concentration, pressure (for gaseous systems), or temperature.
+
+Factors Affecting Equilibrium Position (Shifts):
+
+Change in Concentration of Reactants or Products:
+
+Adding a reactant: Equilibrium shifts to the right (towards products) to consume the added reactant.
+
+Adding a product: Equilibrium shifts to the left (towards reactants) to consume the added product.
+
+Removing a reactant: Equilibrium shifts to the left to replenish the removed reactant.
+
+Removing a product: Equilibrium shifts to the right to replenish the removed product (often used in industry to increase yield).
+
+Adding a pure solid or pure liquid reactant/product does not shift the equilibrium (their concentrations are effectively constant).
+
+Change in Pressure (for Gaseous Reactions):
+
+Changes in pressure primarily affect equilibria involving gases where there is a change in the total number of moles of gas between reactants and products.
+
+Pressure changes can be caused by changing the volume of the container.
+
+Increasing pressure (or decreasing volume): Equilibrium shifts in the direction that produces fewer moles of gas (to reduce pressure).
+
+Decreasing pressure (or increasing volume): Equilibrium shifts in the direction that produces more moles of gas (to increase pressure).
+
+If total moles of gas are equal on both sides: Pressure change has no effect on equilibrium position.
+
+Adding an inert gas at constant volume: No effect on partial pressures of reactants/products, so no shift. Adding inert gas at constant total pressure will increase volume, potentially shifting equilibrium based on moles of gas.
+
+Change in Temperature:
+
+The effect of temperature depends on whether the reaction is exothermic (ΔH < 0) or endothermic (ΔH > 0). Treat heat as a reactant (endothermic) or a product (exothermic).
+
+Increasing temperature:
+
+For an endothermic reaction (ΔH > 0): Reactants + Heat ⇌ Products. Increasing T (adding heat) shifts equilibrium to the right (favors products, absorbs added heat). K increases.
+
+For an exothermic reaction (ΔH < 0): Reactants ⇌ Products + Heat. Increasing T shifts equilibrium to the left (favors reactants, consumes added heat in reverse direction). K decreases.
+
+Decreasing temperature:
+
+For an endothermic reaction: Shifts to the left. K decreases.
+
+For an exothermic reaction: Shifts to the right. K increases.
+
+Only a change in temperature changes the value of the equilibrium constant (K).
+
+Effect of a Catalyst:
+
+A catalyst does not affect the equilibrium position or the value of K.
+
+A catalyst increases the rates of both the forward and reverse reactions equally by lowering the activation energy for both.
+
+Therefore, a catalyst helps the system reach equilibrium faster but does not change the relative amounts of reactants and products at equilibrium.
+
+(Suggested insertion: For each factor (concentration, pressure, temperature), provide clear examples of reversible reactions and illustrate how the equilibrium shifts according to Le Châtelier's Principle, using balanced equations and stating changes in product/reactant amounts. A note about catalysts.)`,
+          "mcq": [
+            {
+              "question": "For the exothermic reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), how will the equilibrium shift if the temperature is increased?",
+              "options": [
+                "Shift to the right (towards products)",
+                "Shift to the left (towards reactants)",
+                "No change in equilibrium position",
+                "The reaction will stop"
+              ],
+              "correctAnswer": "Shift to the left (towards reactants)",
+              "explanation": "An exothermic reaction releases heat (Reactants ⇌ Products + Heat). According to Le Châtelier's principle, if temperature (heat) is increased, the system will shift to counteract the stress by absorbing heat. The reverse reaction is endothermic, so the equilibrium shifts to the left."
+            }
+          ]
+        },
+        {
+          "title": "13.3 Equilibrium Constants (K_c, K_p) and Their Calculations",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=MV9ke4qaegM",
+          "content": `For a general reversible reaction at equilibrium at a given temperature:
+aA + bB ⇌ cC + dD
+The equilibrium constant (K) is a value that expresses the relationship between the concentrations (or partial pressures for gases) of products and reactants at equilibrium.
+
+The value of K indicates the extent to which a reaction proceeds to completion at equilibrium.
+
+Equilibrium Constant Expression:
+
+K_c (in terms of molar concentrations):
+K_c = ([C]^c [D]^d) / ([A]^a [B]^b)
+Where:
+
+[A], [B], [C], [D] are the equilibrium molar concentrations (mol/L) of reactants and products.
+
+a, b, c, d are their stoichiometric coefficients in the balanced equation.
+
+Important: Concentrations of pure solids and pure liquids are considered constant and are not included in the K_c expression. Only gases (g) and aqueous species (aq) are included.
+
+K_p (in terms of partial pressures, for gaseous reactions):
+K_p = (P_C)^c (P_D)^d / (P_A)^a (P_B)^b
+Where P_A, P_B, P_C, P_D are equilibrium partial pressures of the gases.
+
+Interpreting the Value of K:
+
+If K >> 1 (large K, e.g., > 1000): Equilibrium lies far to the right; reaction strongly favors products (proceeds nearly to completion). [Products] >> [Reactants] at equilibrium.
+
+If K << 1 (small K, e.g., < 0.001): Equilibrium lies far to the left; reaction strongly favors reactants (proceeds very little). [Reactants] >> [Products] at equilibrium.
+
+If K ≈ 1: Appreciable concentrations of both reactants and products exist at equilibrium.
+
+Properties of K:
+
+K is constant for a particular reaction at a given temperature.
+
+If the reaction is reversed, the new equilibrium constant K' = 1/K.
+
+If the coefficients in a balanced equation are multiplied by a factor n, the new K' = Kⁿ.
+
+If reactions are added, their K values are multiplied.
+
+Relationship between K_c and K_p:
+For gaseous reactions: K_p = K_c (RT)^(Δn_gas)
+Where:
+
+R = Ideal gas constant (e.g., 0.08206 L⋅atm/(mol⋅K) if pressures in atm).
+
+T = Absolute temperature (K).
+
+Δn_gas = (Total moles of gaseous products) - (Total moles of gaseous reactants) from balanced equation.
+
+If Δn_gas = 0, then K_p = K_c.
+
+Reaction Quotient (Q):
+A measure of the relative amounts of products and reactants present in a reaction at any given time (not necessarily at equilibrium). It has the same form as the equilibrium constant expression.
+Q_c = ([C]^c [D]^d) / ([A]^a [B]^b) (using current concentrations).
+
+Comparing Q and K to predict direction of shift to reach equilibrium:
+
+If Q < K: Ratio of products to reactants is too small. Reaction will shift to the right (towards products) to reach equilibrium.
+
+If Q > K: Ratio of products to reactants is too large. Reaction will shift to the left (towards reactants) to reach equilibrium.
+
+If Q = K: The system is already at equilibrium.
+
+Calculations Involving Equilibrium Constants (ICE Tables):
+Problems often involve calculating K from equilibrium concentrations, or calculating equilibrium concentrations given K and initial concentrations.
+ICE Table Method (Initial, Change, Equilibrium):
+
+Write the balanced equation.
+
+Set up an ICE table:
+
+I (Initial): List initial concentrations (or pressures) of all species.
+
+C (Change): Express the change in concentration (or pressure) of each species in terms of a variable x, using stoichiometric ratios. Reactants decrease (-nx), products increase (+mx).
+
+E (Equilibrium): Express equilibrium concentrations (or pressures) as (Initial + Change).
+
+Substitute equilibrium expressions into the K_c or K_p expression.
+
+Solve for x. This may involve solving a quadratic equation. Approximations can sometimes be made if K is very small (assume x is negligible compared to initial concentrations).
+
+Calculate equilibrium concentrations/pressures using the value of x.
+
+(Suggested insertion: Examples of writing K_c and K_p expressions for various reactions, noting exclusion of solids/liquids. A clear worked example showing how to interpret K value. Derivation or statement of K_p = K_c(RT)^(Δn_gas) relationship. An example comparing Q and K. Several detailed worked examples of ICE table calculations: (a) finding K from equilibrium concentrations, (b) finding equilibrium concentrations from K and initial conditions, possibly involving a quadratic solution and an example with a valid simplifying approximation.)`,
+          "mcq": [
+            {
+              "question": "What is the correct K_c expression for the reaction: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g)?",
+              "options": [
+                "[SO₂]²[O₂] / [SO₃]²",
+                "[SO₃]² / ([SO₂]²[O₂])",
+                "[SO₃] / ([SO₂][O₂])",
+                "2[SO₃] / (2[SO₂][O₂])"
+              ],
+              "correctAnswer": "[SO₃]² / ([SO₂]²[O₂])",
+              "explanation": "The equilibrium constant expression (K_c) is the ratio of the product concentrations to reactant concentrations, with each concentration raised to the power of its stoichiometric coefficient. Thus, it is [Products]/[Reactants] = [SO₃]² / ([SO₂]²[O₂])."
+            }
+          ]
+        },
+        {
+          "title": "13.4 Applications: Solubility Equilibria (K_sp), Common‐Ion Effect",
+          "image": "https://images.pexels.com/photos/16380906/pexels-photo-16380906.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=A1qWKp22nl4",
+          "content": `Solubility Product Constant (K_sp):
+The equilibrium constant for the dissolution of a sparingly soluble (slightly soluble) ionic compound in water. It represents the product of the concentrations of its constituent ions in a saturated solution, each raised to the power of its stoichiometric coefficient.
+
+For a general sparingly soluble salt M_aX_b(s) ⇌ aM^(b+)(aq) + bX^(a-)(aq):
+K_sp = [M^(b+)]^a [X^(a-)]^b
+(Note: The solid M_aX_b(s) is not included in the expression).
+
+K_sp is a measure of a compound's solubility:
+
+Smaller K_sp value → lower solubility.
+
+Larger K_sp value → higher solubility (for compounds with same ion ratio).
+
+Molar Solubility (s): The number of moles of solute that dissolve in 1 liter of saturated solution (mol/L). It can be related to K_sp.
+
+Example: For AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq), K_sp = [Ag⁺][Cl⁻].
+If molar solubility of AgCl is s, then at equilibrium [Ag⁺] = s and [Cl⁻] = s.
+So, K_sp = (s)(s) = s², and s = √K_sp.
+
+Example: For PbCl₂(s) ⇌ Pb²⁺(aq) + 2Cl⁻(aq), K_sp = [Pb²⁺][Cl⁻]².
+If molar solubility of PbCl₂ is s, then [Pb²⁺] = s and [Cl⁻] = 2s.
+So, K_sp = (s)(2s)² = 4s³, and s = ³√(K_sp/4).
+
+Predicting Precipitation using Ion Product (Q_sp):
+The ion product (Q_sp) has the same form as K_sp but uses the current ion concentrations in a solution (not necessarily at equilibrium).
+
+Compare Q_sp with K_sp:
+
+If Q_sp < K_sp: Solution is unsaturated. No precipitate forms. More solid can dissolve.
+
+If Q_sp > K_sp: Solution is supersaturated. A precipitate will form until Q_sp = K_sp.
+
+If Q_sp = K_sp: Solution is saturated. System is at equilibrium.
+
+The Common-Ion Effect:
+The decrease in the solubility of a sparingly soluble ionic compound when a soluble salt containing a common ion (an ion already present in the equilibrium) is added to the solution.
+
+This is an application of Le Châtelier's Principle. Adding a common ion shifts the solubility equilibrium to the left (towards the undissolved solid), reducing the concentration of the other ion and thus reducing the solubility of the sparingly soluble salt.
+
+Example: Adding NaCl (provides Cl⁻ ions) to a saturated solution of AgCl (AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq)) will decrease the solubility of AgCl (reduce [Ag⁺]).
+
+Applications of Solubility Equilibria:
+Qualitative analysis (selective precipitation of ions), controlling water hardness, formation of kidney stones, preventing tooth decay (fluoride incorporating into enamel makes it less soluble).
+
+(Suggested insertion: Examples of writing K_sp expressions for different ionic compounds. Worked examples: (a) calculating K_sp from molar solubility, (b) calculating molar solubility from K_sp, (c) using Q_sp to predict precipitation, (d) calculating solubility in the presence of a common ion and comparing it to solubility in pure water.)`,
+          "mcq": [
+            {
+              "question": "The addition of NaCl to a saturated solution of AgCl will cause:",
+              "options": [
+                "The solubility of AgCl to increase",
+                "More AgCl to precipitate out of solution",
+                "The K_sp of AgCl to increase",
+                "No change in the AgCl equilibrium"
+              ],
+              "correctAnswer": "More AgCl to precipitate out of solution",
+              "explanation": "This is an example of the common-ion effect. The equilibrium is AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq). Adding NaCl introduces more Cl⁻ ions (the common ion), which shifts the equilibrium to the left, causing more solid AgCl to precipitate and reducing the concentration of Ag⁺."
+            },
+            {
+              "question": "A large value of the equilibrium constant (K >> 1) indicates that at equilibrium:",
+              "options": [
+                "The reaction is very slow.",
+                "The concentration of reactants is much greater than the concentration of products.",
+                "The concentration of products is much greater than the concentration of reactants.",
+                "The reaction is at its half-way point."
+              ],
+              "correctAnswer": "The concentration of products is much greater than the concentration of reactants.",
+              "explanation": "The equilibrium constant K = [Products]/[Reactants]. A large K value means the numerator (products) is much larger than the denominator (reactants), so the equilibrium lies far to the right, favoring the formation of products."
+            },
+            {
+              "question": "For the gaseous equilibrium 2A(g) + B(g) ⇌ 2C(g), how will an increase in pressure (by decreasing volume) affect the position of equilibrium?",
+              "options": [
+                "Shift to the left (reactants)",
+                "Shift to the right (products)",
+                "No effect",
+                "It will increase the value of K_p"
+              ],
+              "correctAnswer": "Shift to the right (products)",
+              "explanation": "According to Le Châtelier's principle, an increase in pressure will shift the equilibrium to the side with fewer moles of gas. The reactant side has 2+1 = 3 moles of gas, while the product side has 2 moles of gas. Therefore, the equilibrium will shift to the right."
+            },
+            {
+              "question": "Which of the following is NOT included in the K_c or K_sp expression?",
+              "options": [
+                "Aqueous ions",
+                "Gases",
+                "Pure liquids",
+                "They are all included"
+              ],
+              "correctAnswer": "Pure liquids",
+              "explanation": "The concentrations of pure solids and pure liquids are considered constant and are incorporated into the value of the equilibrium constant. Therefore, they are omitted from the K_c, K_p, or K_sp expression."
+            },
+            {
+              "question": "If the reaction quotient (Q) for a reaction is greater than the equilibrium constant (K), in which direction will the reaction proceed to reach equilibrium?",
+              "options": [
+                "To the right (towards products)",
+                "To the left (towards reactants)",
+                "The reaction is already at equilibrium",
+                "The reaction rate will increase"
+              ],
+              "correctAnswer": "To the left (towards reactants)",
+              "explanation": "Q = [Products]/[Reactants] at a non-equilibrium state. If Q > K, the ratio of products to reactants is too high compared to the equilibrium state. The system will shift to the left, consuming products and forming reactants, to decrease Q until it equals K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 14: Redox Reactions and Electrochemistry",
+      "image": "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=ImV8LyujjqY",
+        "https://www.youtube.com/watch?v=VXvtkwubQQg",
+        "https://www.youtube.com/watch?v=iI46wBMDaLg"
+      ],
+      "sections": [
+        {
+          "title": "14.1 Oxidation Numbers and Balancing Redox Equations (Review & Application)",
+          "image": "https://images.pexels.com/photos/6256077/pexels-photo-6256077.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=KyUEq2ZCCYM",
+          "content": `Oxidation-Reduction (Redox) reactions involve the transfer of electrons from one chemical species to another. These reactions are fundamental to many chemical and biological processes, including combustion, corrosion, respiration, photosynthesis, and the operation of batteries and electrolytic cells. Electrochemistry is the branch of chemistry that studies the relationship between chemical reactions and electrical energy, particularly how redox reactions can be used to produce electricity (in galvanic cells) or how electricity can be used to drive non-spontaneous chemical reactions (in electrolytic cells).
+
+(Review key concepts from Ch 6.1: Oxidation, Reduction, Oxidizing Agent, Reducing Agent, Oxidation Numbers/States, rules for assigning oxidation numbers).
+
+Oxidation: Loss of electrons; increase in oxidation number.
+
+Reduction: Gain of electrons; decrease in oxidation number.
+
+Oxidizing Agent (Oxidant): Substance that causes oxidation (by accepting electrons from another substance); it itself gets reduced.
+
+Reducing Agent (Reductant): Substance that causes reduction (by donating electrons to another substance); it itself gets oxidized.
+Mnemonic: OIL RIG (Oxidation Is Loss, Reduction Is Gain of electrons) or LEO says GER (Lose Electrons Oxidation, Gain Electrons Reduction).
+
+Balancing Redox Equations (Re-emphasis and Practice):
+Recap of common methods, particularly the half-reaction method (ion-electron method) in acidic and basic solutions. Essential skill for quantitative electrochemistry.
+
+Ensure both atoms and charge are balanced in the final equation.
+
+(Suggested insertion: A quick review table of rules for assigning oxidation numbers. One or two complex redox equations to balance using half-reaction method, perhaps one in acidic and one in basic medium, showing all steps clearly.)`,
+          "mcq": [
+            {
+              "question": "In the reaction Zn + Cu²⁺ → Zn²⁺ + Cu, what is the reducing agent?",
+              "options": [
+                "Zn",
+                "Cu²⁺",
+                "Zn²⁺",
+                "Cu"
+              ],
+              "correctAnswer": "Zn",
+              "explanation": "The reducing agent is the substance that is oxidized (loses electrons). Zinc (Zn) goes from an oxidation state of 0 to +2, meaning it loses electrons. Therefore, Zn is oxidized and is the reducing agent."
+            }
+          ]
+        },
+        {
+          "title": "14.2 Electrochemical Cells: Galvanic and Electrolytic",
+          "image": "https://images.pexels.com/photos/25626515/pexels-photo-25626515.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Kx-b594m0NA",
+          "content": `Electrochemical Cell: A device that converts chemical energy into electrical energy (galvanic cell) or electrical energy into chemical energy (electrolytic cell). Both types involve redox reactions and usually consist of two electrodes (conductors) in contact with an electrolyte (a substance containing free ions that allows current flow).
+
+Electrode: The site where oxidation or reduction occurs.
+
+Anode: Electrode where oxidation occurs. (Mnemonic: An Ox)
+
+Cathode: Electrode where reduction occurs. (Mnemonic: Red Cat)
+
+Electrons flow through an external circuit from anode to cathode. Ions flow through the electrolyte (or salt bridge/porous barrier) to maintain charge neutrality.
+
+Galvanic Cell (Voltaic Cell):
+
+Uses a spontaneous redox reaction to generate electrical energy (produces electricity).
+
+Converts chemical energy into electrical energy.
+
+Consists of two half-cells, each with an electrode and an electrolyte. The half-cells are connected by an external wire (for electron flow) and a salt bridge or porous disk (for ion flow to complete the circuit and maintain charge balance).
+
+Anode: Is the negative electrode (source of electrons to external circuit). Oxidation occurs here.
+
+Cathode: Is the positive electrode (where electrons from external circuit are consumed). Reduction occurs here.
+
+Salt Bridge: Contains an inert electrolyte (e.g., KNO₃, KCl) in a gel; allows migration of ions between half-cells to prevent charge buildup and complete the circuit. Anions move towards anode, cations move towards cathode.
+
+Cell Notation (Shorthand): e.g., for Daniell cell (Zn(s) | Zn²⁺(aq) || Cu²⁺(aq) | Cu(s)):
+Anode half-cell || Cathode half-cell
+Single vertical line |: phase boundary.
+Double vertical line ||: salt bridge or porous barrier.
+
+Examples: Daniell cell (Zn/Zn²⁺ and Cu/Cu²⁺), batteries (dry cells, lead-acid battery, lithium-ion batteries).
+
+Electrolytic Cell:
+
+Uses external electrical energy to drive a non-spontaneous redox reaction (forces a chemical change).
+
+Converts electrical energy into chemical energy.
+
+Requires an external power source (e.g., battery, DC power supply) connected to two electrodes immersed in an electrolyte (can be molten ionic compound or aqueous solution of an ionic compound).
+
+Anode: Is the positive electrode (connected to positive terminal of power source). Oxidation occurs here.
+
+Cathode: Is the negative electrode (connected to negative terminal of power source). Reduction occurs here.
+
+(Note: Sign of anode/cathode is opposite to galvanic cell because power source dictates polarity).
+
+Electrolysis: The process of using electricity to bring about a non-spontaneous chemical reaction.
+
+Examples: Electrolysis of molten NaCl (to produce Na metal and Cl₂ gas), electrolysis of water (to produce H₂ and O₂ gas), electroplating (coating an object with a thin layer of metal).
+
+(Suggested insertion: Clear, labeled diagrams of a typical galvanic cell (e.g., Daniell cell showing Zn and Cu half-cells, salt bridge, voltmeter, direction of electron flow and ion flow). A diagram of a simple electrolytic cell (e.g., electrolysis of molten NaCl or water, showing power source, electrodes, ion movement, products formed). A table comparing key features of galvanic and electrolytic cells.)`,
+          "mcq": [
+            {
+              "question": "In a galvanic (voltaic) cell, the anode is the electrode where _____ occurs and it has a _____ charge.",
+              "options": [
+                "oxidation, positive",
+                "reduction, positive",
+                "oxidation, negative",
+                "reduction, negative"
+              ],
+              "correctAnswer": "oxidation, negative",
+              "explanation": "In a galvanic cell, which produces electricity from a spontaneous reaction, oxidation always occurs at the anode (An Ox). The anode is the source of electrons for the external circuit, making it the negative electrode."
+            }
+          ]
+        },
+        {
+          "title": "14.3 Standard Electrode Potentials and Cell EMF",
+          "image": "https://images.pexels.com/photos/3992930/pexels-photo-3992930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=sfGWMnb1rQM",
+          "content": `Electrode Potential (E):
+A measure of the tendency of an electrode in a half-cell to gain electrons (reduction) or lose electrons (oxidation) when in contact with its electrolyte.
+
+It is not possible to measure the absolute potential of a single half-cell. We measure potential differences between two half-cells.
+
+Standard Hydrogen Electrode (SHE): Used as a reference electrode to determine relative electrode potentials. SHE is assigned a standard potential of exactly 0 Volts (0 V) at standard conditions.
+Half-reaction: 2H⁺(aq, 1M) + 2e⁻ ⇌ H₂(g, 1 atm) E° = 0.00 V.
+
+Standard Electrode Potential (E°) (Standard Reduction Potential):
+The potential (voltage) of a half-cell measured relative to the SHE when all substances involved are in their standard states (1 M concentration for solutions, 1 atm pressure for gases, pure solids/liquids, at 25°C or 298 K).
+
+Tabulated as standard reduction potentials (tendency for reduction to occur).
+
+Interpretation of E° values (for reduction half-reactions):
+
+More positive E°: Greater tendency for reduction to occur (stronger oxidizing agent).
+
+More negative E°: Lesser tendency for reduction to occur (stronger reducing agent - the species on product side has greater tendency to be oxidized).
+
+Standard oxidation potential for a half-reaction is the negative of its standard reduction potential.
+
+Standard Cell Potential (EMF) of a Galvanic Cell (E°_cell):
+The potential difference (voltage) between the two half-cells of a galvanic cell when operating under standard conditions. It is a measure of the driving force for the spontaneous redox reaction.
+E°_cell = E°_cathode (reduction) - E°_anode (oxidation)
+(where E°_cathode and E°_anode are the standard reduction potentials of the respective half-cells as listed in tables. If using oxidation potential for anode: E°_cell = E°_reduction(cathode) + E°_oxidation(anode)).
+
+A positive E°_cell indicates a spontaneous reaction (galvanic cell).
+
+ΔG° = -nFE°_cell (relates standard cell potential to standard Gibbs free energy change, n=moles of e⁻ transferred, F=Faraday constant ≈ 96,485 C/mol e⁻).
+
+Predicting Spontaneity of Redox Reactions:
+
+If E°_cell calculated for a proposed redox reaction is positive, the reaction is spontaneous under standard conditions as written.
+
+If E°_cell is negative, the reaction is non-spontaneous as written (reverse reaction is spontaneous).
+
+Nernst Equation (for non-standard conditions - may be advanced for Gen Chem):
+Relates cell potential E_cell under non-standard conditions to standard cell potential E°_cell and concentrations/pressures (Reaction Quotient, Q).
+E_cell = E°_cell - (RT/nF) lnQ or E_cell = E°_cell - (0.0592 V/n) log₁₀Q (at 25°C).
+
+(Suggested insertion: A portion of a standard reduction potential table. Clear worked examples: (a) calculating E°_cell for a galvanic cell given E° for half-cells, (b) identifying anode/cathode and direction of electron flow, (c) using E° values to predict spontaneity of a redox reaction.)`,
+          "mcq": [
+            {
+              "question": "Given the standard reduction potentials: Zn²⁺ + 2e⁻ → Zn (E° = -0.76 V) and Cu²⁺ + 2e⁻ → Cu (E° = +0.34 V). What is the standard cell potential (E°_cell) for a galvanic cell made from these two half-cells?",
+              "options": [
+                "-1.10 V",
+                "+1.10 V",
+                "-0.42 V",
+                "+0.42 V"
+              ],
+              "correctAnswer": "+1.10 V",
+              "explanation": "The half-reaction with the more positive E° will be the reduction (cathode): Cu²⁺ reduction. The other must be the oxidation (anode): Zn oxidation. E°_cell = E°_cathode - E°_anode = (+0.34 V) - (-0.76 V) = 0.34 + 0.76 = +1.10 V."
+            }
+          ]
+        },
+        {
+          "title": "14.4 Applications: Batteries, Corrosion, Electroplating",
+          "image": "https://images.pexels.com/photos/16380906/pexels-photo-16380906.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=O5Qo9ecg3Ic",
+          "content": `1. Batteries (Galvanic Cells as practical power sources):
+A battery is one or more galvanic cells connected in series to produce a DC voltage.
+
+Primary Cells (Non-rechargeable): Cell reaction is not easily reversible. Discarded when reactants are consumed.
+
+Leclanché Cell (Dry Cell): e.g., common Zn-C battery. Anode: Zn. Cathode: MnO₂ + C. Electrolyte: NH₄Cl/ZnCl₂ paste. ~1.5 V.
+
+Alkaline Battery: Similar to dry cell but with KOH electrolyte. Longer life, higher current.
+
+Button Cells: (e.g., silver oxide, lithium) - small, used in watches, calculators.
+
+Secondary Cells (Rechargeable): Cell reaction can be reversed by passing an external current through it (recharging).
+
+Lead-Acid Battery (Car Battery): Anode: Pb. Cathode: PbO₂. Electrolyte: H₂SO₄(aq). Reversible reactions during discharge and recharge. ~2V per cell (typically 6 cells = 12V battery).
+
+Nickel-Cadmium (NiCd) Battery: (Older rechargeable).
+
+Nickel-Metal Hydride (NiMH) Battery: (Used in hybrid vehicles, portable electronics).
+
+Lithium-Ion (Li-ion) Battery: High energy density, lightweight. Widely used in portable electronics (phones, laptops), electric vehicles. Involves intercalation of Li⁺ ions.
+
+2. Corrosion:
+The deterioration of a metal due to an electrochemical (redox) reaction with its environment.
+
+Usually an oxidative process where metal atoms lose electrons to form ions.
+
+Rusting of Iron: A common example. Requires oxygen and water.
+
+Anodic regions (oxidation): Fe(s) → Fe²⁺(aq) + 2e⁻
+
+Cathodic regions (reduction): O₂(g) + 4H⁺(aq) + 4e⁻ → 2H₂O(l) (in acidic conditions) or O₂(g) + 2H₂O(l) + 4e⁻ → 4OH⁻(aq) (in neutral/basic).
+
+Fe²⁺ is further oxidized to Fe³⁺, which forms hydrated iron(III) oxide (rust, Fe₂O₃·xH₂O).
+
+Presence of electrolytes (salts) accelerates rusting by increasing conductivity.
+
+Corrosion Prevention:
+
+Coating (painting, greasing, galvanizing - coating with zinc).
+
+Alloying (e.g., stainless steel - iron with chromium).
+
+Cathodic Protection: Connecting the metal to be protected to a more reactive metal (a sacrificial anode, e.g., zinc or magnesium blocks on ship hulls or pipelines) which corrodes instead of the protected metal. Or, impressing a current to make the protected metal a cathode.
+
+3. Electroplating:
+An electrolytic process used to deposit a thin layer of one metal onto the surface of another metal object.
+
+Purpose: Improve appearance, provide corrosion resistance, increase hardness or wear resistance.
+
+Setup (Electrolytic Cell):
+
+Object to be plated is the cathode (negative electrode).
+
+Metal to be plated (e.g., silver, copper, chromium) is often the anode (positive electrode) or supplied as ions in the electrolyte solution.
+
+Electrolyte: A solution containing ions of the plating metal.
+
+When current passes, metal ions from solution are reduced and deposit on the cathode: Mⁿ⁺(aq) + ne⁻ → M(s).
+
+If the anode is made of the plating metal, it oxidizes to replenish metal ions in solution: M(s) → Mⁿ⁺(aq) + ne⁻.
+
+Amount of metal plated depends on current and time (Faraday's laws of electrolysis - more advanced).
+
+(Suggested insertion: Simple diagrams illustrating a common primary cell (e.g., dry cell) and a secondary cell (e.g., lead-acid battery during discharge/recharge). Diagram showing electrochemical basis of iron rusting. A diagram of an electroplating setup (e.g., copper plating an object).)`,
+          "mcq": [
+            {
+              "question": "The process of coating a metal object with a thin layer of another metal using an electrolytic cell is called:",
+              "options": [
+                "Corrosion",
+                "Galvanizing",
+                "Electroplating",
+                "Smelting"
+              ],
+              "correctAnswer": "Electroplating",
+              "explanation": "Electroplating is an application of electrolysis where an external electric current is used to reduce metal ions from a solution and deposit them as a thin metallic layer onto the surface of an object, which acts as the cathode."
+            },
+            {
+              "question": "Which of the following describes an electrolytic cell?",
+              "options": [
+                "It uses a spontaneous reaction to produce electricity.",
+                "It converts chemical energy into electrical energy.",
+                "The cathode is the positive electrode.",
+                "It uses electrical energy to drive a non-spontaneous reaction."
+              ],
+              "correctAnswer": "It uses electrical energy to drive a non-spontaneous reaction.",
+              "explanation": "An electrolytic cell does the opposite of a galvanic cell. It requires an external power source to force a non-spontaneous chemical reaction to occur, thus converting electrical energy into chemical energy."
+            },
+            {
+              "question": "A positive value for the standard cell potential (E°_cell) indicates that the reaction is:",
+              "options": [
+                "Spontaneous under standard conditions",
+                "Non-spontaneous under standard conditions",
+                "At equilibrium under standard conditions",
+                "Endothermic"
+              ],
+              "correctAnswer": "Spontaneous under standard conditions",
+              "explanation": "The relationship between Gibbs free energy and cell potential is ΔG° = -nFE°_cell. A spontaneous reaction has a negative ΔG°. For ΔG° to be negative, E°_cell must be positive."
+            },
+            {
+              "question": "During the rusting of iron, iron acts as the:",
+              "options": [
+                "Cathode, where reduction occurs",
+                "Anode, where oxidation occurs",
+                "Salt bridge",
+                "Electrolyte"
+              ],
+              "correctAnswer": "Anode, where oxidation occurs",
+              "explanation": "Corrosion is an electrochemical process. In the rusting of iron, iron metal is oxidized to iron(II) ions (Fe → Fe²⁺ + 2e⁻). The site where oxidation occurs is the anode."
+            },
+            {
+              "question": "In the shorthand cell notation Zn(s) | Zn²⁺(aq) || Cu²⁺(aq) | Cu(s), the double vertical line (||) represents the:",
+              "options": [
+                "Anode",
+                "Cathode",
+                "Phase boundary",
+                "Salt bridge"
+              ],
+              "correctAnswer": "Salt bridge",
+              "explanation": "In standard cell notation, the double vertical line (||) represents the salt bridge or porous barrier that separates the two half-cells and allows for ion flow to maintain charge neutrality."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 15: Introduction to Organic Compounds",
+      "image": "https://images.pexels.com/photos/7526057/pexels-photo-7526057.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=B_ketdzJtY8",
+        "https://www.youtube.com/watch?v=HORDaLKmXWY",
+        "https://www.youtube.com/watch?v=GBjNyAdEN5A"
+      ],
+      "sections": [
+        {
+          "title": "15.1 Carbon Bonding, Functional Groups, and Nomenclature",
+          "image": "https://images.pexels.com/photos/7605966/pexels-photo-7605966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=y7tRQwQIzEM",
+          "content": `Organic chemistry is the study of carbon-containing compounds (organic compounds), their structure, properties, composition, reactions, and preparation. Carbon's unique ability to form strong covalent bonds with itself (catenation) and with many other elements (H, O, N, S, P, halogens) leads to an incredibly vast and diverse range of organic molecules, which are the basis of life and many synthetic materials. This chapter introduces fundamental concepts of carbon bonding, common functional groups that determine molecular behavior, basic nomenclature (naming), isomerism, and the classification of hydrocarbons.
+
+The Uniqueness of Carbon:
+
+Electron Configuration: 1s²2s²2p². Has 4 valence electrons.
+
+Forms four covalent bonds to achieve a stable octet (can be single, double, or triple bonds).
+
+Can bond to other carbon atoms to form long chains (straight or branched) and rings of various sizes (catenation).
+
+Forms strong bonds with C, H, O, N, S, P, halogens.
+
+Hybridization: Carbon typically undergoes sp³ (tetrahedral, 4 single bonds), sp² (trigonal planar, e.g., in C=C or C=O), or sp (linear, e.g., in C≡C or O=C=O) hybridization to form these bonds with specific geometries.
+
+Representations of Organic Molecules:
+
+Molecular Formula: Shows type and number of atoms (e.g., C₂H₆O). Not much structural info.
+
+Structural Formula: Shows how atoms are connected (bonded).
+
+Expanded Structural Formula: Shows all atoms and all bonds.
+
+Condensed Structural Formula: Omits some C-H bonds or groups atoms together (e.g., CH₃CH₂OH or CH₃-CH₂-OH for ethanol).
+
+Line-Angle Formula (Skeletal Structure): Carbon atoms are implied at vertices and ends of lines; hydrogen atoms attached to carbons are not shown (assumed to fill valency of C to 4 bonds) unless attached to heteroatoms. Heteroatoms (O, N, etc.) and their H's are shown. (Very common for larger molecules).
+
+Functional Groups:
+Specific groups of atoms within a molecule that are responsible for the characteristic chemical reactions and properties of that molecule, regardless of the size or complexity of the rest of the molecule. They are the reactive sites.
+
+Common Functional Groups: (A table here would be ideal)
+| Functional Group | Structure | Class of Compound | Example |
+|-----------------------|-----------------------------|-------------------|------------------|
+| Alkane | C-C (single bonds only) | Alkane | Methane (CH₄) |
+| Alkene | C=C (double bond) | Alkene | Ethene (C₂H₄) |
+| Alkyne | C≡C (triple bond) | Alkyne | Ethyne (C₂H₂) |
+| Arene (Aromatic) | Benzene ring structure | Aromatic Compound | Benzene (C₆H₆) |
+| Haloalkane (Alkyl Halide) | R-X (X=F, Cl, Br, I) | Haloalkane | Chloroethane |
+| Alcohol | R-OH (Hydroxyl group) | Alcohol | Ethanol (C₂H₅OH) |
+| Ether | R-O-R' | Ether | Diethyl ether |
+| Amine | R-NH₂, R₂NH, R₃N | Amine | Methylamine |
+| Aldehyde | R-CHO (Carbonyl at end) | Aldehyde | Ethanal |
+| Ketone | R-CO-R' (Carbonyl in middle)| Ketone | Propanone (Acetone)|
+| Carboxylic Acid | R-COOH (Carboxyl group) | Carboxylic Acid | Ethanoic acid |
+| Ester | R-COO-R' | Ester | Ethyl ethanoate |
+| Amide | R-CO-NH₂, R-CO-NHR', R-CO-NR'₂| Amide | Ethanamide |
+
+(R and R' represent alkyl groups or hydrogen in some cases).
+
+Nomenclature (Naming Organic Compounds - IUPAC System):
+The International Union of Pure and Applied Chemistry (IUPAC) provides systematic rules for naming organic compounds to ensure each has a unique and unambiguous name. (Basic rules for alkanes, alkenes, alkynes, and simple monofunctional compounds would be covered).
+
+General Steps for Alkanes (and basis for others):
+
+Find the longest continuous carbon chain (parent chain). Name based on number of carbons (meth-, eth-, prop-, but-, pent-, hex-, etc. + suffix "-ane").
+
+Identify and name substituent groups (alkyl groups - methyl, ethyl, etc.; halo groups).
+
+Number the parent chain starting from the end nearest to a substituent to give the substituents the lowest possible numbers (locants).
+
+List substituents alphabetically, preceded by their locant numbers. Use prefixes (di-, tri-, tetra-) if a substituent appears multiple times (these prefixes are ignored for alphabetizing).
+
+Punctuation: Commas separate numbers, hyphens separate numbers and words.
+
+Rules are modified for double/triple bonds (parent chain must include multiple bond, numbering gives multiple bond lowest number, suffix "-ene" or "-yne"), and for functional groups (principal functional group often determines suffix and numbering priority).
+
+(Suggested insertion: Diagrams showing C hybridization (sp³, sp², sp). Examples of expanded, condensed, and line-angle structural formulas. A comprehensive table of common functional groups with their structure and class names. Step-by-step examples of IUPAC nomenclature for simple alkanes, alkenes, alkynes, and molecules with one or two simple functional groups (e.g., alcohol, haloalkane).)`,
+          "mcq": [
+            {
+              "question": "Which functional group is characteristic of an alcohol?",
+              "options": [
+                "-COOH (Carboxyl)",
+                "-CHO (Aldehyde)",
+                "-OH (Hydroxyl)",
+                "-CO- (Carbonyl)"
+              ],
+              "correctAnswer": "-OH (Hydroxyl)",
+              "explanation": "The functional group that defines a molecule as an alcohol is the hydroxyl group (-OH) covalently bonded to a saturated carbon atom."
+            }
+          ]
+        },
+        {
+          "title": "15.2 Isomerism: Structural, Geometric (cis/trans), Optical",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=-rpQP0ijFkA",
+          "content": `Isomers: Compounds that have the same molecular formula but different structural formulas and thus different physical and/or chemical properties.
+
+Structural Isomers (Constitutional Isomers):
+
+Atoms are connected (bonded) in different orders. They have different connectivity.
+
+Types of Structural Isomers:
+
+Chain Isomers: Differ in the arrangement of the carbon skeleton (straight chain vs. branched chain).
+
+Example: Butane (C₄H₁₀) exists as n-butane (straight chain) and isobutane (2-methylpropane, branched).
+
+Positional Isomers: Differ in the position of a functional group or a multiple bond on the same carbon skeleton.
+
+Example: Propan-1-ol (CH₃CH₂CH₂OH) and Propan-2-ol (CH₃CH(OH)CH₃).
+
+Example: But-1-ene (CH₂=CHCH₂CH₃) and But-2-ene (CH₃CH=CHCH₃).
+
+Functional Group Isomers: Have the same molecular formula but different functional groups, leading to entirely different classes of compounds.
+
+Example: Ethanol (C₂H₆O, an alcohol CH₃CH₂OH) and Dimethyl ether (C₂H₆O, an ether CH₃-O-CH₃).
+
+Example: Propanal (C₃H₆O, an aldehyde) and Propanone (C₃H₆O, a ketone - acetone).
+
+Stereoisomers:
+
+Atoms are connected in the same order (same structural formula), but they have different spatial arrangements.
+
+a. Geometric Isomers (Cis-Trans Isomers or E/Z Isomers):
+
+Occur in molecules with restricted rotation around a bond, typically:
+
+Alkenes (due to C=C double bond).
+
+Cyclic compounds.
+
+Requires two different groups to be attached to each carbon of the C=C double bond (or on different carbons in a ring that restrict rotation).
+
+Cis Isomer: Similar groups are on the same side of the double bond (or ring).
+
+Trans Isomer: Similar groups are on opposite sides of the double bond (or ring).
+
+Cis and trans isomers often have different physical properties (e.g., melting point, boiling point, density, polarity).
+
+(E/Z notation is a more general system for alkenes with 3 or 4 different substituents around double bond - Cahn-Ingold-Prelog priority rules. Cis/trans often used for simpler cases).
+
+b. Optical Isomers (Enantiomers and Diastereomers):
+
+Occur in molecules that are chiral (non-superimposable on their mirror images, like left and right hands).
+
+Chiral Center (Chiral Carbon): A carbon atom bonded to four different atoms or groups.
+
+Enantiomers: Stereoisomers that are non-superimposable mirror images of each other.
+
+Have identical physical properties (MP, BP, density, refractive index) except for their interaction with plane-polarized light (they rotate it in opposite directions: one dextrorotatory (+), one levorotatory (-)) and their reactions with other chiral substances.
+
+A 50:50 mixture of enantiomers is a racemic mixture (optically inactive).
+
+Diastereomers: Stereoisomers that are not mirror images of each other. Occur in molecules with two or more chiral centers. Diastereomers have different physical properties. (Meso compounds are achiral molecules with chiral centers due to internal symmetry).
+
+(Optical isomerism is a more advanced topic, introduction here may focus on recognizing chiral centers and understanding enantiomers).
+
+(Suggested insertion: Clear examples with structural formulas for chain, positional, and functional group isomers. Diagrams illustrating cis and trans isomers for an alkene (e.g., but-2-ene) and a cyclic compound. Simple diagrams showing a chiral carbon, a pair of enantiomers (as mirror images), and how they are non-superimposable.)`,
+          "mcq": [
+            {
+              "question": "Compounds with the same molecular formula but different connectivity of atoms are known as:",
+              "options": [
+                "Isotopes",
+                "Structural isomers",
+                "Stereoisomers",
+                "Geometric isomers"
+              ],
+              "correctAnswer": "Structural isomers",
+              "explanation": "Structural (or constitutional) isomers have the same molecular formula but differ in the way their atoms are bonded together. For example, butane and isobutane are structural isomers."
+            }
+          ]
+        },
+        {
+          "title": "15.3 Saturated vs. Unsaturated Hydrocarbons (Alkanes, Alkenes, Alkynes)",
+          "image": "https://images.pexels.com/photos/25626435/pexels-photo-25626435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=qyyIj2d2HaU",
+          "content": `Hydrocarbons: Organic compounds containing only carbon (C) and hydrogen (H) atoms. They are the simplest class of organic compounds.
+
+Saturated Hydrocarbons (Alkanes and Cycloalkanes):
+
+Contain only carbon-carbon single bonds.
+
+Each carbon atom is bonded to the maximum possible number of other atoms (either C or H); they are "saturated" with hydrogen.
+
+Alkanes (Paraffins): Acyclic (open-chain) saturated hydrocarbons.
+
+General Formula: C_n H_(2n+2) (for non-cyclic alkanes).
+
+Names end in "-ane" (e.g., Methane CH₄, Ethane C₂H₆, Propane C₃H₈, Butane C₄H₁₀, Pentane C₅H₁₂, etc. - first few members of homologous series).
+
+Carbon atoms are sp³ hybridized (tetrahedral geometry around each C).
+
+Relatively unreactive (strong C-C and C-H bonds). Undergo combustion and halogenation (substitution) reactions.
+
+Cycloalkanes: Saturated hydrocarbons containing carbon atoms arranged in a ring structure.
+
+General Formula: C_n H_₂n (for single ring).
+
+Names: cyclo- prefix + alkane name (e.g., Cyclopropane C₃H₆, Cyclohexane C₆H₁₂).
+
+Unsaturated Hydrocarbons:
+
+Contain one or more carbon-carbon double bonds (C=C) or triple bonds (C≡C).
+
+They have fewer hydrogen atoms than the corresponding alkane with the same number of carbons; they are "unsaturated" with respect to hydrogen.
+
+More reactive than alkanes due to the presence of π bonds in the multiple bonds.
+
+Alkenes (Olefins): Contain at least one C=C double bond.
+
+General Formula (for one double bond, acyclic): C_n H_₂n.
+
+Names end in "-ene" (e.g., Ethene C₂H₄, Propene C₃H₆, But-1-ene C₄H₈).
+
+Carbon atoms in C=C double bond are sp² hybridized (trigonal planar geometry around them).
+
+Undergo addition reactions across the double bond (e.g., with H₂, halogens, H₂O, HX).
+
+Alkynes (Acetylenes): Contain at least one C≡C triple bond.
+
+General Formula (for one triple bond, acyclic): C_n H_(2n-2).
+
+Names end in "-yne" (e.g., Ethyne C₂H₂ - acetylene, Propyne C₃H₄).
+
+Carbon atoms in C≡C triple bond are sp hybridized (linear geometry around them).
+
+Also undergo addition reactions (can add twice).
+
+(Suggested insertion: Table comparing alkanes, alkenes, alkynes (general formula, type of C-C bond, suffix, example, hybridization of C in multiple bond). Examples of structures and IUPAC names for simple members of each homologous series. Simple equations for typical reactions: combustion of alkane, addition of H₂ or Br₂ to an alkene/alkyne.)`,
+          "mcq": [
+            {
+              "question": "Which of the following hydrocarbons is saturated?",
+              "options": [
+                "Ethene (C₂H₄)",
+                "Ethyne (C₂H₂)",
+                "Benzene (C₆H₆)",
+                "Ethane (C₂H₆)"
+              ],
+              "correctAnswer": "Ethane (C₂H₆)",
+              "explanation": "A saturated hydrocarbon contains only carbon-carbon single bonds. Ethane (C₂H₆) is an alkane and fits this description. Ethene has a double bond, ethyne has a triple bond, and benzene has a delocalized pi system, making them all unsaturated."
+            }
+          ]
+        },
+        {
+          "title": "15.4 Aromaticity and Benzene Chemistry (Introductory)",
+          "image": "https://images.pexels.com/photos/25626509/pexels-photo-25626509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=dsQttwQXYD8",
+          "content": `Aromatic Hydrocarbons (Arenes):
+A special class of cyclic unsaturated hydrocarbons that exhibit exceptional stability due to a delocalized system of π (pi) electrons.
+
+The simplest and most important aromatic hydrocarbon is Benzene (C₆H₆).
+
+Structure of Benzene:
+
+Six carbon atoms arranged in a planar hexagonal ring.
+
+Each carbon atom is sp² hybridized and bonded to one hydrogen atom and two other carbon atoms by σ bonds.
+
+Each carbon atom also has one unhybridized p orbital perpendicular to the plane of the ring, containing one electron.
+
+These six p orbitals overlap sideways above and below the plane of the ring to form a continuous, delocalized π electron system (two "doughnut-shaped" electron clouds). The six π electrons are shared equally among all six carbon atoms.
+
+Representations: Often shown as a hexagon with alternating double and single bonds (Kekulé structures), or more accurately, as a hexagon with an inscribed circle to represent the delocalized π system.
+
+All C-C bonds in benzene are identical in length (intermediate between a single and a double bond).
+
+Aromaticity: The special stability and properties associated with this delocalized π electron system, which must satisfy certain criteria (Hückel's rule: cyclic, planar, fully conjugated, (4n+2) π electrons - where n is an integer).
+
+Properties and Reactions of Benzene (and other Aromatic Compounds):
+
+Distinct from typical alkenes. More stable and less reactive towards addition reactions (which would disrupt the stable delocalized π system).
+
+Undergo electrophilic aromatic substitution reactions, where an electrophile (electron-seeking species) replaces a hydrogen atom on the aromatic ring, while preserving the aromatic system.
+
+Examples: Halogenation (with catalyst), Nitration, Sulfonation, Friedel-Crafts Alkylation/Acylation.
+
+Nomenclature of Benzene Derivatives:
+
+Monosubstituted: (Substituent name)benzene (e.g., chlorobenzene, nitrobenzene, ethylbenzene, toluene (methylbenzene), phenol (hydroxybenzene), aniline (aminobenzene)).
+
+Disubstituted: Use prefixes ortho- (1,2-), meta- (1,3-), para- (1,4-) or numbering.
+
+(Suggested insertion: Diagrams of benzene structure (Kekulé forms and resonance hybrid with circle). Illustration of the p-orbital overlap forming the delocalized π system. Examples of simple electrophilic substitution reactions on benzene (e.g., nitration, halogenation). Structures of some common monosubstituted and disubstituted benzene derivatives with names.)`,
+          "mcq": [
+            {
+              "question": "What is the IUPAC name for the compound CH₃CH(CH₃)CH₂CH₃?",
+              "options": [
+                "Pentane",
+                "2-Methylbutane",
+                "3-Methylbutane",
+                "Dimethylpropane"
+              ],
+              "correctAnswer": "2-Methylbutane",
+              "explanation": "The longest continuous carbon chain is 4 carbons long (butane). The methyl (CH₃) substituent is on the second carbon when numbering from the end that gives the substituent the lowest possible number."
+            },
+            {
+              "question": "Ethanol (CH₃CH₂OH) and dimethyl ether (CH₃-O-CH₃) both have the molecular formula C₂H₆O. They are examples of:",
+              "options": [
+                "Chain isomers",
+                "Positional isomers",
+                "Functional group isomers",
+                "Geometric isomers"
+              ],
+              "correctAnswer": "Functional group isomers",
+              "explanation": "Functional group isomers have the same molecular formula but different functional groups. Ethanol is an alcohol (-OH), while dimethyl ether is an ether (-O-), giving them very different chemical and physical properties."
+            },
+            {
+              "question": "A hydrocarbon with the general formula C_n H_(2n-2) could be an:",
+              "options": [
+                "Alkane",
+                "Alkene",
+                "Alkyne",
+                "Aromatic compound"
+              ],
+              "correctAnswer": "Alkyne",
+              "explanation": "The general formula for an acyclic alkane is C_n H_(2n+2). For an alkene with one double bond, it's C_n H_₂n. For an alkyne with one triple bond, it's C_n H_(2n-2)."
+            },
+            {
+              "question": "The characteristic reaction type for benzene and other aromatic compounds is:",
+              "options": [
+                "Electrophilic addition",
+                "Nucleophilic substitution",
+                "Free-radical addition",
+                "Electrophilic aromatic substitution"
+              ],
+              "correctAnswer": "Electrophilic aromatic substitution",
+              "explanation": "Aromatic compounds like benzene undergo substitution reactions, not addition, to preserve their stable delocalized pi system. An electrophile replaces a hydrogen atom on the ring."
+            },
+            {
+              "question": "Which of the following molecules can exhibit cis-trans (geometric) isomerism?",
+              "options": [
+                "Propene (CH₂=CHCH₃)",
+                "But-1-ene (CH₂=CHCH₂CH₃)",
+                "But-2-ene (CH₃CH=CHCH₃)",
+                "2-Methylpropene"
+              ],
+              "correctAnswer": "But-2-ene (CH₃CH=CHCH₃)",
+              "explanation": "Geometric isomerism requires restricted rotation (like a double bond) and each carbon of the double bond must be attached to two different groups. In but-2-ene, each carbon of the C=C bond is attached to one -H and one -CH₃ group, allowing for cis and trans forms."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 16: Reactions of Organic Molecules",
+      "image": "https://images.pexels.com/photos/6258544/pexels-photo-6258544.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=oCVVd_b_upo",
+        "https://www.youtube.com/watch?v=AAI6pWkyxO8",
+        "https://www.youtube.com/watch?v=qfzWf-kI1EM"
+      ],
+      "sections": [
+        {
+          "title": "16.1 Substitution, Addition, Elimination, and Rearrangement Reactions",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=Dlw0c7AOWKI",
+          "content": `Organic chemistry is largely defined by the reactions that organic compounds undergo. The presence of functional groups (Chapter 15) dictates the characteristic reactivity of different classes of organic molecules. Understanding common types of organic reactions and the general pathways (mechanisms) by which they occur is crucial for synthesizing new compounds, understanding biochemical processes, and predicting product formation. This chapter will explore major categories of organic reactions (substitution, addition, elimination, rearrangement), introduce basic concepts of reaction mechanisms, and then survey characteristic reactions of important functional groups like alcohols, ethers, aldehydes, ketones, carboxylic acids, and their derivatives, concluding with an introduction to polymer chemistry.
+
+These are broad categories classifying organic reactions based on the overall structural change that occurs.
+
+Substitution Reactions:
+
+An atom or group of atoms in a molecule is replaced (substituted) by another atom or group.
+
+Common in saturated compounds (like alkanes and haloalkanes) and aromatic compounds.
+
+General form: R-X + Y → R-Y + X (or similar if groups are involved).
+
+Examples:
+
+Halogenation of alkanes (free-radical substitution): CH₄ + Cl₂ → CH₃Cl + HCl (methane + chlorine → chloromethane + hydrogen chloride).
+
+Nucleophilic substitution on haloalkanes (e.g., S_N1, S_N2 mechanisms - see 16.2): CH₃Br + OH⁻ → CH₃OH + Br⁻.
+
+Electrophilic aromatic substitution on benzene (see 15.4): Benzene + Br₂ (with FeBr₃ catalyst) → Bromobenzene + HBr.
+
+Addition Reactions:
+
+Atoms or groups are added to a molecule, usually across a multiple bond (double or triple bond), breaking one of the bonds in the multiple bond (typically a π bond).
+
+Characteristic of unsaturated compounds (alkenes, alkynes, aldehydes, ketones).
+
+General form (for C=C): R₂C=CR₂ + XY → R₂CX-CRY₂.
+
+Examples:
+
+Hydrogenation of alkenes: CH₂=CH₂ (ethene) + H₂ (with Ni/Pt/Pd catalyst) → CH₃-CH₃ (ethane).
+
+Halogenation of alkenes: CH₂=CH₂ + Br₂ → CH₂Br-CH₂Br (1,2-dibromoethane).
+
+Hydration of alkenes (addition of water, usually acid-catalyzed): CH₂=CH₂ + H₂O (H⁺) → CH₃CH₂OH (ethanol).
+
+Addition of HX (hydrohalogenation) to alkenes (follows Markovnikov's rule - H adds to C with more H's).
+
+Addition to C=O in aldehydes/ketones (e.g., addition of HCN, Grignard reagents - more advanced).
+
+Elimination Reactions:
+
+Atoms or groups are removed from adjacent atoms in a molecule, typically forming a multiple bond (double or triple bond) or a ring. It is essentially the reverse of an addition reaction.
+
+General form: R₂CX-CRY₂ → R₂C=CR₂ + XY.
+
+Examples:
+
+Dehydrohalogenation of haloalkanes (removal of HX): CH₃CH₂Br + KOH (alcoholic, heat) → CH₂=CH₂ (ethene) + KBr + H₂O.
+
+Dehydration of alcohols (removal of H₂O, acid-catalyzed, heat): CH₃CH₂OH (ethanol) → CH₂=CH₂ (ethene) + H₂O.
+
+These reactions often compete with substitution reactions, and conditions (solvent, temperature, base strength) can favor one over the other.
+
+Rearrangement Reactions:
+
+The atoms within a molecule are reorganized, leading to a structural isomer of the original molecule. The molecular formula remains the same, but the connectivity or arrangement of atoms changes.
+
+Often involve migration of an atom or group from one position to another.
+
+Examples (can be more complex):
+
+Carbocation rearrangements (e.g., hydride shifts, alkyl shifts to form more stable carbocations in S_N1/E1 reactions).
+
+Pinacol rearrangement, Beckmann rearrangement (more advanced named reactions).
+
+Isomerization of alkanes (e.g., n-butane ⇌ isobutane, under specific conditions).
+
+(Suggested insertion: Simple schematic diagrams illustrating each type of reaction (substitution - replacing a group; addition - adding across a double bond; elimination - forming a double bond by removing groups). One clear chemical equation example for each type.)`,
+          "mcq": [
+            {
+              "question": "The reaction of ethene (CH₂=CH₂) with bromine (Br₂) to form 1,2-dibromoethane (CH₂Br-CH₂Br) is an example of what type of reaction?",
+              "options": [
+                "Substitution",
+                "Addition",
+                "Elimination",
+                "Rearrangement"
+              ],
+              "correctAnswer": "Addition",
+              "explanation": "This is an addition reaction where the pi bond of the ethene double bond is broken, and a bromine atom is added to each of the carbon atoms. It is characteristic of unsaturated compounds like alkenes."
+            }
+          ]
+        },
+        {
+          "title": "16.2 Reaction Mechanisms: Free Radical, Nucleophilic, Electrophilic",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=4_env8w11uM",
+          "content": `A reaction mechanism describes the step-by-step sequence of elementary reactions by which an overall chemical change occurs. It shows how bonds are broken and formed, the order of events, and the nature of any intermediates. Mechanisms involve the movement of electrons.
+
+Arrow Pushing: Curved arrows are used to show the movement of electron pairs during bond breaking and formation.
+
+Full arrow: Movement of two electrons (e.g., from a lone pair to form a bond, or from a bond to an atom).
+
+Fishhook arrow (half arrow): Movement of a single electron (in free radical reactions).
+
+Intermediates: Short-lived, reactive species formed in one step and consumed in a subsequent step (e.g., carbocations, carbanions, free radicals).
+
+Transition States: High-energy, unstable arrangements of atoms at the peak of the energy barrier between reactants/intermediates and products. Cannot be isolated.
+
+Common Types of Reaction Mechanisms (based on nature of attacking/intermediate species):
+
+Free Radical Mechanisms:
+
+Involve species with unpaired electrons (free radicals). Highly reactive.
+
+Often occur in gas phase or nonpolar solvents, and initiated by light (photolysis) or heat.
+
+Typically involve three stages:
+
+Initiation: Formation of free radicals from a non-radical molecule (e.g., homolytic cleavage of a weak bond like Cl-Cl by UV light: Cl₂ → 2Cl•).
+
+Propagation: A radical reacts with a non-radical molecule to form a new radical and a new non-radical product. These steps can repeat in a chain reaction. (e.g., Cl• + CH₄ → HCl + •CH₃; then •CH₃ + Cl₂ → CH₃Cl + Cl•).
+
+Termination: Two radicals combine to form a stable, non-radical molecule, ending the chain. (e.g., Cl• + Cl• → Cl₂; •CH₃ + •CH₃ → C₂H₆; •CH₃ + Cl• → CH₃Cl).
+
+Example: Free-radical halogenation of alkanes.
+
+Nucleophilic Reactions (often Substitution or Addition):
+
+Involve a nucleophile ("nucleus-loving") – an electron-rich species that donates an electron pair to form a new covalent bond. Nucleophiles are Lewis bases.
+
+Nucleophiles attack electron-deficient centers (electrophilic centers) in other molecules.
+
+Common nucleophiles: Anions (e.g., OH⁻, CN⁻, Cl⁻, Br⁻, I⁻, RO⁻), molecules with lone pairs (e.g., H₂O, NH₃, RNH₂, ROH).
+
+Nucleophilic Substitution (S_N): A nucleophile replaces a leaving group (an atom or group that departs with an electron pair) on a saturated carbon atom (usually sp³ hybridized).
+
+Nu:⁻ + R-LG → R-Nu + LG:⁻
+
+S_N2 Mechanism (Substitution Nucleophilic Bimolecular): One-step concerted reaction. Nucleophile attacks from back side, simultaneous bond formation with Nu and bond breaking with LG. Inversion of configuration at chiral center. Rate depends on [Substrate][Nucleophile]. Favored by primary substrates, strong nucleophiles, good leaving groups, polar aprotic solvents.
+
+S_N1 Mechanism (Substitution Nucleophilic Unimolecular): Two-step reaction involving formation of a carbocation intermediate. First step (slow, rate-determining): LG leaves, forming carbocation. Second step (fast): Nucleophile attacks carbocation. Leads to racemization if at chiral center. Rate depends only on [Substrate]. Favored by tertiary substrates (stabilize carbocation), weak nucleophiles, good leaving groups, polar protic solvents.
+
+Nucleophilic Addition (to Carbonyl Groups C=O): Characteristic of aldehydes and ketones. Nucleophile attacks the electrophilic carbonyl carbon. (e.g., formation of cyanohydrins, hemiacetals/acetals).
+
+Electrophilic Reactions (often Addition or Aromatic Substitution):
+
+Involve an electrophile ("electron-loving") – an electron-deficient species that accepts an electron pair to form a new covalent bond. Electrophiles are Lewis acids.
+
+Electrophiles attack electron-rich centers (e.g., C=C double bonds, aromatic rings).
+
+Common electrophiles: Cations (e.g., H⁺, Br⁺ (from Br₂ + catalyst), NO₂⁺, R⁺ (carbocations)), molecules with polar bonds and electron-deficient atoms (e.g., Br₂ which can be polarized, SO₃).
+
+Electrophilic Addition (to Alkenes/Alkynes): Electrophile attacks the π electron cloud of the multiple bond, forming a carbocation intermediate (often), which then reacts with a nucleophile.
+
+Example Mechanism: Addition of HBr to ethene.
+
+CH₂=CH₂ + H⁺(from HBr) → CH₃-CH₂⁺ (carbocation)
+
+CH₃-CH₂⁺ + Br⁻ → CH₃-CH₂Br
+
+Electrophilic Aromatic Substitution (EAS): Characteristic of aromatic compounds like benzene. An electrophile replaces a hydrogen atom on the aromatic ring. The aromaticity is preserved. (See Ch 15.4). Involves formation of a resonance-stabilized carbocation intermediate (arenium ion or sigma complex).
+
+Understanding mechanisms helps predict products, control reactions, and design new synthetic pathways.
+
+(Suggested insertion: Diagrams showing general arrow pushing for heterolytic cleavage (two electrons to one atom) and homolytic cleavage (one electron to each atom forming radicals). Step-by-step mechanisms for: free-radical halogenation of methane, S_N2 reaction, S_N1 reaction (showing carbocation intermediate), electrophilic addition of HBr to an alkene.)`,
+          "mcq": [
+            {
+              "question": "An electron-rich species that donates an electron pair to form a new bond is called a(n):",
+              "options": [
+                "Electrophile",
+                "Nucleophile",
+                "Free radical",
+                "Carbocation"
+              ],
+              "correctAnswer": "Nucleophile",
+              "explanation": "A nucleophile ('nucleus-loving') is a Lewis base that is rich in electrons (e.g., has a lone pair or a negative charge) and attacks an electron-deficient center to form a covalent bond."
+            }
+          ]
+        },
+        {
+          "title": "16.3 Alcohols, Ethers, Aldehydes, Ketones, Carboxylic Acids, and Derivatives (Key Reactions)",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=LIgrcrK41Fk",
+          "content": `This section surveys some characteristic reactions of common oxygen-containing functional groups.
+(Focus here is on what happens, mechanisms might be simplified or referred back to 16.2)
+
+Alcohols (R-OH):
+
+Combustion: Alcohol + O₂ → CO₂ + H₂O (exothermic).
+
+Oxidation: Outcome depends on type of alcohol (1°, 2°, 3°) and oxidizing agent (e.g., KMnO₄, K₂Cr₂O₇/H⁺, PCC).
+
+Primary alcohols (RCH₂OH): Can be oxidized to aldehydes (RCHO) (using PCC or controlled oxidation), and further to carboxylic acids (RCOOH) (using stronger oxidants).
+
+Secondary alcohols (R₂CHOH): Oxidized to ketones (R₂C=O).
+
+Tertiary alcohols (R₃COH): Generally resistant to oxidation (no H on C-OH).
+
+Dehydration (Elimination): Formation of alkenes by removal of H₂O (acid-catalyzed, heat). (e.g., Ethanol → Ethene + H₂O).
+
+Substitution (e.g., with HX or PX₃, PX₅, SOCl₂): -OH group replaced by halogen. (e.g., ROH + HCl → RCl + H₂O).
+
+Esterification (with Carboxylic Acids): Alcohol + Carboxylic Acid ⇌ Ester + Water (acid-catalyzed). (e.g., CH₃OH + CH₃COOH ⇌ CH₃COOCH₃ + H₂O).
+
+Reaction as weak acids (with strong bases like Na): 2ROH + 2Na → 2RONa (alkoxide) + H₂.
+
+Ethers (R-O-R'):
+
+Generally quite unreactive (no -OH group like alcohols).
+
+Cleavage of C-O bond by strong acids (e.g., conc. HI, HBr) at high temperatures to form alkyl halides.
+
+Can form peroxides upon standing in air (safety hazard).
+
+Aldehydes (R-CHO) and Ketones (R-CO-R'): Contain carbonyl group C=O.
+
+Oxidation:
+
+Aldehydes: Easily oxidized to carboxylic acids (RCOOH) by mild oxidizing agents (e.g., Tollen's reagent - silver mirror test; Fehling's/Benedict's solution - red ppt of Cu₂O).
+
+Ketones: Generally resistant to mild oxidation (C-C bond cleavage needed, which requires stronger conditions).
+
+Reduction (to Alcohols):
+
+Reduced to primary alcohols (from aldehydes) or secondary alcohols (from ketones) using reducing agents like LiAlH₄, NaBH₄, or catalytic hydrogenation (H₂/Ni,Pt,Pd).
+
+RCHO + [H] → RCH₂OH
+
+RCOR' + [H] → RCH(OH)R'
+
+Nucleophilic Addition to Carbonyl Group: (Key reaction type). The C=O bond is polar (C<sup>δ⁺</sup>=O<sup>δ⁻</sup>).
+
+Addition of HCN → cyanohydrins.
+
+Addition of Grignard reagents (RMgX) → alcohols.
+
+Addition of alcohols → hemiacetals/hemiketals, then acetals/ketals (important in carbohydrate chemistry).
+
+Reaction with amines → imines (Schiff bases).
+
+Reactions involving α-hydrogens (e.g., Aldol condensation - more advanced).
+
+Carboxylic Acids (R-COOH): Contain carboxyl group -COOH.
+
+Acidic Properties: Weak acids, react with bases to form salts (carboxylates) and water. RCOOH + NaOH → RCOONa + H₂O.
+
+Esterification (with Alcohols): RCOOH + R'OH ⇌ RCOOR' (ester) + H₂O (acid-catalyzed equilibrium).
+
+Reduction (to Primary Alcohols): By strong reducing agents like LiAlH₄ (not NaBH₄). RCOOH → RCH₂OH.
+
+Conversion to Acid Derivatives: (More advanced, e.g., to acid halides, acid anhydrides, amides).
+
+Esters (R-COOR'):
+
+Hydrolysis (reverse of esterification):
+
+Acid Hydrolysis (reversible): Ester + H₂O (H⁺) ⇌ Carboxylic Acid + Alcohol.
+
+Alkaline Hydrolysis (Saponification - irreversible): Ester + NaOH(aq) → Carboxylate Salt + Alcohol. (Used to make soap from fats/oils, which are esters of glycerol).
+
+Reduction (to two alcohols) by LiAlH₄.
+
+(Suggested insertion: For each functional group class, list 1-2 key characteristic reactions with balanced equations and brief description of conditions. For example: Oxidation of primary alcohol to aldehyde then acid; oxidation of aldehyde to acid; reduction of aldehyde/ketone to alcohol; esterification; ester hydrolysis. Highlight simple tests like Tollen's for aldehydes.)`,
+          "mcq": [
+            {
+              "question": "The oxidation of a primary alcohol (like ethanol) with a strong oxidizing agent (like acidified KMnO₄) will produce a(n):",
+              "options": [
+                "Aldehyde",
+                "Ketone",
+                "Carboxylic acid",
+                "Ester"
+              ],
+              "correctAnswer": "Carboxylic acid",
+              "explanation": "Primary alcohols can be oxidized first to an aldehyde, but with a strong oxidizing agent, the reaction continues, and the aldehyde is further oxidized to a carboxylic acid. To stop at the aldehyde stage, a milder, controlled oxidant like PCC is needed."
+            }
+          ]
+        },
+        {
+          "title": "16.4 Polymer Chemistry (Addition vs. Condensation Polymers)",
+          "image": "https://images.pexels.com/photos/13014236/pexels-photo-13014236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=IfED31v1L4E",
+          "content": `Polymers: Large molecules (macromolecules) composed of many repeating structural units called monomers, linked together by covalent bonds.
+
+Monomer: The small molecule that is the basic repeating unit in a polymer.
+
+Polymerization: The chemical process by which monomers are joined together to form a polymer.
+
+Types of Polymerization Reactions (and Polymers formed):
+
+Addition Polymerization (Chain-Growth Polymerization):
+
+Monomers (usually alkenes or derivatives containing C=C double bonds) add to one another sequentially to form a long chain polymer.
+
+The empirical formula of the polymer is the same as that of the monomer (no atoms are lost).
+
+Often initiated by free radicals, cations, or anions.
+
+Mechanism typically involves initiation, propagation, and termination steps (similar to free radical reactions).
+
+Common Addition Polymers:
+
+Poly(ethene) / Polyethylene (PE): Monomer: Ethene (CH₂=CH₂). Use: Plastic bags, bottles.
+n CH₂=CH₂ → -(CH₂-CH₂)-ₙ
+
+Poly(propene) / Polypropylene (PP): Monomer: Propene (CH₂=CHCH₃). Use: Ropes, containers, carpets.
+
+Poly(chloroethene) / Polyvinyl Chloride (PVC): Monomer: Chloroethene (Vinyl chloride, CH₂=CHCl). Use: Pipes, window frames, flooring.
+
+Poly(styrene) / Polystyrene (PS): Monomer: Styrene (Phenylethene, C₆H₅CH=CH₂). Use: Packaging, disposable cups/containers.
+
+Poly(tetrafluoroethene) / PTFE (Teflon): Monomer: Tetrafluoroethene (CF₂=CF₂). Use: Non-stick coatings.
+
+Condensation Polymerization (Step-Growth Polymerization):
+
+Monomers (or oligomers) react to form a polymer with the elimination (loss) of a small molecule, usually water (H₂O), but sometimes HCl, CH₃OH, etc.
+
+Monomers involved must have at least two functional groups that can react with each other.
+
+The empirical formula of the repeating unit in the polymer is different from that of the monomers (due to loss of small molecule).
+
+Common Condensation Polymers:
+
+Polyesters: Formed from reaction of a dicarboxylic acid (or its derivative) and a diol (dialcohol), with loss of water. The repeating unit contains an ester linkage (-COO-).
+
+Example: Poly(ethylene terephthalate) (PET or Terylene/Dacron): Monomers are terephthalic acid and ethylene glycol. Use: Beverage bottles, clothing fibers.
+
+Polyamides: Formed from reaction of a dicarboxylic acid and a diamine, with loss of water. Or from amino acids reacting with themselves. The repeating unit contains an amide linkage (-CONH-).
+
+Example: Nylon 6,6: Monomers are hexanedioic acid (adipic acid) and hexane-1,6-diamine. Use: Fibers for clothing, ropes, carpets.
+
+Example: Proteins (natural polyamides): Monomers are amino acids.
+
+Polyurethanes, Polycarbonates, Silicones.
+
+Natural Polymers:
+Many important biological macromolecules are polymers.
+
+Proteins (polymers of amino acids - polyamides).
+
+Polysaccharides (e.g., starch, cellulose, glycogen - polymers of monosaccharides like glucose - often condensation type involving glycosidic bonds).
+
+Nucleic Acids (DNA, RNA - polymers of nucleotides).
+
+(Suggested insertion: Simple equations showing the polymerization of ethene to polyethylene (addition). Equation showing the formation of an ester linkage from a dicarboxylic acid and a diol (condensation, with loss of H₂O shown) for polyester. Equation showing amide linkage for nylon or protein formation. Table comparing key features of addition and condensation polymerization.)`,
+          "mcq": [
+            {
+              "question": "Nylon and polyesters are examples of which type of polymer?",
+              "options": [
+                "Addition polymers",
+                "Condensation polymers",
+                "Natural polymers",
+                "Thermosetting polymers"
+              ],
+              "correctAnswer": "Condensation polymers",
+              "explanation": "Condensation polymers are formed when monomers join together with the elimination of a small molecule, such as water. The formation of the amide links in nylon and the ester links in polyesters both involve the loss of a water molecule for each link formed."
+            },
+            {
+              "question": "Which of the following reaction types is characteristic of alkanes?",
+              "options": [
+                "Electrophilic addition",
+                "Free-radical substitution",
+                "Nucleophilic substitution",
+                "Elimination"
+              ],
+              "correctAnswer": "Free-radical substitution",
+              "explanation": "Alkanes are saturated and relatively unreactive. Their primary reaction (other than combustion) is substitution, typically occurring via a free-radical mechanism when initiated by UV light or heat, such as in the halogenation of methane."
+            },
+            {
+              "question": "A test that produces a 'silver mirror' when warmed with a substance indicates the presence of which functional group?",
+              "options": [
+                "Alcohol",
+                "Ketone",
+                "Aldehyde",
+                "Carboxylic acid"
+              ],
+              "correctAnswer": "Aldehyde",
+              "explanation": "The Tollen's test uses Tollen's reagent ([Ag(NH₃)₂]⁺) to oxidize aldehydes to carboxylic acids. In the process, the Ag⁺ ions are reduced to metallic silver (Ag), which deposits on the inside of the test tube, creating a silver mirror. Ketones do not react with Tollen's reagent."
+            },
+            {
+              "question": "The reaction of a carboxylic acid with an alcohol in the presence of an acid catalyst produces an ester and water. This reaction is called:",
+              "options": [
+                "Hydrolysis",
+                "Saponification",
+                "Esterification",
+                "Dehydration"
+              ],
+              "correctAnswer": "Esterification",
+              "explanation": "Esterification is the specific name for the condensation reaction between a carboxylic acid and an alcohol to form an ester. It is a reversible reaction that is typically catalyzed by a strong acid."
+            },
+            {
+              "question": "The monomer used to make the polymer poly(ethene) or polyethylene is:",
+              "options": [
+                "Ethane",
+                "Ethene",
+                "Ethyne",
+                "Ethanol"
+              ],
+              "correctAnswer": "Ethene",
+              "explanation": "Poly(ethene) is an addition polymer. It is formed by the joining of many ethene (CH₂=CH₂) monomers, where the double bond in each monomer breaks to form single bonds with adjacent monomers, creating a long saturated chain."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 17: Laboratory Techniques and Safety",
+      "image": "https://images.pexels.com/photos/7470823/pexels-photo-7470823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=IYbEl3XpMuo",
+        "https://www.youtube.com/watch?v=jd-2U23CjeA",
+        "https://www.youtube.com/watch?v=xFrT3C6mcEs"
+      ],
+      "sections": [
+        {
+          "title": "17.1 Common Laboratory Apparatus (Glassware, Balances, Burettes, etc.)",
+          "image": "https://images.pexels.com/photos/6129867/pexels-photo-6129867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=JpnFSCcU228",
+          "content": `Practical work is the cornerstone of chemistry, allowing for the observation of chemical phenomena, testing of theories, and synthesis of new substances. Proficiency in basic laboratory techniques and a strong commitment to safety are essential for any student of chemistry. This chapter consolidates and expands on common laboratory apparatus, emphasizes safety protocols for handling chemicals and equipment, and outlines best practices for measurement and data recording. This builds on general lab skills introduced in earlier "Nature of Science" type chapters if present in an Integrated Science prerequisite, focusing now specifically on chemical laboratory contexts.
+
+This section details common equipment used in a chemistry lab, their specific uses, and proper handling.
+
+Measuring Volume:
+
+Beakers: Cylindrical containers with a spout, used for mixing, stirring, and roughly measuring volumes of liquids. Not accurate for precise volume measurement.
+
+Erlenmeyer Flasks (Conical Flasks): Conical shape with a narrow neck; used for mixing, swirling (reduces splashing), heating solutions, and titrations. Not accurate for precise volume measurement.
+
+Graduated Cylinders (Measuring Cylinders): Tall, cylindrical containers with precise volume markings (graduations). Used for accurately measuring volumes of liquids. Read volume at the bottom of the meniscus (for water/aqueous solutions).
+
+Volumetric Flasks: Flasks with a long, narrow neck and a single calibration mark. Used to prepare solutions of a specific, precise volume and concentration with high accuracy.
+
+Pipettes: Used to transfer precise volumes of liquids.
+
+Volumetric Pipette (Bulb Pipette): Calibrated to deliver a single, fixed, precise volume.
+
+Graduated Pipette (Mohr Pipette, Serological Pipette): Calibrated with markings to deliver variable volumes.
+
+(Pipette fillers/bulbs are used to draw liquid into pipettes - never mouth pipette).
+
+Burettes (Burets): Long, graduated glass tubes with a stopcock (tap) at the bottom. Used to dispense precise and variable volumes of a liquid, especially in titrations. Read from top down.
+
+Measuring Mass:
+
+Electronic Balance (Digital Balance): Provides direct, accurate mass readings. Must be tared (zeroed) before use. Handle with care, keep clean.
+
+Triple Beam Balance (less common now): Mechanical balance.
+
+Heating Apparatus:
+
+Bunsen Burner: Produces a flame for heating. Adjust air hole for blue (hotter, complete combustion) or yellow (luminous, cooler) flame. Use with tripod and wire gauze.
+
+Hot Plate: Electrically heated flat surface. Safer for flammable liquids (no open flame).
+
+Water Bath / Oil Bath / Sand Bath: Used for controlled, gentle heating or maintaining constant temperature.
+
+Holding and Supporting Apparatus:
+
+Test Tubes and Test Tube Rack.
+
+Beakers and Flasks.
+
+Retort Stand (Support Stand) with Clamps (Boss head and Clamp holder): Used to hold glassware and apparatus securely.
+
+Tripod Stand: Used with wire gauze to support beakers/flasks over a Bunsen burner.
+
+Wire Gauze: Placed on tripod to distribute heat evenly.
+
+Separation Apparatus:
+
+Filter Funnel and Filter Paper: For filtration.
+
+Separating Funnel: For separating immiscible liquids.
+
+Evaporating Dish (Basin): For evaporating solvents from solutions.
+
+Crucible (with lid): For heating substances strongly.
+
+Distillation Apparatus: (Condenser, round-bottom flask, still head, receiving flask - for simple and fractional distillation).
+
+Other Common Glassware/Apparatus:
+
+Watch Glass: Curved piece of glass, used to cover beakers, hold small samples for weighing, or for evaporation of small amounts.
+
+Stirring Rod (Glass): For stirring solutions.
+
+Spatula/Scoopula: For transferring solid chemicals.
+
+Wash Bottle: Contains distilled water for rinsing glassware or adding small amounts of water.
+
+Thermometer: For measuring temperature.
+
+(Suggested insertion: Clear images or line drawings of each piece of common laboratory apparatus with labels and a brief description of its primary use and any key handling tips, e.g., how to read a meniscus in a graduated cylinder or burette.)`,
+          "mcq": [
+            {
+              "question": "Which piece of glassware is designed to prepare a solution of a specific, precise volume with high accuracy?",
+              "options": [
+                "Beaker",
+                "Erlenmeyer flask",
+                "Graduated cylinder",
+                "Volumetric flask"
+              ],
+              "correctAnswer": "Volumetric flask",
+              "explanation": "A volumetric flask is calibrated with a single mark on its long neck to contain a very precise volume (e.g., 100.00 mL) when filled to that mark. It is the standard instrument for preparing solutions of accurate concentrations."
+            }
+          ]
+        },
+        {
+          "title": "17.2 Safety Protocols: Handling Chemicals, Protective Equipment",
+          "image": "https://images.pexels.com/photos/7722835/pexels-photo-7722835.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=8wnZPbTq0Hs",
+          "content": `Laboratory safety is paramount. Always prioritize safety to prevent accidents and injuries.
+General Safety Rules (Review and Chemical Focus):
+
+Know the location of safety equipment: Eyewash stations, safety showers, fire extinguishers, fire blankets, first aid kit, fume hoods, spill kits.
+
+Wear Personal Protective Equipment (PPE):
+
+Safety Goggles/Glasses: Must be worn at all times when handling chemicals or performing experiments, to protect eyes from splashes, fumes, or projectiles.
+
+Lab Coat or Apron: To protect skin and clothing from spills.
+
+Gloves: Appropriate chemical-resistant gloves when handling hazardous chemicals (check compatibility). Remove before touching personal items (pens, notebooks, face).
+
+Closed-toe Shoes: Essential.
+
+Chemical Handling:
+
+Read Labels and Safety Data Sheets (SDS/MSDS): Understand the hazards (flammable, corrosive, toxic, irritant, oxidizer), handling precautions, and emergency procedures for every chemical used. SDS provide detailed safety information.
+
+Never Taste or Directly Smell Chemicals: Waft fumes cautiously towards your nose with your hand if you need to note odor.
+
+Dispensing Chemicals: Use clean spatulas for solids. Pour liquids carefully to avoid splashing. Use a pipette filler for pipettes. Never return excess chemical to the stock bottle (to avoid contamination).
+
+Heating Chemicals: Never heat flammable liquids with an open flame; use a water bath or heating mantle on a hot plate. Point test tubes being heated away from yourself and others. Never heat closed containers.
+
+Mixing Chemicals: Add reagents slowly and carefully, especially when reactions might be vigorous or exothermic. Always add concentrated acid to water slowly while stirring (AAA rule: Always Add Acid to water), not water to acid, to dissipate heat and prevent splashing.
+
+Fume Hood: Work in a fume hood when using volatile, toxic, or strong-smelling chemicals to prevent inhalation of harmful vapors.
+
+Waste Disposal:
+
+Dispose of chemical waste in designated labeled waste containers as instructed by your teacher. Do NOT pour all chemicals down the sink. Some require special disposal.
+
+Dispose of broken glassware in designated sharps containers.
+
+Accidents and Spills:
+
+Report all accidents, injuries, and spills to the instructor immediately.
+
+For chemical spills on skin or eyes, flush with copious amounts of water for at least 15 minutes using safety shower or eyewash.
+
+Clean up spills promptly and appropriately according to instructor's guidance.
+
+Housekeeping: Keep your work area clean and uncluttered.
+
+Personal Hygiene: Wash hands thoroughly with soap and water after handling chemicals and before leaving the lab.
+
+Understanding Hazard Symbols (Pictograms):
+Recognize standard GHS (Globally Harmonized System) hazard pictograms found on chemical labels indicating specific hazards.
+
+Examples: Flammable, Corrosive, Toxic (Acute Toxicity), Health Hazard/Carcinogen, Irritant/Harmful, Oxidizer, Explosive, Gas Under Pressure, Environmental Hazard.
+
+(Suggested insertion: Images of common GHS hazard pictograms with their meanings. A checklist of general lab safety rules. Emphasis on "Always wear goggles.")`,
+          "mcq": [
+            {
+              "question": "What is the correct procedure for diluting a concentrated acid?",
+              "options": [
+                "Add water to the acid quickly",
+                "Add acid to the water quickly",
+                "Add water to the acid slowly",
+                "Add acid to the water slowly"
+              ],
+              "correctAnswer": "Add acid to the water slowly",
+              "explanation": "The dilution of strong acids is highly exothermic. The 'AAA' rule (Always Add Acid to water) is followed because water has a high specific heat capacity and can absorb the heat generated. Adding water to acid can cause the small amount of water to boil violently and splash the concentrated acid out of the container."
+            }
+          ]
+        },
+        {
+          "title": "17.3 Measurement and Data Recording Best Practices (Chemical Context)",
+          "image": "https://images.pexels.com/photos/7580294/pexels-photo-7580294.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=HWl6EKXyJCM",
+          "content": `Accurate and reliable data are essential for valid experimental conclusions.
+Measurement Techniques:
+
+Mass (using Electronic Balance):
+
+Ensure balance is level and clean.
+
+Tare (zero) the balance with the weighing boat/container on the pan.
+
+Carefully add the substance to the container until desired mass is reached (or record the mass of substance added). Avoid spilling on balance pan.
+
+Record mass to the precision of the balance (all decimal places shown).
+
+Volume of Liquids (using Graduated Cylinder, Pipette, Burette):
+
+Choose appropriate glassware for the volume and precision required. (Beakers/flasks are for approximate volumes).
+
+Read the volume at eye level with the bottom of the meniscus (the curved surface of the liquid, for water and most aqueous solutions it's concave).
+
+Graduated Cylinder: Estimate to one decimal place beyond the smallest graduation mark (if markings allow).
+
+Pipette: Calibrated "To Deliver" (TD). Allow liquid to drain by gravity; do not blow out the last drop unless pipette is specifically calibrated for that (usually has a frosted band or double rings if so).
+
+Burette: Read initial and final volumes carefully (usually to ±0.05 mL or ±0.02 mL depending on graduations). Volume delivered = Final Reading - Initial Reading. Ensure no air bubbles in tip.
+
+Temperature (using Thermometer): Ensure bulb is fully immersed in the substance being measured. Allow time for thermometer to reach thermal equilibrium. Read at eye level, avoid parallax error.
+
+Data Recording:
+
+Prepare a neat data table before starting the experiment, with clear headings for each quantity to be measured, including units.
+
+Record all raw data directly into your lab notebook or data sheet immediately as it is observed or measured. Do not write on scraps of paper first.
+
+Record measurements with the correct number of significant figures and appropriate units. Include uncertainties if known or estimated from instrument precision.
+
+Note any qualitative observations (color changes, gas evolution, formation of precipitate, unexpected occurrences) alongside quantitative data.
+
+If repeating trials, record data for each trial separately.
+
+Use pen for recording (if lab notebook is formal record). Mistakes should be crossed out neatly with a single line, and the correct value written alongside (do not erase or use white-out completely, so errors can be traced if needed).
+
+(Suggested insertion: Clear diagrams showing how to read a meniscus correctly in a graduated cylinder, pipette, and burette. Example of a well-organized data table for a simple experiment, showing columns for IV, DV, trials, average, units. Tips on estimating readings between scale marks.)`,
+          "mcq": [
+            {
+              "question": "When reading the volume of a liquid in a burette or graduated cylinder, you should position your eye:",
+              "options": [
+                "Directly above the meniscus",
+                "Directly below the meniscus",
+                "At eye level with the meniscus",
+                "At a 45-degree angle to the meniscus"
+              ],
+              "correctAnswer": "At eye level with the meniscus",
+              "explanation": "Reading the volume at eye level with the meniscus (the curved surface of the liquid) is crucial to avoid parallax error, which can lead to inaccurate volume readings."
+            }
+          ]
+        },
+        {
+          "title": "17.4 Qualitative Analysis: Identifying Cations and Anions (Systematic Approach)",
+          "image": "https://images.pexels.com/photos/19835563/pexels-photo-19835563.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=AaSx1pVwJUg",
+          "content": `(This section details the practical application of tests learned in Ch. 10 of Integrated Science or specific chemistry modules).
+Qualitative Analysis: The branch of analytical chemistry that deals with the identification of the constituent elements or ions present in a sample (i.e., "what is present?").
+
+Relies on characteristic chemical reactions that produce observable results (e.g., color changes, formation/dissolution of precipitates, evolution of gases with specific properties, flame colors).
+
+General Approach for Identifying Unknown Ions in Solution:
+Often involves a systematic scheme of adding specific reagents in a particular order, observing reactions, and using these observations to deduce the presence or absence of certain ions. Separation techniques (like filtration or centrifugation) might be used to isolate precipitates for further testing.
+
+Tests for Cations (Positive Ions):
+
+Addition of NaOH(aq) dropwise then in excess: Observe color of precipitate (if any) and its solubility in excess NaOH.
+
+Common Precipitates: Fe²⁺ (dirty green, oxidizes to brown), Fe³⁺ (reddish-brown), Cu²⁺ (light blue), Zn²⁺ (white, soluble in excess NaOH), Al³⁺ (white, soluble in excess NaOH), Pb²⁺ (white, soluble in excess NaOH), Ca²⁺ (white, usually needs high conc.), Mg²⁺ (white).
+
+Addition of NH₃(aq) (aqueous ammonia) dropwise then in excess: Observe precipitate color and solubility in excess.
+
+Different solubility patterns compared to NaOH for some ions (e.g., Zn²⁺ ppt dissolves in excess NH₃, Al³⁺ ppt insoluble in excess NH₃; Cu²⁺ blue ppt dissolves in excess NH₃ to form deep blue solution [Cu(NH₃)₄]²⁺).
+
+Flame Tests: Some metal cations produce characteristic colors when their compounds are heated in a Bunsen flame. (Dip a clean wire loop in sample, then in flame).
+
+Examples: Li⁺ (crimson), Na⁺ (intense yellow), K⁺ (lilac/pale purple - often viewed through cobalt blue glass to filter Na⁺ yellow), Ca²⁺ (brick red/orange-red), Sr²⁺ (crimson/red), Ba²⁺ (pale green/apple green), Cu²⁺ (blue/green).
+
+Specific tests for other cations (e.g., NH₄⁺ - add NaOH, warm, test gas with damp red litmus - turns blue).
+
+Tests for Anions (Negative Ions):
+
+Carbonate (CO₃²⁻) or Hydrogencarbonate (HCO₃⁻): Add a dilute acid (e.g., HCl, HNO₃). Effervescence (bubbles) of CO₂ gas observed. Test gas by passing through limewater (Ca(OH)₂ solution) – turns milky/cloudy due to CaCO₃ precipitate.
+
+Sulfate (SO₄²⁻): Acidify solution with dilute HCl (to remove CO₃²⁻ which also gives white ppt with Ba²⁺), then add BaCl₂(aq). White precipitate of BaSO₄ forms if sulfate is present (insoluble in acids).
+
+Sulfite (SO₃²⁻): Acidify with dilute HCl, warm gently. SO₂ gas may be evolved (pungent smell of burning matches, turns acidified K₂Cr₂O₇ paper from orange to green). Also gives white ppt with BaCl₂ (like sulfate), but BaSO₃ dissolves in dilute HCl while BaSO₄ does not.
+
+Halides (Cl⁻, Br⁻, I⁻):
+
+Acidify solution with dilute HNO₃ (to prevent precipitation of other silver salts like Ag₂CO₃).
+
+Add AgNO₃(aq).
+
+Cl⁻ → White precipitate of AgCl, soluble in dilute NH₃(aq), insoluble in conc. NH₃(aq) after reprecipitation (Actually, AgCl is soluble in both dilute and conc. NH3). More correctly: AgCl is soluble in dilute NH3(aq).
+
+Br⁻ → Cream precipitate of AgBr, sparingly soluble in dilute NH₃(aq), soluble in concentrated NH₃(aq).
+
+I⁻ → Yellow precipitate of AgI, insoluble in both dilute and concentrated NH₃(aq).
+
+Confirmation for Br⁻/I⁻: Add organic solvent (e.g., hexane or CH₂Cl₂) and oxidizing agent (e.g., chlorine water). Br₂ gives orange/brown color in organic layer; I₂ gives purple/violet color.
+
+Nitrate (NO₃⁻): (Brown Ring Test - less common in basic labs due to conc. H₂SO₄). Add freshly prepared FeSO₄(aq) to the solution, then carefully add concentrated H₂SO₄ down the side of the tilted test tube to form a layer at the bottom. A brown ring at the junction of the two layers indicates NO₃⁻. (Or Devarda's alloy test for NH₃ production).
+
+Other tests: for phosphate, etc.
+
+Recording Qualitative Analysis Results: Systematically record observations in a table: Test performed, Observation, Inference.
+
+(Suggested insertion: Detailed flowcharts or tables for systematic cation and anion identification schemes. Expected colors of precipitates and flame tests clearly listed. Safety precautions specific to certain tests, e.g., handling concentrated acids, flammable solvents for flame tests.)`,
+          "mcq": [
+            {
+              "question": "A student adds dilute nitric acid followed by silver nitrate solution to an unknown solution, and a cream-colored precipitate forms. This precipitate is sparingly soluble in dilute ammonia but dissolves in concentrated ammonia. Which anion is most likely present?",
+              "options": [
+                "Chloride (Cl⁻)",
+                "Bromide (Br⁻)",
+                "Iodide (I⁻)",
+                "Sulfate (SO₄²⁻)"
+              ],
+              "correctAnswer": "Bromide (Br⁻)",
+              "explanation": "The test described is the standard test for halide ions. Silver bromide (AgBr) is a cream-colored precipitate with the characteristic solubility pattern described. AgCl (white) is soluble in dilute ammonia, and AgI (yellow) is insoluble in concentrated ammonia."
+            },
+            {
+              "question": "A flame test produces an intense yellow color. This is the characteristic test for which cation?",
+              "options": [
+                "K⁺ (Potassium)",
+                "Ca²⁺ (Calcium)",
+                "Na⁺ (Sodium)",
+                "Cu²⁺ (Copper)"
+              ],
+              "correctAnswer": "Na⁺ (Sodium)",
+              "explanation": "The intense, persistent yellow-orange flame is the classic positive test for the presence of sodium ions. Even trace amounts of sodium contamination can produce this color."
+            },
+            {
+              "question": "Which piece of Personal Protective Equipment (PPE) is considered the most essential and must be worn at all times in a chemistry lab?",
+              "options": [
+                "Gloves",
+                "Lab coat",
+                "Safety goggles",
+                "Fume hood"
+              ],
+              "correctAnswer": "Safety goggles",
+              "explanation": "While all PPE is important, safety goggles are non-negotiable and must be worn at all times to protect the eyes from chemical splashes, fumes, and projectiles. Eye damage is often irreversible."
+            },
+            {
+              "question": "A student is testing for a carbonate ion (CO₃²⁻). After adding a dilute acid, what observation confirms the presence of the carbonate?",
+              "options": [
+                "A blue precipitate forms.",
+                "The solution turns red.",
+                "Effervescence occurs, and the gas produced turns limewater milky.",
+                "A pungent-smelling gas is evolved."
+              ],
+              "correctAnswer": "Effervescence occurs, and the gas produced turns limewater milky.",
+              "explanation": "Acids react with carbonates to produce carbon dioxide (CO₂) gas, which is seen as effervescence (fizzing). The definitive test for CO₂ is to bubble it through limewater (calcium hydroxide solution), which turns milky or cloudy due to the formation of a white precipitate of calcium carbonate."
+            },
+            {
+              "question": "A burette is used for:",
+              "options": [
+                "Accurately measuring a fixed volume of liquid for transfer.",
+                "Approximately measuring the volume of a liquid.",
+                "Preparing a solution of a precise concentration.",
+                "Accurately dispensing a variable volume of liquid."
+              ],
+              "correctAnswer": "Accurately dispensing a variable volume of liquid.",
+              "explanation": "A burette is designed to deliver precise but variable volumes of a liquid, which is why it is the key instrument for titrations. The volume delivered is found by subtracting the initial reading from the final reading."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 18: Experimental Investigations (Selected Examples)",
+      "image": "https://images.pexels.com/photos/10187652/pexels-photo-10187652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=IYbEl3XpMuo",
+        "https://www.youtube.com/watch?v=doJMDPCyl7A",
+        "https://www.youtube.com/watch?v=mSFxK4jJh80"
+      ],
+      "sections": [
+        {
+          "title": "18.1 Titration Techniques (Acid–Base, Redox, Complexometric)",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=vFVaEdMgq5I",
+          "content": `Building upon the techniques and safety protocols discussed in Chapter 17, this chapter provides a more detailed look at how to conduct, analyze, and report on specific types of quantitative experimental investigations common in chemistry. These include various titration techniques for determining concentrations, methods for preparing and standardizing solutions, approaches to monitoring rates of reaction, and experiments in thermochemistry using calorimetry. Each type of investigation requires careful planning, precise execution, accurate data collection, and thoughtful analysis to derive meaningful results.
+
+(Note: This chapter is about the process of these investigations, reinforcing Ch 9 and applying Ch 17 skills to quantitative labs.)
+
+Titration (Volumetric Analysis): A quantitative chemical analysis technique used to determine the unknown concentration of a solution (analyte) by reacting it with a solution of precisely known concentration (titrant or standard solution).
+
+Equivalence Point: The point in a titration where the amount of titrant added is stoichiometrically equivalent to the amount of analyte present (reaction is just complete).
+
+Endpoint: The point in a titration where a physical change (e.g., color change of an indicator) signals the completion of the reaction. Ideally, the endpoint should be very close to the equivalence point.
+
+Acid-Base Titration:
+
+Purpose: To determine concentration of an acidic or basic solution using a neutralization reaction.
+
+Procedure (Review from Ch 10 and Ch 17):
+
+Pipette a known volume of analyte into a conical flask. Add a few drops of suitable acid-base indicator (e.g., phenolphthalein for strong base/weak acid; methyl orange for strong acid/weak base).
+
+Fill burette with titrant (standard solution). Record initial volume.
+
+Add titrant slowly from burette to analyte while swirling, until indicator shows a permanent color change (endpoint).
+
+Record final burette volume. Calculate titre volume (Volume of titrant used).
+
+Repeat for concordant titres (usually 2-3 results within ±0.10 cm³ or ±0.20 cm³). Calculate average titre.
+
+Calculations:
+
+Write balanced chemical equation for the neutralization reaction.
+
+Calculate moles of titrant used: moles_titrant = M_titrant × V_titrant (in L).
+
+Use mole ratio from balanced equation to find moles of analyte reacted.
+
+Calculate concentration of analyte: M_analyte = moles_analyte / V_analyte (in L).
+
+Titration Curves (pH vs. Volume of titrant): Shape depends on strength of acid/base (see Ch 10.4). Equivalence point can be found from steep part of curve.
+
+Redox Titration:
+
+Uses a redox reaction to determine concentration of an oxidizing or reducing agent.
+
+Titrant is often a strong oxidizing agent (e.g., KMnO₄, K₂Cr₂O₇) or reducing agent.
+
+Endpoint detection:
+
+Some reactants act as self-indicators (e.g., KMnO₄ is deep purple, becomes colorless when reduced; endpoint is first permanent faint pink).
+
+Specific redox indicators that change color at a particular electrode potential.
+
+Calculations: Similar to acid-base, but mole ratios come from the balanced redox equation. Often requires balancing the redox equation first using half-reaction method.
+
+Example: Titration of Fe²⁺ with MnO₄⁻ (permanganate) in acidic solution.
+
+Complexometric Titration (Brief Mention/Example if in Syllabus):
+
+Involves formation of a colored complex between a metal ion and a complexing agent (ligand, e.g., EDTA - ethylenediaminetetraacetic acid).
+
+Used to determine concentration of metal ions. Requires a specific metal ion indicator.
+
+(Suggested insertion: Detailed diagram of a titration setup. Step-by-step calculations for a typical acid-base titration and a simple redox titration (e.g., Fe²⁺ with KMnO₄). Sketches of expected titration curves if not fully covered in Ch 10.)`,
+          "mcq": [
+            {
+              "question": "In a titration, the point at which the amount of titrant added is stoichiometrically equivalent to the amount of analyte is called the:",
+              "options": [
+                "Endpoint",
+                "Equivalence point",
+                "Half-equivalence point",
+                "Standard point"
+              ],
+              "correctAnswer": "Equivalence point",
+              "explanation": "The equivalence point is the theoretical point where the reaction is exactly complete according to the stoichiometry of the balanced equation. The endpoint is the observable point (e.g., indicator color change) that approximates the equivalence point."
+            }
+          ]
+        },
+        {
+          "title": "18.2 Preparation and Standardization of Solutions",
+          "image": "https://images.pexels.com/photos/8666817/pexels-photo-8666817.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=i80OsmSqQ-o",
+          "content": `Standard Solution: A solution whose concentration is accurately known.
+
+Primary Standard: A highly pure substance that can be weighed out accurately to prepare a standard solution directly. It should be stable, not hygroscopic (absorb moisture), have a high molar mass (to reduce weighing errors), and react stoichiometrically.
+
+Examples: Anhydrous sodium carbonate (Na₂CO₃ - base), potassium hydrogen phthalate (KHP - acid), oxalic acid.
+
+Secondary Standard: A solution whose concentration is determined by titrating it against a primary standard (this process is called standardization). Many common lab reagents (e.g., NaOH, HCl, H₂SO₄) are secondary standards because they are hygroscopic, absorb CO₂, or are not available in high purity.
+
+Preparation of a Standard Solution from a Solid (e.g., Na₂CO₃):
+
+Calculate the mass of pure solid required to make a specific volume of solution with a desired molarity (mass = Molarity × Volume (L) × Molar Mass).
+
+Accurately weigh out the calculated mass of the primary standard using an electronic balance (use weighing boat/paper, tare).
+
+Carefully transfer the solid to a volumetric flask of the required volume. Rinse weighing boat with distilled water and add rinsings to flask.
+
+Add some distilled water to dissolve the solid. Swirl gently.
+
+Carefully add more distilled water up to the calibration mark on the neck of the volumetric flask (bottom of meniscus on the mark).
+
+Stopper the flask and invert several times to ensure thorough mixing and uniform concentration.
+
+Standardization of a Solution (e.g., HCl using standard Na₂CO₃):
+
+Prepare a standard solution of the primary standard (e.g., Na₂CO₃) as above.
+
+Titrate a known volume of this primary standard solution with the solution to be standardized (e.g., HCl from burette), using a suitable indicator.
+
+Repeat for concordant titres.
+
+Use titration calculations (M₁V₁/n₁ = M₂V₂/n₂ or mole method) to determine the accurate molarity of the secondary standard solution (HCl).
+
+(Suggested insertion: A flowchart or step-by-step illustrated guide for preparing a standard solution using a volumetric flask. An example of standardizing an HCl solution with Na₂CO₃, showing calculations.)`,
+          "mcq": [
+            {
+              "question": "A substance used to accurately determine the concentration of another solution via titration is known as a:",
+              "options": [
+                "Catalyst",
+                "Primary standard",
+                "Buffer",
+                "Dessicant"
+              ],
+              "correctAnswer": "Primary standard",
+              "explanation": "A primary standard is a highly pure, stable compound that can be weighed accurately to prepare a solution of known concentration. This solution can then be used to standardize (find the accurate concentration of) other solutions, called secondary standards."
+            }
+          ]
+        },
+        {
+          "title": "18.3 Rates of Reaction: Methods for Monitoring",
+          "image": "https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=6pDnoKSwl7s",
+          "content": `(This applies kinetics concepts from Ch 12 to practical measurement.)
+To study reaction rates and determine rate laws or effects of factors (concentration, temperature, catalyst), we need to monitor the change in concentration of a reactant or product over time.
+Methods for Monitoring Reaction Rates:
+The chosen method depends on the specific reaction and the properties of the reactants/products.
+
+Measuring Volume of Gas Evolved:
+
+If a reaction produces a gas, its volume can be collected over time (e.g., using a gas syringe, or by upward/downward displacement of water if gas is not very water-soluble).
+
+Rate can be expressed as ΔVolume_gas / Δtime.
+
+Example: Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g). Collect H₂ gas.
+
+Measuring Mass Loss:
+
+If a gaseous product escapes from an unsealed reaction vessel (e.g., flask on a balance), the decrease in total mass of the reaction mixture over time can be measured.
+
+Rate expressed as ΔMass / Δtime.
+
+Example: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)↑. CO₂ escapes, mass decreases.
+
+Measuring Change in Concentration by Titration (Quenching):
+
+Take small samples (aliquots) from the reaction mixture at regular time intervals.
+
+"Quench" the reaction in the sample (stop it, e.g., by rapid cooling, dilution, or adding a substance that reacts with one of the reactants quickly).
+
+Determine the concentration of a reactant or product in the quenched sample by titration.
+
+Plot concentration vs. time to find rate.
+
+Colorimetry / Spectrophotometry:
+
+If a reactant or product is colored, its concentration can be monitored by measuring the absorbance (or transmittance) of light of a specific wavelength passing through the solution using a colorimeter or spectrophotometer.
+
+Absorbance is usually proportional to concentration (Beer-Lambert Law, A = εcl).
+
+Rate based on ΔAbsorbance / Δtime.
+
+Measuring Change in Electrical Conductivity:
+
+If there is a significant change in the concentration of ions in solution during the reaction, the electrical conductivity of the solution will change, which can be monitored over time.
+
+Measuring Change in pH:
+
+If H⁺ or OH⁻ ions are consumed or produced, pH changes can monitor reaction progress.
+
+Clock Reactions:
+
+Measure the time taken for a specific, easily observable event to occur (e.g., a sudden color change, appearance of a precipitate) under different initial conditions (e.g., varying concentrations).
+
+The initial rate is then ≈ 1 / time_taken. Used to find orders of reaction.
+
+Example: Iodine clock reaction.
+
+Analyzing Rate Data:
+
+Plot graph of (Concentration of reactant/product) vs. Time.
+
+Determine initial rate from tangent at t=0.
+
+Determine instantaneous rates from tangents at various times.
+
+Plot appropriate graphs (ln[A] vs t, or 1/[A] vs t) to determine order and rate constant if integrated rate laws are used.
+
+(Suggested insertion: Simple diagrams for methods like gas collection by syringe, mass loss setup, and basic concept of colorimetry. For each method, list a suitable example reaction. Brief outline of how data from a "clock reaction" is used.)`,
+          "mcq": [
+            {
+              "question": "Which method would be most suitable for monitoring the rate of the reaction: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)?",
+              "options": [
+                "Measuring the change in pH",
+                "Colorimetry",
+                "Measuring the volume of gas evolved over time",
+                "Measuring the change in electrical conductivity"
+              ],
+              "correctAnswer": "Measuring the volume of gas evolved over time",
+              "explanation": "The reaction produces a gas, carbon dioxide (CO₂). A convenient and common way to monitor the rate is to collect the gas in a gas syringe or by displacing water and measure the volume produced at regular time intervals. Measuring mass loss would also be suitable."
+            }
+          ]
+        },
+        {
+          "title": "18.4 Thermochemistry Experiments (Calorimetry - Practical Application)",
+          "image": "https://images.pexels.com/photos/8471788/pexels-photo-8471788.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=rUMpveEmlgw",
+          "content": `(Applies concepts from Ch 11.2 to experimental determination of enthalpy changes).
+Calorimetry: Experimental technique to measure heat absorbed or released (q) during a chemical or physical process. ΔH = q_p (at constant pressure).
+
+Basic Principle: Heat change of reaction = -(Heat change of calorimeter + Heat change of contents).
+
+Often assume Heat change of calorimeter is negligible for simple "coffee-cup" calorimeters, or it can be determined (calorimeter constant).
+
+Determining Enthalpy of Neutralization:
+
+React known volumes of acid and base solutions of known concentrations in a calorimeter (e.g., polystyrene cup).
+
+Measure initial temperatures of solutions (assume same if mixed quickly). Measure highest temperature reached after mixing.
+
+q_solution = m_solution × c_solution × ΔT_solution
+
+m_solution ≈ Total volume × density_water (assuming dilute solutions, density ≈ 1 g/mL).
+
+c_solution ≈ c_water (4.18 J/g°C).
+
+ΔT_solution = T_final - T_initial.
+
+q_reaction = -q_solution (if calorimeter heat capacity is ignored).
+
+ΔH_neutralization = q_reaction / moles of H₂O formed (usually expressed per mole of water). (Ensure to find limiting reactant if not 1:1 mole ratio or equimolar).
+
+Determining Enthalpy of Solution (Dissolving a Solid):
+
+Dissolve a known mass of solid solute in a known volume/mass of solvent (e.g., water) in a calorimeter.
+
+Measure initial temperature of solvent and final temperature of solution.
+
+q_solution = m_solution × c_solution × ΔT_solution.
+
+q_reaction = -q_solution.
+
+ΔH_solution = q_reaction / moles of solute dissolved.
+
+Determining Enthalpy of Combustion (using Bomb Calorimeter - often just discussed conceptually):
+
+A known mass of combustible substance is burned in excess oxygen in a sealed "bomb" immersed in a known mass of water in an insulated container.
+
+Measure temperature rise of water and bomb.
+
+q_reaction = -(q_water + q_bomb)
+q_bomb = C_bomb ΔT (C_bomb is heat capacity of bomb calorimeter, determined by calibration).
+
+This is q_v = ΔU. ΔH can be calculated if needed (ΔH = ΔU + Δ(PV) which is ΔH ≈ ΔU for reactions not involving large mole changes of gas, or ΔH = ΔU + Δn_gasRT).
+
+Sources of Error in Calorimetry:
+Heat loss to surroundings (major error if calorimeter not well insulated), incomplete reaction, errors in temperature/mass/volume measurements.
+
+(Suggested insertion: Diagram of a simple coffee-cup calorimeter setup for neutralization or dissolution. Diagram of a bomb calorimeter (can be simplified). Worked examples of calculating ΔH for neutralization and dissolution, including determining mass of solution, moles, and final ΔH per mole.)`,
+          "mcq": [
+            {
+              "question": "In a calorimetry experiment, the main source of error when using a simple polystyrene cup calorimeter is often:",
+              "options": [
+                "Inaccurate mass measurement",
+                "Incomplete reaction",
+                "Heat loss to the surroundings",
+                "Using the wrong indicator"
+              ],
+              "correctAnswer": "Heat loss to the surroundings",
+              "explanation": "While all options can be sources of error, the most significant and unavoidable error in simple coffee-cup calorimetry is the loss of heat from the calorimeter to the surrounding environment, as the polystyrene cup is an insulator but not a perfect one. This typically leads to a smaller measured temperature change and an underestimated enthalpy change."
+            },
+            {
+              "question": "The process of stopping a reaction suddenly to analyze its composition at a specific time is called:",
+              "options": [
+                "Titrating",
+                "Calibrating",
+                "Quenching",
+                "Standardizing"
+              ],
+              "correctAnswer": "Quenching",
+              "explanation": "In kinetics experiments where concentration is monitored by titration, small samples are taken at intervals and the reaction within the sample is stopped (quenched), often by rapid cooling or adding a chemical to remove a reactant. This allows the concentration at that moment to be determined accurately."
+            },
+            {
+              "question": "To prepare 100 mL of a 0.50 M solution of NaOH (Molar Mass = 40.0 g/mol), what mass of NaOH is required?",
+              "options": [
+                "40.0 g",
+                "20.0 g",
+                "2.0 g",
+                "0.5 g"
+              ],
+              "correctAnswer": "2.0 g",
+              "explanation": "1. Moles needed = Molarity × Volume (L) = 0.50 mol/L × 0.100 L = 0.050 mol. 2. Mass needed = Moles × Molar Mass = 0.050 mol × 40.0 g/mol = 2.0 g."
+            },
+            {
+              "question": "In a titration of Fe²⁺ ions with a standard solution of KMnO₄, what acts as the indicator?",
+              "options": [
+                "Phenolphthalein",
+                "Methyl orange",
+                "The KMnO₄ solution itself",
+                "Starch solution"
+              ],
+              "correctAnswer": "The KMnO₄ solution itself",
+              "explanation": "The permanganate ion (MnO₄⁻) is intensely purple, while the manganese(II) ion (Mn²⁺) it is reduced to is nearly colorless. During the titration, the purple KMnO₄ is decolorized as it reacts. The endpoint is reached when the first drop of excess KMnO₄ is added, giving the entire solution a permanent faint pink/purple color."
+            },
+            {
+              "question": "In an experiment to determine the enthalpy of neutralization, why is a polystyrene cup used as a calorimeter?",
+              "options": [
+                "It is transparent.",
+                "It reacts with the acid and base.",
+                "It is a good conductor of heat.",
+                "It is a good insulator and has a low heat capacity."
+              ],
+              "correctAnswer": "It is a good insulator and has a low heat capacity.",
+              "explanation": "A polystyrene cup is used because it is a good thermal insulator, which minimizes heat loss to the surroundings. It also has a very low heat capacity, meaning it absorbs very little heat itself, so most of the heat from the reaction goes into changing the temperature of the solution, making the calculation more accurate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 19: WAEC Chemistry Practice Questions",
+      "image": "https://images.pexels.com/photos/7470823/pexels-photo-7470823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=EH0ePlkpEfU",
+        "https://www.youtube.com/watch?v=IYbEl3XpMuo",
+        "https://www.youtube.com/watch?v=le9zPdThQto"
+      ],
+      "sections": [
+        {
+          "title": "19.1 Multiple‐Choice Quizzes (All Topics)",
+          "image": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=uG-ixBTMJF4",
+          "content": `This chapter is dedicated to preparing students for the West African Examinations Council (WAEC) Chemistry examination. It provides a comprehensive collection of practice questions that reflect the format, style, syllabus coverage, and difficulty level typically found in the WAEC Senior School Certificate Examination (SSCE) or General Certificate of Education (GCE) Chemistry papers. These papers usually consist of a multiple-choice Objective Test (Paper 1), a Theory/Essay Paper (Paper 2), and often a Practical Test or Alternative to Practical Paper (Paper 3). The aim is to familiarize students with all question types, develop effective exam techniques, and reinforce understanding of key chemical concepts.
+
+Content: A substantial bank of multiple-choice questions (MCQs) covering the entire WAEC Chemistry syllabus. This includes:
+
+Atomic Structure & Periodic Table (Ch 1-2)
+
+Bonding & Molecular Structure (Ch 3-4)
+
+Stoichiometry & Mole Concept (Ch 5-6)
+
+States of Matter & Gas Laws (Ch 7-8)
+
+Solutions, Acids/Bases, Equilibria (Ch 9-10, 13)
+
+Thermodynamics & Kinetics (Ch 11-12)
+
+Redox & Electrochemistry (Ch 14)
+
+Organic Chemistry (Ch 15-16)
+
+Metals, Non-metals, and their compounds (specific elements and reactions typically detailed in syllabus).
+
+Environmental Chemistry aspects if covered.
+
+Format: Standard MCQ format with a stem and usually 4 or 5 options. Questions will test factual recall, conceptual understanding, application of principles, and problem-solving (including simple calculations).
+
+Organization: Could be organized by topic to allow focused practice, or as mixed papers simulating the exam.
+
+Answer Key and Explanations: A full answer key is essential. For many questions, brief explanations of why the correct answer is right, and why distractors are incorrect, should be provided to aid learning.
+
+Exam Tips for MCQs: Emphasize strategies like careful reading, elimination, identifying keywords, estimation for calculations, and time management.`,
+          "mcq": [
+            {
+              "question": "Which of the following is an acid anhydride?",
+              "options": [
+                "CaO",
+                "Na₂O",
+                "CO₂",
+                "H₂O"
+              ],
+              "correctAnswer": "CO₂",
+              "explanation": "An acid anhydride is a non-metal oxide that reacts with water to form an acid. Carbon dioxide (CO₂) reacts with water to form carbonic acid (H₂CO₃), a key topic in the WAEC syllabus regarding periodic trends of oxides."
+            }
+          ]
+        },
+        {
+          "title": "19.2 Structured and Essay‐Type Questions with Mark Schemes",
+          "image": "https://images.pexels.com/photos/5841807/pexels-photo-5841807.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=C-oBQ7_PuPk",
+          "content": `This section provides practice for WAEC Chemistry Paper 2 (Theory/Essay).
+
+Content: A variety of questions including:
+
+Short structured questions requiring definitions, explanations, descriptions, comparisons.
+
+Longer essay-type questions requiring more detailed explanations, discussions, or application of concepts to specific scenarios.
+
+Questions requiring students to write and balance chemical equations for various reaction types.
+
+Stoichiometric calculations (mole concept, reacting masses/volumes, empirical/molecular formulas, limiting reactants, percent yield).
+
+Calculations involving gas laws, solutions (molarity), equilibrium constants (K_c, K_p, K_sp basics), pH.
+
+Questions on periodic trends, bonding theories, VSEPR.
+
+Organic chemistry: nomenclature, isomerism, reactions of functional groups, distinguishing tests.
+
+Describing industrial processes (e.g., Haber process, Contact process, electrolysis of brine) or extraction of metals.
+
+Format: Reflecting WAEC Paper 2, with questions often having multiple parts (a, b, c...).
+
+Model Answers and Marking Schemes:
+
+Provide detailed, accurate model answers for each question, showing clear steps for calculations and well-structured explanations.
+
+Include WAEC-style marking schemes (guidelines) indicating how marks are typically allocated for:
+
+Correct definitions/statements of laws (K marks for knowledge).
+
+Correct formulas and application (A marks for application/method).
+
+Logical steps in calculations and derivations (M marks for method).
+
+Accurate final answers with units (A marks for accuracy).
+
+Balanced equations, correct diagrams.
+
+Diagrams: Guide students on when and how to use diagrams (e.g., energy profile, electrochemical cells, organic structures, laboratory setups for ATTP-style description).`,
+          "mcq": [
+            {
+              "question": "The industrial process for the manufacture of ammonia is known as the:",
+              "options": [
+                "Contact Process",
+                "Haber Process",
+                "Hall-Héroult Process",
+                "Frasch Process"
+              ],
+              "correctAnswer": "Haber Process",
+              "explanation": "The Haber Process (or Haber-Bosch Process) is the key industrial method for producing ammonia from nitrogen and hydrogen gas, a frequently tested topic in WAEC essay questions."
+            }
+          ]
+        },
+        {
+          "title": "19.3 Practical and Alternative to Practical (ATTP) Questions",
+          "image": "https://images.pexels.com/photos/32532169/pexels-photo-32532169.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=fGFFBFL_9EM",
+          "content": `This section focuses on practice for WAEC Chemistry Paper 3 (Practical Test or Alternative to Practical).
+
+Content (Reflecting typical WAEC practicals/ATTP scenarios):
+
+Qualitative Analysis:
+
+Tests for cations (e.g., using NaOH, NH₃, flame tests).
+
+Tests for anions (e.g., CO₃²⁻, SO₄²⁻, Cl⁻, Br⁻, I⁻, NO₃⁻).
+
+Tests for gases (e.g., H₂, O₂, CO₂, NH₃, HCl, SO₂).
+
+Recording observations accurately (color changes, precipitate formation/dissolution, gas evolution and properties).
+
+Making logical inferences and identifying unknown substances/ions.
+
+Volumetric Analysis (Titration):
+
+Acid-base titrations (strong/weak acid vs. strong/weak base).
+
+Redox titrations (e.g., KMnO₄ or K₂Cr₂O₇ titrations).
+
+Reading burettes correctly, recording titres, calculating average titre.
+
+Performing stoichiometric calculations to find concentration, molar mass, percentage purity, water of crystallization, etc.
+
+Choice and use of indicators.
+
+Rates of Reaction:
+
+Experiments investigating effects of concentration, temperature, or catalysts on reaction rate.
+
+Methods of monitoring rates (e.g., gas collection, mass loss, "clock" reactions like iodine clock or thiosulfate precipitation).
+
+Plotting graphs (e.g., volume of gas vs. time), interpreting graphs (finding initial rate).
+
+Thermochemistry (Enthalpy Changes):
+
+Calorimetry experiments (enthalpy of neutralization, solution, displacement).
+
+Measuring temperature changes accurately, recording data.
+
+Calculations involving q = mcΔT and ΔH = q/n.
+
+Solubility (less common as full ATTP, but principles can be tested).
+
+ATTP Question Formats:
+
+Describing procedures for given experiments.
+
+Identifying apparatus and stating their functions.
+
+Stating precautions.
+
+Recording "mock" experimental data from diagrams or descriptions.
+
+Processing data (e.g., calculating averages, differences).
+
+Plotting graphs from given or processed data.
+
+Interpreting graphs and drawing conclusions.
+
+Identifying sources of error and suggesting improvements.
+
+Model Answers and Guidance: Provide detailed answers and explanations for ATTP questions, showing how to present procedures, observations, data tables, graph plotting techniques, and analytical conclusions. Emphasize key practical skills even if not hands-on.
+
+The goal of this chapter is to fully prepare students for all components of the WAEC Chemistry exam by providing extensive practice and insight into examiner expectations.`,
+          "mcq": [
+            {
+              "question": "In a qualitative analysis experiment, a gas is evolved that turns damp red litmus paper blue. The gas is:",
+              "options": [
+                "Carbon dioxide",
+                "Hydrogen",
+                "Oxygen",
+                "Ammonia"
+              ],
+              "correctAnswer": "Ammonia",
+              "explanation": "Ammonia (NH₃) is the only common alkaline gas tested in school labs. It turns damp red litmus paper blue, a standard confirmatory test in WAEC practicals."
+            },
+            {
+              "question": "An element with the electron configuration 1s²2s²2p⁶3s²3p⁴ belongs to which Group and Period of the periodic table?",
+              "options": [
+                "Group 14, Period 3",
+                "Group 4, Period 3",
+                "Group 16, Period 3",
+                "Group 16, Period 4"
+              ],
+              "correctAnswer": "Group 16, Period 3",
+              "explanation": "The highest principal energy level (n) is 3, so the element is in Period 3. The number of valence electrons (in the n=3 shell) is 2 (in 3s) + 4 (in 3p) = 6. For p-block elements, Group number = 10 + valence electrons = 10 + 6 = 16."
+            },
+            {
+              "question": "Which of the following separation techniques is most suitable for separating a mixture of sand and a solution of common salt?",
+              "options": [
+                "Evaporation",
+                "Distillation",
+                "Filtration followed by evaporation",
+                "Fractional distillation"
+              ],
+              "correctAnswer": "Filtration followed by evaporation",
+              "explanation": "First, filtration is used to separate the insoluble sand from the salt solution. Then, the water is evaporated from the filtrate (the salt solution) to recover the solid salt. This is a classic separation question in WAEC."
+            },
+            {
+              "question": "Consider the following reaction at equilibrium: PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)  ΔH = +92 kJ/mol. Which of the following changes will cause an increase in the yield of PCl₃?",
+              "options": [
+                "Increasing the pressure",
+                "Decreasing the temperature",
+                "Adding a catalyst",
+                "Increasing the temperature"
+              ],
+              "correctAnswer": "Increasing the temperature",
+              "explanation": "The reaction is endothermic (ΔH is positive). According to Le Châtelier's principle, increasing the temperature will shift the equilibrium to the right to absorb the added heat, thus increasing the yield of the products, PCl₃ and Cl₂."
+            },
+            {
+              "question": "Hardness of water is caused by the presence of dissolved salts of:",
+              "options": [
+                "Sodium and potassium",
+                "Calcium and magnesium",
+                "Zinc and copper",
+                "Chlorine and sulfur"
+              ],
+              "correctAnswer": "Calcium and magnesium",
+              "explanation": "Hardness of water is defined by the presence of dissolved divalent cations, primarily calcium (Ca²⁺) and magnesium (Mg²⁺) ions. This is a common topic in the environmental/applied chemistry section of the WAEC syllabus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chapter 20: Cambridge IGCSE/WAEC Combined Practice",
+      "image": "https://images.pexels.com/photos/10187121/pexels-photo-10187121.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "video": [
+        "https://www.youtube.com/watch?v=2XSW53TELTE",
+        "https://www.youtube.com/watch?v=pj1Xqiwq2kA",
+        "https://www.youtube.com/watch?v=-C5qolvCETE"
+      ],
+      "sections": [
+        {
+          "title": "20.1 Syllabus Coverage and Key Differences (Comparative Overview)",
+          "image": "https://images.pexels.com/photos/5841756/pexels-photo-5841756.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=us6fsy1c0Ks",
+          "content": `This chapter is tailored for students who might be concurrently preparing for WAEC Chemistry and Cambridge IGCSE Chemistry (0620) or similar international syllabi like O-Level Chemistry. While foundational chemistry is universal, syllabus content, depth, and assessment styles can differ. This chapter aims to provide integrated practice, highlight key differences to be aware of, and offer strategies applicable to excelling in both types of examinations, thereby maximizing study efficiency.
+
+(Note: Cambridge IGCSE Chemistry has Core and Extended options, and also a separate Practical/ATTP. This would typically target skills relevant to Extended level where it aligns with WAEC depth, but also acknowledge differences for Core if necessary.)
+
+This section offers a strategic comparison to help students navigate both syllabi.
+
+Common Core Topics: Identify major areas extensively covered by both WAEC and IGCSE Chemistry (e.g., atomic structure, bonding, stoichiometry, periodic table, acids/bases, redox, basic organic, rates, energetics, states of matter).
+
+WAEC Specific Emphasis/Topics (Potential examples, check current syllabi):
+
+May have different emphasis on certain industrial processes or local chemical contexts.
+
+Specific named reactions or traditional qualitative analysis schemes.
+
+Particular details in metal extraction or non-metal chemistry not as prominent in IGCSE.
+
+Cambridge IGCSE Specific Emphasis/Topics (Potential examples, check current syllabi for 0620):
+
+Perhaps more explicit detail on organic reaction mechanisms (e.g., free-radical substitution for alkanes, electrophilic addition for alkenes if covered in Extended).
+
+Specific aspects of equilibrium (e.g., K_c expressions more quantitatively tested).
+
+More quantitative treatment of electrolysis (Faraday's laws basics if in syllabus).
+
+Specific details on environmental chemistry or industrial applications not emphasized by WAEC.
+
+The "Experimental Techniques and Chemical Analysis" section of IGCSE syllabus is very detailed regarding expected practical knowledge and skills.
+
+Depth and Breadth: Compare how deeply concepts are explored. IGCSE Extended often requires a sophisticated understanding and application.
+
+Mathematical Requirements: While both require calculations, IGCSE might involve slightly more complex algebraic manipulation in certain contexts.
+
+Assessment Objectives (AOs): Briefly compare WAEC's general assessment criteria with Cambridge's explicit AOs (Knowledge with understanding, Handling information and problem solving, Experimental skills and investigations).
+
+(Suggested content: A topic-by-topic comparison table. This requires access to the most current versions of both syllabi to be accurate and useful. Highlighting topics exclusive to one or with different levels of expected detail.)`,
+          "mcq": [
+            {
+              "question": "A key difference between WAEC and Cambridge IGCSE Chemistry assessment is that IGCSE often has a more explicit focus on:",
+              "options": [
+                "Industrial processes",
+                "Definitions of scientific laws",
+                "Experimental skills like planning investigations and evaluating procedures",
+                "Extraction of metals from local ores"
+              ],
+              "correctAnswer": "Experimental skills like planning investigations and evaluating procedures",
+              "explanation": "The Cambridge IGCSE syllabus places a very strong and explicit emphasis on Assessment Objective 3 (AO3): Experimental skills and investigations. This includes detailed questions on planning experiments, identifying variables, suggesting improvements, and evaluating data, which may be tested more rigorously than in WAEC."
+            }
+          ]
+        },
+        {
+          "title": "20.2 Mock Exam Papers and Detailed Solutions (Integrated or Comparative Style)",
+          "image": "https://images.pexels.com/photos/16445487/pexels-photo-16445487.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=jWHOF6cFbpw",
+          "content": `This section provides practice that reflects the interface or common ground between the two exam systems.
+
+Option 1: Integrated Mock Papers:
+
+Design mock papers (MCQ and Theory/Structured sections) that focus on the significant overlap in content and skills. Questions could be selected/adapted to be relevant and challenging for students aiming for good grades in either exam.
+
+Option 2: Comparative Mock Sections:
+
+Provide a WAEC-style mock section and a Cambridge IGCSE (Extended)-style mock section side-by-side for a given topic area, allowing students to see differences in question phrasing and expected depth.
+
+Alternative to Practical (ATTP) Practice:
+
+Include ATTP-style questions based on common practicals, highlighting any differences in how these are typically assessed (e.g., IGCSE often has detailed questions on planning experiments, identifying variables, evaluating procedures, and handling sources of error).
+
+Questions to Include:
+
+MCQs covering a broad range of shared topics.
+
+Structured questions requiring detailed answers, balanced equations, and calculations.
+
+Data analysis and graph plotting tasks (common to ATTP).
+
+Questions requiring explanation of chemical principles and application to new contexts.
+
+Detailed Solutions and Marking Guidance:
+
+Comprehensive model answers for all questions.
+
+Step-by-step working for all calculations.
+
+Explanations of how answers align with marking criteria of both WAEC (where applicable) and Cambridge (emphasizing AOs if relevant).
+
+For ATTP, emphasize precision in describing observations, correct graph conventions, and logical deduction in experimental design questions.
+
+The focus is on reinforcing core chemical knowledge while also preparing for the nuances of different examination styles.`,
+          "mcq": [
+            {
+              "question": "In the electrolysis of concentrated aqueous sodium chloride using inert electrodes, what is produced at the anode?",
+              "options": [
+                "Sodium metal",
+                "Hydrogen gas",
+                "Chlorine gas",
+                "Oxygen gas"
+              ],
+              "correctAnswer": "Chlorine gas",
+              "explanation": "At the anode (positive electrode), negative ions are oxidized. In concentrated NaCl(aq), both Cl⁻ and OH⁻ ions are present. Because Cl⁻ is in high concentration, it is preferentially oxidized over OH⁻, producing chlorine gas. This is a core topic in both WAEC and IGCSE electrochemistry."
+            }
+          ]
+        },
+        {
+          "title": "20.3 Revision Strategies and Common Pitfalls (Combined Advice)",
+          "image": "https://images.pexels.com/photos/4238510/pexels-photo-4238510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "video": "https://www.youtube.com/watch?v=dF5lB7gRtcA",
+          "content": `This section provides overarching revision and exam-taking advice valuable for both systems.
+
+Unified Revision Approach:
+
+Focus on mastering core chemical concepts first, as these are common.
+
+Create comprehensive notes, mind maps, and formula summaries that cover shared syllabus areas.
+
+Practice a wide variety of problems that test both conceptual understanding and application.
+
+Tailoring for Specific Exams:
+
+Once core concepts are strong, dedicate time to practicing specific question styles and topics unique to WAEC or Cambridge IGCSE using their respective past papers.
+
+Pay close attention to the command words and keywords used by each examination board.
+
+Understanding Assessment Objectives:
+
+Be aware of what skills are being tested (e.g., recall, application, analysis, evaluation, experimental skills). This helps in framing answers appropriately.
+
+Time Management: Crucial for all exams. Practice answering questions under timed conditions.
+
+Accuracy in Calculations and Data Presentation:
+
+Show all working clearly.
+
+Use correct units and significant figures.
+
+Plot graphs accurately with proper labeling and scales.
+
+Clarity of Explanation: Use precise scientific terminology. Explain concepts logically and coherently.
+
+Common Pitfalls to Avoid (Applicable to both):
+
+Misinterpreting questions.
+
+Incomplete balancing of equations.
+
+Errors in mole calculations or stoichiometric ratios.
+
+Forgetting to include state symbols where required.
+
+Vague or imprecise definitions/explanations.
+
+Not addressing all parts of a multi-part question.
+
+Poorly drawn or labeled diagrams.
+
+Insufficient detail in ATTP answers (especially in explaining procedures or sources of error).
+
+Ignoring command words (e.g., "explain" vs. "state" vs. "describe").
+
+Developing a Strong Conceptual Foundation: Rote memorization is insufficient; strive to understand the underlying principles.
+
+Consistent Practice and Review: Regular study and revision are key to long-term retention and success.
+
+This chapter aims to equip students with the flexibility and comprehensive knowledge needed to perform well, regardless of which specific West African or Cambridge IGCSE Chemistry examination they are focusing on, by highlighting shared foundations and acknowledging specific nuances.`,
+          "mcq": [
+            {
+              "question": "A common pitfall to avoid in both WAEC and IGCSE chemistry exams is:",
+              "options": [
+                "Showing too much working in calculations",
+                "Using a pen instead of a pencil",
+                "Forgetting to include state symbols in chemical equations where required",
+                "Writing definitions that are too precise"
+              ],
+              "correctAnswer": "Forgetting to include state symbols in chemical equations where required",
+              "explanation": "In both examination systems, marks are often awarded for correctly balanced chemical equations, and this frequently includes the correct state symbols (s, l, g, aq). Omitting them can lead to a loss of marks."
+            },
+            {
+              "question": "Which of the following is a property of acids?",
+              "options": [
+                "They have a slippery feel",
+                "They turn red litmus paper blue",
+                "They react with metals like zinc to produce hydrogen gas",
+                "They have a pH greater than 7"
+              ],
+              "correctAnswer": "They react with metals like zinc to produce hydrogen gas",
+              "explanation": "A characteristic chemical property of acids is their reaction with reactive metals (those above hydrogen in the activity series) to produce a salt and hydrogen gas. This is a fundamental concept in both WAEC and IGCSE."
+            },
+            {
+              "question": "Crude oil is separated into its useful fractions by a process called:",
+              "options": [
+                "Cracking",
+                "Polymerization",
+                "Fractional distillation",
+                "Filtration"
+              ],
+              "correctAnswer": "Fractional distillation",
+              "explanation": "Fractional distillation is the industrial process used to separate crude oil into different fractions (like gasoline, kerosene, diesel) based on their different boiling points. This is a core topic in the organic chemistry sections of both syllabi."
+            },
+            {
+              "question": "The command word 'Explain' in an exam question requires you to:",
+              "options": [
+                "Give a brief, factual answer",
+                "Provide a step-by-step account of a process",
+                "Give reasons or provide a scientific basis for a phenomenon",
+                "Make a sketch or diagram"
+              ],
+              "correctAnswer": "Give reasons or provide a scientific basis for a phenomenon",
+              "explanation": "Understanding command words is crucial. 'Explain' requires more than a simple statement ('state' or 'define'); it requires linking cause and effect using scientific principles, which is a higher-order skill tested in both WAEC and IGCSE."
+            },
+            {
+              "question": "What are the products of the complete combustion of a hydrocarbon like octane (C₈H₁₈)?",
+              "options": [
+                "Carbon monoxide and water",
+                "Carbon and water",
+                "Carbon dioxide and hydrogen",
+                "Carbon dioxide and water"
+              ],
+              "correctAnswer": "Carbon dioxide and water",
+              "explanation": "The complete combustion of any hydrocarbon (a compound containing only C and H) in sufficient oxygen always produces carbon dioxide (CO₂) and water (H₂O). Incomplete combustion produces carbon monoxide (CO) and/or carbon (soot)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+export type Chapter = (typeof textbook)['chapters'][0];
+export type Section = (typeof textbook)['chapters'][0]['sections'][0];
+export type MCQ = (typeof textbook)['chapters'][0]['sections'][0]['mcq'];
+export type mcq_ARRAY = (typeof textbook)['chapters'][0]['sections'][3]['mcq'];

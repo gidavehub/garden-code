@@ -1,0 +1,40 @@
+// app/components/profile/edit/editorStyles.ts
+import { StyleSheet } from 'react-native';
+
+export const formComponentStyles = StyleSheet.create({
+  fieldContainer: { marginBottom: 20, },
+  fieldLabel: { fontSize: 14, color: '#A0A0A0', marginBottom: 8, },
+  dropdownToggle: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#1E1E1E', paddingHorizontal: 15, paddingVertical: 12, borderRadius: 8, borderWidth: 1, borderColor: '#333', minHeight: 48, },
+  dropdownToggleText: { color: '#E0E0E0', fontSize: 16, flex:1 },
+  dropdownMenu: { backgroundColor: '#2a2a2a', borderColor: '#444', borderWidth: 1, borderRadius: 8, marginTop: 2, maxHeight: 200, zIndex: 1000 },
+  dropdownScroll: {},
+  dropdownItem: { paddingVertical: 12, paddingHorizontal: 15, borderBottomWidth:0.5, borderBottomColor: '#383838'},
+  dropdownItemText: { color: '#E0E0E0', fontSize: 15 },
+  dropdownItemSubText: { color: '#999', fontSize: 12, paddingTop: 2 }, // For SchoolSelector
+  emptyDropdownText: { color: '#888', fontStyle: 'italic', textAlign: 'center', paddingVertical: 10 },
+  inputContainer: { flexDirection: 'row', alignItems: 'center', marginBottom: 10, },
+  inputForMulti: { flex: 1, backgroundColor: '#1E1E1E', color: '#E0E0E0', paddingHorizontal: 15, paddingVertical: 12, borderRadius: 8, fontSize: 16, borderWidth: 1, borderColor: '#333', marginRight: 10, minHeight: 48 },
+  addButton: { paddingVertical: 8, paddingHorizontal:5 },
+  itemsList: { flexDirection: 'row', flexWrap: 'wrap', marginTop: 5, },
+  itemTag: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#2a2a2a', borderRadius: 15, paddingVertical: 6, paddingHorizontal: 10, marginRight: 8, marginBottom: 8, },
+  itemTagText: { color: '#E0E0E0', fontSize: 14, marginRight: 6, },
+  removeButton: { paddingLeft: 4 },
+  labelContainer: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, },
+  addItemButton: { padding: 5, },
+  emptyListText: { color: '#888', fontStyle: 'italic', textAlign: 'center', paddingVertical: 10, },
+  complexItemTag: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#1E1E1E', borderRadius: 8, paddingVertical: 10, paddingHorizontal: 12, marginBottom: 8, borderWidth: 1, borderColor: '#333', },
+  complexItemTagText: { color: '#E0E0E0', fontSize: 14, flex: 1, marginRight: 10 },
+  actionIcon: { paddingHorizontal: 5, },
+  modalOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.85)', justifyContent: 'center', alignItems: 'center', paddingHorizontal:15 },
+  modalContainer: { backgroundColor: '#1E1E1E', borderRadius: 12, padding: 25, width: '100%', borderColor: '#333', borderWidth: 1, maxHeight: '90%' },
+  modalTitle: { fontSize: 18, fontWeight: 'bold', color: '#E0E0E0', marginBottom: 20, textAlign: 'center' },
+  modalField: { marginBottom: 15, },
+  modalFieldLabel: { fontSize: 13, color: '#A0A0A0', marginBottom: 5, },
+  modalInput: { backgroundColor: '#121212', color: '#E0E0E0', padding: 10, borderRadius: 6, borderWidth: 1, borderColor: '#444', minHeight: 44 },
+  modalActions: { flexDirection: 'row', justifyContent: 'flex-end', marginTop: 25, },
+  modalButton: { paddingVertical: 10, paddingHorizontal: 20, borderRadius: 6, marginLeft: 10, },
+  cancelButton: { backgroundColor: '#4A5568' },
+  saveModalButton: { backgroundColor: '#3B82F6' },
+  modalButtonText: { color: '#FFFFFF', fontWeight: 'bold', fontSize: 15 },
+  infoTextSmall: { fontSize: 12, color: '#888', fontStyle: 'italic', marginTop: 5, marginLeft: 5, }, // For SchoolSelector curriculum display
+});

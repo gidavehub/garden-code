@@ -1,0 +1,372 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Tabs Navigation */
+.tabs {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #34495e;
+    color: #ecf0f1;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active, .tab-button:hover {
+    background-color: #1abc9c;
+}
+
+/* Tab Content Area */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Home Tab Specific Layout */
+.home-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.chapter-nav {
+    flex-basis: 25%;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 70vh; /* Fixed height */
+    overflow-y: auto; /* Scroll for overflow */
+}
+
+.chapter-nav h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.chapter-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapter-nav ul li {
+    margin-bottom: 5px;
+}
+
+.chapter-nav ul li > span { /* Chapter titles */
+    cursor: pointer;
+    font-weight: bold;
+    color: #2980b9;
+    display: block;
+    padding: 8px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+.chapter-nav ul li > span:hover {
+    background-color: #bdc3c7;
+}
+
+
+.chapter-nav ul ul { /* Section lists */
+    list-style-type: none;
+    padding-left: 20px;
+    display: none; /* Hidden by default */
+}
+
+.chapter-nav ul ul li span {
+    cursor: pointer;
+    font-weight: normal;
+    color: #34495e;
+    display: block;
+    padding: 6px;
+    border-radius: 3px;
+}
+.chapter-nav ul ul li span:hover {
+    background-color: #dfe4e8;
+}
+.chapter-nav ul ul li span.active-section {
+    background-color: #1abc9c;
+    color: white;
+}
+
+
+.content-area {
+    flex-basis: 75%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    max-height: 70vh; /* Fixed height */
+    overflow-y: auto; /* Scroll for overflow */
+}
+
+#textbook-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#textbook-cover p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#section-content-display h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 10px;
+}
+#section-content-display h3 {
+    color: #34495e;
+    margin-top: 25px;
+}
+
+.suggested-image-placeholder {
+    background-color: #e0e0e0;
+    border: 1px dashed #aaa;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    border-radius: 4px;
+}
+
+
+/* MCQ Styling */
+#mcq-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+#mcq-container h3 {
+    margin-bottom: 15px;
+}
+.mcq {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border-left: 5px solid #3498db;
+}
+.mcq p { /* Question text */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mcq-options {
+    list-style: none;
+    padding: 0;
+}
+.mcq-options li {
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.mcq-options li:not(.disabled):hover {
+    background-color: #ecf0f1;
+}
+.mcq-options li.correct {
+    background-color: #2ecc71;
+    color: white;
+    border-color: #27ae60;
+}
+.mcq-options li.incorrect {
+    background-color: #e74c3c;
+    color: white;
+    border-color: #c0392b;
+}
+.mcq-options li.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.mcq-feedback {
+    margin-top: 8px;
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 3px;
+}
+.mcq-feedback.correct-feedback {
+    color: #27ae60;
+}
+.mcq-feedback.incorrect-feedback {
+    color: #c0392b;
+}
+
+
+/* Search Tab Styling */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+#search-button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#search-button:hover {
+    background-color: #2980b9;
+}
+#search-results h3 {
+    margin-top: 0;
+}
+.search-result-item {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fdfdfd;
+}
+.search-result-item h4 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+.search-result-item p { /* Snippet */
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 8px;
+}
+.search-result-item button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.search-result-item button:hover {
+    background-color: #16a085;
+}
+.search-result-item mark {
+    background-color: #f1c40f;
+    padding: 0;
+}
+
+
+/* Glossary Tab Styling */
+#glossary-list {
+    columns: 2; /* Creates two columns for terms if space allows */
+    column-gap: 20px;
+}
+.glossary-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #3498db;
+    border-radius: 0 4px 4px 0;
+    break-inside: avoid-column; /* Prevents items from breaking across columns */
+}
+.glossary-item strong { /* Term */
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.9em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column;
+    }
+    .chapter-nav, .content-area {
+        flex-basis: 100%;
+        max-height: none; /* Allow them to grow as needed on small screens */
+    }
+    .chapter-nav {
+        max-height: 40vh; /* Still constrain nav on small screens a bit */
+    }
+    .tabs {
+        flex-wrap: wrap; /* Allow tabs to wrap */
+    }
+    #glossary-list {
+        columns: 1; /* Single column on small screens */
+    }
+}
+
+/* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

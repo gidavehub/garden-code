@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Biology Textbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Foundations of Biology</h1>
+            <nav class="tabs">
+                <button class="tab-button active" data-tab="home">Home</button>
+                <button class="tab-button" data-tab="search">Search</button>
+                <button class="tab-button" data-tab="glossary">Glossary</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Home Tab Content -->
+            <div id="home" class="tab-content active">
+                <div class="home-layout">
+                    <aside class="chapter-nav">
+                        <h2>Chapters</h2>
+                        <ul id="chapter-list">
+                            <!-- Chapters will be populated by JavaScript -->
+                        </ul>
+                    </aside>
+                    <section class="content-area">
+                        <div id="textbook-cover">
+                            <img src="https://via.placeholder.com/600x400.png?text=Textbook+Cover+Image+Placeholder" alt="Textbook Cover">
+                            <p>Welcome to your interactive journey through biology! Select a chapter and section from the left navigation to begin.</p>
+                        </div>
+                        <div id="section-content-display" style="display:none;">
+                            <!-- Section content and MCQs will be loaded here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Search Tab Content -->
+            <div id="search" class="tab-content">
+                <h2>Search Textbook</h2>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Enter search term...">
+                    <button id="search-button">Search</button>
+                </div>
+                <div id="search-results">
+                    <!-- Search results will be populated here -->
+                </div>
+            ONYOMI_MASKS_TO_REPLACE_0
+            <!-- Glossary Tab Content -->
+            <div id="glossary" class="tab-content">
+                <h2>Glossary</h2>
+                <div id="glossary-list">
+                    <!-- Glossary terms will be populated here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Interactive Biology Textbook</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
