@@ -16,6 +16,8 @@ import {
 
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+// ADDED: Import for image manipulation and Base64 conversion
+import * as ImageManipulator from 'expo-image-manipulator';
 import * as ImagePicker from 'expo-image-picker';
 import { useRouter } from 'expo-router';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
@@ -41,7 +43,7 @@ import {
 } from '@/types/explore';
 
 import { highSchools, HighSchoolsData } from '../../../constants/highschool';
-import { auth, firestore } from '../../../firebaseConfig';
+import { firestore } from '../../../firebaseConfig';
 
 // --- SingleSelectEditor ---
 interface SingleSelectEditorProps {
@@ -382,6 +384,7 @@ const ComplexListEditor = <T extends Record<string, any>>({
   );
 };
 
+
 // --- SchoolSelectorEditor ---
 interface SchoolSelectorEditorProps {
   initialSchool?: string;
@@ -391,182 +394,296 @@ interface SchoolSelectorEditorProps {
 }
 
 const SchoolSelectorEditor: React.FC<SchoolSelectorEditorProps> = ({
-  initialSchool,
-  initialCountry,
-  initialCurriculum,
+  initialSchool = '',
+  initialCountry = '',
+  initialCurriculum = '',
   onSchoolChange,
 }) => {
   const { colors } = useTheme();
   const styles = getThemedStyles(colors);
+  const OTHER_OPTION = 'Other';
 
-  const [selectedCountry, setSelectedCountry] = useState<string | null>(initialCountry || null);
+  // State for dropdown selections
+  const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
-  const [selectedSchoolName, setSelectedSchoolName] = useState<string>(initialSchool || '');
-  const [currentCurriculum, setCurrentCurriculum] = useState<string>(initialCurriculum || '');
+  const [selectedSchool, setSelectedSchool] = useState<string | null>(null);
 
+  // State for manual text inputs
+  const [manualCountry, setManualCountry] = useState('');
+  const [manualRegion, setManualRegion] = useState(''); // ADDED
+  const [manualSchool, setManualSchool] = useState('');
+  const [manualCurriculum, setManualCurriculum] = useState('');
+
+  // Dropdown visibility state
   const [countryDropdownOpen, setCountryDropdownOpen] = useState(false);
   const [regionDropdownOpen, setRegionDropdownOpen] = useState(false);
   const [schoolDropdownOpen, setSchoolDropdownOpen] = useState(false);
 
   const typedHighSchools = highSchools as HighSchoolsData;
-
-  const countries = Object.keys(typedHighSchools);
+  const countries = [...Object.keys(typedHighSchools), OTHER_OPTION];
   const regions =
-    selectedCountry && typedHighSchools[selectedCountry] ? Object.keys(typedHighSchools[selectedCountry]) : [];
+    selectedCountry && typedHighSchools[selectedCountry]
+      ? [...Object.keys(typedHighSchools[selectedCountry]), OTHER_OPTION]
+      : [];
   const schoolsInRegion =
     selectedCountry && selectedRegion && typedHighSchools[selectedCountry]?.[selectedRegion]
-      ? Object.entries(typedHighSchools[selectedCountry][selectedRegion])
+      ? [...Object.keys(typedHighSchools[selectedCountry][selectedRegion]), OTHER_OPTION]
       : [];
 
+  // Effect to initialize state based on initial props
   useEffect(() => {
-    if (initialSchool && initialCountry && typedHighSchools[initialCountry]) {
+    let countryFound = false;
+    let schoolFound = false;
+
+    if (initialCountry && typedHighSchools[initialCountry]) {
+      countryFound = true;
+      setSelectedCountry(initialCountry);
       for (const regionKey in typedHighSchools[initialCountry]) {
         if (typedHighSchools[initialCountry][regionKey][initialSchool]) {
+          schoolFound = true;
           setSelectedRegion(regionKey);
+          setSelectedSchool(initialSchool);
           break;
         }
       }
-    } else if (selectedCountry && regions.length === 1 && !selectedRegion) {
-      setSelectedRegion(regions[0]);
     }
-  }, [selectedCountry, regions, initialSchool, initialCountry, typedHighSchools, selectedRegion]);
 
-  const handleSchoolSelect = (schoolName: string, schoolData: { curriculum: string }) => {
-    if (selectedCountry) {
-      setSelectedSchoolName(schoolName);
-      setCurrentCurriculum(schoolData.curriculum);
-      onSchoolChange({
-        school: schoolName,
+    if (!countryFound && initialCountry) {
+      setSelectedCountry(OTHER_OPTION);
+      setManualCountry(initialCountry);
+      setManualSchool(initialSchool);
+      setManualCurriculum(initialCurriculum);
+      // Since we don't store region, we can't pre-fill it.
+    } else if (countryFound && !schoolFound && initialSchool) {
+      // It's a custom school within a known country. The most common case
+      // is the region is also custom, or the school within a known region is custom.
+      // We will default to showing "Other School" fields.
+      setSelectedSchool(OTHER_OPTION);
+      setManualSchool(initialSchool);
+      setManualCurriculum(initialCurriculum);
+    }
+  }, [initialSchool, initialCountry, initialCurriculum]);
+
+  // Effect to notify parent component of changes
+  useEffect(() => {
+    let finalDetails = { school: '', country: '', curriculum: '' };
+
+    if (selectedCountry === OTHER_OPTION) {
+      finalDetails = { country: manualCountry, school: manualSchool, curriculum: manualCurriculum };
+    } else if (selectedRegion === OTHER_OPTION) {
+      finalDetails = { country: selectedCountry || '', school: manualSchool, curriculum: manualCurriculum };
+    } else if (selectedSchool === OTHER_OPTION) {
+      finalDetails = { country: selectedCountry || '', school: manualSchool, curriculum: manualCurriculum };
+    } else if (selectedSchool && selectedCountry && selectedRegion) {
+      const schoolData = typedHighSchools[selectedCountry]?.[selectedRegion]?.[selectedSchool];
+      finalDetails = {
+        school: selectedSchool,
         country: selectedCountry,
-        curriculum: schoolData.curriculum,
-      });
-      setSchoolDropdownOpen(false);
+        curriculum: schoolData?.curriculum || '',
+      };
     }
-  };
+    onSchoolChange(finalDetails);
+  }, [selectedCountry, selectedRegion, selectedSchool, manualCountry, manualRegion, manualSchool, manualCurriculum, onSchoolChange]);
 
-  const Dropdown = ({
-    label,
-    value,
-    placeholder,
-    isOpen,
-    setIsOpen,
-    options,
-    onSelect,
-    style,
-  }: any) => (
-    <>
-      <TouchableOpacity
-        style={[styles.dropdownToggle, style]}
-        onPress={() => setIsOpen(!isOpen)}
-        disabled={options.length === 0}
-      >
-        <Text style={[styles.dropdownToggleText, !value && { color: colors.textSecondary }]}>
-          {value || placeholder}
-        </Text>
-        <Ionicons
-          name={isOpen ? 'chevron-up-outline' : 'chevron-down-outline'}
-          size={20}
-          color={colors.textSecondary}
-        />
-      </TouchableOpacity>
-      {isOpen && (
-        <View style={styles.dropdownMenu}>
-          <ScrollView nestedScrollEnabled style={styles.dropdownScroll}>
-            {options.map(onSelect)}
-          </ScrollView>
-        </View>
-      )}
-    </>
+  const ManualInput = ({ label, value, onChange, placeholder }: any) => (
+    <View style={{ marginTop: spacing.sm }}>
+      <Text style={styles.modalFieldLabel}>{label}</Text>
+      <TextInput
+        style={styles.modalInput}
+        value={value}
+        onChangeText={onChange}
+        placeholder={placeholder}
+        placeholderTextColor={colors.textSecondary}
+      />
+    </View>
   );
 
   return (
     <View style={styles.fieldContainer}>
       <Text style={styles.fieldLabel}>School Information</Text>
 
-      <Dropdown
-        placeholder="Select Country..."
-        value={selectedCountry}
-        isOpen={countryDropdownOpen}
-        setIsOpen={setCountryDropdownOpen}
-        options={countries}
-        onSelect={(country: string) => (
+      {/* Country Dropdown */}
+      <TouchableOpacity
+        style={styles.dropdownToggle}
+        onPress={() => setCountryDropdownOpen(!countryDropdownOpen)}
+      >
+        <Text style={[styles.dropdownToggleText, !selectedCountry && { color: colors.textSecondary }]}>
+          {selectedCountry || 'Select Country...'}
+        </Text>
+        <Ionicons name="chevron-down-outline" size={20} color={colors.textSecondary} />
+      </TouchableOpacity>
+      {countryDropdownOpen && (
+        <View style={styles.dropdownMenu}>
+          <ScrollView nestedScrollEnabled style={styles.dropdownScroll}>
+            {countries.map((c) => (
+              <TouchableOpacity
+                key={c}
+                style={styles.dropdownItem}
+                onPress={() => {
+                  setSelectedCountry(c);
+                  setSelectedRegion(null);
+                  setSelectedSchool(null);
+                  setCountryDropdownOpen(false);
+                }}
+              >
+                <Text style={styles.dropdownItemText}>{c}</Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+        </View>
+      )}
+
+      {/* Manual Country/Region/School Inputs */}
+      {selectedCountry === OTHER_OPTION && (
+        <View style={styles.manualInputContainer}>
+          <ManualInput
+            label="Country Name"
+            value={manualCountry}
+            onChange={setManualCountry}
+            placeholder="e.g., Singapore"
+          />
+          <ManualInput
+            label="Region Name"
+            value={manualRegion}
+            onChange={setManualRegion}
+            placeholder="e.g., Central Region"
+          />
+          <ManualInput
+            label="School Name"
+            value={manualSchool}
+            onChange={setManualSchool}
+            placeholder="e.g., Global High School"
+          />
+          <ManualInput
+            label="Curriculum"
+            value={manualCurriculum}
+            onChange={setManualCurriculum}
+            placeholder="e.g., IGCSE"
+          />
+        </View>
+      )}
+
+      {/* Region Dropdown */}
+      {selectedCountry && selectedCountry !== OTHER_OPTION && (
+        <>
           <TouchableOpacity
-            key={country}
-            style={styles.dropdownItem}
-            onPress={() => {
-              setSelectedCountry(country);
-              setSelectedRegion(null);
-              setSelectedSchoolName('');
-              setCurrentCurriculum('');
-              setCountryDropdownOpen(false);
-              setRegionDropdownOpen(false);
-              setSchoolDropdownOpen(false);
-            }}
+            style={[styles.dropdownToggle, { marginTop: spacing.sm }]}
+            onPress={() => setRegionDropdownOpen(!regionDropdownOpen)}
+            disabled={regions.length === 0}
           >
-            <Text style={styles.dropdownItemText}>{country}</Text>
+            <Text style={[styles.dropdownToggleText, !selectedRegion && { color: colors.textSecondary }]}>
+              {selectedRegion || 'Select Region...'}
+            </Text>
+            <Ionicons name="chevron-down-outline" size={20} color={colors.textSecondary} />
           </TouchableOpacity>
-        )}
-      />
-
-      {selectedCountry && (
-        <Dropdown
-          placeholder="Select Region..."
-          value={selectedRegion}
-          isOpen={regionDropdownOpen}
-          setIsOpen={setRegionDropdownOpen}
-          options={regions}
-          style={{ marginTop: spacing.sm }}
-          onSelect={(region: string) => (
-            <TouchableOpacity
-              key={region}
-              style={styles.dropdownItem}
-              onPress={() => {
-                setSelectedRegion(region);
-                setSelectedSchoolName('');
-                setCurrentCurriculum('');
-                setRegionDropdownOpen(false);
-                setSchoolDropdownOpen(false);
-              }}
-            >
-              <Text style={styles.dropdownItemText}>{region}</Text>
-            </TouchableOpacity>
+          {regionDropdownOpen && (
+            <View style={styles.dropdownMenu}>
+              <ScrollView nestedScrollEnabled style={styles.dropdownScroll}>
+                {regions.map((r) => (
+                  <TouchableOpacity
+                    key={r}
+                    style={styles.dropdownItem}
+                    onPress={() => {
+                      setSelectedRegion(r);
+                      setSelectedSchool(null);
+                      setRegionDropdownOpen(false);
+                    }}
+                  >
+                    <Text style={styles.dropdownItemText}>{r}</Text>
+                  </TouchableOpacity>
+                ))}
+              </ScrollView>
+            </View>
           )}
-        />
+        </>
       )}
 
-      {selectedRegion && (
-        <Dropdown
-          placeholder="Select School..."
-          value={selectedSchoolName}
-          isOpen={schoolDropdownOpen}
-          setIsOpen={setSchoolDropdownOpen}
-          options={schoolsInRegion}
-          style={{ marginTop: spacing.sm }}
-          onSelect={([schoolName, schoolData]: [string, any]) => (
-            <TouchableOpacity
-              key={schoolName}
-              style={styles.dropdownItem}
-              onPress={() => handleSchoolSelect(schoolName, schoolData)}
-            >
-              <Text style={styles.dropdownItemText}>{schoolName}</Text>
-              <Text style={styles.dropdownItemSubText}>{schoolData.curriculum}</Text>
-            </TouchableOpacity>
-          )}
-        />
+      {/* Manual Region/School Inputs */}
+      {selectedRegion === OTHER_OPTION && selectedCountry !== OTHER_OPTION && (
+        <View style={styles.manualInputContainer}>
+          <Text style={styles.infoTextSmall}>Since the region is not listed, please provide the details manually.</Text>
+          <ManualInput
+            label="Region Name"
+            value={manualRegion}
+            onChange={setManualRegion}
+            placeholder="e.g., Greater Area"
+          />
+          <ManualInput
+            label="School Name"
+            value={manualSchool}
+            onChange={setManualSchool}
+            placeholder="e.g., Local Area High"
+          />
+          <ManualInput
+            label="Curriculum"
+            value={manualCurriculum}
+            onChange={setManualCurriculum}
+            placeholder="e.g., A-Levels"
+          />
+        </View>
       )}
 
-      {currentCurriculum && selectedSchoolName && (
-        <Text style={styles.infoTextSmall}>Curriculum: {currentCurriculum}</Text>
+      {/* School Dropdown */}
+      {selectedRegion && selectedRegion !== OTHER_OPTION && (
+        <>
+          <TouchableOpacity
+            style={[styles.dropdownToggle, { marginTop: spacing.sm }]}
+            onPress={() => setSchoolDropdownOpen(!schoolDropdownOpen)}
+            disabled={schoolsInRegion.length === 0}
+          >
+            <Text style={[styles.dropdownToggleText, !selectedSchool && { color: colors.textSecondary }]}>
+              {selectedSchool || 'Select School...'}
+            </Text>
+            <Ionicons name="chevron-down-outline" size={20} color={colors.textSecondary} />
+          </TouchableOpacity>
+          {schoolDropdownOpen && (
+            <View style={styles.dropdownMenu}>
+              <ScrollView nestedScrollEnabled style={styles.dropdownScroll}>
+                {schoolsInRegion.map((s) => (
+                  <TouchableOpacity
+                    key={s}
+                    style={styles.dropdownItem}
+                    onPress={() => {
+                      setSelectedSchool(s);
+                      setSchoolDropdownOpen(false);
+                    }}
+                  >
+                    <Text style={styles.dropdownItemText}>{s}</Text>
+                  </TouchableOpacity>
+                ))}
+              </ScrollView>
+            </View>
+          )}
+        </>
+      )}
+
+      {/* Manual School Inputs */}
+      {selectedSchool === OTHER_OPTION && selectedRegion !== OTHER_OPTION && (
+        <View style={styles.manualInputContainer}>
+          <ManualInput
+            label="School Name"
+            value={manualSchool}
+            onChange={setManualSchool}
+            placeholder="e.g., Community High School"
+          />
+          <ManualInput
+            label="Curriculum"
+            value={manualCurriculum}
+            onChange={setManualCurriculum}
+            placeholder="e.g., State Diploma"
+          />
+        </View>
       )}
     </View>
   );
 };
 
-// --- ImagePickerEditor ---
+
+// --- ImagePickerEditor --- (MODIFIED TO HANDLE BASE64 CONVERSION)
 interface ImagePickerEditorProps {
   label: string;
   currentImageUrl?: string | null;
-  onImageSelected: (localUri: string | null) => void;
+  onImageSelected: (base64Uri: string | null) => void;
 }
 
 const ImagePickerEditor: React.FC<ImagePickerEditorProps> = ({
@@ -576,6 +693,7 @@ const ImagePickerEditor: React.FC<ImagePickerEditorProps> = ({
 }) => {
   const { colors } = useTheme();
   const styles = getThemedStyles(colors);
+  // This state now holds either a remote URL (from initial load) or a Base64 data URI (after selection)
   const [imagePreviewUri, setImagePreviewUri] = useState<string | null>(currentImageUrl || null);
 
   useEffect(() => {
@@ -602,13 +720,26 @@ const ImagePickerEditor: React.FC<ImagePickerEditorProps> = ({
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
         allowsEditing: true,
         aspect: [1, 1],
-        quality: 0.7,
+        quality: 0.8,
       });
 
       if (!result.canceled && result.assets && result.assets.length > 0) {
-        const localUri = result.assets[0].uri;
-        setImagePreviewUri(localUri);
-        onImageSelected(localUri);
+        const image = result.assets[0];
+        // Resize and convert the selected image to a Base64 string
+        const resized = await ImageManipulator.manipulateAsync(
+          image.uri,
+          [{ resize: { width: 400, height: 400 } }],
+          { compress: 0.8, format: ImageManipulator.SaveFormat.JPEG, base64: true }
+        );
+
+        if (resized.base64) {
+          const dataUri = `data:image/jpeg;base64,${resized.base64}`;
+          setImagePreviewUri(dataUri); // Update local preview
+          onImageSelected(dataUri); // Pass Base64 URI up to parent
+        } else {
+           Alert.alert("Error", "Could not process image. Please try again.");
+           console.error("Image manipulation did not return base64 data.");
+        }
       }
     } catch (error) {
       console.error('ImagePicker Error: ', error);
@@ -618,7 +749,7 @@ const ImagePickerEditor: React.FC<ImagePickerEditorProps> = ({
 
   const clearImage = () => {
     setImagePreviewUri(null);
-    onImageSelected(null);
+    onImageSelected(null); // Signal to the parent that the image was cleared
   };
 
   return (
@@ -642,7 +773,6 @@ const ImagePickerEditor: React.FC<ImagePickerEditorProps> = ({
     </View>
   );
 };
-
 // Helper to get all subject/course options from your subjects data
 const getSubjectOptions = () => {
   const allSubjects = new Set<string>();
@@ -657,6 +787,7 @@ const getSubjectOptions = () => {
 };
 const ALL_SUBJECT_COURSE_OPTIONS = getSubjectOptions();
 
+
 // --- Main EditProfilePage Component ---
 const EditProfilePage = () => {
   const { colors } = useTheme();
@@ -666,17 +797,28 @@ const EditProfilePage = () => {
   const [formData, setFormData] = useState<Partial<ProfileDataType>>({});
   const [loading, setLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
-  const [newLocalImageUri, setNewLocalImageUri] = useState<string | null>(null);
+  
+  // This state will hold the new image as a Base64 string OR null if cleared.
+  const [newImageUri, setNewImageUri] = useState<string | null>(null);
+  // This state explicitly tracks if the user has interacted with the image picker.
+  const [imageChanged, setImageChanged] = useState(false);
 
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);
       try {
-        const user = auth.currentUser;
-        if (!user || !user.email) {
-          Alert.alert('Authentication Error', 'No user identified. Please login again.');
+        const userString = await AsyncStorage.getItem('user');
+        if (!userString) {
+          Alert.alert('Authentication Error', 'No user identified. Please log in again.');
           router.replace('/(auth)');
           return;
+        }
+
+        const user = JSON.parse(userString);
+        if (!user || !user.email) {
+            Alert.alert('Authentication Error', 'User session is invalid. Please log in again.');
+            router.replace('/(auth)');
+            return;
         }
         setCurrentUserEmail(user.email);
 
@@ -692,9 +834,8 @@ const EditProfilePage = () => {
             certifications: (profile as TeacherProfile).certifications || [],
             teachingExperience: (profile as TeacherProfile).teachingExperience || [],
           });
-          if (profile.profilePicture) {
-            setNewLocalImageUri(profile.profilePicture);
-          }
+          // Initialize the image URI state with the existing profile picture
+          setNewImageUri(profile.profilePicture || null);
         } else {
           Alert.alert(
             'Profile Error',
@@ -713,6 +854,7 @@ const EditProfilePage = () => {
     loadData();
   }, [router]);
 
+
   const handleChange = useCallback((field: keyof ProfileDataType, value: any) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   }, []);
@@ -720,6 +862,12 @@ const EditProfilePage = () => {
   const handleListChange = useCallback((field: keyof ProfileDataType, newItems: any[]) => {
     setFormData((prev) => ({ ...prev, [field]: newItems }));
   }, []);
+
+  // This function will be passed to the ImagePickerEditor.
+  const handleImageSelected = (uri: string | null) => {
+    setNewImageUri(uri);    // Update the image URI (either Base64 string or null).
+    setImageChanged(true);  // Mark that an interaction has occurred.
+  };
 
   const handleSchoolSelection = useCallback(
     (schoolDetails: { school: string; country: string; curriculum: string }) => {
@@ -733,51 +881,39 @@ const EditProfilePage = () => {
     [],
   );
 
-  const handleImageSelected = useCallback((localUri: string | null) => {
-    setNewLocalImageUri(localUri);
-  }, []);
-
   const handleSaveChanges = async () => {
     if (!currentUserEmail) {
       Alert.alert('Error', 'User not identified. Cannot save changes.');
       return;
     }
     setIsSaving(true);
+    
+    // Start with existing form data.
+    const dataToSave: Partial<ProfileDataType> = { ...formData };
 
-    let finalProfilePictureUrl = formData.profilePicture;
-
-    if (newLocalImageUri && newLocalImageUri.startsWith('file://')) {
-      // NOTE: Here you would typically upload the new image to a storage service (like Firebase Storage)
-      // and get a new URL. For this example, we assume this is handled elsewhere or being stored as a local ref.
-      finalProfilePictureUrl = newLocalImageUri;
-      console.log('Profile picture will be set to local URI:', finalProfilePictureUrl);
-    } else if (newLocalImageUri === null && formData.profilePicture !== undefined) {
-      // User cleared the image
-      finalProfilePictureUrl = null;
+    // If the image was changed (selected or cleared), update the profilePicture field.
+    if (imageChanged) {
+      dataToSave.profilePicture = newImageUri; // This will be the new Base64 string or null.
     }
 
-    const dataToSave: Partial<ProfileDataType> = {
-      ...formData,
-      profilePicture: finalProfilePictureUrl,
-    };
-
+    // Clean up any undefined fields before saving
     Object.keys(dataToSave).forEach((keyStr) => {
-      const key = keyStr as keyof ProfileDataType;
-      if (dataToSave[key] === undefined) {
-        delete dataToSave[key];
-      }
+        const key = keyStr as keyof ProfileDataType;
+        if (dataToSave[key] === undefined) {
+          delete dataToSave[key];
+        }
     });
 
     try {
       const profileDocRef = doc(firestore, 'users', currentUserEmail, 'profile', 'details');
       await updateDoc(profileDocRef, dataToSave);
-
+      
+      // Fetch the latest version from Firestore to ensure local storage is up to date
       const docSnap = await getDoc(profileDocRef);
-      const finalProfileForStorage = docSnap.exists()
-        ? (docSnap.data() as ProfileDataType)
-        : (dataToSave as ProfileDataType);
+      if (docSnap.exists()) {
+        await AsyncStorage.setItem('profile', JSON.stringify(docSnap.data()));
+      }
 
-      await AsyncStorage.setItem('profile', JSON.stringify(finalProfileForStorage));
       Alert.alert('Success', 'Profile updated successfully!');
       router.back();
     } catch (e) {
@@ -787,6 +923,7 @@ const EditProfilePage = () => {
       setIsSaving(false);
     }
   };
+
 
   if (loading) {
     return (
@@ -853,9 +990,10 @@ const EditProfilePage = () => {
 
       <ImagePickerEditor
         label="Profile Picture"
-        currentImageUrl={formData.profilePicture}
+        currentImageUrl={newImageUri}
         onImageSelected={handleImageSelected}
       />
+
       <BasicTextInputField fieldLabel="Full Name" fieldKey="fullName" />
 
       <SchoolSelectorEditor
@@ -946,9 +1084,9 @@ const EditProfilePage = () => {
             label="Teaching Experience"
             items={(formData as TeacherProfile).teachingExperience || []}
             onItemsChange={(newItems) => handleListChange('teachingExperience', newItems)}
-            itemSchema={{ company: 'string', duration: 'number', role: 'string' }} // Assuming 'role' is part of Experience
+            itemSchema={{ company: 'string', duration: 'number', role: 'string' }}
             displayItem={(item) => `${item.role || item.company || 'N/A'} - ${item.duration || 0} months`}
-            getNewItemPlaceholder={() => ({ company: '', duration: 0, role: '' })} // Added 'role'
+            getNewItemPlaceholder={() => ({ company: '', duration: 0, role: '' })}
           />
         </>
       )}
@@ -969,7 +1107,8 @@ const EditProfilePage = () => {
 };
 export default EditProfilePage;
 
-// Centralized stylesheet using the theme
+
+// --- STYLESHEET ---
 const getThemedStyles = (colors: any) =>
   StyleSheet.create({
     // Main page layout
@@ -1209,7 +1348,7 @@ const getThemedStyles = (colors: any) =>
       paddingHorizontal: spacing.xs,
     },
 
-    // Modal styles
+    // Modal and Manual Input styles
     modalOverlay: {
       flex: 1,
       backgroundColor: 'rgba(0,0,0,0.85)',
@@ -1274,12 +1413,20 @@ const getThemedStyles = (colors: any) =>
       color: colors.background,
     },
     infoTextSmall: {
-      ...typography.body,
-      fontSize: 12,
-      color: colors.textSecondary,
-      fontStyle: 'italic',
-      marginTop: spacing.xs,
-      marginLeft: spacing.xs,
+        ...typography.body,
+        fontSize: 12,
+        color: colors.textSecondary,
+        fontStyle: 'italic',
+        marginBottom: spacing.sm,
+        textAlign: 'center'
+    },
+    manualInputContainer: {
+        backgroundColor: `${colors.primary}10`, // a slightly tinted background
+        padding: spacing.md,
+        borderRadius: radius.lg,
+        marginTop: spacing.sm,
+        borderWidth: 1,
+        borderColor: `${colors.primary}30`,
     },
 
     // Image Picker

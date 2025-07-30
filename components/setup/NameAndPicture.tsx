@@ -52,9 +52,18 @@ export const NameAndPicture = ({ setFullName, setProfilePicture, fullName, profi
         const resized = await ImageManipulator.manipulateAsync(
           image.uri,
           [{ resize: { width: 400, height: 400 } }], // 1/1 aspect ratio
-          { compress: 0.8, format: ImageManipulator.SaveFormat.JPEG }
+          // Add base64: true to get the image data as a string
+          { compress: 0.8, format: ImageManipulator.SaveFormat.JPEG, base64: true }
         );
-        setProfilePicture(resized.uri);
+
+        if (resized.base64) {
+          // Prepend the data URI scheme which is crucial for Image components and web standards
+          const dataUri = `data:image/jpeg;base64,${resized.base64}`;
+          setProfilePicture(dataUri);
+        } else {
+          Alert.alert("Error", "Could not process image. Please try again.");
+          console.error("Image manipulation did not return base64 data.");
+        }
       }
     } catch (e) {
       console.error(e);
@@ -63,11 +72,12 @@ export const NameAndPicture = ({ setFullName, setProfilePicture, fullName, profi
   };
 
   const onContinue = () => {
-    setFullName(name);
-    if(!fullName.trim()) {
+    // FIX: Validate the current input `name` from state, not the old `fullName` prop
+    if(!name.trim()) {
         Alert.alert("Missing Name", "Please enter your full name.");
         return;
     }
+    setFullName(name); // Set the parent state after successful validation
     navigation.navigate("School");
   };
 
@@ -95,6 +105,7 @@ export const NameAndPicture = ({ setFullName, setProfilePicture, fullName, profi
                 />
             </View>
             
+            {/* The Image component works seamlessly with Base64 data URIs */}
             <TouchableOpacity style={styles.imageContainer} onPress={() => handlePickImage('library')}>
               {profilePicture ? (
                 <Image source={{ uri: profilePicture }} style={styles.image} />

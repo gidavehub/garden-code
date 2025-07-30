@@ -1,5 +1,5 @@
 // app/(tabs)/marketplace/create-listing.tsx
-import { auth, firestore } from '@/firebaseConfig';
+import { firestore } from '@/firebaseConfig';
 import { radius, spacing, typography } from '@/theme/atoms';
 import { useTheme } from '@/theme/theme';
 import { ProfileData } from '@/types/explore';
@@ -9,7 +9,7 @@ import * as ImagePicker from 'expo-image-picker'; // For image picking
 import { useRouter } from 'expo-router';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import React, { useState } from 'react';
-import { ActivityIndicator, Alert, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Alert, Image, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function CreateListingScreen() {
     const { colors } = useTheme();
@@ -19,36 +19,26 @@ export default function CreateListingScreen() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [price, setPrice] = useState('');
-    const [images, setImages] = useState<string[]>([]); // stores local URIs
+    const [images, setImages] = useState<string[]>([]); // stores base64 data URIs
     const [isSaving, setIsSaving] = useState(false);
-
-    // This would be replaced with actual image upload to a service like Firebase Storage
-    const uploadImageMock = async (uri: string) => {
-        console.log(`Uploading ${uri}...`);
-        await new Promise(resolve => setTimeout(resolve, 1500)); // simulate network delay
-        return `https://picsum.photos/seed/${Math.random()}/400/300`; // return a placeholder URL
-    };
     
     const pickImage = async () => {
         let result = await ImagePicker.launchImageLibraryAsync({
             mediaTypes: ImagePicker.MediaTypeOptions.Images,
             allowsEditing: true,
             aspect: [4, 3],
-            quality: 0.8,
+            quality: 0.5,
+            base64: true,
         });
 
-        if (!result.canceled) {
-            setImages(prev => [...prev, result.assets[0].uri]);
+        if (!result.canceled && result.assets[0].base64) {
+            const dataUri = `data:image/jpeg;base64,${result.assets[0].base64}`;
+            setImages(prev => [...prev, dataUri]);
         }
     };
 
 
     const handleSaveListing = async () => {
-        const user = auth.currentUser;
-        if (!user || !user.email) {
-            Alert.alert("Authentication Error", "You must be logged in.");
-            return;
-        }
         if (!title.trim() || !price.trim()) {
             Alert.alert("Missing Info", "Please provide at least a title and a price.");
             return;
@@ -56,25 +46,39 @@ export default function CreateListingScreen() {
 
         setIsSaving(true);
         try {
-            // In a real app, this is where you'd upload local image URIs and get back storage URLs
-            const imageUrls = await Promise.all(images.map(uri => uploadImageMock(uri)));
-
-            // Fetch denormalized seller data
+            // Get user and profile info from AsyncStorage
+            const userString = await AsyncStorage.getItem('user');
             const profileString = await AsyncStorage.getItem('profile');
-            const profile: ProfileData = profileString ? JSON.parse(profileString) : {};
+            
+            if (!userString || !profileString) {
+                Alert.alert("Authentication Error", "You must be logged in to create a listing. Please log in again.");
+                setIsSaving(false);
+                return;
+            }
+
+            const user = JSON.parse(userString);
+            const profile: ProfileData = JSON.parse(profileString);
+
+            if (!user.email) {
+                Alert.alert("Authentication Error", "Your user session is invalid. Please log in again.");
+                setIsSaving(false);
+                return;
+            }
+
+            const imageUrls = images;
 
             const newListingData = {
                 title,
                 description,
                 price: parseFloat(price) || 0,
-                category: 'physical', // Default category for simplicity
-                condition: 'used', // Default condition
+                category: 'physical',
+                condition: 'used',
                 imageUrls,
-                sellerId: user.email,
+                sellerId: user.email, // Use email from AsyncStorage
                 sellerName: profile.fullName || "Unknown User",
                 sellerProfilePicture: profile.profilePicture || null,
                 school: profile.school || null,
-                subject: null, // Could be added as another field
+                subject: null,
                 status: 'active',
                 createdAt: serverTimestamp(),
             };
@@ -83,7 +87,12 @@ export default function CreateListingScreen() {
             Alert.alert("Success!", "Your item has been listed.");
             router.back();
         } catch (error: any) {
-            Alert.alert("Error", error.message || "Could not save your listing.");
+            console.error("Error saving listing:", error);
+            if (error.code === 'resource-exhausted' || (error.message && error.message.includes('bytes'))) {
+                 Alert.alert("Error", "The image file(s) are too large. Please select smaller images and try again.");
+            } else {
+                 Alert.alert("Error", error.message || "Could not save your listing.");
+            }
         } finally {
             setIsSaving(false);
         }
@@ -111,9 +120,11 @@ export default function CreateListingScreen() {
                 <Text style={styles.label}>Images</Text>
                 <View style={styles.imageGrid}>
                     {images.map((uri, index) => <Image key={index} source={{uri}} style={styles.imagePreview} />)}
-                    <TouchableOpacity style={styles.addImageButton} onPress={pickImage}>
-                        <Ionicons name="camera-outline" size={30} color={colors.textSecondary} />
-                    </TouchableOpacity>
+                    {images.length < 5 && (
+                      <TouchableOpacity style={styles.addImageButton} onPress={pickImage}>
+                          <Ionicons name="camera-outline" size={30} color={colors.textSecondary} />
+                      </TouchableOpacity>
+                    )}
                 </View>
 
                 <TouchableOpacity style={[styles.saveButton, isSaving && {opacity: 0.7}]} onPress={handleSaveListing} disabled={isSaving}>

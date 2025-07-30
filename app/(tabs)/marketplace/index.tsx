@@ -55,27 +55,36 @@ export default function MarketplaceScreen() {
 
   // The logic for fetching and handling listings is preserved...
   const fetchListings = useCallback(async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const q = query(
-        collection(firestore, 'listings'),
-        where('status', '==', 'active'),
-        orderBy('createdAt', 'desc'),
-        limit(20)
-      );
-      const querySnapshot = await getDocs(q);
-      const fetchedListings = querySnapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-      } as Listing));
-      setListings(fetchedListings);
-    } catch (e: any) {
-      setError(e.message || "Failed to load listings.");
-    } finally {
-      setLoading(false);
+  setLoading(true);
+  setError(null);
+  try {
+    const q = query(
+      collection(firestore, 'listings'),
+      where('status', '==', 'active'),
+      orderBy('createdAt', 'desc'),
+      limit(20)
+    );
+    const querySnapshot = await getDocs(q);
+    const fetchedListings = querySnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    } as Listing));
+    setListings(fetchedListings);
+  } catch (e: any) {
+    if (e.code === 'failed-precondition' && e.message?.includes('indexes')) {
+      // 🔥 Log the Firestore index creation link
+      const match = e.message.match(/https?:\/\/[^\s]+/);
+      if (match) {
+        console.warn("⚠️ Missing Firestore index. Create it here:", match[0]);
+      }
     }
-  }, []);
+    console.error("❌ Error fetching listings:", e);
+    setError(e.message || "Failed to load listings.");
+  } finally {
+    setLoading(false);
+  }
+}, []);
+
 
   useEffect(() => {
     fetchListings();

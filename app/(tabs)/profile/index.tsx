@@ -78,7 +78,6 @@ export default function MainProfileScreen() {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
-  // useEffect and handleLogout can stay the same
   useEffect(() => {
     const loadProfile = async () => { 
       setLoading(true);
@@ -94,22 +93,30 @@ export default function MainProfileScreen() {
     loadProfile();
   }, []);
 
-  const handleLogout = async () => { 
-    Alert.alert("Confirm Logout", "Are you sure you want to logout?",
-      [{ text: "Cancel", style: "cancel" }, {
-          text: "Logout", style: "destructive", onPress: async () => {
-            try { await AsyncStorage.multiRemove(['user', 'profile']); await signOut(auth); router.replace('/(auth)/login'); } 
-            catch (error) { Alert.alert('Logout Failed', 'Something went wrong.'); }
-          },
-      }]
-    );
+  const handleLogout = async () => {
+    Alert.alert("Confirm Logout", "Are you sure you want to logout?", [
+      { text: "Cancel", style: "cancel" },
+      {
+        text: "Logout",
+        style: "destructive",
+        onPress: async () => {
+          try {
+            // Clear all data from AsyncStorage (user, profile, test history, etc.)
+            await AsyncStorage.clear();
+            await signOut(auth);
+            router.replace('/(auth)/login');
+          } catch (error) {
+            Alert.alert('Logout Failed', 'Something went wrong.');
+          }
+        },
+      },
+    ]);
   };
 
   const handleEditProfile = () => {
     router.push('/(tabs)/profile/editProfile');
   };
 
-  // ***** THIS IS THE CORRECTED PART *****
   const handleSettings = () => {
     router.push('/(tabs)/profile/settings');
   };
@@ -206,11 +213,15 @@ export default function MainProfileScreen() {
         </>
       )}
 
-      <View style={{height: spacing.lg}} />
+      <View style={{height: spacing.lg, }} />
       <TouchableOpacity style={styles.actionButtonMain} onPress={handleLogout}>
-          <Ionicons name="log-out-outline" size={22} color={colors.buttonText} style={{ marginRight: spacing.md }} />
+          <Ionicons name="log-out-outline" size={22} color={colors.buttonText} style={{ marginRight: spacing.md,}} />
           <Text style={styles.actionButtonMainText}>Logout</Text>
       </TouchableOpacity>
+      
+      {/* This View adds extra space at the bottom, allowing the Logout button to be scrolled up higher on the screen. */}
+      <View style={{ height: 120 }} />
+
     </ScrollView>
   );
 };
@@ -229,8 +240,9 @@ const getHelperStyles = (colors: ThemeColors) => StyleSheet.create({
 
 // Styles for the Main Profile Screen
 const getStyles = (colors: ThemeColors) => StyleSheet.create({ 
-    container: { flex: 1, backgroundColor: colors.background },
-    contentContainer: { paddingBottom: spacing.xxl },
+    container: { flex: 1, backgroundColor: colors.background  },
+    // Note: an alternative to the <View> spacer would be to increase paddingBottom here
+    contentContainer: { paddingBottom: spacing.sm }, // Adjusted to remove redundant padding
     centered: { flex: 1, backgroundColor: colors.background, alignItems: 'center', justifyContent: 'center', padding: spacing.lg },
     loadingInfoText: { color: colors.textSecondary, marginTop: spacing.md, fontSize: 16 },
     errorText: { ...typography.bodyBold, color: colors.text, textAlign: 'center', marginTop: spacing.md },

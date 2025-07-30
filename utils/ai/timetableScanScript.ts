@@ -10,7 +10,7 @@ export type TimetableData = { [key: string]: { subject: string; startTime: strin
 // 🔴 Note: For a real app, loading this from a secure .env file is the
 // 🔴       recommended and safest practice.
 // 🔴 ======================================================================
-const GEMINI_API_KEY = "AIzaSyB11kq2KGuvZveR65kqRy-vmVn8FfZImcA"; // <--- PASTE YOUR API KEY HERE
+const GEMINI_API_KEY = "AIzaSyB0Xc2ynV7UELSmLhFC0AiG0PoXtuJQzAQ"; // <--- PASTE YOUR API KEY HERE
 
 // --- Initialize the AI ---
 let genAI: GoogleGenerativeAI;

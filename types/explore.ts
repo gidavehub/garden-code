@@ -38,6 +38,21 @@ export type ExperienceItem = {
   duration: number; // Assuming years
 };
 
+export interface PostComment {
+  authorId: string;
+  authorName: string;
+  text: string;
+  createdAt: string; // Stored as ISO string for simplicity
+}
+
+export interface Post {
+  id: string;
+  authorId: string;
+  // ... other post fields
+  likes: string[]; // <-- ADD THIS: An array of user IDs
+  comments: PostComment[]; // <-- ADD THIS: An array of comment objects
+}
+
 export type CertificateItem = {
   title: string;
   level: string;

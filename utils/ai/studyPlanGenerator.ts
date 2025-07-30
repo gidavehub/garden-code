@@ -2,7 +2,7 @@ import { StudyPlan, Subject } from "@/app/(tabs)/index/material/studies/types";
 import { Alert } from "react-native";
 
 // --- PASTE YOUR GEMINI API KEY HERE ---
-const GEMINI_API_KEY = "AIzaSyB11kq2KGuvZveR65kqRy-vmVn8FfZImcA";
+const GEMINI_API_KEY = "AIzaSyB0Xc2ynV7UELSmLhFC0AiG0PoXtuJQzAQ";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
 
 /**

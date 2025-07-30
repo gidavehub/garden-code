@@ -1,9 +1,10 @@
 // app/(tabs)/marketplace/my-listings.tsx
-import { auth, firestore } from '@/firebaseConfig';
+import { firestore } from '@/firebaseConfig'; // No 'auth' needed here anymore
 import { radius, spacing, typography } from '@/theme/atoms';
 import { useTheme } from '@/theme/theme';
 import { Listing } from '@/types/marketplace';
 import { Ionicons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';
 import { collection, doc, getDocs, orderBy, query, updateDoc, where } from 'firebase/firestore';
 import React, { useCallback, useEffect, useState } from 'react';
@@ -20,7 +21,7 @@ import {
     View,
 } from 'react-native';
 
-// Card for a user's own listing
+// Card for a user's own listing (UNMODIFIED)
 const MyListingCard = ({ item, onEdit, onToggleStatus }: { item: Listing; onEdit: (id: string) => void; onToggleStatus: (item: Listing) => void }) => {
     const { colors } = useTheme();
     const styles = getThemedStyles(colors);
@@ -58,17 +59,25 @@ export default function MyListingsScreen() {
     const [refreshing, setRefreshing] = useState(false);
     
     const fetchMyListings = useCallback(async () => {
-        const user = auth.currentUser;
-        if (!user || !user.email) {
-            Alert.alert("Authentication Error", "You must be logged in to view your listings.");
-            setLoading(false);
-            return;
-        }
-
         try {
+            // Get user info from AsyncStorage
+            const userString = await AsyncStorage.getItem('user');
+            if (!userString) {
+                Alert.alert("Authentication Error", "You must be logged in to view your listings.");
+                setLoading(false);
+                return;
+            }
+
+            const user = JSON.parse(userString);
+            if (!user.email) {
+                Alert.alert("Authentication Error", "Your user session is invalid. Please log in again.");
+                setLoading(false);
+                return;
+            }
+
             const q = query(
                 collection(firestore, 'listings'),
-                where('sellerId', '==', user.email),
+                where('sellerId', '==', user.email), // Use email from AsyncStorage
                 orderBy('createdAt', 'desc')
             );
             const querySnapshot = await getDocs(q);
@@ -154,6 +163,7 @@ export default function MyListingsScreen() {
     );
 }
 
+// Styles (UNMODIFIED)
 const getThemedStyles = (colors: any) => StyleSheet.create({
     container: { flex: 1, backgroundColor: colors.background },
     header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: spacing.md, paddingVertical: spacing.sm, borderBottomWidth: 1, borderBottomColor: colors.border },
@@ -164,7 +174,6 @@ const getThemedStyles = (colors: any) => StyleSheet.create({
     createButton: { backgroundColor: colors.primary, padding: spacing.md, borderRadius: radius.md, marginTop: spacing.lg },
     createButtonText: { ...typography.bodyBold, color: colors.background },
     
-    // My Listing Card Styles
     card: { flexDirection: 'row', backgroundColor: colors.card, borderRadius: radius.lg, marginBottom: spacing.md, overflow: 'hidden' },
     cardSold: { opacity: 0.6 },
     cardImage: { width: 100, height: '100%', backgroundColor: colors.border },

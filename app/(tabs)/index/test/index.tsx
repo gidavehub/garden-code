@@ -1,3 +1,11 @@
+// app/(tabs)/index/test/index.tsx
+
+// --- [NEW] IMPORTS ---
+import { app } from '@/firebaseConfig';
+import { useNetInfo } from '@react-native-community/netinfo';
+import { getAuth } from 'firebase/auth';
+import { collection, getDocs, getFirestore, orderBy, query } from 'firebase/firestore';
+// --- END NEW IMPORTS ---
 import { ASYNC_STORAGE_TEST_HISTORY_KEY, GT_NAMES } from '@/data/gtConstants';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -9,7 +17,7 @@ import { ActivityIndicator, ScrollView, StyleSheet, Text, TouchableOpacity, View
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
 
-// --- SCORE CIRCLE COMPONENT (Unchanged - It's already great!) ---
+// --- SCORE CIRCLE COMPONENT (Unchanged) ---
 const SCORE_CIRCLE_SIZE = 44;
 const STROKE_WIDTH = 4.5;
 const RADIUS = (SCORE_CIRCLE_SIZE - STROKE_WIDTH) / 2;
@@ -37,19 +45,67 @@ export default function GTLandingScreen() {
     const [isLoading, setIsLoading] = useState(true);
     const [loadingTestId, setLoadingTestId] = useState<string | null>(null);
 
-    // --- LOGIC (No changes needed) ---
+    // --- [NEW] Hook to get network status ---
+    const netInfo = useNetInfo();
+
+    // --- [MODIFIED] LOGIC for data loading and syncing ---
     useFocusEffect(useCallback(() => {
         setLoadingTestId(null);
-        const loadHistory = async () => { setIsLoading(true); try { const jsonValue = await AsyncStorage.getItem(ASYNC_STORAGE_TEST_HISTORY_KEY); setHistory(jsonValue != null ? JSON.parse(jsonValue) : []); } catch (e) { console.error("Failed to load test history.", e); } finally { setIsLoading(false); } };
-        loadHistory();
-    }, []));
+        
+        const loadAndSyncHistory = async () => {
+            setIsLoading(true);
+            try {
+                // 1. Load local data first for a fast UI response
+                const localHistoryJson = await AsyncStorage.getItem(ASYNC_STORAGE_TEST_HISTORY_KEY);
+                let localHistory: CompletedTest[] = localHistoryJson ? JSON.parse(localHistoryJson) : [];
+                setHistory(localHistory);
+
+                // 2. If online, authenticated, and has network, sync with Firestore
+                if (netInfo.isConnected === true) {
+                    const auth = getAuth(app);
+                    const currentUser = auth.currentUser;
+
+                    if (currentUser && currentUser.uid) {
+                        const db = getFirestore(app);
+                        const historyCollectionRef = collection(db, 'users', currentUser.uid, 'testHistory');
+                        const q = query(historyCollectionRef, orderBy('dateCompleted', 'desc'));
+
+                        const querySnapshot = await getDocs(q);
+                        const firestoreHistory: CompletedTest[] = querySnapshot.docs.map(doc => {
+                             // Firestore data doesn't have the require() function for images.
+                             // For now, we accept it as is. If image display is needed here,
+                             // we'd have to re-map based on an image ID.
+                            return doc.data() as CompletedTest
+                        });
+
+                        // 3. Compare and update if necessary.
+                        // Stringify is a simple but effective way to deep-compare the arrays of objects.
+                        if (JSON.stringify(firestoreHistory) !== JSON.stringify(localHistory)) {
+                            setHistory(firestoreHistory);
+                            await AsyncStorage.setItem(ASYNC_STORAGE_TEST_HISTORY_KEY, JSON.stringify(firestoreHistory));
+                            console.log('AsyncStorage history synced with Firestore.');
+                        }
+                    }
+                }
+            } catch (e) {
+                console.error("Failed to load or sync test history.", e);
+                // The UI will already show local data, so we can fail gracefully.
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        loadAndSyncHistory();
+    }, [netInfo.isConnected])); // Re-run this effect when connection status changes
+
+
+    // --- The rest of your component logic is unchanged ---
     const nextTestIndex = history.length;
     const currentYear = new Date().getFullYear();
     const isExamSeriesComplete = nextTestIndex >= GT_NAMES.length;
     const navigateToSubjectSelector = () => router.push({ pathname: '/test/subjects', params: { testIndex: String(nextTestIndex), testName: GT_NAMES[nextTestIndex] } });
     const navigateToReview = (test: CompletedTest) => { setLoadingTestId(test.id); setTimeout(() => router.push({ pathname: `/test/${test.id}`, params: { testData: JSON.stringify(test) } }), 500); };
     if (isLoading) { return <LinearGradient colors={['#D4E7C5', '#BFD8AF']} style={styles.gradient}><SafeAreaView style={[styles.safeArea, { justifyContent: 'center' }]}><ActivityIndicator size="large" color="#1a3325" /></SafeAreaView></LinearGradient>; }
-    // --- END OF LOGIC ---
 
     return (
         <LinearGradient colors={['#f3f9ef', '#dde9d5']} style={styles.gradient}>
@@ -59,14 +115,14 @@ export default function GTLandingScreen() {
                 </TouchableOpacity>
                 
                 <ScrollView contentContainerStyle={styles.container}>
-                    {/* --- [NEW] Multi-Layered Sunburst Emblem Header --- */}
+                    {/* Sunburst Emblem Header (Unchanged) */}
                     <MotiView
                         style={styles.sunburstEmblem}
                         from={{ opacity: 0, scale: 0.6 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ type: 'spring', damping: 15 }}
                     >
-                        <MotiView // Inner container for a layered effect
+                        <MotiView
                             style={styles.sunburstInner}
                             from={{ scale: 0.5 }}
                             animate={{ scale: 1 }}
@@ -87,7 +143,7 @@ export default function GTLandingScreen() {
                         <Text style={styles.subtitle}>{currentYear} Series</Text>
                     </MotiView>
                     
-                    {/* --- [UPDATED] Primary Action Card --- */}
+                    {/* Primary Action Card (Unchanged) */}
                     <MotiView from={{ opacity: 0, scale: 0.95, translateY: 20 }} animate={{ opacity: 1, scale: 1, translateY: 0 }} transition={{ type: 'timing', duration: 500, delay: 500 }}>
                         <View style={[styles.tile]}>
                             <View style={styles.tileHeaderRow}>
@@ -105,12 +161,13 @@ export default function GTLandingScreen() {
                         </View>
                     </MotiView>
 
-                    {/* --- [UPDATED] History List with New Styling --- */}
+                    {/* History List (Unchanged - uses the `history` state which is now synced) */}
                     {history.length > 0 && (
                         <>
                             <Text style={styles.historyTitle}>Test History</Text>
-                            {history.slice().reverse().map((test, index) => (
-                                <MotiView key={test.id} from={{ opacity: 0, translateX: -20 }} animate={{ opacity: 1, translateX: 0 }} transition={{ type: 'timing', duration: 400, delay: 600 + index * 100 }}>
+                            {/* Sort here to ensure descending order display regardless of sync timing */}
+                            {history.slice().sort((a, b) => new Date(b.dateCompleted).getTime() - new Date(a.dateCompleted).getTime()).map((test, index) => (
+                                <MotiView key={test.id} from={{ opacity: 0, translateX: -20 }} animate={{ opacity: 1, translateX: 0 }} transition={{ type: 'timing', duration: 400, delay: 100 + index * 100 }}>
                                     <TouchableOpacity style={styles.historyItem} onPress={() => navigateToReview(test)} disabled={loadingTestId !== null}>
                                         <View style={{ flex: 1, marginRight: 8 }}>
                                             <Text style={styles.historyName}>{test.name}</Text>
@@ -128,7 +185,7 @@ export default function GTLandingScreen() {
     );
 }
 
-// --- [COMPLETELY REVISED STYLESHEET] ---
+// --- Stylesheet (Unchanged) ---
 const styles = StyleSheet.create({
     gradient: { flex: 1 },
     safeArea: { flex: 1 },
@@ -141,23 +198,20 @@ const styles = StyleSheet.create({
         justifyContent: 'center', alignItems: 'center',
     },
     container: { paddingTop: 20, paddingHorizontal: 24, paddingBottom: 50 },
-
-    // --- NEW SUNBURST EMBLEM STYLES ---
     sunburstEmblem: {
         width: 120, height: 120, borderRadius: 60, alignSelf: 'center',
         justifyContent: 'center', alignItems: 'center',
-        backgroundColor: '#cddfc6', // Darker background layer for depth
+        backgroundColor: '#cddfc6',
     },
     sunburstInner: {
         width: 110, height: 110, borderRadius: 55,
-        backgroundColor: '#FCFFF5', // A soft, creamy white
+        backgroundColor: '#FCFFF5',
         justifyContent: 'center', alignItems: 'center',
         shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 5, elevation: 5
     },
     headerLogo: {
         width: 60, height: 60,
     },
-    
     title: { 
         fontSize: 36, fontWeight: '900', color: '#1a3325', 
         marginTop: 24, textAlign: 'center',
@@ -166,10 +220,8 @@ const styles = StyleSheet.create({
         fontSize: 18, color: '#446955', textAlign: 'center',
         marginTop: 4, marginBottom: 32, fontWeight: '500',
     },
-
-    // --- UPDATED CARD STYLES ---
     tile: {
-        backgroundColor: '#FCFFF5', // Solid, premium card color
+        backgroundColor: '#FCFFF5',
         borderRadius: 28, padding: 24,
         borderColor: '#ffffff', borderWidth: 2,
         marginBottom: 32,
@@ -193,7 +245,7 @@ const styles = StyleSheet.create({
     },
     historyTitle: { fontSize: 24, fontWeight: 'bold', color: '#1a3325', marginBottom: 12, marginLeft: 4, },
     historyItem: {
-        backgroundColor: '#e9f0ec', // A distinct, solid color for history items
+        backgroundColor: '#e9f0ec',
         borderRadius: 20,
         borderColor: '#ffffff', borderWidth: 1,
         padding: 16, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12,

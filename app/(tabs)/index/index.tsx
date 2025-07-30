@@ -204,21 +204,7 @@ export default function GardenScreen() {
             </TouchableOpacity>
           </View>
 
-          <Text style={[styles.standaloneSectionTitle, { fontFamily: FONT_FAMILY.bold }]}>Leaderboard</Text>
-          <View style={[styles.card, styles.leaderboardCard]}>
-            {leaderboardData.map((item, index) => (
-              <View key={index} style={styles.leaderboardItem}>
-                <Text style={[styles.leaderboardRank, { fontFamily: FONT_FAMILY.bold, color: getRankColor(index) }]}>{index + 1}</Text>
-                <View style={[styles.leaderboardAvatarContainer, { borderColor: getRankColor(index) }]}>
-                  <Image source={{ uri: item.avatar }} style={styles.leaderboardAvatar} />
-                </View>
-                <View style={styles.leaderboardTextColumn}>
-                  <Text style={[styles.leaderboardName, { fontFamily: FONT_FAMILY.medium }]} numberOfLines={1}>{item.name}</Text>
-                  <Text style={[styles.leaderboardPoints, { fontFamily: FONT_FAMILY.regular }]} numberOfLines={1}>{item.points}</Text>
-                </View>
-              </View>
-            ))}
-          </View>
+          
         </View>
       </ScrollView>
     </SafeAreaView>
