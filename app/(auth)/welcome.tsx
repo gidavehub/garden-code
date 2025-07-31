@@ -84,7 +84,7 @@ export default function WelcomeScreen({ welcomeReady }: { welcomeReady: boolean 
       }).start();
 
       setTimeout(() => {
-        router.replace('/(tabs)');
+        router.replace('/(welcome)');
       }, 6100); 
 
       setTimeout(() => {

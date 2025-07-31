@@ -7,7 +7,7 @@ import { useRouter } from 'expo-router';
 import { AnimatePresence, MotiView } from 'moti';
 import React, { useMemo, useState } from 'react';
 import {
-  Alert, LayoutChangeEvent, Platform, Pressable, ScrollView,
+  Alert, Image, LayoutChangeEvent, Platform, Pressable, ScrollView,
   StyleSheet, Text, TextInput, TouchableOpacity, View
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -24,16 +24,24 @@ const initialTimetableState = DAYS.reduce((acc, day) => ({ ...acc, [day]: [] }),
 
 const LoadingAnimation = () => (
     <View style={styles.loadingContainer}>
-      <MotiView from={{ scale: 1, opacity: 0.5 }} animate={{ scale: 1.2, opacity: 0.8 }} transition={{ type: 'timing', duration: 2000, loop: true, repeatReverse: true, }} style={styles.loadingBackgroundCircle} />
-      <MotiView style={styles.cloudContainer}>
-        {[0, 600, 1200].map(delay => (
-          <MotiView key={delay} from={{ opacity: 0, scale: 0.5, translateY: 20 }} animate={{ opacity: [0, 1, 0], scale: 1, translateY: -30 }} transition={{ type: 'timing', duration: 3500, delay, loop: true, repeatReverse: false }} style={{ position: 'absolute' }}>
-            <Ionicons name="cloud-outline" size={80 + Math.random() * 40} color={Colors.white} />
-          </MotiView>
-        ))}
+      <MotiView
+        from={{ rotateZ: '0deg' }}
+        animate={{ rotateZ: '360deg' }}
+        transition={{
+          loop: true,
+          repeatReverse: false,
+          type: 'timing',
+          duration: 4000,
+        }}
+      >
+        <Image
+          // The path to your logo. Assumes an alias is set up for `@`.
+          // If not, use a relative path like `require('../../assets/images/logo.png')`.
+          source={require('@/assets/images/logo.png')}
+          style={styles.logo}
+        />
       </MotiView>
-      <Text style={styles.loadingText}>Analysing Timetable...</Text>
-      <Text style={styles.loadingSubText}>Our Garden AI is working its magic!</Text>
+      <Text style={styles.loadingText}>Garden AI is analysing your timetable...</Text>
     </View>
 );
 
@@ -289,11 +297,29 @@ const styles = StyleSheet.create({
   buttonDisabled: { backgroundColor: Colors.lightGray, shadowOpacity: 0, elevation: 0 },
   buttonTextPrimary: { color: Colors.white, fontSize: 16, fontWeight: 'bold' },
   buttonTextSecondary: { color: Colors.accent, fontSize: 16, fontWeight: 'bold' },
-  loadingContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: Spacing.xl, backgroundColor: Colors.primary },
-  loadingBackgroundCircle: { position: 'absolute', width: 400, height: 400, borderRadius: 200, backgroundColor: Colors.accent, opacity: 0.8 },
-  cloudContainer: { width: 250, height: 150, alignItems: 'center', justifyContent: 'center' },
-  loadingText: { ...Typography.title, fontSize: 24, color: Colors.white, fontWeight: '700' },
-  loadingSubText: { ...Typography.subtitle, color: Colors.white, opacity: 0.8 },
+  // --- Updated Loading Animation Styles ---
+  loadingContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#E8F5E9', // Light Green Background
+    padding: Spacing.lg
+  },
+  logo: {
+    width: 150,
+    height: 150,
+    resizeMode: 'contain',
+  },
+  loadingText: {
+    ...Typography.subtitle,
+    fontSize: 18,
+    marginTop: Spacing.xl,
+    textAlign: 'center',
+    maxWidth: '90%',
+    lineHeight: 26,
+    color: Colors.text,
+  },
+  // --- End of Loading Styles ---
   toggleOuterContainer: { alignSelf: 'center', flexDirection: 'row', backgroundColor: Colors.lightGray, borderRadius: 100, position: 'relative', overflow: 'hidden', borderWidth: 1, borderColor: Colors.border, width: '90%', marginBottom: Spacing.lg },
   toggleButton: { paddingVertical: Spacing.md, flex: 1, alignItems: 'center', zIndex: 1 },
   toggleActiveBackground: { ...StyleSheet.absoluteFillObject, backgroundColor: Colors.primary, borderRadius: 100, zIndex: 0 },
